@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-fetch.py — raw HTML fetcher for Battle for the Hill profiles.
+fetch.py - raw HTML fetcher for Battle for the Hill profiles.
 
 Purpose: prove we can reach the profiles and get the stats we care about.
 No parsing beyond marker detection. No dashboard logic. Just: did we get
@@ -31,16 +31,13 @@ from pathlib import Path
 import requests
 
 # --- paths ----------------------------------------------------------------
-# Repo layout (index.html is at repo root, data/ is at repo root):
-#   <repo>/
-#   ├── index.html
-#   ├── data/
-#   │   └── latest.json
-#   └── scraper/
-#       ├── fetch.py
-#       ├── urls.txt
-│       ├── raw/
-│       └── fetch-report.txt
+# Repo layout:
+#   <repo>/index.html
+#   <repo>/data/latest.json
+#   <repo>/scraper/fetch.py
+#   <repo>/scraper/urls.txt
+#   <repo>/scraper/raw/
+#   <repo>/scraper/fetch-report.txt
 
 HERE = Path(__file__).resolve().parent          # <repo>/scraper
 REPO_ROOT = HERE.parent                         # <repo>
@@ -78,15 +75,15 @@ def load_cookies():
 
 # --- helpers --------------------------------------------------------------
 
-def slugify(url: str) -> str:
+def slugify(url):
     """Turn a URL into a safe filename."""
     name = url.rstrip("/").rsplit("/", 1)[-1]
     name = re.sub(r"[^a-zA-Z0-9._-]+", "-", name)
     return name or "index"
 
-def read_urls(path: Path) -> list[str]:
+def read_urls(path):
     if not path.exists():
-        sys.exit(f"missing {path} — create it with one URL per line")
+        sys.exit(f"missing {path} - create it with one URL per line")
     urls = []
     for line in path.read_text().splitlines():
         line = line.strip()
@@ -95,7 +92,7 @@ def read_urls(path: Path) -> list[str]:
         urls.append(line)
     return urls
 
-def fetch_one(session: requests.Session, url: str, out_dir: Path) -> dict:
+def fetch_one(session, url, out_dir):
     """Fetch a URL, save raw HTML, return a result dict."""
     result = {
         "url": url,
@@ -128,9 +125,9 @@ def fetch_one(session: requests.Session, url: str, out_dir: Path) -> dict:
         result["error"] = f"{type(e).__name__}: {e}"
     return result
 
-def write_report(results: list[dict], path: Path) -> None:
+def write_report(results, path):
     lines = []
-    lines.append(f"# Fetch report — {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    lines.append(f"# Fetch report - {time.strftime('%Y-%m-%d %H:%M:%S')}")
     lines.append(f"# {len(results)} URLs\n")
     ok = sum(1 for r in results if r["status"] == 200 and not r["error"])
     lines.append(f"## Summary: {ok}/{len(results)} fetched successfully\n")
@@ -150,7 +147,7 @@ def write_report(results: list[dict], path: Path) -> None:
         lines.append("")
     path.write_text("\n".join(lines))
 
-def write_data(results: list[dict], path: Path) -> None:
+def write_data(results, path):
     """Write the JSON snapshot that index.html reads."""
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
@@ -185,7 +182,7 @@ def main():
         urls = urls[: args.limit]
 
     if not urls:
-        sys.exit("no URLs to fetch — add at least one to scraper/urls.txt")
+        sys.exit("no URLs to fetch - add at least one to scraper/urls.txt")
 
     cookies = load_cookies()
     session = requests.Session()
@@ -197,7 +194,7 @@ def main():
         session.cookies.update(cookies)
         print(f"[auth] loaded {len(cookies)} cookies")
     else:
-        print("[auth] no cookies — trying unauthenticated")
+        print("[auth] no cookies - trying unauthenticated")
 
     print(f"[plan] fetching {len(urls)} URLs -> {RAW_DIR}/")
     results = []
@@ -210,7 +207,7 @@ def main():
         else:
             found = len(result["markers_found"])
             total = len(EXPECTED_MARKERS)
-            print(f"         {result['status']} · {result['bytes']:,} bytes · "
+            print(f"         {result['status']} - {result['bytes']:,} bytes - "
                   f"{found}/{total} markers found")
             if result["final_url"] != result["url"]:
                 print(f"         redirected -> {result['final_url']}")
@@ -222,6 +219,7 @@ def main():
 
     write_data(results, DATA_FILE)
     print(f"[data] wrote {DATA_FILE.relative_to(REPO_ROOT)}")
+
 
 if __name__ == "__main__":
     main()
