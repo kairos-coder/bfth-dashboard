@@ -1,0 +1,12 @@
+# Battle for the Hill — profile URLs
+# Format: one URL per line. Lines starting with # are ignored.
+# Add new players here as you profile them.
+
+https://battleforthehill.com/politician/1871
+https://battleforthehill.com/politician/1872
+https://battleforthehill.com/politician/1291
+https://battleforthehill.com/politician/1292
+https://battleforthehill.com/politician/2476
+https://battleforthehill.com/politician/12513
+https://battleforthehill.com/politician/13549
+https://battleforthehill.com/politician/13207
