@@ -1,4 +1,4 @@
-bftf-dashboard/
+bfth-dashboard/
 ├── .github/workflows/scrape.yml      # cron: hourly + workflow_dispatch
 ├── scraper/
 │   ├── fetch.py                      # requests.Session + cookies from secret
