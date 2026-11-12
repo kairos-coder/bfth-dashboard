@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BFTH War Room — scraper test</title>
+<style>
+  body { font: 14px/1.5 ui-monospace, monospace; margin: 2rem; background: #111; color: #ddd; }
+  h1 { color: #7fd; }
+  .meta { color: #888; margin-bottom: 1rem; }
+  pre { background: #000; padding: 1rem; border: 1px solid #333; overflow-x: auto; }
+  .ok { color: #7f7; }
+  .err { color: #f77; }
+  table { border-collapse: collapse; margin-top: 1rem; }
+  th, td { border: 1px solid #333; padding: .3rem .6rem; text-align: left; }
+  th { background: #1a1a1a; color: #7fd; }
+</style>
+</head>
+<body>
+<h1>BFTH War Room — scraper test</h1>
+<div class="meta" id="meta">loading…</div>
+<div id="status"></div>
+<div id="summary"></div>
+<details>
+  <summary>raw latest.json</summary>
+  <pre id="raw">loading…</pre>
+</details>
+
+<script>
+const DATA_URL = new URL("../data/latest.json", location.href).href;
+
+async function main() {
+  const statusEl = document.getElementById("status");
+  const metaEl = document.getElementById("meta");
+  const summaryEl = document.getElementById("summary");
+  const rawEl = document.getElementById("raw");
+
+  let res;
+  try {
+    res = await fetch(DATA_URL, { cache: "no-store" });
+  } catch (e) {
+    statusEl.innerHTML = `<span class="err">fetch failed: ${e.message}</span>`;
+    metaEl.textContent = DATA_URL;
+    return;
+  }
+
+  if (!res.ok) {
+    statusEl.innerHTML = `<span class="err">HTTP ${res.status} — ${DATA_URL} not found yet</span>`;
+    metaEl.textContent = DATA_URL;
+    return;
+  }
+
+  const data = await res.json();
+  statusEl.innerHTML = `<span class="ok">loaded ${DATA_URL}</span>`;
+  metaEl.textContent = `generated: ${data.generated_at ?? "unknown"} · urls: ${(data.results ?? []).length}`;
+
+  // Summary table: one row per fetched URL.
+  const rows = (data.results ?? []).map(r => `
+    <tr>
+      <td>${r.status ?? "—"}</td>
+      <td>${r.bytes ?? "—"}</td>
+      <td>${(r.markers_found ?? []).length}/${(r.markers_found ?? []).length + (r.markers_missing ?? []).length}</td>
+      <td>${r.url ?? ""}</td>
+      <td>${r.error ? `<span class="err">${r.error}</span>` : ""}</td>
+    </tr>`).join("");
+
+  summaryEl.innerHTML = `
+    <table>
+      <tr><th>status</th><th>bytes</th><th>markers</th><th>url</th><th>error</th></tr>
+      ${rows || '<tr><td colspan="5">no results</td></tr>'}
+    </table>`;
+
+  rawEl.textContent = JSON.stringify(data, null, 2);
+}
+
+main();
+</script>
+</body>
+</html>
