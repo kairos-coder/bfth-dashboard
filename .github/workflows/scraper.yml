@@ -1,0 +1,43 @@
+name: scrape-bfth
+
+on:
+  workflow_dispatch:          # manual trigger from the Actions tab
+  # schedule:                 # uncomment when ready for every-30-min
+  #   - cron: '*/30 * * * *'
+
+permissions:
+  contents: write             # needed to commit data back
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Fetch profiles
+        env:
+          BFTH_COOKIES: ${{ secrets.BFTH_COOKIES }}
+        run: python3 scraper/fetch.py
+
+      - name: Commit data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'scrape: update data/latest.json [skip ci]'
+          file_pattern: 'data/latest.json scraper/fetch-report.txt'
+          commit_user_name: 'bfth-warroom-bot'
+          commit_user_email: 'bot@users.noreply.github.com'
+
+      - name: Upload raw HTML as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-html
+          path: scraper/raw/
+          retention-days: 7
+          if-no-files-found: ignore
