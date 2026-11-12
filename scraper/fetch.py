@@ -3,37 +3,55 @@
 fetch.py — raw HTML fetcher for Battle for the Hill profiles.
 
 Purpose: prove we can reach the profiles and get the stats we care about.
-No parsing. No JSON. No dashboard. Just: did we get the HTML, and does it
-contain the fields we need?
+No parsing beyond marker detection. No dashboard logic. Just: did we get
+the HTML, does it contain the fields we need, and can we write a JSON
+snapshot the static page can read?
 
 Usage:
-    python3 fetch.py                    # fetch all URLs in urls.txt
-    python3 fetch.py --limit 3          # fetch only the first 3 (for testing)
-    python3 fetch.py --url <one-url>    # fetch a single URL
+    python3 scraper/fetch.py                    # fetch all URLs in urls.txt
+    python3 scraper/fetch.py --limit 3          # fetch only the first 3
+    python3 scraper/fetch.py --url <one-url>    # fetch a single URL
+    python3 scraper/fetch.py --delay 2.0        # slower between requests
 
 Output:
     scraper/raw/<slug>.html             # raw HTML per profile
-    scraper/fetch-report.txt            # summary of what worked/failed
+    scraper/fetch-report.txt            # human-readable summary
+    data/latest.json                    # dashboard data (repo root)
 """
 
 import argparse
+import json
 import os
 import re
 import sys
 import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
 
-# --- config ---------------------------------------------------------------
+# --- paths ----------------------------------------------------------------
+# Repo layout (index.html is at repo root, data/ is at repo root):
+#   <repo>/
+#   ├── index.html
+#   ├── data/
+#   │   └── latest.json
+#   └── scraper/
+#       ├── fetch.py
+#       ├── urls.txt
+│       ├── raw/
+│       └── fetch-report.txt
 
-HERE = Path(__file__).resolve().parent
+HERE = Path(__file__).resolve().parent          # <repo>/scraper
+REPO_ROOT = HERE.parent                         # <repo>
 URLS_FILE = HERE / "urls.txt"
 RAW_DIR = HERE / "raw"
 REPORT_FILE = HERE / "fetch-report.txt"
+DATA_DIR = REPO_ROOT / "data"
+DATA_FILE = DATA_DIR / "latest.json"
 
 # Strings we look for in the HTML to confirm the stats are present.
-# Adjust these to match BFTH's actual labels.
+# Adjust these to match BFTH's actual labels once we see real HTML.
 EXPECTED_MARKERS = [
     "National Prestige",
     "Campaign Strength",
@@ -42,15 +60,14 @@ EXPECTED_MARKERS = [
     "Campaign Funds",
 ]
 
-# Cookies: read from env var BFTH_COOKIES if set (JSON dict or "a=1; b=2" string).
-# Leave unset for a public test.
+# --- auth -----------------------------------------------------------------
+
 def load_cookies():
+    """Read BFTH_COOKIES env var as either JSON dict or 'k=v; k=v' string."""
     raw = os.environ.get("BFTH_COOKIES", "").strip()
     if not raw:
         return None
-    # Accept either a JSON dict or a "k=v; k=v" cookie header string.
     if raw.startswith("{"):
-        import json
         return json.loads(raw)
     jar = {}
     for part in raw.split(";"):
@@ -79,13 +96,14 @@ def read_urls(path: Path) -> list[str]:
     return urls
 
 def fetch_one(session: requests.Session, url: str, out_dir: Path) -> dict:
-    """Fetch a URL, save raw HTML, return a summary dict."""
+    """Fetch a URL, save raw HTML, return a result dict."""
     result = {
         "url": url,
         "status": None,
         "bytes": 0,
         "markers_found": [],
         "markers_missing": [],
+        "final_url": None,
         "error": None,
         "saved_to": None,
     }
@@ -93,23 +111,56 @@ def fetch_one(session: requests.Session, url: str, out_dir: Path) -> dict:
         r = session.get(url, timeout=20, allow_redirects=True)
         result["status"] = r.status_code
         result["bytes"] = len(r.content)
+        result["final_url"] = r.url
         html = r.text
 
-        # Check which expected markers appear in the HTML.
         for marker in EXPECTED_MARKERS:
             if marker in html:
                 result["markers_found"].append(marker)
             else:
                 result["markers_missing"].append(marker)
 
-        # Save raw HTML regardless of markers — we want to inspect failures.
         out_path = out_dir / f"{slugify(url)}.html"
         out_path.write_text(html, encoding="utf-8", errors="replace")
-        result["saved_to"] = str(out_path)
+        result["saved_to"] = str(out_path.relative_to(REPO_ROOT))
 
     except requests.RequestException as e:
-        result["error"] = str(e)
+        result["error"] = f"{type(e).__name__}: {e}"
     return result
+
+def write_report(results: list[dict], path: Path) -> None:
+    lines = []
+    lines.append(f"# Fetch report — {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    lines.append(f"# {len(results)} URLs\n")
+    ok = sum(1 for r in results if r["status"] == 200 and not r["error"])
+    lines.append(f"## Summary: {ok}/{len(results)} fetched successfully\n")
+    for r in results:
+        lines.append(f"### {r['url']}")
+        lines.append(f"- status: {r['status']}")
+        lines.append(f"- bytes: {r['bytes']}")
+        if r["final_url"] and r["final_url"] != r["url"]:
+            lines.append(f"- final_url: {r['final_url']}  (redirected)")
+        lines.append(f"- saved: {r['saved_to']}")
+        if r["error"]:
+            lines.append(f"- error: {r['error']}")
+        if r["markers_found"]:
+            lines.append(f"- markers found: {', '.join(r['markers_found'])}")
+        if r["markers_missing"]:
+            lines.append(f"- markers missing: {', '.join(r['markers_missing'])}")
+        lines.append("")
+    path.write_text("\n".join(lines))
+
+def write_data(results: list[dict], path: Path) -> None:
+    """Write the JSON snapshot that index.html reads."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": "fetch.py",
+        "results": results,
+    }
+    path.write_text(json.dumps(payload, indent=2))
+    # Confirm parseability so a bad write fails the workflow loudly.
+    json.loads(path.read_text())
 
 # --- main -----------------------------------------------------------------
 
@@ -134,12 +185,12 @@ def main():
         urls = urls[: args.limit]
 
     if not urls:
-        sys.exit("no URLs to fetch")
+        sys.exit("no URLs to fetch — add at least one to scraper/urls.txt")
 
     cookies = load_cookies()
     session = requests.Session()
     session.headers.update({
-        "User-Agent": "bftf-warroom/0.1 (+private friend tool)",
+        "User-Agent": "bfth-warroom/0.1 (+private friend tool)",
         "Accept": "text/html,application/xhtml+xml",
     })
     if cookies:
@@ -161,28 +212,16 @@ def main():
             total = len(EXPECTED_MARKERS)
             print(f"         {result['status']} · {result['bytes']:,} bytes · "
                   f"{found}/{total} markers found")
-        time.sleep(args.delay)
+            if result["final_url"] != result["url"]:
+                print(f"         redirected -> {result['final_url']}")
+        if i < len(urls):
+            time.sleep(args.delay)
 
-    # Write a human-readable report.
-    lines = []
-    lines.append(f"# Fetch report — {time.strftime('%Y-%m-%d %H:%M:%S')}")
-    lines.append(f"# {len(results)} URLs\n")
-    ok = sum(1 for r in results if r["status"] == 200 and not r["error"])
-    lines.append(f"## Summary: {ok}/{len(results)} fetched successfully\n")
-    for r in results:
-        lines.append(f"### {r['url']}")
-        lines.append(f"- status: {r['status']}")
-        lines.append(f"- bytes: {r['bytes']}")
-        lines.append(f"- saved: {r['saved_to']}")
-        if r["error"]:
-            lines.append(f"- error: {r['error']}")
-        if r["markers_found"]:
-            lines.append(f"- markers found: {', '.join(r['markers_found'])}")
-        if r["markers_missing"]:
-            lines.append(f"- markers missing: {', '.join(r['markers_missing'])}")
-        lines.append("")
-    REPORT_FILE.write_text("\n".join(lines))
-    print(f"\n[report] wrote {REPORT_FILE}")
+    write_report(results, REPORT_FILE)
+    print(f"[report] wrote {REPORT_FILE.relative_to(REPO_ROOT)}")
+
+    write_data(results, DATA_FILE)
+    print(f"[data] wrote {DATA_FILE.relative_to(REPO_ROOT)}")
 
 if __name__ == "__main__":
     main()
