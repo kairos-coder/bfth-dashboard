@@ -1,0 +1,545 @@
+{
+  "election_id": "20749",
+  "state_id": "42",
+  "type": "governor",
+  "label": "Governor",
+  "overview_lean": 12.2,
+  "url": "https://battleforthehill.com/states/42/elections/20749",
+  "candidates": [
+    {
+      "name": "Anthony Adcox",
+      "politician_id": "14866",
+      "final_pct": 55.9
+    },
+    {
+      "name": "Matt glenndenning",
+      "politician_id": "14606",
+      "final_pct": 44.1
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Matt glenndenning": 4.43,
+        "Anthony Adcox": 23.8
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Matt glenndenning": 2.94,
+        "Anthony Adcox": 23.8
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Matt glenndenning": 6.25,
+        "Anthony Adcox": 24.83
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Matt glenndenning": 5.8,
+        "Anthony Adcox": 22.76
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Matt glenndenning": 3.8,
+        "Anthony Adcox": 24.51
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Matt glenndenning": 3.81,
+        "Anthony Adcox": 23.76
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Matt glenndenning": 4.31,
+        "Anthony Adcox": 24.26
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Matt glenndenning": 2.49,
+        "Anthony Adcox": 26.17
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Matt glenndenning": 3.76,
+        "Anthony Adcox": 23.92
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Matt glenndenning": 21.36,
+        "Anthony Adcox": 24.67
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Matt glenndenning": 27.63,
+        "Anthony Adcox": 23.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Matt glenndenning": 34.28,
+        "Anthony Adcox": 21.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Matt glenndenning": 30.03,
+        "Anthony Adcox": 24.6
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Matt glenndenning": 32.29,
+        "Anthony Adcox": 23.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Matt glenndenning": 31.79,
+        "Anthony Adcox": 24.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Matt glenndenning": 31.69,
+        "Anthony Adcox": 24.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Matt glenndenning": 31.69,
+        "Anthony Adcox": 24.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Matt glenndenning": 31.69,
+        "Anthony Adcox": 25.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Matt glenndenning": 31.2,
+        "Anthony Adcox": 22.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Matt glenndenning": 33.35,
+        "Anthony Adcox": 34.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Matt glenndenning": 32.1,
+        "Anthony Adcox": 35.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Matt glenndenning": 33.1,
+        "Anthony Adcox": 34.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Matt glenndenning": 32.09,
+        "Anthony Adcox": 33.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Matt glenndenning": 33,
+        "Anthony Adcox": 40.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Matt glenndenning": 30.5,
+        "Anthony Adcox": 41.6
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Matt glenndenning": 32.5,
+        "Anthony Adcox": 40.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Matt glenndenning": 32.75,
+        "Anthony Adcox": 40.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Matt glenndenning": 32.9,
+        "Anthony Adcox": 46.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Matt glenndenning": 32.9,
+        "Anthony Adcox": 46.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Matt glenndenning": 32.65,
+        "Anthony Adcox": 48.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Matt glenndenning": 33.9,
+        "Anthony Adcox": 46.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Matt glenndenning": 32.55,
+        "Anthony Adcox": 45.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Matt glenndenning": 32.8,
+        "Anthony Adcox": 46.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Matt glenndenning": 30.8,
+        "Anthony Adcox": 44.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Matt glenndenning": 33.3,
+        "Anthony Adcox": 46.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Matt glenndenning": 33.21,
+        "Anthony Adcox": 44.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Matt glenndenning": 33.21,
+        "Anthony Adcox": 46.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Matt glenndenning": 32.71,
+        "Anthony Adcox": 46.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Matt glenndenning": 35.21,
+        "Anthony Adcox": 47.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Matt glenndenning": 33.12,
+        "Anthony Adcox": 46.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Matt glenndenning": 32.87,
+        "Anthony Adcox": 46
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Matt glenndenning": 46.12,
+        "Anthony Adcox": 47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Matt glenndenning": 44.63,
+        "Anthony Adcox": 46.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Matt glenndenning": 49.03,
+        "Anthony Adcox": 52.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Matt glenndenning": 48.05,
+        "Anthony Adcox": 50.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Matt glenndenning": 49.05,
+        "Anthony Adcox": 52.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Matt glenndenning": 47.07,
+        "Anthony Adcox": 52.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Matt glenndenning": 49,
+        "Anthony Adcox": 53.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Matt glenndenning": 48.5,
+        "Anthony Adcox": 52.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Matt glenndenning": 48.5,
+        "Anthony Adcox": 53.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Matt glenndenning": 50,
+        "Anthony Adcox": 53.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Matt glenndenning": 45.66,
+        "Anthony Adcox": 56.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Matt glenndenning": 48.4,
+        "Anthony Adcox": 53.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Matt glenndenning": 47.66,
+        "Anthony Adcox": 54.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Matt glenndenning": 48.41,
+        "Anthony Adcox": 53.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Matt glenndenning": 48.31,
+        "Anthony Adcox": 55.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Matt glenndenning": 55.86,
+        "Anthony Adcox": 55.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Matt glenndenning": 56.11,
+        "Anthony Adcox": 56.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Matt glenndenning": 59.14,
+        "Anthony Adcox": 55.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Matt glenndenning": 57.29,
+        "Anthony Adcox": 54.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Matt glenndenning": 57.3,
+        "Anthony Adcox": 55.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Matt glenndenning": 58.8,
+        "Anthony Adcox": 56.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Matt glenndenning": 57.84,
+        "Anthony Adcox": 55.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Matt glenndenning": 62,
+        "Anthony Adcox": 54.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Matt glenndenning": 62.25,
+        "Anthony Adcox": 56.58
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:43.751704+00:00"
+}

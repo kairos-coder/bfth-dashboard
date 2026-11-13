@@ -1,0 +1,475 @@
+{
+  "election_id": "20735",
+  "state_id": "22",
+  "type": "governor",
+  "label": "Governor",
+  "overview_lean": 0.0,
+  "url": "https://battleforthehill.com/states/22/elections/20735",
+  "candidates": [
+    {
+      "name": "Mike Rogers",
+      "politician_id": "14576",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Mike Rogers": 100
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:39.472073+00:00"
+}

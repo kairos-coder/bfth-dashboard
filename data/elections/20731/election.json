@@ -1,0 +1,475 @@
+{
+  "election_id": "20731",
+  "state_id": "16",
+  "type": "governor",
+  "label": "Governor",
+  "overview_lean": 0.0,
+  "url": "https://battleforthehill.com/states/16/elections/20731",
+  "candidates": [
+    {
+      "name": "Bob Dole",
+      "politician_id": "12512",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Bob Dole": 100
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:38.325447+00:00"
+}

@@ -1,0 +1,537 @@
+{
+  "election_id": "19467",
+  "state_id": "8",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 26.3,
+  "url": "https://battleforthehill.com/states/8/elections/19467",
+  "candidates": [
+    {
+      "name": "James Bond",
+      "politician_id": "1264",
+      "final_pct": 63.2
+    },
+    {
+      "name": "doctorsus",
+      "politician_id": "11484",
+      "final_pct": 36.8
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "James Bond": 49.39,
+        "doctorsus": 30.91
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "James Bond": 49.39,
+        "doctorsus": 32.41
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "James Bond": 49.92,
+        "doctorsus": 34.91
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "James Bond": 49.39,
+        "doctorsus": 35.27
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "James Bond": 49.39,
+        "doctorsus": 36.77
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "James Bond": 49.89,
+        "doctorsus": 38.77
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "James Bond": 47.64,
+        "doctorsus": 43.03
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "James Bond": 51.05,
+        "doctorsus": 46.2
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "James Bond": 48.8,
+        "doctorsus": 48.71
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "James Bond": 49.32,
+        "doctorsus": 50.71
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "James Bond": 48.34,
+        "doctorsus": 53.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "James Bond": 48.75,
+        "doctorsus": 57.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "James Bond": 53.74,
+        "doctorsus": 58.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "James Bond": 75.24,
+        "doctorsus": 58.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "James Bond": 75.24,
+        "doctorsus": 58.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "James Bond": 75.15,
+        "doctorsus": 58.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "James Bond": 75.15,
+        "doctorsus": 58.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "James Bond": 75.15,
+        "doctorsus": 58.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "James Bond": 75.15,
+        "doctorsus": 58.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "James Bond": 75.56,
+        "doctorsus": 59.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "James Bond": 76.56,
+        "doctorsus": 56.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "James Bond": 74.56,
+        "doctorsus": 59.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "James Bond": 75.06,
+        "doctorsus": 59.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "James Bond": 73.46,
+        "doctorsus": 58.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "James Bond": 75.96,
+        "doctorsus": 59.28
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "James Bond": 75.71,
+        "doctorsus": 60.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "James Bond": 75.71,
+        "doctorsus": 59.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "James Bond": 75.62,
+        "doctorsus": 60.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "James Bond": 74.62,
+        "doctorsus": 61.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "James Bond": 76.62,
+        "doctorsus": 58.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "James Bond": 74.62,
+        "doctorsus": 59.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "James Bond": 75.78,
+        "doctorsus": 57.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "James Bond": 76.28,
+        "doctorsus": 60.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "James Bond": 75.28,
+        "doctorsus": 60.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "James Bond": 75.28,
+        "doctorsus": 60.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "James Bond": 74.69,
+        "doctorsus": 60.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "James Bond": 72.94,
+        "doctorsus": 60.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "James Bond": 75.44,
+        "doctorsus": 60.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "James Bond": 74.69,
+        "doctorsus": 60.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "James Bond": 73.6,
+        "doctorsus": 60.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "James Bond": 74.6,
+        "doctorsus": 61.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "James Bond": 75.11,
+        "doctorsus": 61.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "James Bond": 74.61,
+        "doctorsus": 61.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "James Bond": 75.02,
+        "doctorsus": 60.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "James Bond": 74.52,
+        "doctorsus": 62.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "James Bond": 74.27,
+        "doctorsus": 61.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "James Bond": 73.78,
+        "doctorsus": 61.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "James Bond": 74.45,
+        "doctorsus": 60.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "James Bond": 76.2,
+        "doctorsus": 60.44
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "James Bond": 74.45,
+        "doctorsus": 62.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "James Bond": 74.45,
+        "doctorsus": 63.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "James Bond": 78.86,
+        "doctorsus": 64.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "James Bond": 79.85,
+        "doctorsus": 63.63
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "James Bond": 79.36,
+        "doctorsus": 62.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "James Bond": 78.86,
+        "doctorsus": 62.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "James Bond": 78.77,
+        "doctorsus": 62.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "James Bond": 79.27,
+        "doctorsus": 63.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "James Bond": 78.27,
+        "doctorsus": 64.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "James Bond": 79.28,
+        "doctorsus": 63.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "James Bond": 79.94,
+        "doctorsus": 65.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "James Bond": 77.19,
+        "doctorsus": 65.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "James Bond": 76.69,
+        "doctorsus": 65.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "James Bond": 79.2,
+        "doctorsus": 62.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "James Bond": 79.37,
+        "doctorsus": 64.68
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:24.467105+00:00"
+}

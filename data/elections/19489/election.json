@@ -1,0 +1,537 @@
+{
+  "election_id": "19489",
+  "state_id": "40",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 20.7,
+  "url": "https://battleforthehill.com/states/40/elections/19489",
+  "candidates": [
+    {
+      "name": "Dick Butkus",
+      "politician_id": "11564",
+      "final_pct": 60.3
+    },
+    {
+      "name": "Mike Thomason",
+      "politician_id": "14621",
+      "final_pct": 39.7
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Dick Butkus": 30.8,
+        "Mike Thomason": 39.29
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Dick Butkus": 33.3,
+        "Mike Thomason": 39.55
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Dick Butkus": 35.3,
+        "Mike Thomason": 39.32
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Dick Butkus": 36.75,
+        "Mike Thomason": 39.12
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Dick Butkus": 39.25,
+        "Mike Thomason": 39.12
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Dick Butkus": 42.75,
+        "Mike Thomason": 38.38
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Dick Butkus": 46.26,
+        "Mike Thomason": 39.63
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Dick Butkus": 47.68,
+        "Mike Thomason": 39.04
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Dick Butkus": 51.56,
+        "Mike Thomason": 39.8
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Dick Butkus": 54.06,
+        "Mike Thomason": 39.57
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Dick Butkus": 57.31,
+        "Mike Thomason": 40.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Dick Butkus": 56.47,
+        "Mike Thomason": 41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Dick Butkus": 57.22,
+        "Mike Thomason": 40
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Dick Butkus": 58.72,
+        "Mike Thomason": 40.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Dick Butkus": 59.47,
+        "Mike Thomason": 40.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Dick Butkus": 58.64,
+        "Mike Thomason": 39.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Dick Butkus": 58.14,
+        "Mike Thomason": 40.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Dick Butkus": 59.14,
+        "Mike Thomason": 39.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Dick Butkus": 56.76,
+        "Mike Thomason": 41.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Dick Butkus": 58.17,
+        "Mike Thomason": 39.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Dick Butkus": 56.92,
+        "Mike Thomason": 41.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Dick Butkus": 59.67,
+        "Mike Thomason": 39.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Dick Butkus": 59.17,
+        "Mike Thomason": 39.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Dick Butkus": 59.58,
+        "Mike Thomason": 39.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Dick Butkus": 61.58,
+        "Mike Thomason": 39.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Dick Butkus": 61.83,
+        "Mike Thomason": 40.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Dick Butkus": 61.33,
+        "Mike Thomason": 39.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Dick Butkus": 60.74,
+        "Mike Thomason": 39.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Dick Butkus": 60.24,
+        "Mike Thomason": 40.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Dick Butkus": 62.74,
+        "Mike Thomason": 37.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Dick Butkus": 60.24,
+        "Mike Thomason": 39.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Dick Butkus": 61.74,
+        "Mike Thomason": 41.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Dick Butkus": 63.73,
+        "Mike Thomason": 39.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Dick Butkus": 60.23,
+        "Mike Thomason": 40.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Dick Butkus": 61.73,
+        "Mike Thomason": 39.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Dick Butkus": 61.9,
+        "Mike Thomason": 39.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Dick Butkus": 61.9,
+        "Mike Thomason": 36.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Dick Butkus": 62.65,
+        "Mike Thomason": 37.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Dick Butkus": 63.17,
+        "Mike Thomason": 38.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Dick Butkus": 63.08,
+        "Mike Thomason": 39.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Dick Butkus": 62.58,
+        "Mike Thomason": 39.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Dick Butkus": 62.58,
+        "Mike Thomason": 39.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Dick Butkus": 62.58,
+        "Mike Thomason": 39.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Dick Butkus": 62.5,
+        "Mike Thomason": 39.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Dick Butkus": 63.29,
+        "Mike Thomason": 39.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Dick Butkus": 64.04,
+        "Mike Thomason": 41.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Dick Butkus": 62.54,
+        "Mike Thomason": 47.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Dick Butkus": 63.2,
+        "Mike Thomason": 70.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Dick Butkus": 61.7,
+        "Mike Thomason": 69.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Dick Butkus": 63.2,
+        "Mike Thomason": 70.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Dick Butkus": 61.73,
+        "Mike Thomason": 73.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Dick Butkus": 62.39,
+        "Mike Thomason": 71.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Dick Butkus": 63.14,
+        "Mike Thomason": 71.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Dick Butkus": 62.9,
+        "Mike Thomason": 72.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Dick Butkus": 65.65,
+        "Mike Thomason": 70.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Dick Butkus": 63.82,
+        "Mike Thomason": 70.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Dick Butkus": 64.58,
+        "Mike Thomason": 70.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Dick Butkus": 64.37,
+        "Mike Thomason": 71.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Dick Butkus": 64.37,
+        "Mike Thomason": 71.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Dick Butkus": 64.28,
+        "Mike Thomason": 71.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Dick Butkus": 64.78,
+        "Mike Thomason": 71.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Dick Butkus": 64.79,
+        "Mike Thomason": 71.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Dick Butkus": 64.3,
+        "Mike Thomason": 70.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Dick Butkus": 65.24,
+        "Mike Thomason": 71.69
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:31.763753+00:00"
+}

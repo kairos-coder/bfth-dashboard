@@ -1,0 +1,174 @@
+{
+  "election_id": "20730",
+  "state_id": "15",
+  "type": "governor",
+  "label": "Governor",
+  "overview_lean": 0.0,
+  "url": "https://battleforthehill.com/states/15/elections/20730",
+  "candidates": [
+    {
+      "name": "Kylin Waters(2)",
+      "politician_id": "14790",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Kylin Waters(2)": 100
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 22,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:38.036673+00:00"
+}

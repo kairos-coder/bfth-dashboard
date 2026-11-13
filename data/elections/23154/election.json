@@ -1,0 +1,615 @@
+{
+  "election_id": "23154",
+  "state_id": "25",
+  "type": "house",
+  "label": "U.S. House (7 seats)",
+  "overview_lean": 7.3,
+  "url": "https://battleforthehill.com/states/25/elections/23154",
+  "candidates": [
+    {
+      "name": "Clark Nora",
+      "politician_id": "14550",
+      "final_pct": 53.7
+    },
+    {
+      "name": "Queen",
+      "politician_id": "1690",
+      "final_pct": 46.3
+    },
+    {
+      "name": "Who is this guy?",
+      "politician_id": "13185",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Queen": 22.61,
+        "Who is this guy?": null,
+        "Clark Nora": 51.8
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Queen": 22.62,
+        "Who is this guy?": null,
+        "Clark Nora": 52.82
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Queen": 57.89,
+        "Who is this guy?": null,
+        "Clark Nora": 54.3
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Queen": 60.97,
+        "Who is this guy?": 13.98,
+        "Clark Nora": 57.6
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Queen": 61.98,
+        "Who is this guy?": 17.23,
+        "Clark Nora": 58.5
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Queen": 61.98,
+        "Who is this guy?": 17.98,
+        "Clark Nora": 62.95
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Queen": 61.7,
+        "Who is this guy?": 18.16,
+        "Clark Nora": 63.17
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Queen": 62.45,
+        "Who is this guy?": 17.41,
+        "Clark Nora": 62.42
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Queen": 62.71,
+        "Who is this guy?": 19.02,
+        "Clark Nora": 65.02
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Queen": 61.75,
+        "Who is this guy?": 18.42,
+        "Clark Nora": 66.02
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Queen": 62.99,
+        "Who is this guy?": 16.83,
+        "Clark Nora": 64.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Queen": 62.99,
+        "Who is this guy?": 17.92,
+        "Clark Nora": 66.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Queen": 62.24,
+        "Who is this guy?": 19.18,
+        "Clark Nora": 67.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Queen": 60.99,
+        "Who is this guy?": 18.53,
+        "Clark Nora": 67.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Queen": 62.45,
+        "Who is this guy?": 17.69,
+        "Clark Nora": 65.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Queen": 61.45,
+        "Who is this guy?": 17.84,
+        "Clark Nora": 64.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Queen": 62.45,
+        "Who is this guy?": 18.19,
+        "Clark Nora": 66.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Queen": 61.96,
+        "Who is this guy?": 18.69,
+        "Clark Nora": 66.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Queen": 62.42,
+        "Who is this guy?": 17.95,
+        "Clark Nora": 68.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Queen": 61.92,
+        "Who is this guy?": 19.95,
+        "Clark Nora": 65.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Queen": 62.42,
+        "Who is this guy?": 20.45,
+        "Clark Nora": 65.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Queen": 62.41,
+        "Who is this guy?": 20.8,
+        "Clark Nora": 66.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Queen": 61.88,
+        "Who is this guy?": 19.21,
+        "Clark Nora": 66.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Queen": 62.38,
+        "Who is this guy?": 19.56,
+        "Clark Nora": 66.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Queen": 62.38,
+        "Who is this guy?": 17.81,
+        "Clark Nora": 66.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Queen": 61.88,
+        "Who is this guy?": 19.91,
+        "Clark Nora": 66.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Queen": 61.84,
+        "Who is this guy?": 20.32,
+        "Clark Nora": 64.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Queen": 63.34,
+        "Who is this guy?": 20.32,
+        "Clark Nora": 66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Queen": 61.84,
+        "Who is this guy?": 19.82,
+        "Clark Nora": 66.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Queen": 61.84,
+        "Who is this guy?": 20.32,
+        "Clark Nora": 69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Queen": 63.55,
+        "Who is this guy?": 20.58,
+        "Clark Nora": 64.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Queen": 63.3,
+        "Who is this guy?": 19.97,
+        "Clark Nora": 64.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Queen": 61.8,
+        "Who is this guy?": 19.97,
+        "Clark Nora": 66.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Queen": 61.3,
+        "Who is this guy?": 19.97,
+        "Clark Nora": 65.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Queen": 61.76,
+        "Who is this guy?": 19.88,
+        "Clark Nora": 66.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Queen": 61.76,
+        "Who is this guy?": 20.23,
+        "Clark Nora": 66.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Queen": 61.77,
+        "Who is this guy?": 20.12,
+        "Clark Nora": 66.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Queen": 62.27,
+        "Who is this guy?": 18.47,
+        "Clark Nora": 65.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Queen": 61.91,
+        "Who is this guy?": 20.13,
+        "Clark Nora": 65.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Queen": 62.16,
+        "Who is this guy?": 21.48,
+        "Clark Nora": 66.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Queen": 60.68,
+        "Who is this guy?": 20.73,
+        "Clark Nora": 66.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Queen": 61.18,
+        "Who is this guy?": 21.58,
+        "Clark Nora": 67.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Queen": 62.14,
+        "Who is this guy?": 21.49,
+        "Clark Nora": 65.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Queen": 62.66,
+        "Who is this guy?": 20.6,
+        "Clark Nora": 66.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Queen": 62.66,
+        "Who is this guy?": 22.1,
+        "Clark Nora": 63.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Queen": 61.41,
+        "Who is this guy?": 21.45,
+        "Clark Nora": 66.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Queen": 61.64,
+        "Who is this guy?": 22.12,
+        "Clark Nora": 66.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Queen": 59.9,
+        "Who is this guy?": 23.98,
+        "Clark Nora": 67.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Queen": 59.9,
+        "Who is this guy?": 21.23,
+        "Clark Nora": 68.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Queen": 61.15,
+        "Who is this guy?": 20.58,
+        "Clark Nora": 67.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Queen": 58.87,
+        "Who is this guy?": 21.24,
+        "Clark Nora": 67.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Queen": 61.37,
+        "Who is this guy?": 20.84,
+        "Clark Nora": 65.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Queen": 59.12,
+        "Who is this guy?": 22.09,
+        "Clark Nora": 67.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Queen": 61.62,
+        "Who is this guy?": 24.72,
+        "Clark Nora": 65.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Queen": 61.58,
+        "Who is this guy?": 23.88,
+        "Clark Nora": 64.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Queen": 62.58,
+        "Who is this guy?": 22.99,
+        "Clark Nora": 68.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Queen": 62.08,
+        "Who is this guy?": 20.5,
+        "Clark Nora": 67.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Queen": 61.58,
+        "Who is this guy?": 23.6,
+        "Clark Nora": 68.02
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Queen": 61.57,
+        "Who is this guy?": 24.26,
+        "Clark Nora": 69.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Queen": 61.57,
+        "Who is this guy?": 23.86,
+        "Clark Nora": 67.94
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Queen": 61.58,
+        "Who is this guy?": 24.87,
+        "Clark Nora": 67.94
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Queen": 60.83,
+        "Who is this guy?": 24.37,
+        "Clark Nora": 68.44
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Queen": 61.51,
+        "Who is this guy?": 25.15,
+        "Clark Nora": 67.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Queen": 63.01,
+        "Who is this guy?": 26.66,
+        "Clark Nora": 66.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Queen": 60.51,
+        "Who is this guy?": 24.51,
+        "Clark Nora": 69.36
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:48.000128+00:00"
+}

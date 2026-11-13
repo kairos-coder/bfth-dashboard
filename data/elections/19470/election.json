@@ -1,0 +1,537 @@
+{
+  "election_id": "19470",
+  "state_id": "13",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 28.1,
+  "url": "https://battleforthehill.com/states/13/elections/19470",
+  "candidates": [
+    {
+      "name": "Mark Kirk",
+      "politician_id": "11475",
+      "final_pct": null
+    },
+    {
+      "name": "Hunter Biden",
+      "politician_id": "1331",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Hunter Biden": 38.21,
+        "Mark Kirk": 35.3
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Hunter Biden": 38.21,
+        "Mark Kirk": 35.81
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Hunter Biden": 46.05,
+        "Mark Kirk": 41.2
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Hunter Biden": 47.79,
+        "Mark Kirk": 46.44
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Hunter Biden": 47.04,
+        "Mark Kirk": 47.19
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Hunter Biden": 47.79,
+        "Mark Kirk": 50.44
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Hunter Biden": 47.3,
+        "Mark Kirk": 53.94
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Hunter Biden": 48.72,
+        "Mark Kirk": 53.85
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Hunter Biden": 50.23,
+        "Mark Kirk": 57.11
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Hunter Biden": 48.73,
+        "Mark Kirk": 61.88
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Hunter Biden": 47.73,
+        "Mark Kirk": 64.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Hunter Biden": 45.15,
+        "Mark Kirk": 69.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Hunter Biden": 48.15,
+        "Mark Kirk": 68.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Hunter Biden": 44.91,
+        "Mark Kirk": 68.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Hunter Biden": 47.91,
+        "Mark Kirk": 68.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Hunter Biden": 46.83,
+        "Mark Kirk": 68.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Hunter Biden": 44.83,
+        "Mark Kirk": 69.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Hunter Biden": 46.83,
+        "Mark Kirk": 70.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Hunter Biden": 47.83,
+        "Mark Kirk": 69.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Hunter Biden": 47.75,
+        "Mark Kirk": 70.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Hunter Biden": 47.75,
+        "Mark Kirk": 69.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Hunter Biden": 47.5,
+        "Mark Kirk": 70.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Hunter Biden": 48.25,
+        "Mark Kirk": 70.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Hunter Biden": 49.16,
+        "Mark Kirk": 70.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Hunter Biden": 46.91,
+        "Mark Kirk": 70.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Hunter Biden": 46.41,
+        "Mark Kirk": 70.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Hunter Biden": 46.41,
+        "Mark Kirk": 71.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Hunter Biden": 47.33,
+        "Mark Kirk": 70.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Hunter Biden": 44.84,
+        "Mark Kirk": 70.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Hunter Biden": 48.09,
+        "Mark Kirk": 71.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Hunter Biden": 47.34,
+        "Mark Kirk": 68.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Hunter Biden": 48.26,
+        "Mark Kirk": 70.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Hunter Biden": 44.5,
+        "Mark Kirk": 72.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Hunter Biden": 50,
+        "Mark Kirk": 71.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Hunter Biden": 46.25,
+        "Mark Kirk": 70.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Hunter Biden": 47.92,
+        "Mark Kirk": 71.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Hunter Biden": 45.42,
+        "Mark Kirk": 71.43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Hunter Biden": 47.67,
+        "Mark Kirk": 70.93
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Hunter Biden": 46.92,
+        "Mark Kirk": 72.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Hunter Biden": 46.59,
+        "Mark Kirk": 73.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Hunter Biden": 45.59,
+        "Mark Kirk": 70.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Hunter Biden": 48.84,
+        "Mark Kirk": 73.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Hunter Biden": 47.09,
+        "Mark Kirk": 72.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Hunter Biden": 51.57,
+        "Mark Kirk": 71.28
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Hunter Biden": 52.57,
+        "Mark Kirk": 73.28
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Hunter Biden": 54.07,
+        "Mark Kirk": 72.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Hunter Biden": 52.07,
+        "Mark Kirk": 72.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Hunter Biden": 51.49,
+        "Mark Kirk": 70.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Hunter Biden": 53.25,
+        "Mark Kirk": 72.46
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Hunter Biden": 54.75,
+        "Mark Kirk": 71.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Hunter Biden": 74,
+        "Mark Kirk": 72.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Hunter Biden": 76.42,
+        "Mark Kirk": 73.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Hunter Biden": 77.42,
+        "Mark Kirk": 73.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Hunter Biden": 76.43,
+        "Mark Kirk": 73.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Hunter Biden": 76.93,
+        "Mark Kirk": 73.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Hunter Biden": 77.36,
+        "Mark Kirk": 74.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Hunter Biden": 77.12,
+        "Mark Kirk": 74.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Hunter Biden": 76.12,
+        "Mark Kirk": 74.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Hunter Biden": 77.37,
+        "Mark Kirk": 74.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Hunter Biden": 76.04,
+        "Mark Kirk": 74.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Hunter Biden": 74.79,
+        "Mark Kirk": 74.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Hunter Biden": 76.3,
+        "Mark Kirk": 74.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Hunter Biden": 74.56,
+        "Mark Kirk": 72.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Hunter Biden": 76.98,
+        "Mark Kirk": 74.98
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:25.577265+00:00"
+}

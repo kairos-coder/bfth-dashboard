@@ -1,0 +1,545 @@
+{
+  "election_id": "23158",
+  "state_id": "32",
+  "type": "house",
+  "label": "U.S. House (30 seats)",
+  "overview_lean": 3.2,
+  "url": "https://battleforthehill.com/states/32/elections/23158",
+  "candidates": [
+    {
+      "name": "Hakeem Jeffries",
+      "politician_id": "11685",
+      "final_pct": 51.6
+    },
+    {
+      "name": "Don Eastern",
+      "politician_id": "2821",
+      "final_pct": 48.5
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Don Eastern": 51.41,
+        "Hakeem Jeffries": 53.74
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Don Eastern": 51.92,
+        "Hakeem Jeffries": 55.44
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Don Eastern": 56.74,
+        "Hakeem Jeffries": 54.18
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Don Eastern": 58,
+        "Hakeem Jeffries": 54.99
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Don Eastern": 60.86,
+        "Hakeem Jeffries": 55.09
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Don Eastern": 60.86,
+        "Hakeem Jeffries": 55.44
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Don Eastern": 60.3,
+        "Hakeem Jeffries": 53.7
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Don Eastern": 60.8,
+        "Hakeem Jeffries": 56.05
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Don Eastern": 60.81,
+        "Hakeem Jeffries": 56.06
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Don Eastern": 61.85,
+        "Hakeem Jeffries": 56.16
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Don Eastern": 61.56,
+        "Hakeem Jeffries": 56.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Don Eastern": 60.05,
+        "Hakeem Jeffries": 57.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Don Eastern": 60.06,
+        "Hakeem Jeffries": 57.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Don Eastern": 60.56,
+        "Hakeem Jeffries": 57.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Don Eastern": 57.74,
+        "Hakeem Jeffries": 56.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Don Eastern": 60.5,
+        "Hakeem Jeffries": 57.93
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Don Eastern": 61.25,
+        "Hakeem Jeffries": 58.43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Don Eastern": 60.5,
+        "Hakeem Jeffries": 57.93
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Don Eastern": 60.44,
+        "Hakeem Jeffries": 60.27
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Don Eastern": 59.94,
+        "Hakeem Jeffries": 59.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Don Eastern": 59.68,
+        "Hakeem Jeffries": 58.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Don Eastern": 61.43,
+        "Hakeem Jeffries": 58.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Don Eastern": 60.37,
+        "Hakeem Jeffries": 56.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Don Eastern": 60.62,
+        "Hakeem Jeffries": 60.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Don Eastern": 60.12,
+        "Hakeem Jeffries": 60.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Don Eastern": 62.12,
+        "Hakeem Jeffries": 57.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Don Eastern": 60.31,
+        "Hakeem Jeffries": 58.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Don Eastern": 60.31,
+        "Hakeem Jeffries": 61.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Don Eastern": 60.31,
+        "Hakeem Jeffries": 60.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Don Eastern": 60.31,
+        "Hakeem Jeffries": 60.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Don Eastern": 60.74,
+        "Hakeem Jeffries": 61.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Don Eastern": 59.25,
+        "Hakeem Jeffries": 60.68
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Don Eastern": 60,
+        "Hakeem Jeffries": 63.68
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Don Eastern": 57.5,
+        "Hakeem Jeffries": 62.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Don Eastern": 60.68,
+        "Hakeem Jeffries": 62.27
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Don Eastern": 60.19,
+        "Hakeem Jeffries": 62.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Don Eastern": 57.44,
+        "Hakeem Jeffries": 61.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Don Eastern": 60.19,
+        "Hakeem Jeffries": 63.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Don Eastern": 60.62,
+        "Hakeem Jeffries": 63.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Don Eastern": 61.63,
+        "Hakeem Jeffries": 64.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Don Eastern": 60.65,
+        "Hakeem Jeffries": 65.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Don Eastern": 60.14,
+        "Hakeem Jeffries": 64.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Don Eastern": 60.79,
+        "Hakeem Jeffries": 64.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Don Eastern": 60.56,
+        "Hakeem Jeffries": 65.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Don Eastern": 62.56,
+        "Hakeem Jeffries": 66.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Don Eastern": 60.06,
+        "Hakeem Jeffries": 65.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Don Eastern": 58.21,
+        "Hakeem Jeffries": 64.6
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Don Eastern": 60.48,
+        "Hakeem Jeffries": 65.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Don Eastern": 59.98,
+        "Hakeem Jeffries": 66.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Don Eastern": 60.98,
+        "Hakeem Jeffries": 66.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Don Eastern": 59.86,
+        "Hakeem Jeffries": 66.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Don Eastern": 59.87,
+        "Hakeem Jeffries": 66.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Don Eastern": 58.37,
+        "Hakeem Jeffries": 65.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Don Eastern": 58.87,
+        "Hakeem Jeffries": 66.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Don Eastern": 59.75,
+        "Hakeem Jeffries": 67.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Don Eastern": 59.75,
+        "Hakeem Jeffries": 67.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Don Eastern": 59.75,
+        "Hakeem Jeffries": 68.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Don Eastern": 60,
+        "Hakeem Jeffries": 67.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Don Eastern": 58.67,
+        "Hakeem Jeffries": 68.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Don Eastern": 59.67,
+        "Hakeem Jeffries": 69.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Don Eastern": 62.3,
+        "Hakeem Jeffries": 69.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Don Eastern": 61.8,
+        "Hakeem Jeffries": 69.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Don Eastern": 70.67,
+        "Hakeem Jeffries": 69.63
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Don Eastern": 70.67,
+        "Hakeem Jeffries": 70
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Don Eastern": 70.67,
+        "Hakeem Jeffries": 70
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:48.519268+00:00"
+}

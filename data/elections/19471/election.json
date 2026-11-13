@@ -1,0 +1,465 @@
+{
+  "election_id": "19471",
+  "state_id": "15",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 100.0,
+  "url": "https://battleforthehill.com/states/15/elections/19471",
+  "candidates": [
+    {
+      "name": "Jay Gatsby",
+      "politician_id": "14628",
+      "final_pct": null
+    },
+    {
+      "name": "Giles Sweeney II",
+      "politician_id": "14650",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Jay Gatsby": 100,
+        "Giles Sweeney II": null
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Jay Gatsby": -3.42,
+        "Giles Sweeney II": 13.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Jay Gatsby": 17.65,
+        "Giles Sweeney II": 16.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Jay Gatsby": 17.66,
+        "Giles Sweeney II": 18.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Jay Gatsby": 15.12,
+        "Giles Sweeney II": 21.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Jay Gatsby": 17.64,
+        "Giles Sweeney II": 20.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Jay Gatsby": 17.64,
+        "Giles Sweeney II": 20.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Jay Gatsby": 17.64,
+        "Giles Sweeney II": 20.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Jay Gatsby": 18.11,
+        "Giles Sweeney II": 19.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Jay Gatsby": 17.61,
+        "Giles Sweeney II": 20.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Jay Gatsby": 15.86,
+        "Giles Sweeney II": 20.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Jay Gatsby": 17.37,
+        "Giles Sweeney II": 19.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Jay Gatsby": 17.35,
+        "Giles Sweeney II": 21.54
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 55,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:25.894307+00:00"
+}

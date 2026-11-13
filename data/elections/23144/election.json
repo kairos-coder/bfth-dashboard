@@ -1,0 +1,545 @@
+{
+  "election_id": "23144",
+  "state_id": "13",
+  "type": "house",
+  "label": "U.S. House (14 seats)",
+  "overview_lean": 12.2,
+  "url": "https://battleforthehill.com/states/13/elections/23144",
+  "candidates": [
+    {
+      "name": "Don Western",
+      "politician_id": "2820",
+      "final_pct": 56.2
+    },
+    {
+      "name": "The Prerequisite",
+      "politician_id": "12580",
+      "final_pct": 43.8
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Don Western": 48.5,
+        "The Prerequisite": 38.86
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Don Western": 48.5,
+        "The Prerequisite": 39.22
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Don Western": 52.65,
+        "The Prerequisite": 39.23
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Don Western": 52.05,
+        "The Prerequisite": 39.78
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Don Western": 53.86,
+        "The Prerequisite": 39.13
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Don Western": 52.36,
+        "The Prerequisite": 39.38
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Don Western": 51.31,
+        "The Prerequisite": 39.91
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Don Western": 53.06,
+        "The Prerequisite": 40.76
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Don Western": 51.57,
+        "The Prerequisite": 40.37
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Don Western": 53.11,
+        "The Prerequisite": 41.47
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Don Western": 53.19,
+        "The Prerequisite": 42.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Don Western": 51.93,
+        "The Prerequisite": 42.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Don Western": 52.69,
+        "The Prerequisite": 41.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Don Western": 52.69,
+        "The Prerequisite": 41.44
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Don Western": 52.38,
+        "The Prerequisite": 42.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Don Western": 52.89,
+        "The Prerequisite": 42.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Don Western": 55.39,
+        "The Prerequisite": 42.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Don Western": 53.14,
+        "The Prerequisite": 41.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Don Western": 52.34,
+        "The Prerequisite": 43.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Don Western": 52.84,
+        "The Prerequisite": 44.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Don Western": 50.84,
+        "The Prerequisite": 44.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Don Western": 53.58,
+        "The Prerequisite": 44.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Don Western": 51.78,
+        "The Prerequisite": 44.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Don Western": 52.79,
+        "The Prerequisite": 43.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Don Western": 52.54,
+        "The Prerequisite": 45.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Don Western": 52.79,
+        "The Prerequisite": 45.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Don Western": 52.74,
+        "The Prerequisite": 45.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Don Western": 52.74,
+        "The Prerequisite": 45.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Don Western": 51.74,
+        "The Prerequisite": 45.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Don Western": 53.74,
+        "The Prerequisite": 46.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Don Western": 50.93,
+        "The Prerequisite": 45.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Don Western": 51.94,
+        "The Prerequisite": 46.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Don Western": 52.19,
+        "The Prerequisite": 48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Don Western": 52.69,
+        "The Prerequisite": 47.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Don Western": 52.63,
+        "The Prerequisite": 47.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Don Western": 52.64,
+        "The Prerequisite": 47.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Don Western": 52.14,
+        "The Prerequisite": 47.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Don Western": 52.64,
+        "The Prerequisite": 48.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Don Western": 53.59,
+        "The Prerequisite": 46.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Don Western": 53.09,
+        "The Prerequisite": 50.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Don Western": 52.61,
+        "The Prerequisite": 49.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Don Western": 52.61,
+        "The Prerequisite": 49.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Don Western": 52.06,
+        "The Prerequisite": 49.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Don Western": 51.07,
+        "The Prerequisite": 51.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Don Western": 52.57,
+        "The Prerequisite": 50.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Don Western": 53.32,
+        "The Prerequisite": 49.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Don Western": 52.54,
+        "The Prerequisite": 50.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Don Western": 51.56,
+        "The Prerequisite": 51.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Don Western": 53.06,
+        "The Prerequisite": 51.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Don Western": 52.56,
+        "The Prerequisite": 52.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Don Western": 52.5,
+        "The Prerequisite": 51.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Don Western": 52.51,
+        "The Prerequisite": 54.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Don Western": 52.01,
+        "The Prerequisite": 52.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Don Western": 52.51,
+        "The Prerequisite": 52.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Don Western": 52.46,
+        "The Prerequisite": 52.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Don Western": 51.71,
+        "The Prerequisite": 53.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Don Western": 52.46,
+        "The Prerequisite": 53.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Don Western": 52.46,
+        "The Prerequisite": 51.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Don Western": 51.93,
+        "The Prerequisite": 53.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Don Western": 52.64,
+        "The Prerequisite": 54.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Don Western": 59.94,
+        "The Prerequisite": 53.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Don Western": 59.94,
+        "The Prerequisite": 54.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Don Western": 65.5,
+        "The Prerequisite": 54.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Don Western": 66.51,
+        "The Prerequisite": 54.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Don Western": 65.51,
+        "The Prerequisite": 55.05
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:47.100831+00:00"
+}

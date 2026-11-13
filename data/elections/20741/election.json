@@ -1,0 +1,545 @@
+{
+  "election_id": "20741",
+  "state_id": "32",
+  "type": "governor",
+  "label": "Governor",
+  "overview_lean": 18.4,
+  "url": "https://battleforthehill.com/states/32/elections/20741",
+  "candidates": [
+    {
+      "name": "David aspensa",
+      "politician_id": "14607",
+      "final_pct": 59.2
+    },
+    {
+      "name": "Aaron Humphreys",
+      "politician_id": "14641",
+      "final_pct": 40.8
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "David aspensa": 50.09,
+        "Aaron Humphreys": 45.94
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "David aspensa": 49.1,
+        "Aaron Humphreys": 46.69
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "David aspensa": 53.67,
+        "Aaron Humphreys": 45.44
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "David aspensa": 55.9,
+        "Aaron Humphreys": 47.49
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "David aspensa": 55.15,
+        "Aaron Humphreys": 45.74
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "David aspensa": 54.92,
+        "Aaron Humphreys": 46.24
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "David aspensa": 55.42,
+        "Aaron Humphreys": 46.27
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "David aspensa": 56.82,
+        "Aaron Humphreys": 45.17
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "David aspensa": 55.83,
+        "Aaron Humphreys": 45.93
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "David aspensa": 54.12,
+        "Aaron Humphreys": 47.43
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "David aspensa": 55.67,
+        "Aaron Humphreys": 48.43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "David aspensa": 56.07,
+        "Aaron Humphreys": 45.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "David aspensa": 55.82,
+        "Aaron Humphreys": 45.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "David aspensa": 53.58,
+        "Aaron Humphreys": 44.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "David aspensa": 55.08,
+        "Aaron Humphreys": 45.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "David aspensa": 53.98,
+        "Aaron Humphreys": 44.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "David aspensa": 54.98,
+        "Aaron Humphreys": 45.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "David aspensa": 54.98,
+        "Aaron Humphreys": 45.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "David aspensa": 54.49,
+        "Aaron Humphreys": 45.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "David aspensa": 55.55,
+        "Aaron Humphreys": 44.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "David aspensa": 54.8,
+        "Aaron Humphreys": 45.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "David aspensa": 54.8,
+        "Aaron Humphreys": 45.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "David aspensa": 55.55,
+        "Aaron Humphreys": 45.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "David aspensa": 54.2,
+        "Aaron Humphreys": 44.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "David aspensa": 54.7,
+        "Aaron Humphreys": 44.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "David aspensa": 54.7,
+        "Aaron Humphreys": 45.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "David aspensa": 55.7,
+        "Aaron Humphreys": 45.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "David aspensa": 55.35,
+        "Aaron Humphreys": 43.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "David aspensa": 54.6,
+        "Aaron Humphreys": 45.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "David aspensa": 54.6,
+        "Aaron Humphreys": 45.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "David aspensa": 55.52,
+        "Aaron Humphreys": 45.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "David aspensa": 56.42,
+        "Aaron Humphreys": 46.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "David aspensa": 54.42,
+        "Aaron Humphreys": 45.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "David aspensa": 54.92,
+        "Aaron Humphreys": 44.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "David aspensa": 56.17,
+        "Aaron Humphreys": 46.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "David aspensa": 53.58,
+        "Aaron Humphreys": 45.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "David aspensa": 55.33,
+        "Aaron Humphreys": 47.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "David aspensa": 53.83,
+        "Aaron Humphreys": 44.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "David aspensa": 55.74,
+        "Aaron Humphreys": 47.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "David aspensa": 54.9,
+        "Aaron Humphreys": 44.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "David aspensa": 54.15,
+        "Aaron Humphreys": 44.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "David aspensa": 54.17,
+        "Aaron Humphreys": 44.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "David aspensa": 54.17,
+        "Aaron Humphreys": 44.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "David aspensa": 56.58,
+        "Aaron Humphreys": 45.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "David aspensa": 53.59,
+        "Aaron Humphreys": 44.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "David aspensa": 54.59,
+        "Aaron Humphreys": 45.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "David aspensa": 54.37,
+        "Aaron Humphreys": 45.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "David aspensa": 53.79,
+        "Aaron Humphreys": 44.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "David aspensa": 55.79,
+        "Aaron Humphreys": 44.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "David aspensa": 54.54,
+        "Aaron Humphreys": 45.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "David aspensa": 54.04,
+        "Aaron Humphreys": 44.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "David aspensa": 52.95,
+        "Aaron Humphreys": 44.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "David aspensa": 54.44,
+        "Aaron Humphreys": 45.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "David aspensa": 54.2,
+        "Aaron Humphreys": 45.44
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "David aspensa": 53.95,
+        "Aaron Humphreys": 44.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "David aspensa": 54.1,
+        "Aaron Humphreys": 45.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "David aspensa": 54.35,
+        "Aaron Humphreys": 45.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "David aspensa": 53.35,
+        "Aaron Humphreys": 44.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "David aspensa": 52.39,
+        "Aaron Humphreys": 43.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "David aspensa": 54.79,
+        "Aaron Humphreys": 43.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "David aspensa": 53.3,
+        "Aaron Humphreys": 44.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "David aspensa": 53.55,
+        "Aaron Humphreys": 44.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "David aspensa": 53.25,
+        "Aaron Humphreys": 45.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "David aspensa": 53.41,
+        "Aaron Humphreys": 45.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "David aspensa": 52.91,
+        "Aaron Humphreys": 44.24
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:41.294857+00:00"
+}

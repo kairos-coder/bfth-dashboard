@@ -1,0 +1,675 @@
+{
+  "election_id": "23139",
+  "state_id": "5",
+  "type": "house",
+  "label": "U.S. House (62 seats)",
+  "overview_lean": 22.4,
+  "url": "https://battleforthehill.com/states/5/elections/23139",
+  "candidates": [
+    {
+      "name": "S.I. Hayakawa",
+      "politician_id": "11550",
+      "final_pct": 50.5
+    },
+    {
+      "name": "Himothy Jalpert",
+      "politician_id": "11686",
+      "final_pct": 28.1
+    },
+    {
+      "name": "Comrade Dimitri",
+      "politician_id": "4923",
+      "final_pct": 16.1
+    },
+    {
+      "name": "Cali Clear",
+      "politician_id": "12466",
+      "final_pct": 5.2
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Comrade Dimitri": 29.29,
+        "S.I. Hayakawa": 64.3,
+        "Himothy Jalpert": 49.6,
+        "Cali Clear": 32.9
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Comrade Dimitri": 29.49,
+        "S.I. Hayakawa": 65.61,
+        "Himothy Jalpert": 49.45,
+        "Cali Clear": 33.85
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Comrade Dimitri": 30.25,
+        "S.I. Hayakawa": 65.14,
+        "Himothy Jalpert": 49.59,
+        "Cali Clear": 33.61
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Comrade Dimitri": 29.6,
+        "S.I. Hayakawa": 65.94,
+        "Himothy Jalpert": 49.72,
+        "Cali Clear": 34.36
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Comrade Dimitri": 31.45,
+        "S.I. Hayakawa": 66.8,
+        "Himothy Jalpert": 48.07,
+        "Cali Clear": 31.71
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Comrade Dimitri": 31.05,
+        "S.I. Hayakawa": 67.93,
+        "Himothy Jalpert": 50.17,
+        "Cali Clear": 33.75
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Comrade Dimitri": 31.21,
+        "S.I. Hayakawa": 67.66,
+        "Himothy Jalpert": 50.83,
+        "Cali Clear": 34.41
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Comrade Dimitri": 32.06,
+        "S.I. Hayakawa": 69.01,
+        "Himothy Jalpert": 51.18,
+        "Cali Clear": 35.51
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Comrade Dimitri": 31.91,
+        "S.I. Hayakawa": 68.38,
+        "Himothy Jalpert": 51.54,
+        "Cali Clear": 35.08
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Comrade Dimitri": 32.26,
+        "S.I. Hayakawa": 68.77,
+        "Himothy Jalpert": 51.89,
+        "Cali Clear": 35.08
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Comrade Dimitri": 45.17,
+        "S.I. Hayakawa": 68.93,
+        "Himothy Jalpert": 51.63,
+        "Cali Clear": 35.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Comrade Dimitri": 44.27,
+        "S.I. Hayakawa": 69.03,
+        "Himothy Jalpert": 52.12,
+        "Cali Clear": 35.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Comrade Dimitri": 44.37,
+        "S.I. Hayakawa": 68.88,
+        "Himothy Jalpert": 51.73,
+        "Cali Clear": 35.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Comrade Dimitri": 43.22,
+        "S.I. Hayakawa": 67.88,
+        "Himothy Jalpert": 51.08,
+        "Cali Clear": 35.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Comrade Dimitri": 44.38,
+        "S.I. Hayakawa": 70.02,
+        "Himothy Jalpert": 54.07,
+        "Cali Clear": 36.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Comrade Dimitri": 45.66,
+        "S.I. Hayakawa": 69.87,
+        "Himothy Jalpert": 53.57,
+        "Cali Clear": 36.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Comrade Dimitri": 45.41,
+        "S.I. Hayakawa": 71.32,
+        "Himothy Jalpert": 52.92,
+        "Cali Clear": 35.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Comrade Dimitri": 46.03,
+        "S.I. Hayakawa": 70.32,
+        "Himothy Jalpert": 53.77,
+        "Cali Clear": 37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Comrade Dimitri": 46.94,
+        "S.I. Hayakawa": 69.16,
+        "Himothy Jalpert": 52.51,
+        "Cali Clear": 38.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Comrade Dimitri": 46.79,
+        "S.I. Hayakawa": 70.16,
+        "Himothy Jalpert": 55.36,
+        "Cali Clear": 37.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Comrade Dimitri": 48.29,
+        "S.I. Hayakawa": 73,
+        "Himothy Jalpert": 54.61,
+        "Cali Clear": 36.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Comrade Dimitri": 46.74,
+        "S.I. Hayakawa": 70.25,
+        "Himothy Jalpert": 52.95,
+        "Cali Clear": 37.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Comrade Dimitri": 47.66,
+        "S.I. Hayakawa": 72.09,
+        "Himothy Jalpert": 55.34,
+        "Cali Clear": 38.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Comrade Dimitri": 47.51,
+        "S.I. Hayakawa": 71.84,
+        "Himothy Jalpert": 54.94,
+        "Cali Clear": 38.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Comrade Dimitri": 47.01,
+        "S.I. Hayakawa": 72.19,
+        "Himothy Jalpert": 55.64,
+        "Cali Clear": 38.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Comrade Dimitri": 46.71,
+        "S.I. Hayakawa": 71.44,
+        "Himothy Jalpert": 54.14,
+        "Cali Clear": 38.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Comrade Dimitri": 48.12,
+        "S.I. Hayakawa": 72.77,
+        "Himothy Jalpert": 55.53,
+        "Cali Clear": 38.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Comrade Dimitri": 48.47,
+        "S.I. Hayakawa": 73.12,
+        "Himothy Jalpert": 55.88,
+        "Cali Clear": 39.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Comrade Dimitri": 47.47,
+        "S.I. Hayakawa": 72.87,
+        "Himothy Jalpert": 56.33,
+        "Cali Clear": 40.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Comrade Dimitri": 48.42,
+        "S.I. Hayakawa": 72.87,
+        "Himothy Jalpert": 59.08,
+        "Cali Clear": 39.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Comrade Dimitri": 50.08,
+        "S.I. Hayakawa": 73.46,
+        "Himothy Jalpert": 55.97,
+        "Cali Clear": 40.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Comrade Dimitri": 50.18,
+        "S.I. Hayakawa": 73.06,
+        "Himothy Jalpert": 56.31,
+        "Cali Clear": 39.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Comrade Dimitri": 51.13,
+        "S.I. Hayakawa": 74.06,
+        "Himothy Jalpert": 56.76,
+        "Cali Clear": 40.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Comrade Dimitri": 50.38,
+        "S.I. Hayakawa": 73.06,
+        "Himothy Jalpert": 56.76,
+        "Cali Clear": 39.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Comrade Dimitri": 50.04,
+        "S.I. Hayakawa": 74.64,
+        "Himothy Jalpert": 57.4,
+        "Cali Clear": 40.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Comrade Dimitri": 52.14,
+        "S.I. Hayakawa": 75.49,
+        "Himothy Jalpert": 56.75,
+        "Cali Clear": 40.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Comrade Dimitri": 51.59,
+        "S.I. Hayakawa": 75,
+        "Himothy Jalpert": 57.45,
+        "Cali Clear": 41.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Comrade Dimitri": 50.34,
+        "S.I. Hayakawa": 74.5,
+        "Himothy Jalpert": 59.45,
+        "Cali Clear": 42.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Comrade Dimitri": 51,
+        "S.I. Hayakawa": 75.58,
+        "Himothy Jalpert": 58.34,
+        "Cali Clear": 41.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Comrade Dimitri": 50.85,
+        "S.I. Hayakawa": 76.43,
+        "Himothy Jalpert": 59.69,
+        "Cali Clear": 42.43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Comrade Dimitri": 52.05,
+        "S.I. Hayakawa": 75.2,
+        "Himothy Jalpert": 58.64,
+        "Cali Clear": 42.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Comrade Dimitri": 50.55,
+        "S.I. Hayakawa": 75.95,
+        "Himothy Jalpert": 57.38,
+        "Cali Clear": 43.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Comrade Dimitri": 51.97,
+        "S.I. Hayakawa": 76.54,
+        "Himothy Jalpert": 59.97,
+        "Cali Clear": 42.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Comrade Dimitri": 52.82,
+        "S.I. Hayakawa": 75.39,
+        "Himothy Jalpert": 59.23,
+        "Cali Clear": 41.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Comrade Dimitri": 50.27,
+        "S.I. Hayakawa": 77.15,
+        "Himothy Jalpert": 58.58,
+        "Cali Clear": 40.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Comrade Dimitri": 54.52,
+        "S.I. Hayakawa": 78.35,
+        "Himothy Jalpert": 62.08,
+        "Cali Clear": 44.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Comrade Dimitri": 52.63,
+        "S.I. Hayakawa": 78.01,
+        "Himothy Jalpert": 61.18,
+        "Cali Clear": 43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Comrade Dimitri": 54.13,
+        "S.I. Hayakawa": 77.87,
+        "Himothy Jalpert": 60.68,
+        "Cali Clear": 43.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Comrade Dimitri": 56.73,
+        "S.I. Hayakawa": 77.12,
+        "Himothy Jalpert": 61.28,
+        "Cali Clear": 43.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Comrade Dimitri": 54.48,
+        "S.I. Hayakawa": 80.57,
+        "Himothy Jalpert": 63.04,
+        "Cali Clear": 41.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Comrade Dimitri": 54.59,
+        "S.I. Hayakawa": 78.46,
+        "Himothy Jalpert": 61.88,
+        "Cali Clear": 43.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Comrade Dimitri": 54.34,
+        "S.I. Hayakawa": 79.31,
+        "Himothy Jalpert": 62.97,
+        "Cali Clear": 42.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Comrade Dimitri": 57.44,
+        "S.I. Hayakawa": 77.31,
+        "Himothy Jalpert": 64.97,
+        "Cali Clear": 44.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Comrade Dimitri": 54.94,
+        "S.I. Hayakawa": 79.51,
+        "Himothy Jalpert": 62.25,
+        "Cali Clear": 45.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Comrade Dimitri": 55.55,
+        "S.I. Hayakawa": 79.4,
+        "Himothy Jalpert": 62.84,
+        "Cali Clear": 44.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Comrade Dimitri": 58.03,
+        "S.I. Hayakawa": 79.75,
+        "Himothy Jalpert": 62.95,
+        "Cali Clear": 45.27
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Comrade Dimitri": 57.53,
+        "S.I. Hayakawa": 79.75,
+        "Himothy Jalpert": 63.96,
+        "Cali Clear": 45.02
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Comrade Dimitri": 56.53,
+        "S.I. Hayakawa": 81.94,
+        "Himothy Jalpert": 63.21,
+        "Cali Clear": 43.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Comrade Dimitri": 58.64,
+        "S.I. Hayakawa": 78.61,
+        "Himothy Jalpert": 63.3,
+        "Cali Clear": 45.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Comrade Dimitri": 58.24,
+        "S.I. Hayakawa": 80.96,
+        "Himothy Jalpert": 63.4,
+        "Cali Clear": 45.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Comrade Dimitri": 57.99,
+        "S.I. Hayakawa": 80.71,
+        "Himothy Jalpert": 64.16,
+        "Cali Clear": 46.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Comrade Dimitri": 57.99,
+        "S.I. Hayakawa": 81.41,
+        "Himothy Jalpert": 65.16,
+        "Cali Clear": 46.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Comrade Dimitri": 58.85,
+        "S.I. Hayakawa": 82.08,
+        "Himothy Jalpert": 62.02,
+        "Cali Clear": 44.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Comrade Dimitri": 58.95,
+        "S.I. Hayakawa": 81.68,
+        "Himothy Jalpert": 65.13,
+        "Cali Clear": 46.85
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:46.701535+00:00"
+}

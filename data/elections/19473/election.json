@@ -1,0 +1,537 @@
+{
+  "election_id": "19473",
+  "state_id": "17",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 21.4,
+  "url": "https://battleforthehill.com/states/17/elections/19473",
+  "candidates": [
+    {
+      "name": "Mitch McConnell",
+      "politician_id": "11477",
+      "final_pct": 60.7
+    },
+    {
+      "name": "Sam Knighht",
+      "politician_id": "14300",
+      "final_pct": 39.3
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Mitch McConnell": 37.15,
+        "Sam Knighht": 38.54
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Mitch McConnell": 38.65,
+        "Sam Knighht": 37.78
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Mitch McConnell": 39.68,
+        "Sam Knighht": 38.04
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Mitch McConnell": 41.52,
+        "Sam Knighht": 37.75
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Mitch McConnell": 42.02,
+        "Sam Knighht": 42.65
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Mitch McConnell": 45.53,
+        "Sam Knighht": 45.65
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Mitch McConnell": 48.53,
+        "Sam Knighht": 45.66
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Mitch McConnell": 50.94,
+        "Sam Knighht": 48.12
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Mitch McConnell": 53.94,
+        "Sam Knighht": 45.62
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Mitch McConnell": 58.96,
+        "Sam Knighht": 46.12
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Mitch McConnell": 60.73,
+        "Sam Knighht": 45.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Mitch McConnell": 64.13,
+        "Sam Knighht": 45.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Mitch McConnell": 65.63,
+        "Sam Knighht": 45.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Mitch McConnell": 65.64,
+        "Sam Knighht": 46.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Mitch McConnell": 65.64,
+        "Sam Knighht": 46.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Mitch McConnell": 66.63,
+        "Sam Knighht": 46.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Mitch McConnell": 66.13,
+        "Sam Knighht": 46.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Mitch McConnell": 66.13,
+        "Sam Knighht": 46.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Mitch McConnell": 66.63,
+        "Sam Knighht": 47.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Mitch McConnell": 67.03,
+        "Sam Knighht": 44.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Mitch McConnell": 67.03,
+        "Sam Knighht": 46.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Mitch McConnell": 64.82,
+        "Sam Knighht": 48.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Mitch McConnell": 66.57,
+        "Sam Knighht": 46.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Mitch McConnell": 65.48,
+        "Sam Knighht": 45.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Mitch McConnell": 66.73,
+        "Sam Knighht": 45.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Mitch McConnell": 66.98,
+        "Sam Knighht": 46.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Mitch McConnell": 66.48,
+        "Sam Knighht": 46.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Mitch McConnell": 67.39,
+        "Sam Knighht": 45.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Mitch McConnell": 67.39,
+        "Sam Knighht": 46.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Mitch McConnell": 67.39,
+        "Sam Knighht": 46.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Mitch McConnell": 67.89,
+        "Sam Knighht": 45.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Mitch McConnell": 68.79,
+        "Sam Knighht": 47.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Mitch McConnell": 68.54,
+        "Sam Knighht": 45.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Mitch McConnell": 66.04,
+        "Sam Knighht": 47.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Mitch McConnell": 68.6,
+        "Sam Knighht": 45.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Mitch McConnell": 68.51,
+        "Sam Knighht": 45.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Mitch McConnell": 68.51,
+        "Sam Knighht": 43.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Mitch McConnell": 67.76,
+        "Sam Knighht": 45.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Mitch McConnell": 67.76,
+        "Sam Knighht": 47.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Mitch McConnell": 68.67,
+        "Sam Knighht": 45.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Mitch McConnell": 69.67,
+        "Sam Knighht": 47.02
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Mitch McConnell": 69.43,
+        "Sam Knighht": 46.02
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Mitch McConnell": 69.43,
+        "Sam Knighht": 46.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Mitch McConnell": 69.21,
+        "Sam Knighht": 45.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Mitch McConnell": 70.22,
+        "Sam Knighht": 51.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Mitch McConnell": 68.72,
+        "Sam Knighht": 51.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Mitch McConnell": 68.23,
+        "Sam Knighht": 52.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Mitch McConnell": 69.21,
+        "Sam Knighht": 75.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Mitch McConnell": 68.08,
+        "Sam Knighht": 74.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Mitch McConnell": 67.58,
+        "Sam Knighht": 76.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Mitch McConnell": 68.08,
+        "Sam Knighht": 75.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Mitch McConnell": 68.74,
+        "Sam Knighht": 75.94
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Mitch McConnell": 70.49,
+        "Sam Knighht": 76.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Mitch McConnell": 69.74,
+        "Sam Knighht": 76.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Mitch McConnell": 71.24,
+        "Sam Knighht": 75.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Mitch McConnell": 71.9,
+        "Sam Knighht": 76.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Mitch McConnell": 68.9,
+        "Sam Knighht": 77.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Mitch McConnell": 70.65,
+        "Sam Knighht": 75.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Mitch McConnell": 70.17,
+        "Sam Knighht": 76.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Mitch McConnell": 70.99,
+        "Sam Knighht": 77.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Mitch McConnell": 70.25,
+        "Sam Knighht": 79.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Mitch McConnell": 70,
+        "Sam Knighht": 76.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Mitch McConnell": 72,
+        "Sam Knighht": 76.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Mitch McConnell": 74.42,
+        "Sam Knighht": 76.74
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:26.644177+00:00"
+}

@@ -1,0 +1,545 @@
+{
+  "election_id": "23142",
+  "state_id": "10",
+  "type": "house",
+  "label": "U.S. House (13 seats)",
+  "overview_lean": 63.4,
+  "url": "https://battleforthehill.com/states/10/elections/23142",
+  "candidates": [
+    {
+      "name": "Warren Buffett",
+      "politician_id": "13279",
+      "final_pct": 81.6
+    },
+    {
+      "name": "Georgia House",
+      "politician_id": "12597",
+      "final_pct": 18.4
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Georgia House": 25.04,
+        "Warren Buffett": 54.36
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Georgia House": 24.64,
+        "Warren Buffett": 63.51
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Georgia House": 26.08,
+        "Warren Buffett": 64.22
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Georgia House": 25.06,
+        "Warren Buffett": 65.9
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Georgia House": 25.16,
+        "Warren Buffett": 62.66
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Georgia House": 25.59,
+        "Warren Buffett": 61.66
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Georgia House": 25.86,
+        "Warren Buffett": 63.82
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Georgia House": 26.71,
+        "Warren Buffett": 63.32
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Georgia House": 27.03,
+        "Warren Buffett": 64.34
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Georgia House": 27.38,
+        "Warren Buffett": 63.37
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Georgia House": 26.29,
+        "Warren Buffett": 66.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Georgia House": 26.89,
+        "Warren Buffett": 64.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Georgia House": 27.49,
+        "Warren Buffett": 64.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Georgia House": 27.84,
+        "Warren Buffett": 63.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Georgia House": 26.1,
+        "Warren Buffett": 61.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Georgia House": 28.6,
+        "Warren Buffett": 63.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Georgia House": 28.95,
+        "Warren Buffett": 63.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Georgia House": 29.3,
+        "Warren Buffett": 63.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Georgia House": 29.49,
+        "Warren Buffett": 63.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Georgia House": 29.84,
+        "Warren Buffett": 63.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Georgia House": 29.59,
+        "Warren Buffett": 63.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Georgia House": 30.19,
+        "Warren Buffett": 63.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Georgia House": 30.11,
+        "Warren Buffett": 62.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Georgia House": 30.46,
+        "Warren Buffett": 63.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Georgia House": 32.91,
+        "Warren Buffett": 64.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Georgia House": 31.16,
+        "Warren Buffett": 63.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Georgia House": 32.07,
+        "Warren Buffett": 61.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Georgia House": 28.67,
+        "Warren Buffett": 61.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Georgia House": 34.12,
+        "Warren Buffett": 64.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Georgia House": 31.68,
+        "Warren Buffett": 61.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Georgia House": 30.27,
+        "Warren Buffett": 62.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Georgia House": 33.87,
+        "Warren Buffett": 61.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Georgia House": 33.07,
+        "Warren Buffett": 62.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Georgia House": 33.57,
+        "Warren Buffett": 63.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Georgia House": 31.19,
+        "Warren Buffett": 63.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Georgia House": 34.19,
+        "Warren Buffett": 62.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Georgia House": 34.04,
+        "Warren Buffett": 62.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Georgia House": 34.04,
+        "Warren Buffett": 62.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Georgia House": 34.58,
+        "Warren Buffett": 62.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Georgia House": 34.93,
+        "Warren Buffett": 67.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Georgia House": 34.43,
+        "Warren Buffett": 65.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Georgia House": 33.18,
+        "Warren Buffett": 67.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Georgia House": 34.54,
+        "Warren Buffett": 68.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Georgia House": 35.89,
+        "Warren Buffett": 66.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Georgia House": 35.89,
+        "Warren Buffett": 66.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Georgia House": 36.59,
+        "Warren Buffett": 66.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Georgia House": 37.51,
+        "Warren Buffett": 66.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Georgia House": 36.61,
+        "Warren Buffett": 66.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Georgia House": 37.36,
+        "Warren Buffett": 66.46
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Georgia House": 38.56,
+        "Warren Buffett": 65.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Georgia House": 37.97,
+        "Warren Buffett": 66.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Georgia House": 37.82,
+        "Warren Buffett": 66.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Georgia House": 38.32,
+        "Warren Buffett": 66.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Georgia House": 38.52,
+        "Warren Buffett": 66.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Georgia House": 37.93,
+        "Warren Buffett": 65.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Georgia House": 38.28,
+        "Warren Buffett": 66.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Georgia House": 38.03,
+        "Warren Buffett": 66.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Georgia House": 39.48,
+        "Warren Buffett": 66.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Georgia House": 38.64,
+        "Warren Buffett": 67.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Georgia House": 40.24,
+        "Warren Buffett": 67.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Georgia House": 40.44,
+        "Warren Buffett": 66.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Georgia House": 40.44,
+        "Warren Buffett": 66.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Georgia House": 40.79,
+        "Warren Buffett": 67.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Georgia House": 41.39,
+        "Warren Buffett": 67.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Georgia House": 38.59,
+        "Warren Buffett": 65.29
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:46.935523+00:00"
+}

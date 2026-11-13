@@ -1,0 +1,606 @@
+{
+  "election_id": "23141",
+  "state_id": "9",
+  "type": "house",
+  "label": "U.S. House (29 seats)",
+  "overview_lean": 20.6,
+  "url": "https://battleforthehill.com/states/9/elections/23141",
+  "candidates": [
+    {
+      "name": "Bill Nye",
+      "politician_id": "1317",
+      "final_pct": 60.3
+    },
+    {
+      "name": "Jack Thatch",
+      "politician_id": "1361",
+      "final_pct": 39.7
+    },
+    {
+      "name": "James T. Fishback",
+      "politician_id": "3154",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Bill Nye": 75.09,
+        "Jack Thatch": 63.71,
+        "James T. Fishback": 41.59
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Bill Nye": 99.69,
+        "Jack Thatch": 64.22,
+        "James T. Fishback": 41.44
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Bill Nye": 99.83,
+        "Jack Thatch": 74.85,
+        "James T. Fishback": 43.25
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Bill Nye": 99.1,
+        "Jack Thatch": 73.88,
+        "James T. Fishback": 43.08
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Bill Nye": 98.6,
+        "Jack Thatch": 84.9,
+        "James T. Fishback": 42.08
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Bill Nye": 99.1,
+        "Jack Thatch": 87,
+        "James T. Fishback": 41.39
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Bill Nye": 99.01,
+        "Jack Thatch": 86.94,
+        "James T. Fishback": 41.3
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Bill Nye": 99.01,
+        "Jack Thatch": 86.94,
+        "James T. Fishback": 41.31
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Bill Nye": 99.52,
+        "Jack Thatch": 87.05,
+        "James T. Fishback": 39.53
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Bill Nye": 99.72,
+        "Jack Thatch": 87.34,
+        "James T. Fishback": 40.53
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Bill Nye": 98.83,
+        "Jack Thatch": 87.3,
+        "James T. Fishback": 39.94
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Bill Nye": 100.47,
+        "Jack Thatch": 87.66,
+        "James T. Fishback": 40.44
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Bill Nye": 100.72,
+        "Jack Thatch": 88.66,
+        "James T. Fishback": 40.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Bill Nye": 100.48,
+        "Jack Thatch": 87.66,
+        "James T. Fishback": 40.44
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Bill Nye": 100.36,
+        "Jack Thatch": 87.6,
+        "James T. Fishback": 40.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Bill Nye": 99.87,
+        "Jack Thatch": 87.11,
+        "James T. Fishback": 39.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Bill Nye": 99.37,
+        "Jack Thatch": 87.61,
+        "James T. Fishback": 39.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Bill Nye": 99.62,
+        "Jack Thatch": 88.61,
+        "James T. Fishback": 40.6
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Bill Nye": 99.75,
+        "Jack Thatch": 88.05,
+        "James T. Fishback": 40.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Bill Nye": 100.26,
+        "Jack Thatch": 87.55,
+        "James T. Fishback": 40.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Bill Nye": 99.26,
+        "Jack Thatch": 88.3,
+        "James T. Fishback": 41.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Bill Nye": 100.26,
+        "Jack Thatch": 88.29,
+        "James T. Fishback": 39.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Bill Nye": 99.39,
+        "Jack Thatch": 86.97,
+        "James T. Fishback": 40.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Bill Nye": 98.4,
+        "Jack Thatch": 85.47,
+        "James T. Fishback": 39.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Bill Nye": 100.15,
+        "Jack Thatch": 87.47,
+        "James T. Fishback": 40.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Bill Nye": 101.9,
+        "Jack Thatch": 84.72,
+        "James T. Fishback": 39.68
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Bill Nye": 101.54,
+        "Jack Thatch": 89.36,
+        "James T. Fishback": 38.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Bill Nye": 99.54,
+        "Jack Thatch": 89.86,
+        "James T. Fishback": 41.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Bill Nye": 101.83,
+        "Jack Thatch": 86.36,
+        "James T. Fishback": 39.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Bill Nye": 101.58,
+        "Jack Thatch": 87.36,
+        "James T. Fishback": 40.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Bill Nye": 102.47,
+        "Jack Thatch": 87.75,
+        "James T. Fishback": 40.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Bill Nye": 101.57,
+        "Jack Thatch": 86.51,
+        "James T. Fishback": 40.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Bill Nye": 102.57,
+        "Jack Thatch": 88.26,
+        "James T. Fishback": 39.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Bill Nye": 100.82,
+        "Jack Thatch": 85.51,
+        "James T. Fishback": 40.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Bill Nye": 101.7,
+        "Jack Thatch": 86.39,
+        "James T. Fishback": 39.47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Bill Nye": 102.46,
+        "Jack Thatch": 87.15,
+        "James T. Fishback": 42.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Bill Nye": 102.06,
+        "Jack Thatch": 87.15,
+        "James T. Fishback": 39.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Bill Nye": 103.56,
+        "Jack Thatch": 87.65,
+        "James T. Fishback": 41.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Bill Nye": 101.95,
+        "Jack Thatch": 87.04,
+        "James T. Fishback": 39.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Bill Nye": 101.95,
+        "Jack Thatch": 87.04,
+        "James T. Fishback": 39.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Bill Nye": 101.45,
+        "Jack Thatch": 87.81,
+        "James T. Fishback": 39.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Bill Nye": 100.45,
+        "Jack Thatch": 88.06,
+        "James T. Fishback": 42.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Bill Nye": 100.84,
+        "Jack Thatch": 85.2,
+        "James T. Fishback": 39.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Bill Nye": 101.86,
+        "Jack Thatch": 86.95,
+        "James T. Fishback": 39.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Bill Nye": 102.36,
+        "Jack Thatch": 85.47,
+        "James T. Fishback": 39.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Bill Nye": 102.36,
+        "Jack Thatch": 86.97,
+        "James T. Fishback": 40.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Bill Nye": 101.5,
+        "Jack Thatch": 86.88,
+        "James T. Fishback": 39.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Bill Nye": 102.26,
+        "Jack Thatch": 85.9,
+        "James T. Fishback": 37.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Bill Nye": 101.76,
+        "Jack Thatch": 86.9,
+        "James T. Fishback": 39.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Bill Nye": 101.77,
+        "Jack Thatch": 86.9,
+        "James T. Fishback": 39.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Bill Nye": 102.66,
+        "Jack Thatch": 87.78,
+        "James T. Fishback": 39.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Bill Nye": 101.65,
+        "Jack Thatch": 89.74,
+        "James T. Fishback": 39.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Bill Nye": 102.15,
+        "Jack Thatch": 90.54,
+        "James T. Fishback": 40.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Bill Nye": 101.68,
+        "Jack Thatch": 91.04,
+        "James T. Fishback": 39.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Bill Nye": 102.32,
+        "Jack Thatch": 91.18,
+        "James T. Fishback": 39.28
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Bill Nye": 99.84,
+        "Jack Thatch": 91.43,
+        "James T. Fishback": 38.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Bill Nye": 102.1,
+        "Jack Thatch": 89.93,
+        "James T. Fishback": 39.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Bill Nye": 101.6,
+        "Jack Thatch": 90.93,
+        "James T. Fishback": 39.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Bill Nye": 101.49,
+        "Jack Thatch": 90.85,
+        "James T. Fishback": 39.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Bill Nye": 101.49,
+        "Jack Thatch": 90.85,
+        "James T. Fishback": 39.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Bill Nye": 103,
+        "Jack Thatch": 90.36,
+        "James T. Fishback": 38.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Bill Nye": 102.25,
+        "Jack Thatch": 93.36,
+        "James T. Fishback": 40.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Bill Nye": 101.41,
+        "Jack Thatch": 91.48,
+        "James T. Fishback": 39.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Bill Nye": 101.42,
+        "Jack Thatch": 91.48,
+        "James T. Fishback": 39.36
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:46.849544+00:00"
+}

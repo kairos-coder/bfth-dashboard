@@ -1,0 +1,537 @@
+{
+  "election_id": "19478",
+  "state_id": "23",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 1.8,
+  "url": "https://battleforthehill.com/states/23/elections/19478",
+  "candidates": [
+    {
+      "name": "The Northern",
+      "politician_id": "12582",
+      "final_pct": 50.9
+    },
+    {
+      "name": "Sonetto",
+      "politician_id": "1288",
+      "final_pct": 49.1
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Sonetto": 100,
+        "The Northern": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Sonetto": 100,
+        "The Northern": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Sonetto": 100,
+        "The Northern": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Sonetto": 100,
+        "The Northern": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Sonetto": 30.12,
+        "The Northern": 13.64
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Sonetto": 30.62,
+        "The Northern": 11.14
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Sonetto": 31.12,
+        "The Northern": 14.15
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Sonetto": 31.04,
+        "The Northern": 15.63
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Sonetto": 31.04,
+        "The Northern": 17.13
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Sonetto": 28.29,
+        "The Northern": 20.13
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Sonetto": 28.29,
+        "The Northern": 20.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Sonetto": 32.16,
+        "The Northern": 25.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Sonetto": 32.16,
+        "The Northern": 28.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Sonetto": 34.33,
+        "The Northern": 31.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Sonetto": 35.09,
+        "The Northern": 34.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Sonetto": 35.01,
+        "The Northern": 37.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Sonetto": 33.51,
+        "The Northern": 37.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Sonetto": 32.76,
+        "The Northern": 37.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Sonetto": 34.76,
+        "The Northern": 40.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Sonetto": 34.43,
+        "The Northern": 37.75
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Sonetto": 34.61,
+        "The Northern": 42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Sonetto": 35.61,
+        "The Northern": 41.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Sonetto": 34.61,
+        "The Northern": 41.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Sonetto": 34.53,
+        "The Northern": 42.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Sonetto": 34.53,
+        "The Northern": 42.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Sonetto": 33.78,
+        "The Northern": 43.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Sonetto": 35.03,
+        "The Northern": 44.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Sonetto": 33.95,
+        "The Northern": 43.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Sonetto": 34.45,
+        "The Northern": 44.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Sonetto": 35.2,
+        "The Northern": 46.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Sonetto": 34.45,
+        "The Northern": 47.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Sonetto": 34.37,
+        "The Northern": 45.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Sonetto": 34.37,
+        "The Northern": 46.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Sonetto": 35.12,
+        "The Northern": 46.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Sonetto": 33.37,
+        "The Northern": 45.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Sonetto": 31.54,
+        "The Northern": 44.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Sonetto": 33.79,
+        "The Northern": 48.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Sonetto": 33.29,
+        "The Northern": 46.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Sonetto": 34.79,
+        "The Northern": 46.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Sonetto": 34.22,
+        "The Northern": 44.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Sonetto": 32.97,
+        "The Northern": 47.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Sonetto": 34.72,
+        "The Northern": 47.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Sonetto": 35.22,
+        "The Northern": 48.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Sonetto": 33.89,
+        "The Northern": 48.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Sonetto": 35.14,
+        "The Northern": 49.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Sonetto": 33.64,
+        "The Northern": 47.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Sonetto": 34.14,
+        "The Northern": 48.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Sonetto": 34.56,
+        "The Northern": 49.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Sonetto": 34.56,
+        "The Northern": 49.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Sonetto": 35.56,
+        "The Northern": 49.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Sonetto": 35.06,
+        "The Northern": 49.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Sonetto": 34.48,
+        "The Northern": 50.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Sonetto": 34.48,
+        "The Northern": 51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Sonetto": 36.23,
+        "The Northern": 49.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Sonetto": 35.23,
+        "The Northern": 51.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Sonetto": 35.16,
+        "The Northern": 52.28
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Sonetto": 34.41,
+        "The Northern": 52.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Sonetto": 33.41,
+        "The Northern": 51.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Sonetto": 34.91,
+        "The Northern": 53.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Sonetto": 34.33,
+        "The Northern": 52.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Sonetto": 34.33,
+        "The Northern": 52.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Sonetto": 37.83,
+        "The Northern": 52.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Sonetto": 45.83,
+        "The Northern": 54.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Sonetto": 63.75,
+        "The Northern": 52.29
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:28.314735+00:00"
+}

@@ -1,0 +1,545 @@
+{
+  "election_id": "23148",
+  "state_id": "18",
+  "type": "house",
+  "label": "U.S. House (7 seats)",
+  "overview_lean": 13.5,
+  "url": "https://battleforthehill.com/states/18/elections/23148",
+  "candidates": [
+    {
+      "name": "King_Verdi",
+      "politician_id": "13579",
+      "final_pct": 56.7
+    },
+    {
+      "name": "Louisiana House",
+      "politician_id": "12462",
+      "final_pct": 85.7
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Louisiana House": 37.04,
+        "King_Verdi": 41.89
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Louisiana House": 38.39,
+        "King_Verdi": 41.39
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Louisiana House": 37.84,
+        "King_Verdi": 42.22
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Louisiana House": 37.15,
+        "King_Verdi": 40.01
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Louisiana House": 39,
+        "King_Verdi": 41.26
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Louisiana House": 38.18,
+        "King_Verdi": 41.76
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Louisiana House": 38.45,
+        "King_Verdi": 41.66
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Louisiana House": 40.8,
+        "King_Verdi": 42.16
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Louisiana House": 39.12,
+        "King_Verdi": 41.66
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Louisiana House": 38.62,
+        "King_Verdi": 40.16
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Louisiana House": 38.88,
+        "King_Verdi": 41.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Louisiana House": 38.73,
+        "King_Verdi": 40.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Louisiana House": 40.58,
+        "King_Verdi": 39.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Louisiana House": 39.93,
+        "King_Verdi": 43.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Louisiana House": 41.34,
+        "King_Verdi": 41.46
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Louisiana House": 40.69,
+        "King_Verdi": 41.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Louisiana House": 41.04,
+        "King_Verdi": 45.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Louisiana House": 42.39,
+        "King_Verdi": 57.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Louisiana House": 41.59,
+        "King_Verdi": 54.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Louisiana House": 41.59,
+        "King_Verdi": 55.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Louisiana House": 42.94,
+        "King_Verdi": 55.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Louisiana House": 40.54,
+        "King_Verdi": 54.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Louisiana House": 43.2,
+        "King_Verdi": 55.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Louisiana House": 44.3,
+        "King_Verdi": 56.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Louisiana House": 42.05,
+        "King_Verdi": 56.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Louisiana House": 42.75,
+        "King_Verdi": 55.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Louisiana House": 43.66,
+        "King_Verdi": 55.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Louisiana House": 44.26,
+        "King_Verdi": 57.01
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Louisiana House": 44.01,
+        "King_Verdi": 55.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Louisiana House": 44.27,
+        "King_Verdi": 55.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Louisiana House": 44.12,
+        "King_Verdi": 55.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Louisiana House": 43.97,
+        "King_Verdi": 55.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Louisiana House": 45.97,
+        "King_Verdi": 54.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Louisiana House": 45.67,
+        "King_Verdi": 54.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Louisiana House": 45.08,
+        "King_Verdi": 55.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Louisiana House": 45.43,
+        "King_Verdi": 55.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Louisiana House": 46.13,
+        "King_Verdi": 54.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Louisiana House": 47.63,
+        "King_Verdi": 55.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Louisiana House": 46.47,
+        "King_Verdi": 54.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Louisiana House": 46.32,
+        "King_Verdi": 55.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Louisiana House": 47.02,
+        "King_Verdi": 55.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Louisiana House": 47.02,
+        "King_Verdi": 54.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Louisiana House": 45.43,
+        "King_Verdi": 53.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Louisiana House": 47.28,
+        "King_Verdi": 55.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Louisiana House": 47.98,
+        "King_Verdi": 55.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Louisiana House": 46.23,
+        "King_Verdi": 53.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Louisiana House": 47.9,
+        "King_Verdi": 55.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Louisiana House": 48.25,
+        "King_Verdi": 55.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Louisiana House": 48.95,
+        "King_Verdi": 55.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Louisiana House": 48.95,
+        "King_Verdi": 55.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Louisiana House": 50.56,
+        "King_Verdi": 56.43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Louisiana House": 49.56,
+        "King_Verdi": 54.93
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Louisiana House": 49.91,
+        "King_Verdi": 54.93
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Louisiana House": 51.66,
+        "King_Verdi": 54.93
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Louisiana House": 49.77,
+        "King_Verdi": 55.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Louisiana House": 48.77,
+        "King_Verdi": 53.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Louisiana House": 51.37,
+        "King_Verdi": 55.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Louisiana House": 53.62,
+        "King_Verdi": 53.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Louisiana House": 51.99,
+        "King_Verdi": 56.38
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Louisiana House": 52.59,
+        "King_Verdi": 55.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Louisiana House": 51.34,
+        "King_Verdi": 55.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Louisiana House": 51.84,
+        "King_Verdi": 56.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Louisiana House": 52.38,
+        "King_Verdi": 56.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Louisiana House": 53.73,
+        "King_Verdi": 55.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Louisiana House": 52.98,
+        "King_Verdi": 55.79
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:47.419437+00:00"
+}

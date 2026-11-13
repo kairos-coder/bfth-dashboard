@@ -1,0 +1,3468 @@
+{
+  "generated_at": "2026-11-13T19:05:18.444737+00:00",
+  "total": 124,
+  "with_polls": 93,
+  "by_type": {
+    "governor": 39,
+    "house": 51,
+    "senate": 34
+  },
+  "by_poll_count": {
+    "60-69": 90,
+    "50-59": 2,
+    "20-29": 1,
+    "0": 31
+  },
+  "elections": [
+    {
+      "election_id": "20722",
+      "state_id": "5",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/5/elections/20722",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Beetee432(2)",
+          "politician_id": "2476",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Beetee432(2)",
+        "politician_id": "2476",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:35.659295+00:00"
+    },
+    {
+      "election_id": "20724",
+      "state_id": "7",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/7/elections/20724",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Frozen Jackie Taylor",
+          "politician_id": "14805",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Frozen Jackie Taylor",
+        "politician_id": "14805",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:36.178212+00:00"
+    },
+    {
+      "election_id": "20725",
+      "state_id": "9",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/9/elections/20725",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Jessica Pearson",
+          "politician_id": "10382",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Jessica Pearson",
+        "politician_id": "10382",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:36.457534+00:00"
+    },
+    {
+      "election_id": "20727",
+      "state_id": "11",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/11/elections/20727",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Jarek Krefo",
+          "politician_id": "14762",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Jarek Krefo",
+        "politician_id": "14762",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:37.090803+00:00"
+    },
+    {
+      "election_id": "20728",
+      "state_id": "12",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/12/elections/20728",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Quandale Dingle",
+          "politician_id": "14830",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Quandale Dingle",
+        "politician_id": "14830",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:37.359979+00:00"
+    },
+    {
+      "election_id": "20729",
+      "state_id": "13",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/13/elections/20729",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Wyatt Thatch",
+          "politician_id": "1362",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Wyatt Thatch",
+        "politician_id": "1362",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:37.650760+00:00"
+    },
+    {
+      "election_id": "20731",
+      "state_id": "16",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/16/elections/20731",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Bob Dole",
+          "politician_id": "12512",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Bob Dole",
+        "politician_id": "12512",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:38.325447+00:00"
+    },
+    {
+      "election_id": "20735",
+      "state_id": "22",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/22/elections/20735",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Mike Rogers",
+          "politician_id": "14576",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Mike Rogers",
+        "politician_id": "14576",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:39.472073+00:00"
+    },
+    {
+      "election_id": "20736",
+      "state_id": "23",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/23/elections/20736",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Mohamed Mohamed",
+          "politician_id": "14415",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Mohamed Mohamed",
+        "politician_id": "14415",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:39.752595+00:00"
+    },
+    {
+      "election_id": "20738",
+      "state_id": "28",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/28/elections/20738",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Eric Hovde",
+          "politician_id": "14577",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Eric Hovde",
+        "politician_id": "14577",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:40.394981+00:00"
+    },
+    {
+      "election_id": "20739",
+      "state_id": "30",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/30/elections/20739",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Gina Hinojosa",
+          "politician_id": "2887",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Gina Hinojosa",
+        "politician_id": "2887",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:40.696436+00:00"
+    },
+    {
+      "election_id": "20740",
+      "state_id": "31",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/31/elections/20740",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Lorenzo Bellandi",
+          "politician_id": "3844",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Lorenzo Bellandi",
+        "politician_id": "3844",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:40.993388+00:00"
+    },
+    {
+      "election_id": "20741",
+      "state_id": "32",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/32/elections/20741",
+      "overview_lean": 18.4,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "David aspensa",
+          "politician_id": "14607",
+          "final_pct": 59.2,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Aaron Humphreys",
+          "politician_id": "14641",
+          "final_pct": 40.8,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "David aspensa",
+        "politician_id": "14607",
+        "final_pct": 59.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Aaron Humphreys",
+        "politician_id": "14641",
+        "final_pct": 40.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:41.294857+00:00"
+    },
+    {
+      "election_id": "20742",
+      "state_id": "35",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/35/elections/20742",
+      "overview_lean": 68.1,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Willis Blackshear",
+          "politician_id": "13736",
+          "final_pct": 84.1,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Joe Burrow",
+          "politician_id": "14565",
+          "final_pct": 15.9,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Willis Blackshear",
+        "politician_id": "13736",
+        "final_pct": 84.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Joe Burrow",
+        "politician_id": "14565",
+        "final_pct": 15.9,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:41.700097+00:00"
+    },
+    {
+      "election_id": "20743",
+      "state_id": "36",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/36/elections/20743",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Carly Rae Jepsen",
+          "politician_id": "14714",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Carly Rae Jepsen",
+        "politician_id": "14714",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:41.986502+00:00"
+    },
+    {
+      "election_id": "20744",
+      "state_id": "37",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/37/elections/20744",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Krystal Harrison",
+          "politician_id": "13550",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Krystal Harrison",
+        "politician_id": "13550",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:42.254003+00:00"
+    },
+    {
+      "election_id": "20745",
+      "state_id": "38",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/38/elections/20745",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Henry Clay",
+          "politician_id": "14627",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Henry Clay",
+        "politician_id": "14627",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:42.530492+00:00"
+    },
+    {
+      "election_id": "20747",
+      "state_id": "40",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/40/elections/20747",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Ryan Mahoney",
+          "politician_id": "14882",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Ryan Mahoney",
+        "politician_id": "14882",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:43.150415+00:00"
+    },
+    {
+      "election_id": "20749",
+      "state_id": "42",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/42/elections/20749",
+      "overview_lean": 12.2,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Anthony Adcox",
+          "politician_id": "14866",
+          "final_pct": 55.9,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Matt glenndenning",
+          "politician_id": "14606",
+          "final_pct": 44.1,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Anthony Adcox",
+        "politician_id": "14866",
+        "final_pct": 55.9,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Matt glenndenning",
+        "politician_id": "14606",
+        "final_pct": 44.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:43.751704+00:00"
+    },
+    {
+      "election_id": "20750",
+      "state_id": "43",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/43/elections/20750",
+      "overview_lean": 2.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Kate Freebairn",
+          "politician_id": "4657",
+          "final_pct": 50.9,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "James Talarico",
+          "politician_id": "2528",
+          "final_pct": 49.1,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Kate Freebairn",
+        "politician_id": "4657",
+        "final_pct": 50.9,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "James Talarico",
+        "politician_id": "2528",
+        "final_pct": 49.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:44.227874+00:00"
+    },
+    {
+      "election_id": "20751",
+      "state_id": "46",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/46/elections/20751",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Nexis(2)",
+          "politician_id": "14092",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Nexis(2)",
+        "politician_id": "14092",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:44.524128+00:00"
+    },
+    {
+      "election_id": "20754",
+      "state_id": "51",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/51/elections/20754",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Adam Slater",
+          "politician_id": "2746",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Adam Slater",
+        "politician_id": "2746",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.384263+00:00"
+    },
+    {
+      "election_id": "22381",
+      "state_id": "1",
+      "type": "house",
+      "label": "U.S. House (4 seats)",
+      "url": "https://battleforthehill.com/states/1/elections/22381",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Madison Beer",
+          "politician_id": "1224",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Madison Beer",
+        "politician_id": "1224",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.462325+00:00"
+    },
+    {
+      "election_id": "22424",
+      "state_id": "20",
+      "type": "house",
+      "label": "U.S. House (7 seats)",
+      "url": "https://battleforthehill.com/states/20/elections/22424",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Vertin",
+          "politician_id": "1287",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Vertin",
+        "politician_id": "1287",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.821629+00:00"
+    },
+    {
+      "election_id": "22452",
+      "state_id": "31",
+      "type": "house",
+      "label": "U.S. House (3 seats)",
+      "url": "https://battleforthehill.com/states/31/elections/22452",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "jonaseaworth",
+          "politician_id": "2057",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "jonaseaworth",
+        "politician_id": "2057",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.031348+00:00"
+    },
+    {
+      "election_id": "22463",
+      "state_id": "36",
+      "type": "house",
+      "label": "U.S. House (6 seats)",
+      "url": "https://battleforthehill.com/states/36/elections/22463",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Joseph Peir-Proudhoon",
+          "politician_id": "14819",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Joseph Peir-Proudhoon",
+        "politician_id": "14819",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.153062+00:00"
+    },
+    {
+      "election_id": "23142",
+      "state_id": "10",
+      "type": "house",
+      "label": "U.S. House (13 seats)",
+      "url": "https://battleforthehill.com/states/10/elections/23142",
+      "overview_lean": 63.4,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Warren Buffett",
+          "politician_id": "13279",
+          "final_pct": 81.6,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Georgia House",
+          "politician_id": "12597",
+          "final_pct": 18.4,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Warren Buffett",
+        "politician_id": "13279",
+        "final_pct": 81.6,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Georgia House",
+        "politician_id": "12597",
+        "final_pct": 18.4,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:46.935523+00:00"
+    },
+    {
+      "election_id": "23143",
+      "state_id": "11",
+      "type": "house",
+      "label": "U.S. House (2 seats)",
+      "url": "https://battleforthehill.com/states/11/elections/23143",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "SkyeRhodes(2)",
+          "politician_id": "1804",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "SkyeRhodes(2)",
+        "politician_id": "1804",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.013013+00:00"
+    },
+    {
+      "election_id": "23144",
+      "state_id": "13",
+      "type": "house",
+      "label": "U.S. House (14 seats)",
+      "url": "https://battleforthehill.com/states/13/elections/23144",
+      "overview_lean": 12.2,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Don Western",
+          "politician_id": "2820",
+          "final_pct": 56.2,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "The Prerequisite",
+          "politician_id": "12580",
+          "final_pct": 43.8,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Don Western",
+        "politician_id": "2820",
+        "final_pct": 56.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "The Prerequisite",
+        "politician_id": "12580",
+        "final_pct": 43.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:47.100831+00:00"
+    },
+    {
+      "election_id": "23145",
+      "state_id": "14",
+      "type": "house",
+      "label": "U.S. House (7 seats)",
+      "url": "https://battleforthehill.com/states/14/elections/23145",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Prick's Face",
+          "politician_id": "14726",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Prick's Face",
+        "politician_id": "14726",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.180063+00:00"
+    },
+    {
+      "election_id": "23146",
+      "state_id": "16",
+      "type": "house",
+      "label": "U.S. House (4 seats)",
+      "url": "https://battleforthehill.com/states/16/elections/23146",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Joshua Miller(2)",
+          "politician_id": "12732",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Joshua Miller(2)",
+        "politician_id": "12732",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.259520+00:00"
+    },
+    {
+      "election_id": "23147",
+      "state_id": "17",
+      "type": "house",
+      "label": "U.S. House (6 seats)",
+      "url": "https://battleforthehill.com/states/17/elections/23147",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Gabriel Hernandez",
+          "politician_id": "14479",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Gabriel Hernandez",
+        "politician_id": "14479",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.339073+00:00"
+    },
+    {
+      "election_id": "23148",
+      "state_id": "18",
+      "type": "house",
+      "label": "U.S. House (7 seats)",
+      "url": "https://battleforthehill.com/states/18/elections/23148",
+      "overview_lean": 13.5,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Louisiana House",
+          "politician_id": "12462",
+          "final_pct": 85.7,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "King_Verdi",
+          "politician_id": "13579",
+          "final_pct": 56.7,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Louisiana House",
+        "politician_id": "12462",
+        "final_pct": 85.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "King_Verdi",
+        "politician_id": "13579",
+        "final_pct": 56.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:47.419437+00:00"
+    },
+    {
+      "election_id": "23149",
+      "state_id": "19",
+      "type": "house",
+      "label": "U.S. House (2 seats)",
+      "url": "https://battleforthehill.com/states/19/elections/23149",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Pete Brown",
+          "politician_id": "14549",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Pete Brown",
+        "politician_id": "14549",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.496347+00:00"
+    },
+    {
+      "election_id": "23150",
+      "state_id": "21",
+      "type": "house",
+      "label": "U.S. House (12 seats)",
+      "url": "https://battleforthehill.com/states/21/elections/23150",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Freddy Haynes III",
+          "politician_id": "11681",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Freddy Haynes III",
+        "politician_id": "11681",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.578606+00:00"
+    },
+    {
+      "election_id": "23151",
+      "state_id": "22",
+      "type": "house",
+      "label": "U.S. House (9 seats)",
+      "url": "https://battleforthehill.com/states/22/elections/23151",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Peter L. King",
+          "politician_id": "2491",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Peter L. King",
+        "politician_id": "2491",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.663221+00:00"
+    },
+    {
+      "election_id": "23153",
+      "state_id": "24",
+      "type": "house",
+      "label": "U.S. House (5 seats)",
+      "url": "https://battleforthehill.com/states/24/elections/23153",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Carter Vance",
+          "politician_id": "13798",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Carter Vance",
+        "politician_id": "13798",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.905652+00:00"
+    },
+    {
+      "election_id": "23154",
+      "state_id": "25",
+      "type": "house",
+      "label": "U.S. House (7 seats)",
+      "url": "https://battleforthehill.com/states/25/elections/23154",
+      "overview_lean": 7.3,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Clark Nora",
+          "politician_id": "14550",
+          "final_pct": 53.7,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Queen",
+          "politician_id": "1690",
+          "final_pct": 46.3,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Who is this guy?",
+          "politician_id": "13185",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Clark Nora",
+        "politician_id": "14550",
+        "final_pct": 53.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Queen",
+        "politician_id": "1690",
+        "final_pct": 46.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:48.000128+00:00"
+    },
+    {
+      "election_id": "23155",
+      "state_id": "26",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/26/elections/23155",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Fright",
+          "politician_id": "14571",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Fright",
+        "politician_id": "14571",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.074259+00:00"
+    },
+    {
+      "election_id": "23156",
+      "state_id": "29",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/29/elections/23156",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Lance Thomson",
+          "politician_id": "14590",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Lance Thomson",
+        "politician_id": "14590",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.334496+00:00"
+    },
+    {
+      "election_id": "23157",
+      "state_id": "30",
+      "type": "house",
+      "label": "U.S. House (11 seats)",
+      "url": "https://battleforthehill.com/states/30/elections/23157",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "The Risen",
+          "politician_id": "12027",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "The Risen",
+        "politician_id": "12027",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.417948+00:00"
+    },
+    {
+      "election_id": "23158",
+      "state_id": "32",
+      "type": "house",
+      "label": "U.S. House (30 seats)",
+      "url": "https://battleforthehill.com/states/32/elections/23158",
+      "overview_lean": 3.2,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Hakeem Jeffries",
+          "politician_id": "11685",
+          "final_pct": 51.6,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Don Eastern",
+          "politician_id": "2821",
+          "final_pct": 48.5,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Hakeem Jeffries",
+        "politician_id": "11685",
+        "final_pct": 51.6,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Don Eastern",
+        "politician_id": "2821",
+        "final_pct": 48.5,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:48.519268+00:00"
+    },
+    {
+      "election_id": "23159",
+      "state_id": "33",
+      "type": "house",
+      "label": "U.S. House (19 seats)",
+      "url": "https://battleforthehill.com/states/33/elections/23159",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "North Carolina House",
+          "politician_id": "12598",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "North Carolina House",
+        "politician_id": "12598",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.610992+00:00"
+    },
+    {
+      "election_id": "23160",
+      "state_id": "35",
+      "type": "house",
+      "label": "U.S. House (14 seats)",
+      "url": "https://battleforthehill.com/states/35/elections/23160",
+      "overview_lean": 48.2,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Caleb Walton",
+          "politician_id": "11323",
+          "final_pct": 71.4,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Uncle Sam",
+          "politician_id": "13851",
+          "final_pct": 23.3,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "politician_id": "14566",
+          "final_pct": 5.3,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Caleb Walton",
+        "politician_id": "11323",
+        "final_pct": 71.4,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Uncle Sam",
+        "politician_id": "13851",
+        "final_pct": 23.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:48.702432+00:00"
+    },
+    {
+      "election_id": "23162",
+      "state_id": "38",
+      "type": "house",
+      "label": "U.S. House (13 seats)",
+      "url": "https://battleforthehill.com/states/38/elections/23162",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Arthur Pendelton",
+          "politician_id": "4921",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Arthur Pendelton",
+        "politician_id": "4921",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.832178+00:00"
+    },
+    {
+      "election_id": "23163",
+      "state_id": "40",
+      "type": "house",
+      "label": "U.S. House (7 seats)",
+      "url": "https://battleforthehill.com/states/40/elections/23163",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Zoe Palmer-Hayes",
+          "politician_id": "1970",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Zoe Palmer-Hayes",
+        "politician_id": "1970",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.913194+00:00"
+    },
+    {
+      "election_id": "23164",
+      "state_id": "42",
+      "type": "house",
+      "label": "U.S. House (14 seats)",
+      "url": "https://battleforthehill.com/states/42/elections/23164",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Cyn",
+          "politician_id": "12061",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Cyn",
+        "politician_id": "12061",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:49.001397+00:00"
+    },
+    {
+      "election_id": "23165",
+      "state_id": "43",
+      "type": "house",
+      "label": "U.S. House (33 seats)",
+      "url": "https://battleforthehill.com/states/43/elections/23165",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Brandon Gill",
+          "politician_id": "11478",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Brandon Gill",
+        "politician_id": "11478",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:49.105988+00:00"
+    },
+    {
+      "election_id": "23166",
+      "state_id": "45",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/45/elections/23166",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Kristi Noem",
+          "politician_id": "1691",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Kristi Noem",
+        "politician_id": "1691",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:49.444621+00:00"
+    },
+    {
+      "election_id": "23167",
+      "state_id": "46",
+      "type": "house",
+      "label": "U.S. House (11 seats)",
+      "url": "https://battleforthehill.com/states/46/elections/23167",
+      "overview_lean": 100.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Jacob Elordi",
+          "politician_id": "3496",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Miku",
+          "politician_id": "13191",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Jacob Elordi",
+        "politician_id": "3496",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Miku",
+        "politician_id": "13191",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:49.534439+00:00"
+    },
+    {
+      "election_id": "23168",
+      "state_id": "47",
+      "type": "house",
+      "label": "U.S. House (6 seats)",
+      "url": "https://battleforthehill.com/states/47/elections/23168",
+      "overview_lean": 0.0,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Chenster(2)",
+          "politician_id": "4900",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Chenster(2)",
+        "politician_id": "4900",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:49.613040+00:00"
+    },
+    {
+      "election_id": "23170",
+      "state_id": "49",
+      "type": "house",
+      "label": "U.S. House (6 seats)",
+      "url": "https://battleforthehill.com/states/49/elections/23170",
+      "overview_lean": 88.7,
+      "polls_count": 65,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Glen Youngkin",
+          "politician_id": "1229",
+          "final_pct": 94.2,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Sleepy Bezzer",
+          "politician_id": "13183",
+          "final_pct": 5.8,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Glen Youngkin",
+        "politician_id": "1229",
+        "final_pct": 94.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Sleepy Bezzer",
+        "politician_id": "13183",
+        "final_pct": 5.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:49.739403+00:00"
+    },
+    {
+      "election_id": "19463",
+      "state_id": "1",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/1/elections/19463",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Tommy Tuberville",
+          "politician_id": "11553",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Tommy Tuberville",
+        "politician_id": "11553",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:23.204159+00:00"
+    },
+    {
+      "election_id": "19464",
+      "state_id": "2",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/2/elections/19464",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Dan Sullivan",
+          "politician_id": "11474",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Dan Sullivan",
+        "politician_id": "11474",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:23.499656+00:00"
+    },
+    {
+      "election_id": "19465",
+      "state_id": "4",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/4/elections/19465",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "John Boozman",
+          "politician_id": "11481",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "John Boozman",
+        "politician_id": "11481",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:23.856126+00:00"
+    },
+    {
+      "election_id": "19466",
+      "state_id": "6",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/6/elections/19466",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Carter Pewterschmidt",
+          "politician_id": "11633",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Carter Pewterschmidt",
+        "politician_id": "11633",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:24.159925+00:00"
+    },
+    {
+      "election_id": "19467",
+      "state_id": "8",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/8/elections/19467",
+      "overview_lean": 26.3,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "James Bond",
+          "politician_id": "1264",
+          "final_pct": 63.2,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "doctorsus",
+          "politician_id": "11484",
+          "final_pct": 36.8,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "James Bond",
+        "politician_id": "1264",
+        "final_pct": 63.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "doctorsus",
+        "politician_id": "11484",
+        "final_pct": 36.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:24.467105+00:00"
+    },
+    {
+      "election_id": "19468",
+      "state_id": "10",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/10/elections/19468",
+      "overview_lean": 50.1,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "David Perdue",
+          "politician_id": "11508",
+          "final_pct": 75.1,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Gary",
+          "politician_id": "14066",
+          "final_pct": 24.9,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "David Perdue",
+        "politician_id": "11508",
+        "final_pct": 75.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Gary",
+        "politician_id": "14066",
+        "final_pct": 24.9,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:24.933561+00:00"
+    },
+    {
+      "election_id": "19469",
+      "state_id": "12",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/12/elections/19469",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Larry Craig",
+          "politician_id": "11567",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Larry Craig",
+        "politician_id": "11567",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:25.221744+00:00"
+    },
+    {
+      "election_id": "19470",
+      "state_id": "13",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/13/elections/19470",
+      "overview_lean": 28.1,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Mark Kirk",
+          "politician_id": "11475",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Hunter Biden",
+          "politician_id": "1331",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Mark Kirk",
+        "politician_id": "11475",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Hunter Biden",
+        "politician_id": "1331",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:25.577265+00:00"
+    },
+    {
+      "election_id": "19472",
+      "state_id": "16",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/16/elections/19472",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Joshua Miller",
+          "politician_id": "12731",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Joshua Miller",
+        "politician_id": "12731",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:26.289129+00:00"
+    },
+    {
+      "election_id": "19473",
+      "state_id": "17",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/17/elections/19473",
+      "overview_lean": 21.4,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Mitch McConnell",
+          "politician_id": "11477",
+          "final_pct": 60.7,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Sam Knighht",
+          "politician_id": "14300",
+          "final_pct": 39.3,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Mitch McConnell",
+        "politician_id": "11477",
+        "final_pct": 60.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Sam Knighht",
+        "politician_id": "14300",
+        "final_pct": 39.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:26.644177+00:00"
+    },
+    {
+      "election_id": "19474",
+      "state_id": "18",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/18/elections/19474",
+      "overview_lean": 2.1,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "John Kennedy",
+          "politician_id": "11542",
+          "final_pct": 51.1,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Clara Vance",
+          "politician_id": "4922",
+          "final_pct": 7.8,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "John Kennedy",
+        "politician_id": "11542",
+        "final_pct": 51.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Clara Vance",
+        "politician_id": "4922",
+        "final_pct": 7.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:26.984272+00:00"
+    },
+    {
+      "election_id": "19475",
+      "state_id": "19",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/19/elections/19475",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Buster Cherry",
+          "politician_id": "11680",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Buster Cherry",
+        "politician_id": "11680",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:27.356585+00:00"
+    },
+    {
+      "election_id": "19476",
+      "state_id": "21",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/21/elections/19476",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Sanders",
+          "politician_id": "11616",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Sanders",
+        "politician_id": "11616",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:27.631886+00:00"
+    },
+    {
+      "election_id": "19477",
+      "state_id": "22",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/22/elections/19477",
+      "overview_lean": 5.6,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "That Coraline",
+          "politician_id": "14730",
+          "final_pct": 52.8,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Spencer Abraham",
+          "politician_id": "11502",
+          "final_pct": 47.2,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "That Coraline",
+        "politician_id": "14730",
+        "final_pct": 52.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Spencer Abraham",
+        "politician_id": "11502",
+        "final_pct": 47.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:27.969811+00:00"
+    },
+    {
+      "election_id": "19478",
+      "state_id": "23",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/23/elections/19478",
+      "overview_lean": 1.8,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "The Northern",
+          "politician_id": "12582",
+          "final_pct": 50.9,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Sonetto",
+          "politician_id": "1288",
+          "final_pct": 49.1,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "The Northern",
+        "politician_id": "12582",
+        "final_pct": 50.9,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Sonetto",
+        "politician_id": "1288",
+        "final_pct": 49.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:28.314735+00:00"
+    },
+    {
+      "election_id": "19479",
+      "state_id": "24",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/24/elections/19479",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "John Nixon",
+          "politician_id": "13207",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "John Nixon",
+        "politician_id": "13207",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:28.696515+00:00"
+    },
+    {
+      "election_id": "19480",
+      "state_id": "26",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/26/elections/19480",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Joshua Houston Jr.",
+          "politician_id": "13908",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Joshua Houston Jr.",
+        "politician_id": "13908",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:28.969684+00:00"
+    },
+    {
+      "election_id": "19481",
+      "state_id": "27",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/27/elections/19481",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Deb Fischer",
+          "politician_id": "11494",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Deb Fischer",
+        "politician_id": "11494",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:29.274521+00:00"
+    },
+    {
+      "election_id": "19482",
+      "state_id": "29",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/29/elections/19482",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Nancy Mace",
+          "politician_id": "3085",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Nancy Mace",
+        "politician_id": "3085",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:29.540370+00:00"
+    },
+    {
+      "election_id": "19483",
+      "state_id": "30",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/30/elections/19483",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Mikie Sherril",
+          "politician_id": "10386",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Mikie Sherril",
+        "politician_id": "10386",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:29.889976+00:00"
+    },
+    {
+      "election_id": "19484",
+      "state_id": "31",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/31/elections/19484",
+      "overview_lean": 24.8,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Dr. Isaiah Hayes",
+          "politician_id": "1969",
+          "final_pct": 62.4,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Gary Johnson",
+          "politician_id": "11571",
+          "final_pct": 37.6,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Dr. Isaiah Hayes",
+        "politician_id": "1969",
+        "final_pct": 62.4,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Gary Johnson",
+        "politician_id": "11571",
+        "final_pct": 37.6,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:30.200333+00:00"
+    },
+    {
+      "election_id": "19485",
+      "state_id": "33",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/33/elections/19485",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Nikki Haley",
+          "politician_id": "1240",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Nikki Haley",
+        "politician_id": "1240",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:30.488091+00:00"
+    },
+    {
+      "election_id": "19486",
+      "state_id": "36",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/36/elections/19486",
+      "overview_lean": 15.4,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "John \"Lung\" C. Aquilino",
+          "politician_id": "13850",
+          "final_pct": 57.7,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Lord Frumplebucket",
+          "politician_id": "13186",
+          "final_pct": 42.3,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "John \"Lung\" C. Aquilino",
+        "politician_id": "13850",
+        "final_pct": 57.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Lord Frumplebucket",
+        "politician_id": "13186",
+        "final_pct": 42.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:30.889149+00:00"
+    },
+    {
+      "election_id": "19487",
+      "state_id": "37",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/37/elections/19487",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Bob Packwood",
+          "politician_id": "11682",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Bob Packwood",
+        "politician_id": "11682",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:31.174651+00:00"
+    },
+    {
+      "election_id": "19488",
+      "state_id": "39",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/39/elections/19488",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "John Herbert",
+          "politician_id": "11639",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "John Herbert",
+        "politician_id": "11639",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:31.447818+00:00"
+    },
+    {
+      "election_id": "19489",
+      "state_id": "40",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/40/elections/19489",
+      "overview_lean": 20.7,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Dick Butkus",
+          "politician_id": "11564",
+          "final_pct": 60.3,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Mike Thomason",
+          "politician_id": "14621",
+          "final_pct": 39.7,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Dick Butkus",
+        "politician_id": "11564",
+        "final_pct": 60.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Mike Thomason",
+        "politician_id": "14621",
+        "final_pct": 39.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:31.763753+00:00"
+    },
+    {
+      "election_id": "19490",
+      "state_id": "41",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/41/elections/19490",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Mike Rounds",
+          "politician_id": "11552",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Mike Rounds",
+        "politician_id": "11552",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:32.162331+00:00"
+    },
+    {
+      "election_id": "19491",
+      "state_id": "42",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/42/elections/19491",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Monty Fritts",
+          "politician_id": "11493",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Monty Fritts",
+        "politician_id": "11493",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:32.464578+00:00"
+    },
+    {
+      "election_id": "19492",
+      "state_id": "43",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/43/elections/19492",
+      "overview_lean": 100.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "John Cornyn",
+          "politician_id": "11515",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "sugz",
+          "politician_id": "14836",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "John Cornyn",
+        "politician_id": "11515",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "sugz",
+        "politician_id": "14836",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:32.862144+00:00"
+    },
+    {
+      "election_id": "19493",
+      "state_id": "46",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/46/elections/19493",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Sydney Sweeney",
+          "politician_id": "3495",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Sydney Sweeney",
+        "politician_id": "3495",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:33.255587+00:00"
+    },
+    {
+      "election_id": "19494",
+      "state_id": "48",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/48/elections/19494",
+      "overview_lean": 34.3,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Daemon Targaryen",
+          "politician_id": "14497",
+          "final_pct": 67.2,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Greg Abbott",
+          "politician_id": "1239",
+          "final_pct": 32.8,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Daemon Targaryen",
+        "politician_id": "14497",
+        "final_pct": 67.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Greg Abbott",
+        "politician_id": "1239",
+        "final_pct": 32.8,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:33.553829+00:00"
+    },
+    {
+      "election_id": "19495",
+      "state_id": "50",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/50/elections/19495",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Dick \"Dick\" Cheney",
+          "politician_id": "11577",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Dick \"Dick\" Cheney",
+        "politician_id": "11577",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:33.836503+00:00"
+    },
+    {
+      "election_id": "20718",
+      "state_id": "1",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/1/elections/20718",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Karlie Kirk",
+          "politician_id": "12094",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Karlie Kirk",
+        "politician_id": "12094",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:34.474852+00:00"
+    },
+    {
+      "election_id": "20719",
+      "state_id": "2",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/2/elections/20719",
+      "overview_lean": 46.3,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Dr. Donald Mallard",
+          "politician_id": "12773",
+          "final_pct": 73.2,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Walter Louis",
+          "politician_id": "14867",
+          "final_pct": 26.9,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Dr. Donald Mallard",
+        "politician_id": "12773",
+        "final_pct": 73.2,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Walter Louis",
+        "politician_id": "14867",
+        "final_pct": 26.9,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:34.761434+00:00"
+    },
+    {
+      "election_id": "20721",
+      "state_id": "4",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/4/elections/20721",
+      "overview_lean": 0.0,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Anna Paulina Luna",
+          "politician_id": "1223",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Anna Paulina Luna",
+        "politician_id": "1223",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:35.289475+00:00"
+    },
+    {
+      "election_id": "23138",
+      "state_id": "3",
+      "type": "house",
+      "label": "U.S. House (10 seats)",
+      "url": "https://battleforthehill.com/states/3/elections/23138",
+      "overview_lean": 47.1,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Marjorie Taylor Greene",
+          "politician_id": "13568",
+          "final_pct": 93.3,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Erton C. K\u00f6hler",
+          "politician_id": "14831",
+          "final_pct": 26.4,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Marjorie Taylor Greene",
+        "politician_id": "13568",
+        "final_pct": 93.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Erton C. K\u00f6hler",
+        "politician_id": "14831",
+        "final_pct": 26.4,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:46.564542+00:00"
+    },
+    {
+      "election_id": "23139",
+      "state_id": "5",
+      "type": "house",
+      "label": "U.S. House (62 seats)",
+      "url": "https://battleforthehill.com/states/5/elections/23139",
+      "overview_lean": 22.4,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "S.I. Hayakawa",
+          "politician_id": "11550",
+          "final_pct": 50.5,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Himothy Jalpert",
+          "politician_id": "11686",
+          "final_pct": 28.1,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Comrade Dimitri",
+          "politician_id": "4923",
+          "final_pct": 16.1,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Cali Clear",
+          "politician_id": "12466",
+          "final_pct": 5.2,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "S.I. Hayakawa",
+        "politician_id": "11550",
+        "final_pct": 50.5,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Himothy Jalpert",
+        "politician_id": "11686",
+        "final_pct": 28.1,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:46.701535+00:00"
+    },
+    {
+      "election_id": "23141",
+      "state_id": "9",
+      "type": "house",
+      "label": "U.S. House (29 seats)",
+      "url": "https://battleforthehill.com/states/9/elections/23141",
+      "overview_lean": 20.6,
+      "polls_count": 64,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Bill Nye",
+          "politician_id": "1317",
+          "final_pct": 60.3,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Jack Thatch",
+          "politician_id": "1361",
+          "final_pct": 39.7,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "James T. Fishback",
+          "politician_id": "3154",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Bill Nye",
+        "politician_id": "1317",
+        "final_pct": 60.3,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Jack Thatch",
+        "politician_id": "1361",
+        "final_pct": 39.7,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:46.849544+00:00"
+    },
+    {
+      "election_id": "19496",
+      "state_id": "51",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/51/elections/19496",
+      "overview_lean": 0.0,
+      "polls_count": 56,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Pear Teto",
+          "politician_id": "13190",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Pear Teto",
+        "politician_id": "13190",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:34.098057+00:00"
+    },
+    {
+      "election_id": "19471",
+      "state_id": "15",
+      "type": "senate",
+      "label": "U.S. Senate, Class 2",
+      "url": "https://battleforthehill.com/states/15/elections/19471",
+      "overview_lean": 100.0,
+      "polls_count": 55,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Jay Gatsby",
+          "politician_id": "14628",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        },
+        {
+          "name": "Giles Sweeney II",
+          "politician_id": "14650",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Jay Gatsby",
+        "politician_id": "14628",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": {
+        "name": "Giles Sweeney II",
+        "politician_id": "14650",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "parsed_at": "2026-11-13T19:04:25.894307+00:00"
+    },
+    {
+      "election_id": "20730",
+      "state_id": "15",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/15/elections/20730",
+      "overview_lean": 0.0,
+      "polls_count": 22,
+      "polls_source": "pollingHistory",
+      "candidates": [
+        {
+          "name": "Kylin Waters(2)",
+          "politician_id": "14790",
+          "final_pct": null,
+          "predicted_final": null,
+          "polls_used": 0
+        }
+      ],
+      "leader": {
+        "name": "Kylin Waters(2)",
+        "politician_id": "14790",
+        "final_pct": null,
+        "predicted_final": null,
+        "polls_used": 0
+      },
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:38.036673+00:00"
+    },
+    {
+      "election_id": "20720",
+      "state_id": "3",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/3/elections/20720",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:35.011245+00:00"
+    },
+    {
+      "election_id": "20723",
+      "state_id": "6",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/6/elections/20723",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:35.921481+00:00"
+    },
+    {
+      "election_id": "20726",
+      "state_id": "10",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/10/elections/20726",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:36.835156+00:00"
+    },
+    {
+      "election_id": "20732",
+      "state_id": "19",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/19/elections/20732",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:38.573895+00:00"
+    },
+    {
+      "election_id": "20733",
+      "state_id": "20",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/20/elections/20733",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:38.831942+00:00"
+    },
+    {
+      "election_id": "20734",
+      "state_id": "21",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/21/elections/20734",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:39.187755+00:00"
+    },
+    {
+      "election_id": "20737",
+      "state_id": "27",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/27/elections/20737",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:40.027231+00:00"
+    },
+    {
+      "election_id": "20746",
+      "state_id": "39",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/39/elections/20746",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:42.881142+00:00"
+    },
+    {
+      "election_id": "20748",
+      "state_id": "41",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/41/elections/20748",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:43.411364+00:00"
+    },
+    {
+      "election_id": "20752",
+      "state_id": "49",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/49/elections/20752",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:44.787034+00:00"
+    },
+    {
+      "election_id": "20753",
+      "state_id": "50",
+      "type": "governor",
+      "label": "Governor",
+      "url": "https://battleforthehill.com/states/50/elections/20753",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.129867+00:00"
+    },
+    {
+      "election_id": "22382",
+      "state_id": "2",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/2/elections/22382",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.506461+00:00"
+    },
+    {
+      "election_id": "22386",
+      "state_id": "4",
+      "type": "house",
+      "label": "U.S. House (3 seats)",
+      "url": "https://battleforthehill.com/states/4/elections/22386",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.547455+00:00"
+    },
+    {
+      "election_id": "22390",
+      "state_id": "6",
+      "type": "house",
+      "label": "U.S. House (8 seats)",
+      "url": "https://battleforthehill.com/states/6/elections/22390",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.588308+00:00"
+    },
+    {
+      "election_id": "22391",
+      "state_id": "7",
+      "type": "house",
+      "label": "U.S. House (7 seats)",
+      "url": "https://battleforthehill.com/states/7/elections/22391",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.634825+00:00"
+    },
+    {
+      "election_id": "22404",
+      "state_id": "12",
+      "type": "house",
+      "label": "U.S. House (2 seats)",
+      "url": "https://battleforthehill.com/states/12/elections/22404",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.681939+00:00"
+    },
+    {
+      "election_id": "22411",
+      "state_id": "15",
+      "type": "house",
+      "label": "U.S. House (4 seats)",
+      "url": "https://battleforthehill.com/states/15/elections/22411",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.733882+00:00"
+    },
+    {
+      "election_id": "22443",
+      "state_id": "27",
+      "type": "house",
+      "label": "U.S. House (3 seats)",
+      "url": "https://battleforthehill.com/states/27/elections/22443",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.869067+00:00"
+    },
+    {
+      "election_id": "22444",
+      "state_id": "28",
+      "type": "house",
+      "label": "U.S. House (5 seats)",
+      "url": "https://battleforthehill.com/states/28/elections/22444",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.911123+00:00"
+    },
+    {
+      "election_id": "22448",
+      "state_id": "29",
+      "type": "house",
+      "label": "U.S. House (2 seats)",
+      "url": "https://battleforthehill.com/states/29/elections/22448",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:45.955938+00:00"
+    },
+    {
+      "election_id": "22459",
+      "state_id": "34",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/34/elections/22459",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.075699+00:00"
+    },
+    {
+      "election_id": "22470",
+      "state_id": "39",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/39/elections/22470",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.198700+00:00"
+    },
+    {
+      "election_id": "22474",
+      "state_id": "41",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/41/elections/22474",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.240018+00:00"
+    },
+    {
+      "election_id": "22481",
+      "state_id": "44",
+      "type": "house",
+      "label": "U.S. House (4 seats)",
+      "url": "https://battleforthehill.com/states/44/elections/22481",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.280782+00:00"
+    },
+    {
+      "election_id": "22485",
+      "state_id": "45",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/45/elections/22485",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.393677+00:00"
+    },
+    {
+      "election_id": "22498",
+      "state_id": "50",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/50/elections/22498",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.435391+00:00"
+    },
+    {
+      "election_id": "22499",
+      "state_id": "51",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/51/elections/22499",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.481220+00:00"
+    },
+    {
+      "election_id": "23140",
+      "state_id": "8",
+      "type": "house",
+      "label": "U.S. House (1 seat)",
+      "url": "https://battleforthehill.com/states/8/elections/23140",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:46.745973+00:00"
+    },
+    {
+      "election_id": "23152",
+      "state_id": "23",
+      "type": "house",
+      "label": "U.S. House (9 seats)",
+      "url": "https://battleforthehill.com/states/23/elections/23152",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:47.706291+00:00"
+    },
+    {
+      "election_id": "23161",
+      "state_id": "37",
+      "type": "house",
+      "label": "U.S. House (5 seats)",
+      "url": "https://battleforthehill.com/states/37/elections/23161",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:48.744404+00:00"
+    },
+    {
+      "election_id": "23169",
+      "state_id": "48",
+      "type": "house",
+      "label": "U.S. House (2 seats)",
+      "url": "https://battleforthehill.com/states/48/elections/23169",
+      "overview_lean": 0.0,
+      "polls_count": 0,
+      "polls_source": "unavailable",
+      "candidates": [],
+      "leader": null,
+      "runner_up": null,
+      "parsed_at": "2026-11-13T19:04:49.657771+00:00"
+    }
+  ]
+}

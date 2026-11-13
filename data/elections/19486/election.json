@@ -1,0 +1,537 @@
+{
+  "election_id": "19486",
+  "state_id": "36",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 15.4,
+  "url": "https://battleforthehill.com/states/36/elections/19486",
+  "candidates": [
+    {
+      "name": "John \"Lung\" C. Aquilino",
+      "politician_id": "13850",
+      "final_pct": 57.7
+    },
+    {
+      "name": "Lord Frumplebucket",
+      "politician_id": "13186",
+      "final_pct": 42.3
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Lord Frumplebucket": null,
+        "John \"Lung\" C. Aquilino": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Lord Frumplebucket": null,
+        "John \"Lung\" C. Aquilino": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Lord Frumplebucket": null,
+        "John \"Lung\" C. Aquilino": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Lord Frumplebucket": null,
+        "John \"Lung\" C. Aquilino": 100
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Lord Frumplebucket": 7.33,
+        "John \"Lung\" C. Aquilino": 42.98
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Lord Frumplebucket": 10.83,
+        "John \"Lung\" C. Aquilino": 42.24
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Lord Frumplebucket": 13.09,
+        "John \"Lung\" C. Aquilino": 40.24
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Lord Frumplebucket": 14.07,
+        "John \"Lung\" C. Aquilino": 41.91
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Lord Frumplebucket": 17.08,
+        "John \"Lung\" C. Aquilino": 41.17
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Lord Frumplebucket": 18.58,
+        "John \"Lung\" C. Aquilino": 45.69
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Lord Frumplebucket": 21.08,
+        "John \"Lung\" C. Aquilino": 41.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Lord Frumplebucket": 26.05,
+        "John \"Lung\" C. Aquilino": 43.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Lord Frumplebucket": 28.55,
+        "John \"Lung\" C. Aquilino": 42.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Lord Frumplebucket": 30.06,
+        "John \"Lung\" C. Aquilino": 43.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Lord Frumplebucket": 33.06,
+        "John \"Lung\" C. Aquilino": 44.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Lord Frumplebucket": 36.03,
+        "John \"Lung\" C. Aquilino": 44.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Lord Frumplebucket": 37.28,
+        "John \"Lung\" C. Aquilino": 44.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Lord Frumplebucket": 38.03,
+        "John \"Lung\" C. Aquilino": 45.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Lord Frumplebucket": 38.78,
+        "John \"Lung\" C. Aquilino": 45.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Lord Frumplebucket": 39.7,
+        "John \"Lung\" C. Aquilino": 42.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Lord Frumplebucket": 40.95,
+        "John \"Lung\" C. Aquilino": 42.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Lord Frumplebucket": 38.45,
+        "John \"Lung\" C. Aquilino": 44.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Lord Frumplebucket": 42.7,
+        "John \"Lung\" C. Aquilino": 43.22
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Lord Frumplebucket": 41.61,
+        "John \"Lung\" C. Aquilino": 43.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Lord Frumplebucket": 42.36,
+        "John \"Lung\" C. Aquilino": 44.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Lord Frumplebucket": 42.86,
+        "John \"Lung\" C. Aquilino": 42.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Lord Frumplebucket": 40.28,
+        "John \"Lung\" C. Aquilino": 43.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Lord Frumplebucket": 43.19,
+        "John \"Lung\" C. Aquilino": 43.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Lord Frumplebucket": 43.19,
+        "John \"Lung\" C. Aquilino": 42.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Lord Frumplebucket": 43.69,
+        "John \"Lung\" C. Aquilino": 43.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Lord Frumplebucket": 45.69,
+        "John \"Lung\" C. Aquilino": 43.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Lord Frumplebucket": 46.11,
+        "John \"Lung\" C. Aquilino": 42.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Lord Frumplebucket": 46.11,
+        "John \"Lung\" C. Aquilino": 42.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Lord Frumplebucket": 47.61,
+        "John \"Lung\" C. Aquilino": 43.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Lord Frumplebucket": 45.11,
+        "John \"Lung\" C. Aquilino": 43.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Lord Frumplebucket": 45.52,
+        "John \"Lung\" C. Aquilino": 42.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Lord Frumplebucket": 46.52,
+        "John \"Lung\" C. Aquilino": 43.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Lord Frumplebucket": 46.27,
+        "John \"Lung\" C. Aquilino": 42.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Lord Frumplebucket": 46.02,
+        "John \"Lung\" C. Aquilino": 42.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Lord Frumplebucket": 48.85,
+        "John \"Lung\" C. Aquilino": 42.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Lord Frumplebucket": 46.85,
+        "John \"Lung\" C. Aquilino": 43.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Lord Frumplebucket": 46.35,
+        "John \"Lung\" C. Aquilino": 41.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Lord Frumplebucket": 47.85,
+        "John \"Lung\" C. Aquilino": 41.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Lord Frumplebucket": 47.52,
+        "John \"Lung\" C. Aquilino": 43.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Lord Frumplebucket": 47.27,
+        "John \"Lung\" C. Aquilino": 43.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Lord Frumplebucket": 48.27,
+        "John \"Lung\" C. Aquilino": 42.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Lord Frumplebucket": 48.27,
+        "John \"Lung\" C. Aquilino": 42.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Lord Frumplebucket": 48.19,
+        "John \"Lung\" C. Aquilino": 42.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Lord Frumplebucket": 48.69,
+        "John \"Lung\" C. Aquilino": 42.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Lord Frumplebucket": 49.69,
+        "John \"Lung\" C. Aquilino": 42.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Lord Frumplebucket": 49.69,
+        "John \"Lung\" C. Aquilino": 40.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Lord Frumplebucket": 49.86,
+        "John \"Lung\" C. Aquilino": 43.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Lord Frumplebucket": 49.11,
+        "John \"Lung\" C. Aquilino": 42.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Lord Frumplebucket": 49.37,
+        "John \"Lung\" C. Aquilino": 43.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Lord Frumplebucket": 51.27,
+        "John \"Lung\" C. Aquilino": 43.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Lord Frumplebucket": 50.44,
+        "John \"Lung\" C. Aquilino": 42.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Lord Frumplebucket": 52.7,
+        "John \"Lung\" C. Aquilino": 44.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Lord Frumplebucket": 50.95,
+        "John \"Lung\" C. Aquilino": 42.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Lord Frumplebucket": 50.62,
+        "John \"Lung\" C. Aquilino": 44.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Lord Frumplebucket": 51.03,
+        "John \"Lung\" C. Aquilino": 43.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Lord Frumplebucket": 51.78,
+        "John \"Lung\" C. Aquilino": 40.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Lord Frumplebucket": 52.29,
+        "John \"Lung\" C. Aquilino": 42.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Lord Frumplebucket": 52.3,
+        "John \"Lung\" C. Aquilino": 42.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Lord Frumplebucket": 52.22,
+        "John \"Lung\" C. Aquilino": 42.16
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:30.889149+00:00"
+}

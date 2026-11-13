@@ -1,0 +1,537 @@
+{
+  "election_id": "19492",
+  "state_id": "43",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 100.0,
+  "url": "https://battleforthehill.com/states/43/elections/19492",
+  "candidates": [
+    {
+      "name": "John Cornyn",
+      "politician_id": "11515",
+      "final_pct": null
+    },
+    {
+      "name": "sugz",
+      "politician_id": "14836",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "John Cornyn": 37.33,
+        "sugz": 1.43
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "John Cornyn": 40.59,
+        "sugz": 0.43
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "John Cornyn": 39.61,
+        "sugz": 0.43
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "John Cornyn": 44.32,
+        "sugz": 2.07
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "John Cornyn": 43.07,
+        "sugz": 1.57
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "John Cornyn": 46.32,
+        "sugz": 2.32
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "John Cornyn": 48.57,
+        "sugz": 1.58
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "John Cornyn": 51.48,
+        "sugz": 1.56
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "John Cornyn": 53.99,
+        "sugz": 2.07
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "John Cornyn": 56.51,
+        "sugz": 2.07
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "John Cornyn": 61.02,
+        "sugz": 3.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "John Cornyn": 62.18,
+        "sugz": 1.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "John Cornyn": 63.43,
+        "sugz": 0.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "John Cornyn": 65.18,
+        "sugz": 4.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "John Cornyn": 63.43,
+        "sugz": 2.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "John Cornyn": 63.84,
+        "sugz": 1.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "John Cornyn": 65.19,
+        "sugz": 4.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "John Cornyn": 65.94,
+        "sugz": 1.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "John Cornyn": 64.94,
+        "sugz": 1.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "John Cornyn": 66.35,
+        "sugz": 0.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "John Cornyn": 65.35,
+        "sugz": 2.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "John Cornyn": 65.35,
+        "sugz": 1.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "John Cornyn": 64.6,
+        "sugz": 2.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "John Cornyn": 66.25,
+        "sugz": 1.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "John Cornyn": 66.25,
+        "sugz": 2.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "John Cornyn": 66.25,
+        "sugz": -0.47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "John Cornyn": 66.75,
+        "sugz": 2.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "John Cornyn": 65.66,
+        "sugz": 1.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "John Cornyn": 65.22,
+        "sugz": 4.27
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "John Cornyn": 66.14,
+        "sugz": 1.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "John Cornyn": 68.64,
+        "sugz": 3.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "John Cornyn": 64.3,
+        "sugz": 0.76
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "John Cornyn": 66.55,
+        "sugz": 1.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "John Cornyn": 66.55,
+        "sugz": 0.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "John Cornyn": 66.57,
+        "sugz": 1.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "John Cornyn": 66.98,
+        "sugz": 2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "John Cornyn": 69.73,
+        "sugz": 3.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "John Cornyn": 66.73,
+        "sugz": 0
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "John Cornyn": 66.98,
+        "sugz": 1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "John Cornyn": 65.39,
+        "sugz": -0.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "John Cornyn": 68.14,
+        "sugz": 1.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "John Cornyn": 68.15,
+        "sugz": 1.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "John Cornyn": 67.9,
+        "sugz": 2.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "John Cornyn": 67.05,
+        "sugz": 1.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "John Cornyn": 68.56,
+        "sugz": 1.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "John Cornyn": 67.06,
+        "sugz": -0.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "John Cornyn": 67.07,
+        "sugz": 1.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "John Cornyn": 68.49,
+        "sugz": 1.47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "John Cornyn": 68.99,
+        "sugz": 2.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "John Cornyn": 69.24,
+        "sugz": 0.47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "John Cornyn": 70.41,
+        "sugz": 3.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "John Cornyn": 66.07,
+        "sugz": -1.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "John Cornyn": 70.31,
+        "sugz": 0.47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "John Cornyn": 70.32,
+        "sugz": 2.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "John Cornyn": 69.42,
+        "sugz": 1.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "John Cornyn": 68.33,
+        "sugz": 0.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "John Cornyn": 69.33,
+        "sugz": 2.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "John Cornyn": 70.33,
+        "sugz": 0.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "John Cornyn": 68.84,
+        "sugz": 2.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "John Cornyn": 69.75,
+        "sugz": 2.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "John Cornyn": 69.54,
+        "sugz": 1.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "John Cornyn": 72.29,
+        "sugz": 3.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "John Cornyn": 70.3,
+        "sugz": 2.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "John Cornyn": 71.96,
+        "sugz": 0.3
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:32.862144+00:00"
+}

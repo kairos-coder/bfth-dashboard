@@ -1,0 +1,545 @@
+{
+  "election_id": "23170",
+  "state_id": "49",
+  "type": "house",
+  "label": "U.S. House (6 seats)",
+  "overview_lean": 88.7,
+  "url": "https://battleforthehill.com/states/49/elections/23170",
+  "candidates": [
+    {
+      "name": "Glen Youngkin",
+      "politician_id": "1229",
+      "final_pct": 94.2
+    },
+    {
+      "name": "Sleepy Bezzer",
+      "politician_id": "13183",
+      "final_pct": 5.8
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Glen Youngkin": 100,
+        "Sleepy Bezzer": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Glen Youngkin": 100,
+        "Sleepy Bezzer": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Glen Youngkin": 100,
+        "Sleepy Bezzer": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Glen Youngkin": 60.83,
+        "Sleepy Bezzer": 15.63
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Glen Youngkin": 60.83,
+        "Sleepy Bezzer": 16.63
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Glen Youngkin": 61.83,
+        "Sleepy Bezzer": 17.13
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Glen Youngkin": 62.47,
+        "Sleepy Bezzer": 20.2
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Glen Youngkin": 60.72,
+        "Sleepy Bezzer": 17.8
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Glen Youngkin": 63.21,
+        "Sleepy Bezzer": 18.06
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Glen Youngkin": 62.46,
+        "Sleepy Bezzer": 20.31
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Glen Youngkin": 63.85,
+        "Sleepy Bezzer": 18.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Glen Youngkin": 63.15,
+        "Sleepy Bezzer": 18.72
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Glen Youngkin": 63.9,
+        "Sleepy Bezzer": 19.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Glen Youngkin": 63.9,
+        "Sleepy Bezzer": 19.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Glen Youngkin": 64.54,
+        "Sleepy Bezzer": 21.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Glen Youngkin": 63.54,
+        "Sleepy Bezzer": 18.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Glen Youngkin": 64.54,
+        "Sleepy Bezzer": 18.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Glen Youngkin": 62.04,
+        "Sleepy Bezzer": 20.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Glen Youngkin": 65.43,
+        "Sleepy Bezzer": 18.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Glen Youngkin": 63.68,
+        "Sleepy Bezzer": 20.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Glen Youngkin": 62.68,
+        "Sleepy Bezzer": 18.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Glen Youngkin": 64.18,
+        "Sleepy Bezzer": 20.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Glen Youngkin": 63.57,
+        "Sleepy Bezzer": 20.1
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Glen Youngkin": 64.07,
+        "Sleepy Bezzer": 19.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Glen Youngkin": 63.57,
+        "Sleepy Bezzer": 20.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Glen Youngkin": 66.32,
+        "Sleepy Bezzer": 20.45
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Glen Youngkin": 62.46,
+        "Sleepy Bezzer": 19.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Glen Youngkin": 63.96,
+        "Sleepy Bezzer": 19.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Glen Youngkin": 62.96,
+        "Sleepy Bezzer": 19.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Glen Youngkin": 63.46,
+        "Sleepy Bezzer": 20.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Glen Youngkin": 60.6,
+        "Sleepy Bezzer": 20.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Glen Youngkin": 62.6,
+        "Sleepy Bezzer": 20.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Glen Youngkin": 63.35,
+        "Sleepy Bezzer": 20.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Glen Youngkin": 65.35,
+        "Sleepy Bezzer": 20.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Glen Youngkin": 62.74,
+        "Sleepy Bezzer": 20.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Glen Youngkin": 62.74,
+        "Sleepy Bezzer": 20.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Glen Youngkin": 60.74,
+        "Sleepy Bezzer": 23.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Glen Youngkin": 63.24,
+        "Sleepy Bezzer": 21.47
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Glen Youngkin": 62.38,
+        "Sleepy Bezzer": 23.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Glen Youngkin": 62.63,
+        "Sleepy Bezzer": 21.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Glen Youngkin": 61.38,
+        "Sleepy Bezzer": 19.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Glen Youngkin": 62.88,
+        "Sleepy Bezzer": 23.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Glen Youngkin": 61.52,
+        "Sleepy Bezzer": 21.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Glen Youngkin": 63.52,
+        "Sleepy Bezzer": 22.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Glen Youngkin": 63.77,
+        "Sleepy Bezzer": 22.6
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Glen Youngkin": 63.02,
+        "Sleepy Bezzer": 23.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Glen Youngkin": 63.41,
+        "Sleepy Bezzer": 23.02
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Glen Youngkin": 63.16,
+        "Sleepy Bezzer": 25.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Glen Youngkin": 62.91,
+        "Sleepy Bezzer": 23.63
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Glen Youngkin": 64.41,
+        "Sleepy Bezzer": 23.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Glen Youngkin": 63.3,
+        "Sleepy Bezzer": 23.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Glen Youngkin": 62.8,
+        "Sleepy Bezzer": 22.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Glen Youngkin": 61.8,
+        "Sleepy Bezzer": 22.54
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Glen Youngkin": 62.05,
+        "Sleepy Bezzer": 23.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Glen Youngkin": 62.69,
+        "Sleepy Bezzer": 23.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Glen Youngkin": 60.19,
+        "Sleepy Bezzer": 24.69
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Glen Youngkin": 62.69,
+        "Sleepy Bezzer": 24.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Glen Youngkin": 61.94,
+        "Sleepy Bezzer": 24.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Glen Youngkin": 61.83,
+        "Sleepy Bezzer": 24.96
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Glen Youngkin": 62.58,
+        "Sleepy Bezzer": 24.81
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Glen Youngkin": 64.33,
+        "Sleepy Bezzer": 23.97
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Glen Youngkin": 62.83,
+        "Sleepy Bezzer": 25.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Glen Youngkin": 62.47,
+        "Sleepy Bezzer": 25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Glen Youngkin": 62.47,
+        "Sleepy Bezzer": 25.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Glen Youngkin": 61.97,
+        "Sleepy Bezzer": 26.11
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:49.739403+00:00"
+}

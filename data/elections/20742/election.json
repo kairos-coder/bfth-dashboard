@@ -1,0 +1,545 @@
+{
+  "election_id": "20742",
+  "state_id": "35",
+  "type": "governor",
+  "label": "Governor",
+  "overview_lean": 68.1,
+  "url": "https://battleforthehill.com/states/35/elections/20742",
+  "candidates": [
+    {
+      "name": "Willis Blackshear",
+      "politician_id": "13736",
+      "final_pct": 84.1
+    },
+    {
+      "name": "Joe Burrow",
+      "politician_id": "14565",
+      "final_pct": 15.9
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Willis Blackshear": 37.89,
+        "Joe Burrow": 26.38
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Willis Blackshear": 35.88,
+        "Joe Burrow": 26.15
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Willis Blackshear": 37.89,
+        "Joe Burrow": 26.4
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Willis Blackshear": 39.98,
+        "Joe Burrow": 27.89
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Willis Blackshear": 44.48,
+        "Joe Burrow": 27.14
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Willis Blackshear": 61.48,
+        "Joe Burrow": 25.39
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Willis Blackshear": 62.01,
+        "Joe Burrow": 26.14
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Willis Blackshear": 63.66,
+        "Joe Burrow": 25.3
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Willis Blackshear": 62.42,
+        "Joe Burrow": 24.55
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Willis Blackshear": 61.67,
+        "Joe Burrow": 26.55
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Willis Blackshear": 60.92,
+        "Joe Burrow": 26.8
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Willis Blackshear": 61.58,
+        "Joe Burrow": 24.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Willis Blackshear": 63.58,
+        "Joe Burrow": 26.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Willis Blackshear": 62.59,
+        "Joe Burrow": 25.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Willis Blackshear": 61.84,
+        "Joe Burrow": 25.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Willis Blackshear": 62.74,
+        "Joe Burrow": 26.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Willis Blackshear": 63.24,
+        "Joe Burrow": 24.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Willis Blackshear": 61.74,
+        "Joe Burrow": 26.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Willis Blackshear": 60.74,
+        "Joe Burrow": 25.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Willis Blackshear": 60.9,
+        "Joe Burrow": 26.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Willis Blackshear": 61.65,
+        "Joe Burrow": 26.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Willis Blackshear": 61.65,
+        "Joe Burrow": 26.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Willis Blackshear": 61.15,
+        "Joe Burrow": 25.28
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Willis Blackshear": 59.05,
+        "Joe Burrow": 24.94
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Willis Blackshear": 59.55,
+        "Joe Burrow": 26.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Willis Blackshear": 61.55,
+        "Joe Burrow": 25.94
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Willis Blackshear": 62.05,
+        "Joe Burrow": 26.19
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Willis Blackshear": 62.46,
+        "Joe Burrow": 27.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Willis Blackshear": 62.21,
+        "Joe Burrow": 25.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Willis Blackshear": 60.96,
+        "Joe Burrow": 25.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Willis Blackshear": 60.96,
+        "Joe Burrow": 24.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Willis Blackshear": 60.61,
+        "Joe Burrow": 25.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Willis Blackshear": 61.36,
+        "Joe Burrow": 25.27
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Willis Blackshear": 61.36,
+        "Joe Burrow": 25.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Willis Blackshear": 63.36,
+        "Joe Burrow": 23.27
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Willis Blackshear": 61.27,
+        "Joe Burrow": 26.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Willis Blackshear": 62.02,
+        "Joe Burrow": 26.68
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Willis Blackshear": 62.02,
+        "Joe Burrow": 26.43
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Willis Blackshear": 61.27,
+        "Joe Burrow": 25.68
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Willis Blackshear": 63.67,
+        "Joe Burrow": 26.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Willis Blackshear": 61.17,
+        "Joe Burrow": 25.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Willis Blackshear": 62.17,
+        "Joe Burrow": 25.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Willis Blackshear": 60.66,
+        "Joe Burrow": 26.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Willis Blackshear": 61.34,
+        "Joe Burrow": 24.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Willis Blackshear": 61.34,
+        "Joe Burrow": 25.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Willis Blackshear": 61.09,
+        "Joe Burrow": 25.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Willis Blackshear": 60.84,
+        "Joe Burrow": 25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Willis Blackshear": 60.51,
+        "Joe Burrow": 25.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Willis Blackshear": 61.26,
+        "Joe Burrow": 25.92
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Willis Blackshear": 61.01,
+        "Joe Burrow": 25.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Willis Blackshear": 61.02,
+        "Joe Burrow": 25.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Willis Blackshear": 61.42,
+        "Joe Burrow": 26.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Willis Blackshear": 60.92,
+        "Joe Burrow": 25.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Willis Blackshear": 60.96,
+        "Joe Burrow": 25.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Willis Blackshear": 60.96,
+        "Joe Burrow": 25.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Willis Blackshear": 60.87,
+        "Joe Burrow": 24.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Willis Blackshear": 60.88,
+        "Joe Burrow": 25.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Willis Blackshear": 63.39,
+        "Joe Burrow": 22.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Willis Blackshear": 60.64,
+        "Joe Burrow": 25.49
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Willis Blackshear": 60.05,
+        "Joe Burrow": 26.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Willis Blackshear": 60.3,
+        "Joe Burrow": 24.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Willis Blackshear": 60.06,
+        "Joe Burrow": 23.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Willis Blackshear": 60.09,
+        "Joe Burrow": 25.66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Willis Blackshear": 60.75,
+        "Joe Burrow": 25.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Willis Blackshear": 61.25,
+        "Joe Burrow": 24.07
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:41.700097+00:00"
+}

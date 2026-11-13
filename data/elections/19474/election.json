@@ -1,0 +1,537 @@
+{
+  "election_id": "19474",
+  "state_id": "18",
+  "type": "senate",
+  "label": "U.S. Senate, Class 2",
+  "overview_lean": 2.1,
+  "url": "https://battleforthehill.com/states/18/elections/19474",
+  "candidates": [
+    {
+      "name": "John Kennedy",
+      "politician_id": "11542",
+      "final_pct": 51.1
+    },
+    {
+      "name": "Clara Vance",
+      "politician_id": "4922",
+      "final_pct": 7.8
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Clara Vance": 31.08,
+        "John Kennedy": 32.63
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Clara Vance": 31.83,
+        "John Kennedy": 33.13
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Clara Vance": 34.08,
+        "John Kennedy": 34.66
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Clara Vance": 36.57,
+        "John Kennedy": 36.2
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Clara Vance": 37.57,
+        "John Kennedy": 40.2
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Clara Vance": 40.32,
+        "John Kennedy": 40.71
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Clara Vance": 45.32,
+        "John Kennedy": 44.96
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Clara Vance": 47.98,
+        "John Kennedy": 45.87
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Clara Vance": 47.98,
+        "John Kennedy": 46.88
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Clara Vance": 51.48,
+        "John Kennedy": 50.9
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Clara Vance": 53.48,
+        "John Kennedy": 56.17
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Clara Vance": 55.91,
+        "John Kennedy": 56.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Clara Vance": 60.66,
+        "John Kennedy": 59.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Clara Vance": 59.16,
+        "John Kennedy": 60.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Clara Vance": 58.66,
+        "John Kennedy": 60.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Clara Vance": 58.03,
+        "John Kennedy": 60.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Clara Vance": 61.15,
+        "John Kennedy": 62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Clara Vance": 58.65,
+        "John Kennedy": 60.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Clara Vance": 58.87,
+        "John Kennedy": 62.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Clara Vance": 59.1,
+        "John Kennedy": 61.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Clara Vance": 60.35,
+        "John Kennedy": 60.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Clara Vance": 58.85,
+        "John Kennedy": 59.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Clara Vance": 61.12,
+        "John Kennedy": 59.03
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Clara Vance": 59.78,
+        "John Kennedy": 61.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Clara Vance": 61.53,
+        "John Kennedy": 60.86
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Clara Vance": 60.78,
+        "John Kennedy": 61.61
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Clara Vance": 61.03,
+        "John Kennedy": 61.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Clara Vance": 61.44,
+        "John Kennedy": 60.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Clara Vance": 59.69,
+        "John Kennedy": 60.53
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Clara Vance": 61.23,
+        "John Kennedy": 61.59
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Clara Vance": 60.48,
+        "John Kennedy": 62.09
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Clara Vance": 59.38,
+        "John Kennedy": 63.25
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Clara Vance": 60.63,
+        "John Kennedy": 61.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Clara Vance": 61.63,
+        "John Kennedy": 62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Clara Vance": 61.63,
+        "John Kennedy": 63
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Clara Vance": 61.06,
+        "John Kennedy": 61.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Clara Vance": 61.81,
+        "John Kennedy": 63.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Clara Vance": 62.31,
+        "John Kennedy": 63.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Clara Vance": 62.06,
+        "John Kennedy": 61.41
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Clara Vance": 60.22,
+        "John Kennedy": 62.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Clara Vance": 62.97,
+        "John Kennedy": 63.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Clara Vance": 63.26,
+        "John Kennedy": 65.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Clara Vance": 63.01,
+        "John Kennedy": 64.84
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Clara Vance": 63.92,
+        "John Kennedy": 65.31
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Clara Vance": 62.92,
+        "John Kennedy": 64.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Clara Vance": 63.17,
+        "John Kennedy": 64.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Clara Vance": 61.17,
+        "John Kennedy": 63.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Clara Vance": 63.58,
+        "John Kennedy": 66.5
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Clara Vance": 64.58,
+        "John Kennedy": 66
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Clara Vance": 64.58,
+        "John Kennedy": 66.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Clara Vance": 63.58,
+        "John Kennedy": 64.79
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Clara Vance": 64.74,
+        "John Kennedy": 64.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Clara Vance": 64.49,
+        "John Kennedy": 65.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Clara Vance": 64.49,
+        "John Kennedy": 65.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Clara Vance": 62.74,
+        "John Kennedy": 65.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Clara Vance": 65.21,
+        "John Kennedy": 65.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Clara Vance": 64.96,
+        "John Kennedy": 68.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Clara Vance": 64.96,
+        "John Kennedy": 65.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Clara Vance": 64.96,
+        "John Kennedy": 66.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Clara Vance": 64.87,
+        "John Kennedy": 66.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Clara Vance": 65.37,
+        "John Kennedy": 66.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Clara Vance": 65.41,
+        "John Kennedy": 66.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Clara Vance": 65.91,
+        "John Kennedy": 66.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Clara Vance": 65.32,
+        "John Kennedy": 66.55
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:26.984272+00:00"
+}

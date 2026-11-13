@@ -1,0 +1,545 @@
+{
+  "election_id": "23167",
+  "state_id": "46",
+  "type": "house",
+  "label": "U.S. House (11 seats)",
+  "overview_lean": 100.0,
+  "url": "https://battleforthehill.com/states/46/elections/23167",
+  "candidates": [
+    {
+      "name": "Jacob Elordi",
+      "politician_id": "3496",
+      "final_pct": null
+    },
+    {
+      "name": "Miku",
+      "politician_id": "13191",
+      "final_pct": null
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Jacob Elordi": 100,
+        "Miku": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Jacob Elordi": 100,
+        "Miku": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Jacob Elordi": 100,
+        "Miku": null
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Jacob Elordi": 64.79,
+        "Miku": 6.24
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Jacob Elordi": 68.29,
+        "Miku": 7.99
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Jacob Elordi": 67.29,
+        "Miku": 8.39
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Jacob Elordi": 66.42,
+        "Miku": 8.32
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Jacob Elordi": 66.43,
+        "Miku": 9.32
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Jacob Elordi": 65.93,
+        "Miku": 10.07
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Jacob Elordi": 66.43,
+        "Miku": 9.32
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Jacob Elordi": 68.07,
+        "Miku": 9.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Jacob Elordi": 66.82,
+        "Miku": 11.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Jacob Elordi": 66.82,
+        "Miku": 9.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Jacob Elordi": 66.32,
+        "Miku": 10.24
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Jacob Elordi": 66.46,
+        "Miku": 10.15
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Jacob Elordi": 67.96,
+        "Miku": 9.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Jacob Elordi": 66.96,
+        "Miku": 10.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Jacob Elordi": 65.71,
+        "Miku": 11.9
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Jacob Elordi": 67.6,
+        "Miku": 10.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Jacob Elordi": 66.1,
+        "Miku": 11.06
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Jacob Elordi": 67.1,
+        "Miku": 10.7
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Jacob Elordi": 65.85,
+        "Miku": 8.2
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Jacob Elordi": 65.99,
+        "Miku": 12.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Jacob Elordi": 65.49,
+        "Miku": 11.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Jacob Elordi": 64.99,
+        "Miku": 13.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Jacob Elordi": 66.74,
+        "Miku": 10.11
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Jacob Elordi": 63.15,
+        "Miku": 11.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Jacob Elordi": 64.41,
+        "Miku": 10.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Jacob Elordi": 66.41,
+        "Miku": 12.87
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Jacob Elordi": 66.66,
+        "Miku": 13.02
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Jacob Elordi": 66.29,
+        "Miku": 10.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Jacob Elordi": 67.55,
+        "Miku": 12.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Jacob Elordi": 66.3,
+        "Miku": 13.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Jacob Elordi": 64.8,
+        "Miku": 11.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Jacob Elordi": 65.44,
+        "Miku": 12.73
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Jacob Elordi": 63.69,
+        "Miku": 11.58
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Jacob Elordi": 65.69,
+        "Miku": 12.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Jacob Elordi": 65.69,
+        "Miku": 14.08
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Jacob Elordi": 64.83,
+        "Miku": 11.74
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Jacob Elordi": 65.58,
+        "Miku": 11.99
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Jacob Elordi": 63.08,
+        "Miku": 10.34
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Jacob Elordi": 65.58,
+        "Miku": 12.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Jacob Elordi": 65.22,
+        "Miku": 12.64
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Jacob Elordi": 65.72,
+        "Miku": 14.91
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Jacob Elordi": 65.47,
+        "Miku": 13.16
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Jacob Elordi": 66.97,
+        "Miku": 11.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Jacob Elordi": 65.11,
+        "Miku": 13.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Jacob Elordi": 66.36,
+        "Miku": 11.57
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Jacob Elordi": 65.36,
+        "Miku": 14.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Jacob Elordi": 65.36,
+        "Miku": 13.83
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Jacob Elordi": 66.75,
+        "Miku": 12.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Jacob Elordi": 65.5,
+        "Miku": 12.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Jacob Elordi": 65.25,
+        "Miku": 14.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Jacob Elordi": 64.75,
+        "Miku": 14.26
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Jacob Elordi": 65.14,
+        "Miku": 13.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Jacob Elordi": 65.14,
+        "Miku": 13.78
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Jacob Elordi": 66.14,
+        "Miku": 15.29
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Jacob Elordi": 65.39,
+        "Miku": 13.39
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Jacob Elordi": 65.78,
+        "Miku": 15.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Jacob Elordi": 64.54,
+        "Miku": 16.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Jacob Elordi": 65.04,
+        "Miku": 14.42
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Jacob Elordi": 64.79,
+        "Miku": 14.67
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Jacob Elordi": 64.92,
+        "Miku": 15.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Jacob Elordi": 63.18,
+        "Miku": 16.36
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 65,
+      "results": {
+        "Jacob Elordi": 64.93,
+        "Miku": 15.36
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 65,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:49.534439+00:00"
+}

@@ -1,0 +1,537 @@
+{
+  "election_id": "23138",
+  "state_id": "3",
+  "type": "house",
+  "label": "U.S. House (10 seats)",
+  "overview_lean": 47.1,
+  "url": "https://battleforthehill.com/states/3/elections/23138",
+  "candidates": [
+    {
+      "name": "Marjorie Taylor Greene",
+      "politician_id": "13568",
+      "final_pct": 93.3
+    },
+    {
+      "name": "Erton C. K\u00f6hler",
+      "politician_id": "14831",
+      "final_pct": 26.4
+    }
+  ],
+  "polls": [
+    {
+      "index": 1,
+      "results": {
+        "Marjorie Taylor Greene": 54.5,
+        "Erton C. K\u00f6hler": 42.36
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 2,
+      "results": {
+        "Marjorie Taylor Greene": 54.1,
+        "Erton C. K\u00f6hler": 40.61
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 3,
+      "results": {
+        "Marjorie Taylor Greene": 55.09,
+        "Erton C. K\u00f6hler": 42.69
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 4,
+      "results": {
+        "Marjorie Taylor Greene": 55.44,
+        "Erton C. K\u00f6hler": 42.65
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 5,
+      "results": {
+        "Marjorie Taylor Greene": 56.44,
+        "Erton C. K\u00f6hler": 41.91
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 6,
+      "results": {
+        "Marjorie Taylor Greene": 55.04,
+        "Erton C. K\u00f6hler": 43.16
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 7,
+      "results": {
+        "Marjorie Taylor Greene": 56.02,
+        "Erton C. K\u00f6hler": 42.57
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 8,
+      "results": {
+        "Marjorie Taylor Greene": 56.37,
+        "Erton C. K\u00f6hler": 42.57
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 9,
+      "results": {
+        "Marjorie Taylor Greene": 55.37,
+        "Erton C. K\u00f6hler": 42.34
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 10,
+      "results": {
+        "Marjorie Taylor Greene": 57.72,
+        "Erton C. K\u00f6hler": 43.12
+      },
+      "date": "2026-11-12"
+    },
+    {
+      "index": 11,
+      "results": {
+        "Marjorie Taylor Greene": 56.96,
+        "Erton C. K\u00f6hler": 42.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 12,
+      "results": {
+        "Marjorie Taylor Greene": 57.31,
+        "Erton C. K\u00f6hler": 42.56
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 13,
+      "results": {
+        "Marjorie Taylor Greene": 55.31,
+        "Erton C. K\u00f6hler": 40.82
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 14,
+      "results": {
+        "Marjorie Taylor Greene": 57.41,
+        "Erton C. K\u00f6hler": 42.32
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 15,
+      "results": {
+        "Marjorie Taylor Greene": 57.9,
+        "Erton C. K\u00f6hler": 42.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 16,
+      "results": {
+        "Marjorie Taylor Greene": 59,
+        "Erton C. K\u00f6hler": 42.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 17,
+      "results": {
+        "Marjorie Taylor Greene": 58.6,
+        "Erton C. K\u00f6hler": 42.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 18,
+      "results": {
+        "Marjorie Taylor Greene": 58.6,
+        "Erton C. K\u00f6hler": 42.48
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 19,
+      "results": {
+        "Marjorie Taylor Greene": 59.33,
+        "Erton C. K\u00f6hler": 41.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 20,
+      "results": {
+        "Marjorie Taylor Greene": 59.68,
+        "Erton C. K\u00f6hler": 40.65
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 21,
+      "results": {
+        "Marjorie Taylor Greene": 57.03,
+        "Erton C. K\u00f6hler": 41.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 22,
+      "results": {
+        "Marjorie Taylor Greene": 60.53,
+        "Erton C. K\u00f6hler": 44.14
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 23,
+      "results": {
+        "Marjorie Taylor Greene": 60.52,
+        "Erton C. K\u00f6hler": 44.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 24,
+      "results": {
+        "Marjorie Taylor Greene": 60.62,
+        "Erton C. K\u00f6hler": 45.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 25,
+      "results": {
+        "Marjorie Taylor Greene": 59.37,
+        "Erton C. K\u00f6hler": 42.3
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 26,
+      "results": {
+        "Marjorie Taylor Greene": 61.62,
+        "Erton C. K\u00f6hler": 42.05
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 27,
+      "results": {
+        "Marjorie Taylor Greene": 67.45,
+        "Erton C. K\u00f6hler": 42.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 28,
+      "results": {
+        "Marjorie Taylor Greene": 67.8,
+        "Erton C. K\u00f6hler": 42.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 29,
+      "results": {
+        "Marjorie Taylor Greene": 69.3,
+        "Erton C. K\u00f6hler": 40.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 30,
+      "results": {
+        "Marjorie Taylor Greene": 67.3,
+        "Erton C. K\u00f6hler": 42.21
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 31,
+      "results": {
+        "Marjorie Taylor Greene": 68.39,
+        "Erton C. K\u00f6hler": 42.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 32,
+      "results": {
+        "Marjorie Taylor Greene": 69.49,
+        "Erton C. K\u00f6hler": 43.13
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 33,
+      "results": {
+        "Marjorie Taylor Greene": 68.49,
+        "Erton C. K\u00f6hler": 42.88
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 34,
+      "results": {
+        "Marjorie Taylor Greene": 68.74,
+        "Erton C. K\u00f6hler": 42.63
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 35,
+      "results": {
+        "Marjorie Taylor Greene": 69.33,
+        "Erton C. K\u00f6hler": 42.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 36,
+      "results": {
+        "Marjorie Taylor Greene": 69.68,
+        "Erton C. K\u00f6hler": 42.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 37,
+      "results": {
+        "Marjorie Taylor Greene": 69.68,
+        "Erton C. K\u00f6hler": 42.55
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 38,
+      "results": {
+        "Marjorie Taylor Greene": 69.68,
+        "Erton C. K\u00f6hler": 42.04
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 39,
+      "results": {
+        "Marjorie Taylor Greene": 70.26,
+        "Erton C. K\u00f6hler": 41.95
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 40,
+      "results": {
+        "Marjorie Taylor Greene": 72.36,
+        "Erton C. K\u00f6hler": 43.71
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 41,
+      "results": {
+        "Marjorie Taylor Greene": 70.11,
+        "Erton C. K\u00f6hler": 42.23
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 42,
+      "results": {
+        "Marjorie Taylor Greene": 70.61,
+        "Erton C. K\u00f6hler": 41.98
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 43,
+      "results": {
+        "Marjorie Taylor Greene": 73.2,
+        "Erton C. K\u00f6hler": 41.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 44,
+      "results": {
+        "Marjorie Taylor Greene": 71.3,
+        "Erton C. K\u00f6hler": 42.89
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 45,
+      "results": {
+        "Marjorie Taylor Greene": 68.8,
+        "Erton C. K\u00f6hler": 42.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 46,
+      "results": {
+        "Marjorie Taylor Greene": 71.05,
+        "Erton C. K\u00f6hler": 42.4
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 47,
+      "results": {
+        "Marjorie Taylor Greene": 69.64,
+        "Erton C. K\u00f6hler": 41.33
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 48,
+      "results": {
+        "Marjorie Taylor Greene": 73.49,
+        "Erton C. K\u00f6hler": 42.35
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 49,
+      "results": {
+        "Marjorie Taylor Greene": 72.24,
+        "Erton C. K\u00f6hler": 42.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 50,
+      "results": {
+        "Marjorie Taylor Greene": 72.49,
+        "Erton C. K\u00f6hler": 41.85
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 51,
+      "results": {
+        "Marjorie Taylor Greene": 73.82,
+        "Erton C. K\u00f6hler": 41.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 52,
+      "results": {
+        "Marjorie Taylor Greene": 71.92,
+        "Erton C. K\u00f6hler": 42.51
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 53,
+      "results": {
+        "Marjorie Taylor Greene": 73.92,
+        "Erton C. K\u00f6hler": 43.77
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 54,
+      "results": {
+        "Marjorie Taylor Greene": 72.67,
+        "Erton C. K\u00f6hler": 41.52
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 55,
+      "results": {
+        "Marjorie Taylor Greene": 72.51,
+        "Erton C. K\u00f6hler": 42.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 56,
+      "results": {
+        "Marjorie Taylor Greene": 75.36,
+        "Erton C. K\u00f6hler": 41.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 57,
+      "results": {
+        "Marjorie Taylor Greene": 71.86,
+        "Erton C. K\u00f6hler": 39.18
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 58,
+      "results": {
+        "Marjorie Taylor Greene": 74.36,
+        "Erton C. K\u00f6hler": 41.68
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 59,
+      "results": {
+        "Marjorie Taylor Greene": 74.95,
+        "Erton C. K\u00f6hler": 41.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 60,
+      "results": {
+        "Marjorie Taylor Greene": 74.55,
+        "Erton C. K\u00f6hler": 44.37
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 61,
+      "results": {
+        "Marjorie Taylor Greene": 74.3,
+        "Erton C. K\u00f6hler": 42.62
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 62,
+      "results": {
+        "Marjorie Taylor Greene": 77,
+        "Erton C. K\u00f6hler": 41.12
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 63,
+      "results": {
+        "Marjorie Taylor Greene": 75.38,
+        "Erton C. K\u00f6hler": 42.07
+      },
+      "date": "2026-11-13"
+    },
+    {
+      "index": 64,
+      "results": {
+        "Marjorie Taylor Greene": 75.23,
+        "Erton C. K\u00f6hler": 42.32
+      },
+      "date": "2026-11-13"
+    }
+  ],
+  "polls_count": 64,
+  "polls_source": "pollingHistory",
+  "parsed_at": "2026-11-13T19:04:46.564542+00:00"
+}
