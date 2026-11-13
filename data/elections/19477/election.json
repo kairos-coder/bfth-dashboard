@@ -3,7 +3,7 @@
   "state_id": "22",
   "type": "senate",
   "label": "U.S. Senate, Class 2",
-  "overview_lean": 5.6,
+  "overview_lean": 3.4,
   "url": "https://battleforthehill.com/states/22/elections/19477",
   "candidates": [
     {
@@ -533,5 +533,5 @@
   ],
   "polls_count": 64,
   "polls_source": "pollingHistory",
-  "parsed_at": "2026-11-13T19:04:27.969811+00:00"
+  "parsed_at": "2026-11-13T21:12:12.914525+00:00"
 }

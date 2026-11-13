@@ -3,7 +3,7 @@
   "state_id": "17",
   "type": "senate",
   "label": "U.S. Senate, Class 2",
-  "overview_lean": 21.4,
+  "overview_lean": 16.6,
   "url": "https://battleforthehill.com/states/17/elections/19473",
   "candidates": [
     {
@@ -533,5 +533,5 @@
   ],
   "polls_count": 64,
   "polls_source": "pollingHistory",
-  "parsed_at": "2026-11-13T19:04:26.644177+00:00"
+  "parsed_at": "2026-11-13T21:12:11.557046+00:00"
 }

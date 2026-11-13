@@ -3,7 +3,7 @@
   "state_id": "5",
   "type": "house",
   "label": "U.S. House (62 seats)",
-  "overview_lean": 22.4,
+  "overview_lean": 22.5,
   "url": "https://battleforthehill.com/states/5/elections/23139",
   "candidates": [
     {
@@ -671,5 +671,5 @@
   ],
   "polls_count": 64,
   "polls_source": "pollingHistory",
-  "parsed_at": "2026-11-13T19:04:46.701535+00:00"
+  "parsed_at": "2026-11-13T21:12:32.255711+00:00"
 }

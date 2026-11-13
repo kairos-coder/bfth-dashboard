@@ -246,3 +246,127 @@
 {"ts": "2026-11-13T19:04:49.613040+00:00", "election_id": "23168", "type": "house", "state_id": "47", "label": "U.S. House (6 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
 {"ts": "2026-11-13T19:04:49.657771+00:00", "election_id": "23169", "type": "house", "state_id": "48", "label": "U.S. House (2 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
 {"ts": "2026-11-13T19:04:49.739403+00:00", "election_id": "23170", "type": "house", "state_id": "49", "label": "U.S. House (6 seats)", "polls_count": 65, "lean": 88.7, "leader_pct": 94.2}
+{"ts": "2026-11-13T21:12:07.970912+00:00", "election_id": "19463", "type": "senate", "state_id": "1", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:08.275632+00:00", "election_id": "19464", "type": "senate", "state_id": "2", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:08.644193+00:00", "election_id": "19465", "type": "senate", "state_id": "4", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:08.953656+00:00", "election_id": "19466", "type": "senate", "state_id": "6", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:09.273212+00:00", "election_id": "19467", "type": "senate", "state_id": "8", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 26.0, "leader_pct": 63.2}
+{"ts": "2026-11-13T21:12:09.774859+00:00", "election_id": "19468", "type": "senate", "state_id": "10", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 41.6, "leader_pct": 75.1}
+{"ts": "2026-11-13T21:12:10.089780+00:00", "election_id": "19469", "type": "senate", "state_id": "12", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:10.458303+00:00", "election_id": "19470", "type": "senate", "state_id": "13", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 23.4, "leader_pct": null}
+{"ts": "2026-11-13T21:12:10.782399+00:00", "election_id": "19471", "type": "senate", "state_id": "15", "label": "U.S. Senate, Class 2", "polls_count": 55, "lean": 100.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:11.184860+00:00", "election_id": "19472", "type": "senate", "state_id": "16", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:11.557046+00:00", "election_id": "19473", "type": "senate", "state_id": "17", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 16.6, "leader_pct": 60.7}
+{"ts": "2026-11-13T21:12:11.897329+00:00", "election_id": "19474", "type": "senate", "state_id": "18", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 2.5, "leader_pct": 51.1}
+{"ts": "2026-11-13T21:12:12.284009+00:00", "election_id": "19475", "type": "senate", "state_id": "19", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:12.569444+00:00", "election_id": "19476", "type": "senate", "state_id": "21", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:12.914525+00:00", "election_id": "19477", "type": "senate", "state_id": "22", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 3.4, "leader_pct": 52.8}
+{"ts": "2026-11-13T21:12:13.267436+00:00", "election_id": "19478", "type": "senate", "state_id": "23", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 1.6, "leader_pct": 50.9}
+{"ts": "2026-11-13T21:12:13.657772+00:00", "election_id": "19479", "type": "senate", "state_id": "24", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:13.935955+00:00", "election_id": "19480", "type": "senate", "state_id": "26", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:14.267278+00:00", "election_id": "19481", "type": "senate", "state_id": "27", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:14.548516+00:00", "election_id": "19482", "type": "senate", "state_id": "29", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:14.911189+00:00", "election_id": "19483", "type": "senate", "state_id": "30", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:15.238534+00:00", "election_id": "19484", "type": "senate", "state_id": "31", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 23.6, "leader_pct": 62.4}
+{"ts": "2026-11-13T21:12:15.542918+00:00", "election_id": "19485", "type": "senate", "state_id": "33", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:15.956193+00:00", "election_id": "19486", "type": "senate", "state_id": "36", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 9.9, "leader_pct": 57.7}
+{"ts": "2026-11-13T21:12:16.256992+00:00", "election_id": "19487", "type": "senate", "state_id": "37", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:16.554914+00:00", "election_id": "19488", "type": "senate", "state_id": "39", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:16.887885+00:00", "election_id": "19489", "type": "senate", "state_id": "40", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 16.2, "leader_pct": 60.3}
+{"ts": "2026-11-13T21:12:17.299359+00:00", "election_id": "19490", "type": "senate", "state_id": "41", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:17.616233+00:00", "election_id": "19491", "type": "senate", "state_id": "42", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:18.026646+00:00", "election_id": "19492", "type": "senate", "state_id": "43", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 100.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:18.452829+00:00", "election_id": "19493", "type": "senate", "state_id": "46", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:18.792544+00:00", "election_id": "19494", "type": "senate", "state_id": "48", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 10.7, "leader_pct": 67.2}
+{"ts": "2026-11-13T21:12:19.085893+00:00", "election_id": "19495", "type": "senate", "state_id": "50", "label": "U.S. Senate, Class 2", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:19.358685+00:00", "election_id": "19496", "type": "senate", "state_id": "51", "label": "U.S. Senate, Class 2", "polls_count": 56, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:19.748602+00:00", "election_id": "20718", "type": "governor", "state_id": "1", "label": "Governor", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:20.046096+00:00", "election_id": "20719", "type": "governor", "state_id": "2", "label": "Governor", "polls_count": 64, "lean": 51.6, "leader_pct": 73.2}
+{"ts": "2026-11-13T21:12:20.305715+00:00", "election_id": "20720", "type": "governor", "state_id": "3", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:20.597629+00:00", "election_id": "20721", "type": "governor", "state_id": "4", "label": "Governor", "polls_count": 64, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:20.983331+00:00", "election_id": "20722", "type": "governor", "state_id": "5", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:21.255172+00:00", "election_id": "20723", "type": "governor", "state_id": "6", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:21.526180+00:00", "election_id": "20724", "type": "governor", "state_id": "7", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:21.832885+00:00", "election_id": "20725", "type": "governor", "state_id": "9", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:22.244459+00:00", "election_id": "20726", "type": "governor", "state_id": "10", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:22.510419+00:00", "election_id": "20727", "type": "governor", "state_id": "11", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:22.787101+00:00", "election_id": "20728", "type": "governor", "state_id": "12", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:23.089240+00:00", "election_id": "20729", "type": "governor", "state_id": "13", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:23.484736+00:00", "election_id": "20730", "type": "governor", "state_id": "15", "label": "Governor", "polls_count": 22, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:23.779725+00:00", "election_id": "20731", "type": "governor", "state_id": "16", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:24.037776+00:00", "election_id": "20732", "type": "governor", "state_id": "19", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:24.304492+00:00", "election_id": "20733", "type": "governor", "state_id": "20", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:24.661640+00:00", "election_id": "20734", "type": "governor", "state_id": "21", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:24.951212+00:00", "election_id": "20735", "type": "governor", "state_id": "22", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:25.242557+00:00", "election_id": "20736", "type": "governor", "state_id": "23", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:25.524388+00:00", "election_id": "20737", "type": "governor", "state_id": "27", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:25.887577+00:00", "election_id": "20738", "type": "governor", "state_id": "28", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:26.155641+00:00", "election_id": "20739", "type": "governor", "state_id": "30", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:26.426102+00:00", "election_id": "20740", "type": "governor", "state_id": "31", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:26.727352+00:00", "election_id": "20741", "type": "governor", "state_id": "32", "label": "Governor", "polls_count": 65, "lean": 12.5, "leader_pct": 59.2}
+{"ts": "2026-11-13T21:12:27.144097+00:00", "election_id": "20742", "type": "governor", "state_id": "35", "label": "Governor", "polls_count": 65, "lean": 68.6, "leader_pct": 84.1}
+{"ts": "2026-11-13T21:12:27.428541+00:00", "election_id": "20743", "type": "governor", "state_id": "36", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:27.700155+00:00", "election_id": "20744", "type": "governor", "state_id": "37", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:27.987168+00:00", "election_id": "20745", "type": "governor", "state_id": "38", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:28.337419+00:00", "election_id": "20746", "type": "governor", "state_id": "39", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:28.616219+00:00", "election_id": "20747", "type": "governor", "state_id": "40", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:28.889248+00:00", "election_id": "20748", "type": "governor", "state_id": "41", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:29.237444+00:00", "election_id": "20749", "type": "governor", "state_id": "42", "label": "Governor", "polls_count": 65, "lean": 9.0, "leader_pct": 55.9}
+{"ts": "2026-11-13T21:12:29.720367+00:00", "election_id": "20750", "type": "governor", "state_id": "43", "label": "Governor", "polls_count": 65, "lean": 2.6, "leader_pct": 50.9}
+{"ts": "2026-11-13T21:12:30.027244+00:00", "election_id": "20751", "type": "governor", "state_id": "46", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:30.299794+00:00", "election_id": "20752", "type": "governor", "state_id": "49", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:30.645648+00:00", "election_id": "20753", "type": "governor", "state_id": "50", "label": "Governor", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:30.912545+00:00", "election_id": "20754", "type": "governor", "state_id": "51", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:30.994274+00:00", "election_id": "22381", "type": "house", "state_id": "1", "label": "U.S. House (4 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.041161+00:00", "election_id": "22382", "type": "house", "state_id": "2", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.084543+00:00", "election_id": "22386", "type": "house", "state_id": "4", "label": "U.S. House (3 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.129654+00:00", "election_id": "22390", "type": "house", "state_id": "6", "label": "U.S. House (8 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.172157+00:00", "election_id": "22391", "type": "house", "state_id": "7", "label": "U.S. House (7 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.215939+00:00", "election_id": "22404", "type": "house", "state_id": "12", "label": "U.S. House (2 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.262669+00:00", "election_id": "22411", "type": "house", "state_id": "15", "label": "U.S. House (4 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.346267+00:00", "election_id": "22424", "type": "house", "state_id": "20", "label": "U.S. House (7 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.389721+00:00", "election_id": "22443", "type": "house", "state_id": "27", "label": "U.S. House (3 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.432424+00:00", "election_id": "22444", "type": "house", "state_id": "28", "label": "U.S. House (5 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.479657+00:00", "election_id": "22448", "type": "house", "state_id": "29", "label": "U.S. House (2 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.557526+00:00", "election_id": "22452", "type": "house", "state_id": "31", "label": "U.S. House (3 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.604156+00:00", "election_id": "22459", "type": "house", "state_id": "34", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.685036+00:00", "election_id": "22463", "type": "house", "state_id": "36", "label": "U.S. House (6 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.730963+00:00", "election_id": "22470", "type": "house", "state_id": "39", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.773587+00:00", "election_id": "22474", "type": "house", "state_id": "41", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.894650+00:00", "election_id": "22481", "type": "house", "state_id": "44", "label": "U.S. House (4 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.936972+00:00", "election_id": "22485", "type": "house", "state_id": "45", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:31.979922+00:00", "election_id": "22498", "type": "house", "state_id": "50", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.027259+00:00", "election_id": "22499", "type": "house", "state_id": "51", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.113409+00:00", "election_id": "23138", "type": "house", "state_id": "3", "label": "U.S. House (10 seats)", "polls_count": 64, "lean": 46.9, "leader_pct": 93.3}
+{"ts": "2026-11-13T21:12:32.255711+00:00", "election_id": "23139", "type": "house", "state_id": "5", "label": "U.S. House (62 seats)", "polls_count": 64, "lean": 22.5, "leader_pct": 50.5}
+{"ts": "2026-11-13T21:12:32.298296+00:00", "election_id": "23140", "type": "house", "state_id": "8", "label": "U.S. House (1 seat)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.404732+00:00", "election_id": "23141", "type": "house", "state_id": "9", "label": "U.S. House (29 seats)", "polls_count": 64, "lean": 20.1, "leader_pct": 60.3}
+{"ts": "2026-11-13T21:12:32.495343+00:00", "election_id": "23142", "type": "house", "state_id": "10", "label": "U.S. House (13 seats)", "polls_count": 65, "lean": 61.5, "leader_pct": 81.6}
+{"ts": "2026-11-13T21:12:32.571609+00:00", "election_id": "23143", "type": "house", "state_id": "11", "label": "U.S. House (2 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.663648+00:00", "election_id": "23144", "type": "house", "state_id": "13", "label": "U.S. House (14 seats)", "polls_count": 65, "lean": 13.0, "leader_pct": 56.2}
+{"ts": "2026-11-13T21:12:32.745850+00:00", "election_id": "23145", "type": "house", "state_id": "14", "label": "U.S. House (7 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.823967+00:00", "election_id": "23146", "type": "house", "state_id": "16", "label": "U.S. House (4 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.907140+00:00", "election_id": "23147", "type": "house", "state_id": "17", "label": "U.S. House (6 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:32.991787+00:00", "election_id": "23148", "type": "house", "state_id": "18", "label": "U.S. House (7 seats)", "polls_count": 65, "lean": 12.3, "leader_pct": 85.7}
+{"ts": "2026-11-13T21:12:33.073160+00:00", "election_id": "23149", "type": "house", "state_id": "19", "label": "U.S. House (2 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.161006+00:00", "election_id": "23150", "type": "house", "state_id": "21", "label": "U.S. House (12 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.244846+00:00", "election_id": "23151", "type": "house", "state_id": "22", "label": "U.S. House (9 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.362356+00:00", "election_id": "23152", "type": "house", "state_id": "23", "label": "U.S. House (9 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.443277+00:00", "election_id": "23153", "type": "house", "state_id": "24", "label": "U.S. House (5 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.532761+00:00", "election_id": "23154", "type": "house", "state_id": "25", "label": "U.S. House (7 seats)", "polls_count": 65, "lean": 7.7, "leader_pct": 53.7}
+{"ts": "2026-11-13T21:12:33.611191+00:00", "election_id": "23155", "type": "house", "state_id": "26", "label": "U.S. House (1 seat)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.875926+00:00", "election_id": "23156", "type": "governor", "state_id": "29", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:33.963012+00:00", "election_id": "23157", "type": "house", "state_id": "30", "label": "U.S. House (11 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:34.071041+00:00", "election_id": "23158", "type": "house", "state_id": "32", "label": "U.S. House (30 seats)", "polls_count": 65, "lean": 2.6, "leader_pct": 51.6}
+{"ts": "2026-11-13T21:12:34.163032+00:00", "election_id": "23159", "type": "house", "state_id": "33", "label": "U.S. House (19 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:34.257789+00:00", "election_id": "23160", "type": "house", "state_id": "35", "label": "U.S. House (14 seats)", "polls_count": 65, "lean": 48.5, "leader_pct": 71.4}
+{"ts": "2026-11-13T21:12:34.303136+00:00", "election_id": "23161", "type": "house", "state_id": "37", "label": "U.S. House (5 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:34.390022+00:00", "election_id": "23162", "type": "house", "state_id": "38", "label": "U.S. House (13 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:34.475608+00:00", "election_id": "23163", "type": "house", "state_id": "40", "label": "U.S. House (7 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:34.567103+00:00", "election_id": "23164", "type": "house", "state_id": "42", "label": "U.S. House (14 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:34.677267+00:00", "election_id": "23165", "type": "house", "state_id": "43", "label": "U.S. House (33 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:35.042945+00:00", "election_id": "23166", "type": "governor", "state_id": "45", "label": "Governor", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:35.134674+00:00", "election_id": "23167", "type": "house", "state_id": "46", "label": "U.S. House (11 seats)", "polls_count": 65, "lean": 100.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:35.216426+00:00", "election_id": "23168", "type": "house", "state_id": "47", "label": "U.S. House (6 seats)", "polls_count": 65, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:35.266649+00:00", "election_id": "23169", "type": "house", "state_id": "48", "label": "U.S. House (2 seats)", "polls_count": 0, "lean": 0.0, "leader_pct": null}
+{"ts": "2026-11-13T21:12:35.351740+00:00", "election_id": "23170", "type": "house", "state_id": "49", "label": "U.S. House (6 seats)", "polls_count": 65, "lean": 86.2, "leader_pct": 94.2}

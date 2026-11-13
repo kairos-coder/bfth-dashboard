@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T19:05:18.444737+00:00",
+  "generated_at": "2026-11-13T21:12:35.461392+00:00",
   "total": 124,
   "with_polls": 93,
   "by_type": {
@@ -40,7 +40,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:35.659295+00:00"
+      "parsed_at": "2026-11-13T21:12:20.983331+00:00"
     },
     {
       "election_id": "20724",
@@ -68,7 +68,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:36.178212+00:00"
+      "parsed_at": "2026-11-13T21:12:21.526180+00:00"
     },
     {
       "election_id": "20725",
@@ -96,7 +96,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:36.457534+00:00"
+      "parsed_at": "2026-11-13T21:12:21.832885+00:00"
     },
     {
       "election_id": "20727",
@@ -124,7 +124,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:37.090803+00:00"
+      "parsed_at": "2026-11-13T21:12:22.510419+00:00"
     },
     {
       "election_id": "20728",
@@ -152,7 +152,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:37.359979+00:00"
+      "parsed_at": "2026-11-13T21:12:22.787101+00:00"
     },
     {
       "election_id": "20729",
@@ -180,7 +180,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:37.650760+00:00"
+      "parsed_at": "2026-11-13T21:12:23.089240+00:00"
     },
     {
       "election_id": "20731",
@@ -208,7 +208,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:38.325447+00:00"
+      "parsed_at": "2026-11-13T21:12:23.779725+00:00"
     },
     {
       "election_id": "20735",
@@ -236,7 +236,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:39.472073+00:00"
+      "parsed_at": "2026-11-13T21:12:24.951212+00:00"
     },
     {
       "election_id": "20736",
@@ -264,7 +264,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:39.752595+00:00"
+      "parsed_at": "2026-11-13T21:12:25.242557+00:00"
     },
     {
       "election_id": "20738",
@@ -292,7 +292,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:40.394981+00:00"
+      "parsed_at": "2026-11-13T21:12:25.887577+00:00"
     },
     {
       "election_id": "20739",
@@ -320,7 +320,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:40.696436+00:00"
+      "parsed_at": "2026-11-13T21:12:26.155641+00:00"
     },
     {
       "election_id": "20740",
@@ -348,7 +348,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:40.993388+00:00"
+      "parsed_at": "2026-11-13T21:12:26.426102+00:00"
     },
     {
       "election_id": "20741",
@@ -356,7 +356,7 @@
       "type": "governor",
       "label": "Governor",
       "url": "https://battleforthehill.com/states/32/elections/20741",
-      "overview_lean": 18.4,
+      "overview_lean": 12.5,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -389,7 +389,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:41.294857+00:00"
+      "parsed_at": "2026-11-13T21:12:26.727352+00:00"
     },
     {
       "election_id": "20742",
@@ -397,7 +397,7 @@
       "type": "governor",
       "label": "Governor",
       "url": "https://battleforthehill.com/states/35/elections/20742",
-      "overview_lean": 68.1,
+      "overview_lean": 68.6,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -430,7 +430,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:41.700097+00:00"
+      "parsed_at": "2026-11-13T21:12:27.144097+00:00"
     },
     {
       "election_id": "20743",
@@ -458,7 +458,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:41.986502+00:00"
+      "parsed_at": "2026-11-13T21:12:27.428541+00:00"
     },
     {
       "election_id": "20744",
@@ -486,7 +486,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:42.254003+00:00"
+      "parsed_at": "2026-11-13T21:12:27.700155+00:00"
     },
     {
       "election_id": "20745",
@@ -514,7 +514,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:42.530492+00:00"
+      "parsed_at": "2026-11-13T21:12:27.987168+00:00"
     },
     {
       "election_id": "20747",
@@ -542,7 +542,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:43.150415+00:00"
+      "parsed_at": "2026-11-13T21:12:28.616219+00:00"
     },
     {
       "election_id": "20749",
@@ -550,7 +550,7 @@
       "type": "governor",
       "label": "Governor",
       "url": "https://battleforthehill.com/states/42/elections/20749",
-      "overview_lean": 12.2,
+      "overview_lean": 9.0,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -583,7 +583,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:43.751704+00:00"
+      "parsed_at": "2026-11-13T21:12:29.237444+00:00"
     },
     {
       "election_id": "20750",
@@ -591,7 +591,7 @@
       "type": "governor",
       "label": "Governor",
       "url": "https://battleforthehill.com/states/43/elections/20750",
-      "overview_lean": 2.0,
+      "overview_lean": 2.6,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -624,7 +624,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:44.227874+00:00"
+      "parsed_at": "2026-11-13T21:12:29.720367+00:00"
     },
     {
       "election_id": "20751",
@@ -652,7 +652,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:44.524128+00:00"
+      "parsed_at": "2026-11-13T21:12:30.027244+00:00"
     },
     {
       "election_id": "20754",
@@ -680,7 +680,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.384263+00:00"
+      "parsed_at": "2026-11-13T21:12:30.912545+00:00"
     },
     {
       "election_id": "22381",
@@ -708,7 +708,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.462325+00:00"
+      "parsed_at": "2026-11-13T21:12:30.994274+00:00"
     },
     {
       "election_id": "22424",
@@ -736,7 +736,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.821629+00:00"
+      "parsed_at": "2026-11-13T21:12:31.346267+00:00"
     },
     {
       "election_id": "22452",
@@ -764,7 +764,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.031348+00:00"
+      "parsed_at": "2026-11-13T21:12:31.557526+00:00"
     },
     {
       "election_id": "22463",
@@ -792,7 +792,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.153062+00:00"
+      "parsed_at": "2026-11-13T21:12:31.685036+00:00"
     },
     {
       "election_id": "23142",
@@ -800,7 +800,7 @@
       "type": "house",
       "label": "U.S. House (13 seats)",
       "url": "https://battleforthehill.com/states/10/elections/23142",
-      "overview_lean": 63.4,
+      "overview_lean": 61.5,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -833,7 +833,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:46.935523+00:00"
+      "parsed_at": "2026-11-13T21:12:32.495343+00:00"
     },
     {
       "election_id": "23143",
@@ -861,7 +861,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.013013+00:00"
+      "parsed_at": "2026-11-13T21:12:32.571609+00:00"
     },
     {
       "election_id": "23144",
@@ -869,7 +869,7 @@
       "type": "house",
       "label": "U.S. House (14 seats)",
       "url": "https://battleforthehill.com/states/13/elections/23144",
-      "overview_lean": 12.2,
+      "overview_lean": 13.0,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -902,7 +902,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:47.100831+00:00"
+      "parsed_at": "2026-11-13T21:12:32.663648+00:00"
     },
     {
       "election_id": "23145",
@@ -930,7 +930,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.180063+00:00"
+      "parsed_at": "2026-11-13T21:12:32.745850+00:00"
     },
     {
       "election_id": "23146",
@@ -958,7 +958,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.259520+00:00"
+      "parsed_at": "2026-11-13T21:12:32.823967+00:00"
     },
     {
       "election_id": "23147",
@@ -986,7 +986,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.339073+00:00"
+      "parsed_at": "2026-11-13T21:12:32.907140+00:00"
     },
     {
       "election_id": "23148",
@@ -994,7 +994,7 @@
       "type": "house",
       "label": "U.S. House (7 seats)",
       "url": "https://battleforthehill.com/states/18/elections/23148",
-      "overview_lean": 13.5,
+      "overview_lean": 12.3,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1027,7 +1027,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:47.419437+00:00"
+      "parsed_at": "2026-11-13T21:12:32.991787+00:00"
     },
     {
       "election_id": "23149",
@@ -1055,7 +1055,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.496347+00:00"
+      "parsed_at": "2026-11-13T21:12:33.073160+00:00"
     },
     {
       "election_id": "23150",
@@ -1083,7 +1083,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.578606+00:00"
+      "parsed_at": "2026-11-13T21:12:33.161006+00:00"
     },
     {
       "election_id": "23151",
@@ -1111,7 +1111,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.663221+00:00"
+      "parsed_at": "2026-11-13T21:12:33.244846+00:00"
     },
     {
       "election_id": "23153",
@@ -1139,7 +1139,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.905652+00:00"
+      "parsed_at": "2026-11-13T21:12:33.443277+00:00"
     },
     {
       "election_id": "23154",
@@ -1147,7 +1147,7 @@
       "type": "house",
       "label": "U.S. House (7 seats)",
       "url": "https://battleforthehill.com/states/25/elections/23154",
-      "overview_lean": 7.3,
+      "overview_lean": 7.7,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1187,7 +1187,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:48.000128+00:00"
+      "parsed_at": "2026-11-13T21:12:33.532761+00:00"
     },
     {
       "election_id": "23155",
@@ -1215,7 +1215,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.074259+00:00"
+      "parsed_at": "2026-11-13T21:12:33.611191+00:00"
     },
     {
       "election_id": "23156",
@@ -1243,7 +1243,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.334496+00:00"
+      "parsed_at": "2026-11-13T21:12:33.875926+00:00"
     },
     {
       "election_id": "23157",
@@ -1271,7 +1271,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.417948+00:00"
+      "parsed_at": "2026-11-13T21:12:33.963012+00:00"
     },
     {
       "election_id": "23158",
@@ -1279,7 +1279,7 @@
       "type": "house",
       "label": "U.S. House (30 seats)",
       "url": "https://battleforthehill.com/states/32/elections/23158",
-      "overview_lean": 3.2,
+      "overview_lean": 2.6,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1312,7 +1312,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:48.519268+00:00"
+      "parsed_at": "2026-11-13T21:12:34.071041+00:00"
     },
     {
       "election_id": "23159",
@@ -1340,7 +1340,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.610992+00:00"
+      "parsed_at": "2026-11-13T21:12:34.163032+00:00"
     },
     {
       "election_id": "23160",
@@ -1348,7 +1348,7 @@
       "type": "house",
       "label": "U.S. House (14 seats)",
       "url": "https://battleforthehill.com/states/35/elections/23160",
-      "overview_lean": 48.2,
+      "overview_lean": 48.5,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1388,7 +1388,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:48.702432+00:00"
+      "parsed_at": "2026-11-13T21:12:34.257789+00:00"
     },
     {
       "election_id": "23162",
@@ -1416,7 +1416,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.832178+00:00"
+      "parsed_at": "2026-11-13T21:12:34.390022+00:00"
     },
     {
       "election_id": "23163",
@@ -1444,7 +1444,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.913194+00:00"
+      "parsed_at": "2026-11-13T21:12:34.475608+00:00"
     },
     {
       "election_id": "23164",
@@ -1472,7 +1472,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:49.001397+00:00"
+      "parsed_at": "2026-11-13T21:12:34.567103+00:00"
     },
     {
       "election_id": "23165",
@@ -1500,7 +1500,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:49.105988+00:00"
+      "parsed_at": "2026-11-13T21:12:34.677267+00:00"
     },
     {
       "election_id": "23166",
@@ -1528,7 +1528,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:49.444621+00:00"
+      "parsed_at": "2026-11-13T21:12:35.042945+00:00"
     },
     {
       "election_id": "23167",
@@ -1569,7 +1569,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:49.534439+00:00"
+      "parsed_at": "2026-11-13T21:12:35.134674+00:00"
     },
     {
       "election_id": "23168",
@@ -1597,7 +1597,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:49.613040+00:00"
+      "parsed_at": "2026-11-13T21:12:35.216426+00:00"
     },
     {
       "election_id": "23170",
@@ -1605,7 +1605,7 @@
       "type": "house",
       "label": "U.S. House (6 seats)",
       "url": "https://battleforthehill.com/states/49/elections/23170",
-      "overview_lean": 88.7,
+      "overview_lean": 86.2,
       "polls_count": 65,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1638,7 +1638,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:49.739403+00:00"
+      "parsed_at": "2026-11-13T21:12:35.351740+00:00"
     },
     {
       "election_id": "19463",
@@ -1666,7 +1666,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:23.204159+00:00"
+      "parsed_at": "2026-11-13T21:12:07.970912+00:00"
     },
     {
       "election_id": "19464",
@@ -1694,7 +1694,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:23.499656+00:00"
+      "parsed_at": "2026-11-13T21:12:08.275632+00:00"
     },
     {
       "election_id": "19465",
@@ -1722,7 +1722,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:23.856126+00:00"
+      "parsed_at": "2026-11-13T21:12:08.644193+00:00"
     },
     {
       "election_id": "19466",
@@ -1750,7 +1750,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:24.159925+00:00"
+      "parsed_at": "2026-11-13T21:12:08.953656+00:00"
     },
     {
       "election_id": "19467",
@@ -1758,7 +1758,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/8/elections/19467",
-      "overview_lean": 26.3,
+      "overview_lean": 26.0,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1791,7 +1791,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:24.467105+00:00"
+      "parsed_at": "2026-11-13T21:12:09.273212+00:00"
     },
     {
       "election_id": "19468",
@@ -1799,7 +1799,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/10/elections/19468",
-      "overview_lean": 50.1,
+      "overview_lean": 41.6,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1832,7 +1832,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:24.933561+00:00"
+      "parsed_at": "2026-11-13T21:12:09.774859+00:00"
     },
     {
       "election_id": "19469",
@@ -1860,7 +1860,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:25.221744+00:00"
+      "parsed_at": "2026-11-13T21:12:10.089780+00:00"
     },
     {
       "election_id": "19470",
@@ -1868,7 +1868,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/13/elections/19470",
-      "overview_lean": 28.1,
+      "overview_lean": 23.4,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1901,7 +1901,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:25.577265+00:00"
+      "parsed_at": "2026-11-13T21:12:10.458303+00:00"
     },
     {
       "election_id": "19472",
@@ -1929,7 +1929,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:26.289129+00:00"
+      "parsed_at": "2026-11-13T21:12:11.184860+00:00"
     },
     {
       "election_id": "19473",
@@ -1937,7 +1937,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/17/elections/19473",
-      "overview_lean": 21.4,
+      "overview_lean": 16.6,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -1970,7 +1970,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:26.644177+00:00"
+      "parsed_at": "2026-11-13T21:12:11.557046+00:00"
     },
     {
       "election_id": "19474",
@@ -1978,7 +1978,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/18/elections/19474",
-      "overview_lean": 2.1,
+      "overview_lean": 2.5,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2011,7 +2011,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:26.984272+00:00"
+      "parsed_at": "2026-11-13T21:12:11.897329+00:00"
     },
     {
       "election_id": "19475",
@@ -2039,7 +2039,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:27.356585+00:00"
+      "parsed_at": "2026-11-13T21:12:12.284009+00:00"
     },
     {
       "election_id": "19476",
@@ -2067,7 +2067,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:27.631886+00:00"
+      "parsed_at": "2026-11-13T21:12:12.569444+00:00"
     },
     {
       "election_id": "19477",
@@ -2075,7 +2075,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/22/elections/19477",
-      "overview_lean": 5.6,
+      "overview_lean": 3.4,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2108,7 +2108,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:27.969811+00:00"
+      "parsed_at": "2026-11-13T21:12:12.914525+00:00"
     },
     {
       "election_id": "19478",
@@ -2116,7 +2116,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/23/elections/19478",
-      "overview_lean": 1.8,
+      "overview_lean": 1.6,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2149,7 +2149,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:28.314735+00:00"
+      "parsed_at": "2026-11-13T21:12:13.267436+00:00"
     },
     {
       "election_id": "19479",
@@ -2177,7 +2177,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:28.696515+00:00"
+      "parsed_at": "2026-11-13T21:12:13.657772+00:00"
     },
     {
       "election_id": "19480",
@@ -2205,7 +2205,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:28.969684+00:00"
+      "parsed_at": "2026-11-13T21:12:13.935955+00:00"
     },
     {
       "election_id": "19481",
@@ -2233,7 +2233,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:29.274521+00:00"
+      "parsed_at": "2026-11-13T21:12:14.267278+00:00"
     },
     {
       "election_id": "19482",
@@ -2261,7 +2261,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:29.540370+00:00"
+      "parsed_at": "2026-11-13T21:12:14.548516+00:00"
     },
     {
       "election_id": "19483",
@@ -2289,7 +2289,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:29.889976+00:00"
+      "parsed_at": "2026-11-13T21:12:14.911189+00:00"
     },
     {
       "election_id": "19484",
@@ -2297,7 +2297,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/31/elections/19484",
-      "overview_lean": 24.8,
+      "overview_lean": 23.6,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2330,7 +2330,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:30.200333+00:00"
+      "parsed_at": "2026-11-13T21:12:15.238534+00:00"
     },
     {
       "election_id": "19485",
@@ -2358,7 +2358,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:30.488091+00:00"
+      "parsed_at": "2026-11-13T21:12:15.542918+00:00"
     },
     {
       "election_id": "19486",
@@ -2366,7 +2366,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/36/elections/19486",
-      "overview_lean": 15.4,
+      "overview_lean": 9.9,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2399,7 +2399,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:30.889149+00:00"
+      "parsed_at": "2026-11-13T21:12:15.956193+00:00"
     },
     {
       "election_id": "19487",
@@ -2427,7 +2427,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:31.174651+00:00"
+      "parsed_at": "2026-11-13T21:12:16.256992+00:00"
     },
     {
       "election_id": "19488",
@@ -2455,7 +2455,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:31.447818+00:00"
+      "parsed_at": "2026-11-13T21:12:16.554914+00:00"
     },
     {
       "election_id": "19489",
@@ -2463,7 +2463,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/40/elections/19489",
-      "overview_lean": 20.7,
+      "overview_lean": 16.2,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2496,7 +2496,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:31.763753+00:00"
+      "parsed_at": "2026-11-13T21:12:16.887885+00:00"
     },
     {
       "election_id": "19490",
@@ -2524,7 +2524,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:32.162331+00:00"
+      "parsed_at": "2026-11-13T21:12:17.299359+00:00"
     },
     {
       "election_id": "19491",
@@ -2552,7 +2552,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:32.464578+00:00"
+      "parsed_at": "2026-11-13T21:12:17.616233+00:00"
     },
     {
       "election_id": "19492",
@@ -2593,7 +2593,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:32.862144+00:00"
+      "parsed_at": "2026-11-13T21:12:18.026646+00:00"
     },
     {
       "election_id": "19493",
@@ -2621,7 +2621,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:33.255587+00:00"
+      "parsed_at": "2026-11-13T21:12:18.452829+00:00"
     },
     {
       "election_id": "19494",
@@ -2629,7 +2629,7 @@
       "type": "senate",
       "label": "U.S. Senate, Class 2",
       "url": "https://battleforthehill.com/states/48/elections/19494",
-      "overview_lean": 34.3,
+      "overview_lean": 10.7,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2662,7 +2662,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:33.553829+00:00"
+      "parsed_at": "2026-11-13T21:12:18.792544+00:00"
     },
     {
       "election_id": "19495",
@@ -2690,7 +2690,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:33.836503+00:00"
+      "parsed_at": "2026-11-13T21:12:19.085893+00:00"
     },
     {
       "election_id": "20718",
@@ -2718,7 +2718,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:34.474852+00:00"
+      "parsed_at": "2026-11-13T21:12:19.748602+00:00"
     },
     {
       "election_id": "20719",
@@ -2726,7 +2726,7 @@
       "type": "governor",
       "label": "Governor",
       "url": "https://battleforthehill.com/states/2/elections/20719",
-      "overview_lean": 46.3,
+      "overview_lean": 51.6,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2759,7 +2759,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:34.761434+00:00"
+      "parsed_at": "2026-11-13T21:12:20.046096+00:00"
     },
     {
       "election_id": "20721",
@@ -2787,7 +2787,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:35.289475+00:00"
+      "parsed_at": "2026-11-13T21:12:20.597629+00:00"
     },
     {
       "election_id": "23138",
@@ -2795,7 +2795,7 @@
       "type": "house",
       "label": "U.S. House (10 seats)",
       "url": "https://battleforthehill.com/states/3/elections/23138",
-      "overview_lean": 47.1,
+      "overview_lean": 46.9,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2828,7 +2828,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:46.564542+00:00"
+      "parsed_at": "2026-11-13T21:12:32.113409+00:00"
     },
     {
       "election_id": "23139",
@@ -2836,7 +2836,7 @@
       "type": "house",
       "label": "U.S. House (62 seats)",
       "url": "https://battleforthehill.com/states/5/elections/23139",
-      "overview_lean": 22.4,
+      "overview_lean": 22.5,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2883,7 +2883,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:46.701535+00:00"
+      "parsed_at": "2026-11-13T21:12:32.255711+00:00"
     },
     {
       "election_id": "23141",
@@ -2891,7 +2891,7 @@
       "type": "house",
       "label": "U.S. House (29 seats)",
       "url": "https://battleforthehill.com/states/9/elections/23141",
-      "overview_lean": 20.6,
+      "overview_lean": 20.1,
       "polls_count": 64,
       "polls_source": "pollingHistory",
       "candidates": [
@@ -2931,7 +2931,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:46.849544+00:00"
+      "parsed_at": "2026-11-13T21:12:32.404732+00:00"
     },
     {
       "election_id": "19496",
@@ -2959,7 +2959,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:34.098057+00:00"
+      "parsed_at": "2026-11-13T21:12:19.358685+00:00"
     },
     {
       "election_id": "19471",
@@ -3000,7 +3000,7 @@
         "predicted_final": null,
         "polls_used": 0
       },
-      "parsed_at": "2026-11-13T19:04:25.894307+00:00"
+      "parsed_at": "2026-11-13T21:12:10.782399+00:00"
     },
     {
       "election_id": "20730",
@@ -3028,7 +3028,7 @@
         "polls_used": 0
       },
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:38.036673+00:00"
+      "parsed_at": "2026-11-13T21:12:23.484736+00:00"
     },
     {
       "election_id": "20720",
@@ -3042,7 +3042,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:35.011245+00:00"
+      "parsed_at": "2026-11-13T21:12:20.305715+00:00"
     },
     {
       "election_id": "20723",
@@ -3056,7 +3056,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:35.921481+00:00"
+      "parsed_at": "2026-11-13T21:12:21.255172+00:00"
     },
     {
       "election_id": "20726",
@@ -3070,7 +3070,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:36.835156+00:00"
+      "parsed_at": "2026-11-13T21:12:22.244459+00:00"
     },
     {
       "election_id": "20732",
@@ -3084,7 +3084,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:38.573895+00:00"
+      "parsed_at": "2026-11-13T21:12:24.037776+00:00"
     },
     {
       "election_id": "20733",
@@ -3098,7 +3098,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:38.831942+00:00"
+      "parsed_at": "2026-11-13T21:12:24.304492+00:00"
     },
     {
       "election_id": "20734",
@@ -3112,7 +3112,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:39.187755+00:00"
+      "parsed_at": "2026-11-13T21:12:24.661640+00:00"
     },
     {
       "election_id": "20737",
@@ -3126,7 +3126,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:40.027231+00:00"
+      "parsed_at": "2026-11-13T21:12:25.524388+00:00"
     },
     {
       "election_id": "20746",
@@ -3140,7 +3140,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:42.881142+00:00"
+      "parsed_at": "2026-11-13T21:12:28.337419+00:00"
     },
     {
       "election_id": "20748",
@@ -3154,7 +3154,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:43.411364+00:00"
+      "parsed_at": "2026-11-13T21:12:28.889248+00:00"
     },
     {
       "election_id": "20752",
@@ -3168,7 +3168,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:44.787034+00:00"
+      "parsed_at": "2026-11-13T21:12:30.299794+00:00"
     },
     {
       "election_id": "20753",
@@ -3182,7 +3182,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.129867+00:00"
+      "parsed_at": "2026-11-13T21:12:30.645648+00:00"
     },
     {
       "election_id": "22382",
@@ -3196,7 +3196,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.506461+00:00"
+      "parsed_at": "2026-11-13T21:12:31.041161+00:00"
     },
     {
       "election_id": "22386",
@@ -3210,7 +3210,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.547455+00:00"
+      "parsed_at": "2026-11-13T21:12:31.084543+00:00"
     },
     {
       "election_id": "22390",
@@ -3224,7 +3224,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.588308+00:00"
+      "parsed_at": "2026-11-13T21:12:31.129654+00:00"
     },
     {
       "election_id": "22391",
@@ -3238,7 +3238,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.634825+00:00"
+      "parsed_at": "2026-11-13T21:12:31.172157+00:00"
     },
     {
       "election_id": "22404",
@@ -3252,7 +3252,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.681939+00:00"
+      "parsed_at": "2026-11-13T21:12:31.215939+00:00"
     },
     {
       "election_id": "22411",
@@ -3266,7 +3266,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.733882+00:00"
+      "parsed_at": "2026-11-13T21:12:31.262669+00:00"
     },
     {
       "election_id": "22443",
@@ -3280,7 +3280,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.869067+00:00"
+      "parsed_at": "2026-11-13T21:12:31.389721+00:00"
     },
     {
       "election_id": "22444",
@@ -3294,7 +3294,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.911123+00:00"
+      "parsed_at": "2026-11-13T21:12:31.432424+00:00"
     },
     {
       "election_id": "22448",
@@ -3308,7 +3308,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:45.955938+00:00"
+      "parsed_at": "2026-11-13T21:12:31.479657+00:00"
     },
     {
       "election_id": "22459",
@@ -3322,7 +3322,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.075699+00:00"
+      "parsed_at": "2026-11-13T21:12:31.604156+00:00"
     },
     {
       "election_id": "22470",
@@ -3336,7 +3336,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.198700+00:00"
+      "parsed_at": "2026-11-13T21:12:31.730963+00:00"
     },
     {
       "election_id": "22474",
@@ -3350,7 +3350,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.240018+00:00"
+      "parsed_at": "2026-11-13T21:12:31.773587+00:00"
     },
     {
       "election_id": "22481",
@@ -3364,7 +3364,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.280782+00:00"
+      "parsed_at": "2026-11-13T21:12:31.894650+00:00"
     },
     {
       "election_id": "22485",
@@ -3378,7 +3378,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.393677+00:00"
+      "parsed_at": "2026-11-13T21:12:31.936972+00:00"
     },
     {
       "election_id": "22498",
@@ -3392,7 +3392,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.435391+00:00"
+      "parsed_at": "2026-11-13T21:12:31.979922+00:00"
     },
     {
       "election_id": "22499",
@@ -3406,7 +3406,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.481220+00:00"
+      "parsed_at": "2026-11-13T21:12:32.027259+00:00"
     },
     {
       "election_id": "23140",
@@ -3420,7 +3420,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:46.745973+00:00"
+      "parsed_at": "2026-11-13T21:12:32.298296+00:00"
     },
     {
       "election_id": "23152",
@@ -3434,7 +3434,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:47.706291+00:00"
+      "parsed_at": "2026-11-13T21:12:33.362356+00:00"
     },
     {
       "election_id": "23161",
@@ -3448,7 +3448,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:48.744404+00:00"
+      "parsed_at": "2026-11-13T21:12:34.303136+00:00"
     },
     {
       "election_id": "23169",
@@ -3462,7 +3462,7 @@
       "candidates": [],
       "leader": null,
       "runner_up": null,
-      "parsed_at": "2026-11-13T19:04:49.657771+00:00"
+      "parsed_at": "2026-11-13T21:12:35.266649+00:00"
     }
   ]
 }

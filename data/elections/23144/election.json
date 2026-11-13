@@ -3,7 +3,7 @@
   "state_id": "13",
   "type": "house",
   "label": "U.S. House (14 seats)",
-  "overview_lean": 12.2,
+  "overview_lean": 13.0,
   "url": "https://battleforthehill.com/states/13/elections/23144",
   "candidates": [
     {
@@ -541,5 +541,5 @@
   ],
   "polls_count": 65,
   "polls_source": "pollingHistory",
-  "parsed_at": "2026-11-13T19:04:47.100831+00:00"
+  "parsed_at": "2026-11-13T21:12:32.663648+00:00"
 }

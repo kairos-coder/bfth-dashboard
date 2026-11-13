@@ -3,7 +3,7 @@
   "state_id": "25",
   "type": "house",
   "label": "U.S. House (7 seats)",
-  "overview_lean": 7.3,
+  "overview_lean": 7.7,
   "url": "https://battleforthehill.com/states/25/elections/23154",
   "candidates": [
     {
@@ -611,5 +611,5 @@
   ],
   "polls_count": 65,
   "polls_source": "pollingHistory",
-  "parsed_at": "2026-11-13T19:04:48.000128+00:00"
+  "parsed_at": "2026-11-13T21:12:33.532761+00:00"
 }
