@@ -586,7 +586,7 @@ function render() {
       ? `<img class="avatar" src="${escapeAttr(imgSrc)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`
       : `<div class="avatar"></div>`;
 
-    const pid = p.politician_id;
+    const pid = p.id || p.politician_id;
     const nameText = escapeHtml(p.name || "Unknown");
     const nameLink = pid
       ? `<a href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">${nameText}</a>`
