@@ -267,8 +267,15 @@ def main():
         "npc_filtered": npc_count,
         "players": players,
     }
-    OUT_FILE.write_text(json.dumps(payload, indent=2))
+    body = json.dumps(payload, indent=2)
+
+    OUT_FILE.write_text(body)
     print(f"[parse] wrote {OUT_FILE.relative_to(REPO_ROOT)} ({len(players)} players, {npc_count} NPCs filtered)")
+
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H")
+    archive = PLAYERS_DIR / f"{stamp}.json"
+    archive.write_text(body)
+    print(f"[parse] archived {archive.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":

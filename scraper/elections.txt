@@ -1,0 +1,2 @@
+# Format: one election URL per line. Lines starting with # are ignored.
+https://battleforthehill.com/states/43/elections/22081   # TX, Ma Ferguson vs Crockett

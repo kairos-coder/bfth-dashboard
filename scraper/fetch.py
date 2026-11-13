@@ -1,25 +1,12 @@
 #!/usr/bin/env python3
 """
-fetch.py - raw HTML fetcher for Battle for the Hill profiles.
-
-Purpose: prove we can reach the profiles and get the stats we care about.
-No parsing beyond marker detection. No dashboard logic. Just: did we get
-the HTML, does it contain the fields we need, and can we write a JSON
-snapshot the static page can read?
-
-Usage:
-    python3 scraper/fetch.py                    # fetch all URLs in urls.txt
-    python3 scraper/fetch.py --limit 3          # fetch only the first 3
-    python3 scraper/fetch.py --url <one-url>    # fetch a single URL
-    python3 scraper/fetch.py --delay 2.0        # slower between requests
-
-Output:
-    scraper/raw/<slug>.html             # raw HTML per profile
-    scraper/fetch-report.txt            # human-readable summary
-    data/latest.json                    # dashboard data (repo root)
+fetch.py - Playwright-based fetcher for BFTH profiles.
+Reads BFTH_STORAGE_STATE_B64 from env (or uses local scraper/storage_state.json),
+writes data/latest.json + scraper/fetch-report.txt + scraper/raw/*.html.
 """
 
 import argparse
+import base64
 import json
 import os
 import re
@@ -28,27 +15,16 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
+from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
-# --- paths ----------------------------------------------------------------
-# Repo layout:
-#   <repo>/index.html
-#   <repo>/data/latest.json
-#   <repo>/scraper/fetch.py
-#   <repo>/scraper/urls.txt
-#   <repo>/scraper/raw/
-#   <repo>/scraper/fetch-report.txt
-
-HERE = Path(__file__).resolve().parent          # <repo>/scraper
-REPO_ROOT = HERE.parent                         # <repo>
-URLS_FILE = HERE / "urls.txt"
+HERE = Path(__file__).resolve().parent
+REPO_ROOT = HERE.parent
+URLS_FILE = HERE / "urls" / "gop.txt"
 RAW_DIR = HERE / "raw"
 REPORT_FILE = HERE / "fetch-report.txt"
 DATA_DIR = REPO_ROOT / "data"
 DATA_FILE = DATA_DIR / "latest.json"
 
-# Strings we look for in the HTML to confirm the stats are present.
-# Adjust these to match BFTH's actual labels once we see real HTML.
 EXPECTED_MARKERS = [
     "National Prestige",
     "Campaign Strength",
@@ -57,26 +33,19 @@ EXPECTED_MARKERS = [
     "Campaign Funds",
 ]
 
-# --- auth -----------------------------------------------------------------
-
-def load_cookies():
-    """Read BFTH_COOKIES env var as either JSON dict or 'k=v; k=v' string."""
-    raw = os.environ.get("BFTH_COOKIES", "").strip()
-    if not raw:
-        return None
-    if raw.startswith("{"):
-        return json.loads(raw)
-    jar = {}
-    for part in raw.split(";"):
-        if "=" in part:
-            k, v = part.split("=", 1)
-            jar[k.strip()] = v.strip()
-    return jar
-
-# --- helpers --------------------------------------------------------------
+def load_storage_state():
+    """Prefer BFTH_STORAGE_STATE_B64 (CI) then local storage_state.json."""
+    raw = os.environ.get("BFTH_STORAGE_STATE_B64", "").strip()
+    if raw:
+        state_path = HERE / "storage_state.ci.json"
+        state_path.write_bytes(base64.b64decode(raw))
+        return str(state_path)
+    local = HERE / "storage_state.json"
+    if local.exists():
+        return str(local)
+    return None
 
 def slugify(url):
-    """Turn a URL into a safe filename."""
     name = url.rstrip("/").rsplit("/", 1)[-1]
     name = re.sub(r"[^a-zA-Z0-9._-]+", "-", name)
     return name or "index"
@@ -92,8 +61,7 @@ def read_urls(path):
         urls.append(line)
     return urls
 
-def fetch_one(session, url, out_dir):
-    """Fetch a URL, save raw HTML, return a result dict."""
+def fetch_one(page, url, out_dir):
     result = {
         "url": url,
         "status": None,
@@ -105,11 +73,11 @@ def fetch_one(session, url, out_dir):
         "saved_to": None,
     }
     try:
-        r = session.get(url, timeout=20, allow_redirects=True)
-        result["status"] = r.status_code
-        result["bytes"] = len(r.content)
-        result["final_url"] = r.url
-        html = r.text
+        resp = page.goto(url, timeout=30000, wait_until="networkidle")
+        result["status"] = resp.status if resp else None
+        result["final_url"] = page.url
+        html = page.content()
+        result["bytes"] = len(html.encode("utf-8"))
 
         for marker in EXPECTED_MARKERS:
             if marker in html:
@@ -121,7 +89,9 @@ def fetch_one(session, url, out_dir):
         out_path.write_text(html, encoding="utf-8", errors="replace")
         result["saved_to"] = str(out_path.relative_to(REPO_ROOT))
 
-    except requests.RequestException as e:
+    except PWTimeout:
+        result["error"] = "Playwright timeout (30s)"
+    except Exception as e:
         result["error"] = f"{type(e).__name__}: {e}"
     return result
 
@@ -148,27 +118,20 @@ def write_report(results, path):
     path.write_text("\n".join(lines))
 
 def write_data(results, path):
-    """Write the JSON snapshot that index.html reads."""
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "fetch.py",
+        "source": "fetch.py (playwright)",
         "results": results,
     }
     path.write_text(json.dumps(payload, indent=2))
-    # Confirm parseability so a bad write fails the workflow loudly.
     json.loads(path.read_text())
-
-# --- main -----------------------------------------------------------------
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--limit", type=int, default=None,
-                    help="only fetch the first N URLs")
-    ap.add_argument("--url", type=str, default=None,
-                    help="fetch a single URL instead of urls.txt")
-    ap.add_argument("--delay", type=float, default=1.0,
-                    help="seconds between requests (default 1.0)")
+    ap.add_argument("--limit", type=int, default=None)
+    ap.add_argument("--url", type=str, default=None)
+    ap.add_argument("--delay", type=float, default=1.5)
     args = ap.parse_args()
 
     RAW_DIR.mkdir(exist_ok=True)
@@ -177,49 +140,49 @@ def main():
         urls = [args.url]
     else:
         urls = read_urls(URLS_FILE)
-
     if args.limit:
         urls = urls[: args.limit]
-
     if not urls:
         sys.exit("no URLs to fetch - add at least one to scraper/urls.txt")
 
-    cookies = load_cookies()
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "bfth-warroom/0.1 (+private friend tool)",
-        "Accept": "text/html,application/xhtml+xml",
-    })
-    if cookies:
-        session.cookies.update(cookies)
-        print(f"[auth] loaded {len(cookies)} cookies")
+    state_path = load_storage_state()
+    if state_path:
+        print(f"[auth] loaded storageState ({Path(state_path).stat().st_size} bytes)")
     else:
-        print("[auth] no cookies - trying unauthenticated")
+        print("[auth] no storageState - will likely hit login redirect")
 
     print(f"[plan] fetching {len(urls)} URLs -> {RAW_DIR}/")
     results = []
-    for i, url in enumerate(urls, 1):
-        print(f"[{i}/{len(urls)}] {url}")
-        result = fetch_one(session, url, RAW_DIR)
-        results.append(result)
-        if result["error"]:
-            print(f"         ERROR: {result['error']}")
-        else:
-            found = len(result["markers_found"])
-            total = len(EXPECTED_MARKERS)
-            print(f"         {result['status']} - {result['bytes']:,} bytes - "
-                  f"{found}/{total} markers found")
-            if result["final_url"] != result["url"]:
-                print(f"         redirected -> {result['final_url']}")
-        if i < len(urls):
-            time.sleep(args.delay)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(
+            storage_state=state_path,
+            user_agent="bfth-warroom/0.1 (+private friend tool)",
+        )
+        page = context.new_page()
+
+        for i, url in enumerate(urls, 1):
+            print(f"[{i}/{len(urls)}] {url}")
+            result = fetch_one(page, url, RAW_DIR)
+            results.append(result)
+            if result["error"]:
+                print(f"         ERROR: {result['error']}")
+            else:
+                found = len(result["markers_found"])
+                total = len(EXPECTED_MARKERS)
+                print(f"         {result['status']} - {result['bytes']:,} bytes - "
+                      f"{found}/{total} markers found")
+                if result["final_url"] != result["url"]:
+                    print(f"         redirected -> {result['final_url']}")
+            if i < len(urls):
+                time.sleep(args.delay)
+
+        browser.close()
 
     write_report(results, REPORT_FILE)
     print(f"[report] wrote {REPORT_FILE.relative_to(REPO_ROOT)}")
-
     write_data(results, DATA_FILE)
     print(f"[data] wrote {DATA_FILE.relative_to(REPO_ROOT)}")
-
 
 if __name__ == "__main__":
     main()
