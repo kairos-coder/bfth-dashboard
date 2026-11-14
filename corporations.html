@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GOP Market Desk — BFTH War Room</title>
 <link rel="icon" href="./images/emblem.png" type="image/png">
+<meta property="og:title" content="BFTH War Room — Market Desk">
+<meta property="og:description" content="GOP corporations, valuation, dividends, and market concentration.">
 <style>
   :root {
+    --hero-image: url("./images/banner-warroom.png");
     --bg: #08090c; --bg-2: #0d0f14; --panel: #13161d; --panel-2: #1a1e27;
     --border: #242a36; --border-2: #2f3745;
     --text: #e6e8ec; --muted: #8a93a6; --dim: #4a5263;
@@ -19,59 +22,94 @@
   body {
     font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
     background: var(--bg); color: var(--text); min-height: 100vh;
+    overflow-x: hidden;
   }
 
+  /* ambient grid (matches other pages) */
+  body::before {
+    content: ""; position: fixed; inset: -1px; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(212,175,55,0.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,175,55,0.022) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    animation: gridDrift 40s linear infinite;
+  }
+  @keyframes gridDrift {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 64px 64px, 64px 64px; }
+  }
+  body > * { position: relative; z-index: 1; }
+
   /* HERO */
-  .hero { position: relative; height: 200px; overflow: hidden;
-          border-bottom: 2px solid var(--gold); background: var(--bg-2); }
-  .hero-img { position: absolute; inset: 0;
-    background-image: url("./images/banner-warroom.png");
-    background-size: cover; background-position: center 40%; opacity: 0.55; }
-  .hero::after { content: ""; position: absolute; inset: 0;
+  .hero { position: relative; height: 230px; overflow: hidden;
+    border-bottom: 2px solid var(--gold); background: var(--bg-2); }
+  .hero-img { position: absolute; inset: 0; background-image: var(--hero-image);
+    background-size: cover; background-position: center 40%; opacity: 0.55;
+    transform: scale(1.02); animation: heroZoom 20s ease-in-out infinite alternate; }
+  @keyframes heroZoom { from { transform: scale(1.02); } to { transform: scale(1.08); } }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(135deg,
+      rgba(212,175,55,0) 0%, rgba(212,175,55,0.08) 25%,
+      rgba(212,175,55,0) 50%, rgba(212,175,55,0.08) 75%,
+      rgba(212,175,55,0) 100%);
+    background-size: 300% 300%; animation: heroSweep 12s ease-in-out infinite;
+    pointer-events: none; }
+  @keyframes heroSweep { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2;
     background:
-      linear-gradient(180deg, rgba(8,9,12,0.35) 0%, rgba(8,9,12,0.15) 40%, rgba(8,9,12,0.95) 100%),
-      linear-gradient(90deg, rgba(8,9,12,0.7) 0%, transparent 30%, transparent 70%, rgba(8,9,12,0.7) 100%); }
-  .hero-inner { position: relative; z-index: 2; height: 100%;
+      linear-gradient(180deg, rgba(8,9,12,0.35) 0%, rgba(8,9,12,0.15) 40%, rgba(8,9,12,0.96) 100%),
+      linear-gradient(90deg, rgba(8,9,12,0.75) 0%, transparent 25%, transparent 75%, rgba(8,9,12,0.75) 100%); }
+  .hero-inner { position: relative; z-index: 3; height: 100%;
     display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 0 2rem 1.25rem; gap: 1rem; }
-  .brand h1 { font-size: 2rem; margin: 0; letter-spacing: 0.06em;
-    color: var(--gold-bright); text-shadow: 0 2px 12px rgba(0,0,0,0.8); font-weight: 800; }
-  .brand .sub { color: var(--muted); font-size: 0.85rem;
-    letter-spacing: 0.15em; text-transform: uppercase; margin-top: 0.35rem; }
+    padding: 0 2rem 1.4rem; gap: 1rem; max-width: 1600px; margin: 0 auto; }
+  .brand h1 { font-size: 2.1rem; margin: 0; letter-spacing: 0.08em;
+    background: linear-gradient(90deg, #f0c850 0%, #fbbf24 40%, #d4af37 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85)); font-weight: 800; }
+  .brand .sub { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.18em;
+    text-transform: uppercase; margin-top: 0.4rem; }
   .status { display: flex; align-items: center; gap: 0.5rem;
     background: rgba(13,15,20,0.85); border: 1px solid var(--border-2);
-    padding: 0.5rem 0.9rem; border-radius: 999px; font-size: 0.8rem;
-    color: var(--muted); backdrop-filter: blur(6px); }
-  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
-  .status-dot.fresh { background: var(--green); box-shadow: 0 0 8px var(--green); }
-  .status-dot.stale { background: var(--yellow); }
+    padding: 0.5rem 0.95rem; border-radius: 999px; font-size: 0.78rem;
+    color: var(--muted); backdrop-filter: blur(8px); flex-shrink: 0; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted);
+    transition: background 0.3s; }
+  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green);
+    animation: statusPulse 2.4s ease-in-out infinite; }
+  @keyframes statusPulse {
+    0%,100% { box-shadow: 0 0 10px var(--green), 0 0 0 0 rgba(74,222,128,0.4); }
+    50%     { box-shadow: 0 0 10px var(--green), 0 0 0 5px rgba(74,222,128,0); }
+  }
+  .status-dot.stale { background: var(--yellow); box-shadow: 0 0 8px var(--yellow); }
   .status-dot.dead  { background: var(--red); }
 
   /* NAV */
   .nav { display: flex; background: var(--bg-2);
-    border-bottom: 1px solid var(--border); padding: 0 2rem; }
-  .nav a { padding: 0.9rem 1.1rem; color: var(--muted); text-decoration: none;
-    font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto;
+    position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+  .nav a { padding: 0.95rem 1.15rem; color: var(--muted); text-decoration: none;
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
     text-transform: uppercase; border-bottom: 2px solid transparent;
-    transition: color 0.15s, border-color 0.15s; }
+    transition: color 0.15s, border-color 0.15s; white-space: nowrap; }
   .nav a:hover { color: var(--text); }
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
-  .nav a.soon { color: var(--dim); cursor: not-allowed; }
-  .nav a.soon::after { content: "soon"; font-size: 0.6rem;
-    background: var(--panel-2); color: var(--muted); padding: 0.1rem 0.35rem;
-    border-radius: 3px; margin-left: 0.4rem; vertical-align: middle; letter-spacing: 0.05em; }
+  .nav a.soon { color: var(--dim); }
+  .nav a.ext::after { content: " ↗"; font-size: 0.7em; }
 
   /* STAT STRIP */
-  .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 0.75rem; padding: 1.5rem 2rem 0.5rem; max-width: 1600px; margin: 0 auto; }
   .stat-card { background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
-    border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.1rem;
+    border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.15rem;
     position: relative; overflow: hidden; }
   .stat-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
-    height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.4; }
-  .stat-card .label { color: var(--muted); font-size: 0.7rem; letter-spacing: 0.12em;
-    text-transform: uppercase; margin-bottom: 0.4rem; }
-  .stat-card .value { font-size: 1.65rem; font-weight: 800;
+    height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.5; }
+  .stat-card .label { color: var(--muted); font-size: 0.66rem; letter-spacing: 0.14em;
+    text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 700; }
+  .stat-card .value { font-size: 1.7rem; font-weight: 800;
     font-variant-numeric: tabular-nums; letter-spacing: -0.01em; color: var(--text); }
   .stat-card .delta { font-size: 0.72rem; margin-top: 0.2rem; color: var(--dim); }
   .stat-card.gold .value { color: var(--gold-bright); }
@@ -85,38 +123,47 @@
     flex-wrap: wrap; align-items: center; }
   .controls-wrap input, .controls-wrap select {
     background: var(--panel); color: var(--text); border: 1px solid var(--border);
-    padding: 0.6rem 0.9rem; border-radius: 6px; font-size: 0.9rem; font-family: inherit; }
+    padding: 0.65rem 0.95rem; border-radius: 6px; font-size: 0.88rem;
+    font-family: inherit; }
   .controls-wrap input:focus, .controls-wrap select:focus {
-    outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,55,0.1); }
-  .controls-wrap input { flex: 1; min-width: 240px; }
-  .controls-wrap .count { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+    outline: none; border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212,175,55,0.12); }
+  .controls-wrap input { flex: 1; min-width: 220px; }
+  .controls-wrap .count { color: var(--muted); font-size: 0.82rem; margin-left: auto;
+    font-variant-numeric: tabular-nums; }
 
   /* SECTION */
   .section { max-width: 1600px; margin: 0 auto; padding: 1.5rem 2rem 0; }
-  .section h2 { font-size: 0.85rem; letter-spacing: 0.15em;
+  .section h2 { font-size: 0.85rem; letter-spacing: 0.18em;
     text-transform: uppercase; color: var(--gold); margin: 0 0 1rem;
-    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between; }
+  .section h2 .hint { color: var(--dim); font-size: 0.72rem;
+    letter-spacing: 0.05em; font-weight: 400; text-transform: none; }
 
   /* MOVERS */
   .movers { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 0.75rem; margin-bottom: 1.5rem; }
   .mover { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.8rem 1rem; }
+    border-radius: 8px; padding: 0.85rem 1rem; }
   .mover.up { border-left: 3px solid var(--green); }
   .mover.down { border-left: 3px solid var(--red); }
-  .mover .pct { font-size: 1.2rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .mover .pct { font-size: 1.2rem; font-weight: 800; font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em; }
   .mover.up .pct { color: var(--green); }
   .mover.down .pct { color: var(--red); }
   .mover .name { font-size: 0.85rem; color: var(--text); margin-top: 0.15rem; font-weight: 600; }
+  .mover .name a { color: inherit; text-decoration: none; }
+  .mover .name a:hover { color: var(--gold-bright); }
   .mover .meta { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
 
   /* TABLE */
   .table-wrap { background: var(--panel); border: 1px solid var(--border);
     border-radius: 10px; overflow: hidden; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   thead { background: var(--bg-2); }
-  th { text-align: left; padding: 0.7rem 0.9rem; font-size: 0.7rem;
-    letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  th { text-align: left; padding: 0.7rem 0.9rem; font-size: 0.64rem;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
     font-weight: 700; border-bottom: 1px solid var(--border-2); cursor: pointer;
     user-select: none; white-space: nowrap; }
   th:hover { color: var(--text); }
@@ -132,11 +179,11 @@
   td.name a { color: inherit; text-decoration: none; }
   td.name a:hover { color: var(--gold-bright); }
   td.symbol { font-family: "SF Mono", Menlo, Consolas, monospace;
-    font-size: 0.8rem; color: var(--blue); font-weight: 700; }
+    font-size: 0.78rem; color: var(--blue); font-weight: 700; }
   td.ceo.vacant { color: var(--red); font-style: italic; }
-  .sector-tag { display: inline-block; padding: 0.15rem 0.5rem;
-    border-radius: 4px; font-size: 0.7rem; font-weight: 600;
-    text-transform: capitalize; }
+  .sector-tag { display: inline-block; padding: 0.1rem 0.45rem;
+    border-radius: 3px; font-size: 0.66rem; font-weight: 700;
+    text-transform: capitalize; letter-spacing: 0.03em; }
   .sector-media { background: rgba(236,72,153,0.15); color: #f472b6; }
   .sector-healthcare { background: rgba(6,182,212,0.15); color: #22d3ee; }
   .sector-real-estate { background: rgba(168,85,247,0.15); color: #c084fc; }
@@ -153,19 +200,24 @@
   .val-neg { color: var(--red); font-weight: 600; }
   .val-gold { color: var(--gold-bright); font-weight: 700; }
 
-  /* SECTOR BREAKDOWN */
+  /* SECTOR BREAKDOWN — now clickable */
   .sector-grid { display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0.75rem; margin-bottom: 1.5rem; }
-  .sector-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.9rem 1rem; }
-  .sector-card .label { font-size: 0.72rem; letter-spacing: 0.08em;
-    text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem;
-    display: flex; justify-content: space-between; align-items: center; }
+  a.sector-card { display: block; text-decoration: none; color: inherit;
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 8px; padding: 0.9rem 1rem;
+    transition: border-color 0.15s, transform 0.15s; }
+  a.sector-card:hover { border-color: var(--border-2); transform: translateY(-1px); }
+  .sector-card .label { font-size: 0.7rem; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 0.35rem;
+    display: flex; justify-content: space-between; align-items: center;
+    font-weight: 700; }
   .sector-card .bar { height: 4px; background: var(--bg-2);
     border-radius: 2px; overflow: hidden; margin: 0.4rem 0; }
-  .sector-card .bar-fill { height: 100%; background: var(--gold); }
-  .sector-card .value { font-size: 1.1rem; font-weight: 800;
+  .sector-card .bar-fill { height: 100%; background: var(--gold);
+    border-radius: 2px; transition: width 0.3s ease; }
+  .sector-card .value { font-size: 1.15rem; font-weight: 800;
     color: var(--gold-bright); font-variant-numeric: tabular-nums; }
   .sector-card .meta { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
 
@@ -176,29 +228,42 @@
   .vacant-card { background: var(--panel); border: 1px solid var(--border);
     border-left: 3px solid var(--red); border-radius: 8px; padding: 0.8rem 1rem; }
   .vacant-card .name { font-size: 0.9rem; font-weight: 700; }
+  .vacant-card .name a { color: inherit; text-decoration: none; }
+  .vacant-card .name a:hover { color: var(--gold-bright); }
   .vacant-card .meta { font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem; }
   .vacant-card .val { font-size: 0.9rem; font-weight: 700;
     color: var(--gold-bright); margin-top: 0.3rem; font-variant-numeric: tabular-nums; }
 
+  /* ERRORS */
   #error { color: var(--red); padding: 1rem; background: #1a0a0a;
-    border: 1px solid #3a1a1a; border-radius: 6px; margin: 1rem 2rem; display: none; }
-  #loading { color: var(--muted); text-align: center; padding: 4rem; font-size: 1rem; }
+    border: 1px solid #3a1a1a; border-radius: 6px; margin: 1rem 2rem;
+    display: none; }
+  #loading { color: var(--muted); text-align: center; padding: 4rem;
+    font-size: 1rem; }
 
+  /* FOOTER */
   .footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem;
-    color: var(--dim); font-size: 0.78rem; text-align: center; letter-spacing: 0.05em; }
+    color: var(--dim); font-size: 0.75rem; text-align: center;
+    letter-spacing: 0.06em; margin-top: 2rem; }
+  .footer a { color: var(--dim); text-decoration: none; }
+  .footer a:hover { color: var(--gold-bright); }
 
   @media (max-width: 700px) {
-    .hero { height: 160px; }
-    .hero-inner { padding: 0 1rem 1rem; flex-wrap: wrap; }
-    .brand h1 { font-size: 1.4rem; }
-    .nav { padding: 0 0.5rem; overflow-x: auto; }
-    .nav a { padding: 0.8rem 0.7rem; font-size: 0.75rem; }
+    .hero { height: 180px; }
+    .hero-inner { padding: 0 1rem 1rem; flex-wrap: wrap; gap: 0.5rem; }
+    .brand h1 { font-size: 1.5rem; }
+    .nav { padding: 0 0.5rem; }
+    .nav a { padding: 0.8rem 0.7rem; font-size: 0.72rem; }
     .stat-strip, .controls-wrap, .section { padding-left: 1rem; padding-right: 1rem; }
     table { font-size: 0.75rem; }
     th, td { padding: 0.5rem 0.5rem; }
     th:nth-child(2), td:nth-child(2),
     th:nth-child(5), td:nth-child(5),
-    th:nth-child(7), td:nth-child(7) { display: none; }
+    th:nth-child(7), td:nth-child(7),
+    th:nth-child(10), td:nth-child(10) { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before, .hero-img, .hero::before, .status-dot.fresh { animation: none !important; }
   }
 </style>
 </head>
@@ -211,7 +276,7 @@
       <h1>GOP MARKET DESK</h1>
       <div class="sub">Corporation War Room · Vice Chair's Briefing</div>
     </div>
-    <div class="status" id="status">
+    <div class="status">
       <span class="status-dot" id="statusDot"></span>
       <span id="statusText">Loading…</span>
     </div>
@@ -219,10 +284,14 @@
 </div>
 
 <nav class="nav">
-  <a href="./index.html">Roster</a>
+  <a href="./index.html">Home</a>
+  <a href="./roster.html">Roster</a>
   <a href="./caucus.html">Caucus</a>
   <a href="./elections.html">Elections</a>
   <a href="./corporations.html" class="active">Market Desk</a>
+  <a href="./congress.html">Congress</a>
+  <a href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener" class="ext">Nations</a>
+  <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="ext">Parties</a>
   <a href="./history.html" class="soon">History</a>
 </nav>
 
@@ -239,25 +308,21 @@
 
 <div id="content" style="display:none">
 
-  <!-- OVERNIGHT MOVERS -->
   <div class="section">
-    <h2>Overnight Movers (GOP corps by stock change)</h2>
+    <h2>Overnight Movers <span class="hint">GOP corps by stock change</span></h2>
     <div class="movers" id="movers"></div>
   </div>
 
-  <!-- SECTOR BREAKDOWN -->
   <div class="section">
-    <h2>GOP Sector Concentration</h2>
+    <h2>GOP Sector Concentration <span class="hint">click a sector to browse corps</span></h2>
     <div class="sector-grid" id="sectors"></div>
   </div>
 
-  <!-- VACANT CEO LIST -->
   <div class="section">
-    <h2>Vacant CEO Corps (Intervention Targets)</h2>
+    <h2>Vacant CEO Corps <span class="hint">intervention targets</span></h2>
     <div class="vacant-list" id="vacants"></div>
   </div>
 
-  <!-- CONTROLS -->
   <div class="controls-wrap">
     <input id="search" type="search" placeholder="Search corp, symbol, sector, CEO…" autocomplete="off">
     <select id="filter">
@@ -277,7 +342,6 @@
     <span class="count" id="count"></span>
   </div>
 
-  <!-- TOP CORPS TABLE -->
   <div class="section" style="padding-top:0.5rem">
     <h2>Corporations</h2>
     <div class="table-wrap">
@@ -304,7 +368,9 @@
 </div>
 
 <div class="footer">
-  Roster · Caucus · Elections · <strong style="color:var(--gold-bright)">Market Desk</strong> · History (soon) — BFTH War Room v0.3
+  Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> ·
+  <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> ·
+  <a href="./congress.html">Congress</a> · BFTH War Room v1.4
 </div>
 
 <script>
@@ -328,6 +394,7 @@ const sectorClass = (s) => {
   if (!s) return "sector-mining";
   return "sector-" + String(s).toLowerCase().replace(/\s+/g, "-");
 };
+const corpUrl = (c) => `https://battleforthehill.com/parties/${c.party_id}/corporations/${c.corp_id}`;
 
 let allCorps = [];
 let filtered = [];
@@ -369,19 +436,21 @@ function renderStats(agg) {
 }
 
 function renderMovers(agg) {
-  // Top 5 gainers and top 5 losers among GOP corps
   const gop = agg.gop.filter(c => c.stock_change_pct != null);
   const sorted = [...gop].sort((a, b) => (b.stock_change_pct || 0) - (a.stock_change_pct || 0));
   const movers = [...sorted.slice(0, 5), ...sorted.slice(-3).reverse()];
   const container = document.getElementById("movers");
-  if (!movers.length) { container.innerHTML = '<div style="color:var(--muted)">No movers data</div>'; return; }
+  if (!movers.length) {
+    container.innerHTML = '<div style="color:var(--muted)">No movers data</div>';
+    return;
+  }
   container.innerHTML = movers.map(c => {
     const p = c.stock_change_pct || 0;
     const dir = p >= 0 ? "up" : "down";
     const sign = p >= 0 ? "+" : "";
     return `<div class="mover ${dir}">
       <div class="pct">${sign}${p.toFixed(2)}%</div>
-      <div class="name">${esc(c.name)}</div>
+      <div class="name"><a href="${corpUrl(c)}" target="_blank" rel="noopener">${esc(c.name)}</a></div>
       <div class="meta">${esc(c.symbol || "—")} · ${esc(c.sector || "—")} · ${money(c.valuation)}</div>
     </div>`;
   }).join("");
@@ -399,10 +468,13 @@ function renderSectors(agg) {
   const rows = Object.entries(bySector).sort(([,a], [,b]) => b.val - a.val);
   const max = Math.max(...rows.map(([,r]) => r.val), 1);
   const container = document.getElementById("sectors");
-  if (!rows.length) { container.innerHTML = '<div style="color:var(--muted)">No sector data</div>'; return; }
+  if (!rows.length) {
+    container.innerHTML = '<div style="color:var(--muted)">No sector data</div>';
+    return;
+  }
   container.innerHTML = rows.map(([sector, r]) => {
     const w = Math.max(2, (r.val / max) * 100);
-    return `<div class="sector-card">
+    return `<a href="https://battleforthehill.com/parties/${GOP_PARTY_ID}/corporations" target="_blank" rel="noopener" class="sector-card">
       <div class="label">
         <span class="sector-tag ${sectorClass(sector)}">${esc(sector)}</span>
         <span>${r.count} corp${r.count !== 1 ? "s" : ""}</span>
@@ -410,7 +482,7 @@ function renderSectors(agg) {
       <div class="value">${money(r.val)}</div>
       <div class="bar"><div class="bar-fill" style="width:${w}%"></div></div>
       <div class="meta">${money(r.div)} dividends</div>
-    </div>`;
+    </a>`;
   }).join("");
 }
 
@@ -423,7 +495,7 @@ function renderVacants(agg) {
   }
   container.innerHTML = vacants.map(c => `
     <div class="vacant-card">
-      <div class="name">${esc(c.name)}</div>
+      <div class="name"><a href="${corpUrl(c)}" target="_blank" rel="noopener">${esc(c.name)}</a></div>
       <div class="meta">${esc(c.symbol || "—")} · <span class="sector-tag ${sectorClass(c.sector)}">${esc(c.sector || "—")}</span> · ${esc(c.hq?.state || "—")}</div>
       <div class="val">${money(c.valuation)}</div>
     </div>
@@ -441,9 +513,8 @@ function renderTable() {
     const change = c.stock_change_pct || 0;
     const changeCls = change >= 0 ? "val-pos" : "val-neg";
     const ceo = c.ceo?.name || "Vacant";
-    const corpUrl = `https://battleforthehill.com/parties/${c.party_id}/corporations/${c.corp_id}`;
     return `<tr data-corp-id="${c.corp_id}">
-      <td class="name"><a href="${corpUrl}" target="_blank" rel="noopener">${esc(c.name)}</a>${!isGop ? ' <span style="color:var(--dim);font-size:0.7rem">(non-GOP)</span>' : ''}</td>
+      <td class="name"><a href="${corpUrl(c)}" target="_blank" rel="noopener">${esc(c.name)}</a>${!isGop ? ' <span style="color:var(--dim);font-size:0.7rem">(non-GOP)</span>' : ''}</td>
       <td class="symbol">${esc(c.symbol || "—")}</td>
       <td><span class="sector-tag ${sectorClass(c.sector)}">${esc(c.sector || "—")}</span></td>
       <td class="ceo${c.is_vacant_ceo ? ' vacant' : ''}">${esc(ceo)}</td>
@@ -483,14 +554,13 @@ function applyFilterSort() {
   filtered.sort((a, b) => {
     if (currentSort.key === "name") return (a.name || "").localeCompare(b.name || "");
     if (currentSort.key === "ceo") {
-      // Vacant first
       return (b.is_vacant_ceo ? 1 : 0) - (a.is_vacant_ceo ? 1 : 0);
     }
     if (currentSort.key === "hq") {
       return (a.hq?.state || "").localeCompare(b.hq?.state || "");
     }
-    const av = currentSort.key === "hq" ? (a.hq?.state || "") : (a[k] ?? -Infinity);
-    const bv = currentSort.key === "hq" ? (b.hq?.state || "") : (b[k] ?? -Infinity);
+    const av = a[k] ?? -Infinity;
+    const bv = b[k] ?? -Infinity;
     return currentSort.dir === "desc" ? bv - av : av - bv;
   });
 
@@ -510,7 +580,10 @@ function wireSortableHeaders() {
         currentSort.dir = key === "name" ? "asc" : "desc";
       }
       th.classList.add(currentSort.dir === "asc" ? "sort-asc" : "sort-desc");
-      document.getElementById("sort").value = currentSort.key;
+      const sortSel = document.getElementById("sort");
+      if ([...sortSel.options].some(o => o.value === currentSort.key)) {
+        sortSel.value = currentSort.key;
+      }
       applyFilterSort();
     });
   });
