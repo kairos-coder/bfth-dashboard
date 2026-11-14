@@ -1,134 +1,1888 @@
 {
-  "generated_at": "2026-11-12T21:46:50.475020+00:00",
-  "source": "fetch.py",
+  "generated_at": "2026-11-14T19:58:10.957419+00:00",
+  "source": "fetch.py (playwright)",
   "results": [
     {
-      "url": "https://battleforthehill.com/politician/1871",
+      "url": "https://battleforthehill.com/politician/1175",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 260410,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1175",
       "error": null,
-      "saved_to": "scraper/raw/1871.html"
+      "saved_to": "scraper/raw/1175.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/1872",
+      "url": "https://battleforthehill.com/politician/1223",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 272950,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1223",
       "error": null,
-      "saved_to": "scraper/raw/1872.html"
+      "saved_to": "scraper/raw/1223.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1224",
+      "status": 200,
+      "bytes": 266187,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1224",
+      "error": null,
+      "saved_to": "scraper/raw/1224.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1225",
+      "status": 200,
+      "bytes": 265010,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1225",
+      "error": null,
+      "saved_to": "scraper/raw/1225.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1227",
+      "status": 200,
+      "bytes": 269833,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1227",
+      "error": null,
+      "saved_to": "scraper/raw/1227.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1239",
+      "status": 200,
+      "bytes": 288605,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1239",
+      "error": null,
+      "saved_to": "scraper/raw/1239.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1263",
+      "status": 200,
+      "bytes": 281504,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1263",
+      "error": null,
+      "saved_to": "scraper/raw/1263.html"
     },
     {
       "url": "https://battleforthehill.com/politician/1291",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 268301,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1291",
       "error": null,
       "saved_to": "scraper/raw/1291.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/1292",
+      "url": "https://battleforthehill.com/politician/1361",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 283255,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1361",
       "error": null,
-      "saved_to": "scraper/raw/1292.html"
+      "saved_to": "scraper/raw/1361.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/2476",
+      "url": "https://battleforthehill.com/politician/1464",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 283558,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1464",
       "error": null,
-      "saved_to": "scraper/raw/2476.html"
+      "saved_to": "scraper/raw/1464.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/12513",
+      "url": "https://battleforthehill.com/politician/1690",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 260776,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1690",
       "error": null,
-      "saved_to": "scraper/raw/12513.html"
+      "saved_to": "scraper/raw/1690.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/13549",
+      "url": "https://battleforthehill.com/politician/1743",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 283755,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1743",
       "error": null,
-      "saved_to": "scraper/raw/13549.html"
+      "saved_to": "scraper/raw/1743.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1744",
+      "status": 200,
+      "bytes": 268080,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1744",
+      "error": null,
+      "saved_to": "scraper/raw/1744.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1770",
+      "status": 200,
+      "bytes": 285692,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1770",
+      "error": null,
+      "saved_to": "scraper/raw/1770.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1771",
+      "status": 200,
+      "bytes": 261479,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1771",
+      "error": null,
+      "saved_to": "scraper/raw/1771.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1871",
+      "status": 200,
+      "bytes": 325601,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1871",
+      "error": null,
+      "saved_to": "scraper/raw/1871.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/1969",
+      "status": 200,
+      "bytes": 275930,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/1969",
+      "error": null,
+      "saved_to": "scraper/raw/1969.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/2273",
+      "status": 200,
+      "bytes": 255938,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/2273",
+      "error": null,
+      "saved_to": "scraper/raw/2273.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/2820",
+      "status": 200,
+      "bytes": 265105,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/2820",
+      "error": null,
+      "saved_to": "scraper/raw/2820.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/2985",
+      "status": 200,
+      "bytes": 255036,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/2985",
+      "error": null,
+      "saved_to": "scraper/raw/2985.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/3108",
+      "status": 200,
+      "bytes": 277336,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/3108",
+      "error": null,
+      "saved_to": "scraper/raw/3108.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/4142",
+      "status": 200,
+      "bytes": 256085,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/4142",
+      "error": null,
+      "saved_to": "scraper/raw/4142.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/4657",
+      "status": 200,
+      "bytes": 279616,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/4657",
+      "error": null,
+      "saved_to": "scraper/raw/4657.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11473",
+      "status": 200,
+      "bytes": 257328,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11473",
+      "error": null,
+      "saved_to": "scraper/raw/11473.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11474",
+      "status": 200,
+      "bytes": 256662,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11474",
+      "error": null,
+      "saved_to": "scraper/raw/11474.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11475",
+      "status": 200,
+      "bytes": 257856,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11475",
+      "error": null,
+      "saved_to": "scraper/raw/11475.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11476",
+      "status": 200,
+      "bytes": 257022,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11476",
+      "error": null,
+      "saved_to": "scraper/raw/11476.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11477",
+      "status": 200,
+      "bytes": 256415,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11477",
+      "error": null,
+      "saved_to": "scraper/raw/11477.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11478",
+      "status": 200,
+      "bytes": 257616,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11478",
+      "error": null,
+      "saved_to": "scraper/raw/11478.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11479",
+      "status": 200,
+      "bytes": 255781,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11479",
+      "error": null,
+      "saved_to": "scraper/raw/11479.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11480",
+      "status": 200,
+      "bytes": 255780,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11480",
+      "error": null,
+      "saved_to": "scraper/raw/11480.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11481",
+      "status": 200,
+      "bytes": 255545,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11481",
+      "error": null,
+      "saved_to": "scraper/raw/11481.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11482",
+      "status": 200,
+      "bytes": 256177,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11482",
+      "error": null,
+      "saved_to": "scraper/raw/11482.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11493",
+      "status": 200,
+      "bytes": 254835,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11493",
+      "error": null,
+      "saved_to": "scraper/raw/11493.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11494",
+      "status": 200,
+      "bytes": 255120,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11494",
+      "error": null,
+      "saved_to": "scraper/raw/11494.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11502",
+      "status": 200,
+      "bytes": 255425,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11502",
+      "error": null,
+      "saved_to": "scraper/raw/11502.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11506",
+      "status": 200,
+      "bytes": 255902,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11506",
+      "error": null,
+      "saved_to": "scraper/raw/11506.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11508",
+      "status": 200,
+      "bytes": 257145,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11508",
+      "error": null,
+      "saved_to": "scraper/raw/11508.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11511",
+      "status": 200,
+      "bytes": 255812,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11511",
+      "error": null,
+      "saved_to": "scraper/raw/11511.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11512",
+      "status": 200,
+      "bytes": 256153,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11512",
+      "error": null,
+      "saved_to": "scraper/raw/11512.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11514",
+      "status": 200,
+      "bytes": 255922,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11514",
+      "error": null,
+      "saved_to": "scraper/raw/11514.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11515",
+      "status": 200,
+      "bytes": 256927,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11515",
+      "error": null,
+      "saved_to": "scraper/raw/11515.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11519",
+      "status": 200,
+      "bytes": 255491,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11519",
+      "error": null,
+      "saved_to": "scraper/raw/11519.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11521",
+      "status": 200,
+      "bytes": 256720,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11521",
+      "error": null,
+      "saved_to": "scraper/raw/11521.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11536",
+      "status": 200,
+      "bytes": 256350,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11536",
+      "error": null,
+      "saved_to": "scraper/raw/11536.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11538",
+      "status": 200,
+      "bytes": 256187,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11538",
+      "error": null,
+      "saved_to": "scraper/raw/11538.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11539",
+      "status": 200,
+      "bytes": 255837,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11539",
+      "error": null,
+      "saved_to": "scraper/raw/11539.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11540",
+      "status": 200,
+      "bytes": 255510,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11540",
+      "error": null,
+      "saved_to": "scraper/raw/11540.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11542",
+      "status": 200,
+      "bytes": 255256,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11542",
+      "error": null,
+      "saved_to": "scraper/raw/11542.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11544",
+      "status": 200,
+      "bytes": 256179,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11544",
+      "error": null,
+      "saved_to": "scraper/raw/11544.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11547",
+      "status": 200,
+      "bytes": 256541,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11547",
+      "error": null,
+      "saved_to": "scraper/raw/11547.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11548",
+      "status": 200,
+      "bytes": 255539,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11548",
+      "error": null,
+      "saved_to": "scraper/raw/11548.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11549",
+      "status": 200,
+      "bytes": 255261,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11549",
+      "error": null,
+      "saved_to": "scraper/raw/11549.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11550",
+      "status": 200,
+      "bytes": 258147,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11550",
+      "error": null,
+      "saved_to": "scraper/raw/11550.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11552",
+      "status": 200,
+      "bytes": 255574,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11552",
+      "error": null,
+      "saved_to": "scraper/raw/11552.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11553",
+      "status": 200,
+      "bytes": 257072,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11553",
+      "error": null,
+      "saved_to": "scraper/raw/11553.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11557",
+      "status": 200,
+      "bytes": 255933,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11557",
+      "error": null,
+      "saved_to": "scraper/raw/11557.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11560",
+      "status": 200,
+      "bytes": 255551,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11560",
+      "error": null,
+      "saved_to": "scraper/raw/11560.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11565",
+      "status": 200,
+      "bytes": 256291,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11565",
+      "error": null,
+      "saved_to": "scraper/raw/11565.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11572",
+      "status": 200,
+      "bytes": 254741,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11572",
+      "error": null,
+      "saved_to": "scraper/raw/11572.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11573",
+      "status": 200,
+      "bytes": 255143,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11573",
+      "error": null,
+      "saved_to": "scraper/raw/11573.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11574",
+      "status": 200,
+      "bytes": 255092,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11574",
+      "error": null,
+      "saved_to": "scraper/raw/11574.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11575",
+      "status": 200,
+      "bytes": 255138,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11575",
+      "error": null,
+      "saved_to": "scraper/raw/11575.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11576",
+      "status": 200,
+      "bytes": 254770,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11576",
+      "error": null,
+      "saved_to": "scraper/raw/11576.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11578",
+      "status": 200,
+      "bytes": 255508,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11578",
+      "error": null,
+      "saved_to": "scraper/raw/11578.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11579",
+      "status": 200,
+      "bytes": 254768,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11579",
+      "error": null,
+      "saved_to": "scraper/raw/11579.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11581",
+      "status": 200,
+      "bytes": 253308,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11581",
+      "error": null,
+      "saved_to": "scraper/raw/11581.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11584",
+      "status": 200,
+      "bytes": 254755,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11584",
+      "error": null,
+      "saved_to": "scraper/raw/11584.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11585",
+      "status": 200,
+      "bytes": 254328,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11585",
+      "error": null,
+      "saved_to": "scraper/raw/11585.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11587",
+      "status": 200,
+      "bytes": 253446,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11587",
+      "error": null,
+      "saved_to": "scraper/raw/11587.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11588",
+      "status": 200,
+      "bytes": 254365,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11588",
+      "error": null,
+      "saved_to": "scraper/raw/11588.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11593",
+      "status": 200,
+      "bytes": 254369,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11593",
+      "error": null,
+      "saved_to": "scraper/raw/11593.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11597",
+      "status": 200,
+      "bytes": 254353,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11597",
+      "error": null,
+      "saved_to": "scraper/raw/11597.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11598",
+      "status": 200,
+      "bytes": 255283,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11598",
+      "error": null,
+      "saved_to": "scraper/raw/11598.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11605",
+      "status": 200,
+      "bytes": 253283,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11605",
+      "error": null,
+      "saved_to": "scraper/raw/11605.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11608",
+      "status": 200,
+      "bytes": 253419,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11608",
+      "error": null,
+      "saved_to": "scraper/raw/11608.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11610",
+      "status": 200,
+      "bytes": 253298,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11610",
+      "error": null,
+      "saved_to": "scraper/raw/11610.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11613",
+      "status": 200,
+      "bytes": 253338,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11613",
+      "error": null,
+      "saved_to": "scraper/raw/11613.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11615",
+      "status": 200,
+      "bytes": 253092,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11615",
+      "error": null,
+      "saved_to": "scraper/raw/11615.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11634",
+      "status": 200,
+      "bytes": 253310,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11634",
+      "error": null,
+      "saved_to": "scraper/raw/11634.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11635",
+      "status": 200,
+      "bytes": 253243,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11635",
+      "error": null,
+      "saved_to": "scraper/raw/11635.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11638",
+      "status": 200,
+      "bytes": 253352,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11638",
+      "error": null,
+      "saved_to": "scraper/raw/11638.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11640",
+      "status": 200,
+      "bytes": 253250,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11640",
+      "error": null,
+      "saved_to": "scraper/raw/11640.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/11641",
+      "status": 200,
+      "bytes": 253255,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/11641",
+      "error": null,
+      "saved_to": "scraper/raw/11641.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/12098",
+      "status": 200,
+      "bytes": 279851,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/12098",
+      "error": null,
+      "saved_to": "scraper/raw/12098.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/12512",
+      "status": 200,
+      "bytes": 262193,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/12512",
+      "error": null,
+      "saved_to": "scraper/raw/12512.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/12731",
+      "status": 200,
+      "bytes": 261848,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/12731",
+      "error": null,
+      "saved_to": "scraper/raw/12731.html"
     },
     {
       "url": "https://battleforthehill.com/politician/13207",
       "status": 200,
-      "bytes": 29295,
-      "markers_found": [],
-      "markers_missing": [
+      "bytes": 269319,
+      "markers_found": [
         "National Prestige",
         "Campaign Strength",
         "State Reputation",
         "National Reputation",
         "Campaign Funds"
       ],
-      "final_url": "https://battleforthehill.com/login",
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/13207",
       "error": null,
       "saved_to": "scraper/raw/13207.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/13536",
+      "status": null,
+      "bytes": 0,
+      "markers_found": [],
+      "markers_missing": [],
+      "final_url": null,
+      "error": "Playwright timeout (30s)",
+      "saved_to": null
+    },
+    {
+      "url": "https://battleforthehill.com/politician/13537",
+      "status": 200,
+      "bytes": 268433,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/13537",
+      "error": null,
+      "saved_to": "scraper/raw/13537.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/13549",
+      "status": 200,
+      "bytes": 288570,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/13549",
+      "error": null,
+      "saved_to": "scraper/raw/13549.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/13709",
+      "status": 200,
+      "bytes": 256123,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/13709",
+      "error": null,
+      "saved_to": "scraper/raw/13709.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/13798",
+      "status": 200,
+      "bytes": 275836,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/13798",
+      "error": null,
+      "saved_to": "scraper/raw/13798.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/13850",
+      "status": 200,
+      "bytes": 278612,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/13850",
+      "error": null,
+      "saved_to": "scraper/raw/13850.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14145",
+      "status": 200,
+      "bytes": 271844,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14145",
+      "error": null,
+      "saved_to": "scraper/raw/14145.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14159",
+      "status": 200,
+      "bytes": 278309,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14159",
+      "error": null,
+      "saved_to": "scraper/raw/14159.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14479",
+      "status": 200,
+      "bytes": 261568,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14479",
+      "error": null,
+      "saved_to": "scraper/raw/14479.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14480",
+      "status": 200,
+      "bytes": 257682,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14480",
+      "error": null,
+      "saved_to": "scraper/raw/14480.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14606",
+      "status": 200,
+      "bytes": 271596,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14606",
+      "error": null,
+      "saved_to": "scraper/raw/14606.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14621",
+      "status": 200,
+      "bytes": 259192,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14621",
+      "error": null,
+      "saved_to": "scraper/raw/14621.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14649",
+      "status": 200,
+      "bytes": 260697,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14649",
+      "error": null,
+      "saved_to": "scraper/raw/14649.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14753",
+      "status": 200,
+      "bytes": 255101,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14753",
+      "error": null,
+      "saved_to": "scraper/raw/14753.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14755",
+      "status": 200,
+      "bytes": 255002,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14755",
+      "error": null,
+      "saved_to": "scraper/raw/14755.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14765",
+      "status": 200,
+      "bytes": 254732,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14765",
+      "error": null,
+      "saved_to": "scraper/raw/14765.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14767",
+      "status": 200,
+      "bytes": 258566,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14767",
+      "error": null,
+      "saved_to": "scraper/raw/14767.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14777",
+      "status": 200,
+      "bytes": 255038,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14777",
+      "error": null,
+      "saved_to": "scraper/raw/14777.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14779",
+      "status": 200,
+      "bytes": 258666,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14779",
+      "error": null,
+      "saved_to": "scraper/raw/14779.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14787",
+      "status": 200,
+      "bytes": 256547,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14787",
+      "error": null,
+      "saved_to": "scraper/raw/14787.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14796",
+      "status": 200,
+      "bytes": 257227,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14796",
+      "error": null,
+      "saved_to": "scraper/raw/14796.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14810",
+      "status": 200,
+      "bytes": 255072,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14810",
+      "error": null,
+      "saved_to": "scraper/raw/14810.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14826",
+      "status": 200,
+      "bytes": 255091,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14826",
+      "error": null,
+      "saved_to": "scraper/raw/14826.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14830",
+      "status": 200,
+      "bytes": 263127,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14830",
+      "error": null,
+      "saved_to": "scraper/raw/14830.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14853",
+      "status": 200,
+      "bytes": 270313,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14853",
+      "error": null,
+      "saved_to": "scraper/raw/14853.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14855",
+      "status": 200,
+      "bytes": 254801,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14855",
+      "error": null,
+      "saved_to": "scraper/raw/14855.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14882",
+      "status": 200,
+      "bytes": 261520,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14882",
+      "error": null,
+      "saved_to": "scraper/raw/14882.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14903",
+      "status": 200,
+      "bytes": 262869,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14903",
+      "error": null,
+      "saved_to": "scraper/raw/14903.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14906",
+      "status": 200,
+      "bytes": 255460,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14906",
+      "error": null,
+      "saved_to": "scraper/raw/14906.html"
+    },
+    {
+      "url": "https://battleforthehill.com/politician/14923",
+      "status": 200,
+      "bytes": 254801,
+      "markers_found": [
+        "National Prestige",
+        "Campaign Strength",
+        "State Reputation",
+        "National Reputation",
+        "Campaign Funds"
+      ],
+      "markers_missing": [],
+      "final_url": "https://battleforthehill.com/politician/14923",
+      "error": null,
+      "saved_to": "scraper/raw/14923.html"
     }
   ]
 }
