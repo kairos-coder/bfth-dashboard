@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>History — BFTH War Room</title>
 <link rel="icon" href="./images/emblem.png" type="image/png">
+<meta property="og:title" content="BFTH War Room — History">
+<meta property="og:description" content="Archive comparison and time series across the GOP roster.">
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <style>
   :root {
@@ -19,18 +21,48 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body { font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--bg); color: var(--text); min-height: 100vh; }
-  .hero { position: relative; height: 220px; overflow: hidden;
+    background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
+
+  body::before {
+    content: ""; position: fixed; inset: -1px; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(212,175,55,0.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,175,55,0.022) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    animation: gridDrift 40s linear infinite;
+  }
+  @keyframes gridDrift {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 64px 64px, 64px 64px; }
+  }
+  body > * { position: relative; z-index: 1; }
+
+  /* HERO */
+  .hero { position: relative; height: 230px; overflow: hidden;
     border-bottom: 2px solid var(--gold); background: var(--bg-2); }
   .hero-img { position: absolute; inset: 0; background-image: var(--hero-image);
-    background-size: cover; background-position: center 45%; opacity: 0.55; }
-  .hero::after { content: ""; position: absolute; inset: 0;
+    background-size: cover; background-position: center 45%; opacity: 0.55;
+    transform: scale(1.02); animation: heroZoom 20s ease-in-out infinite alternate; }
+  @keyframes heroZoom { from { transform: scale(1.02); } to { transform: scale(1.08); } }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(135deg,
+      rgba(212,175,55,0) 0%, rgba(212,175,55,0.08) 25%,
+      rgba(212,175,55,0) 50%, rgba(212,175,55,0.08) 75%,
+      rgba(212,175,55,0) 100%);
+    background-size: 300% 300%; animation: heroSweep 12s ease-in-out infinite;
+    pointer-events: none; }
+  @keyframes heroSweep { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2;
     background: linear-gradient(180deg, rgba(8,9,12,0.4) 0%, rgba(8,9,12,0.1) 40%, rgba(8,9,12,0.96) 100%); }
-  .hero-inner { position: relative; z-index: 2; height: 100%; display: flex;
-    align-items: flex-end; justify-content: space-between;
+  .hero-inner { position: relative; z-index: 3; height: 100%;
+    display: flex; align-items: flex-end; justify-content: space-between;
     padding: 0 2rem 1.4rem; max-width: 1600px; margin: 0 auto; gap: 1rem; }
-  .brand h1 { font-size: 2.1rem; margin: 0; letter-spacing: 0.08em; color: var(--gold-bright);
-    text-shadow: 0 2px 14px rgba(0,0,0,0.85); font-weight: 800; }
+  .brand h1 { font-size: 2.1rem; margin: 0; letter-spacing: 0.08em;
+    background: linear-gradient(90deg, #f0c850 0%, #fbbf24 40%, #d4af37 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85)); font-weight: 800; }
   .brand .sub { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.18em;
     text-transform: uppercase; margin-top: 0.4rem; }
   .status { display: flex; align-items: center; gap: 0.5rem;
@@ -38,25 +70,35 @@
     padding: 0.5rem 0.95rem; border-radius: 999px; font-size: 0.78rem;
     color: var(--muted); backdrop-filter: blur(8px); flex-shrink: 0; }
   .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
-  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green); }
-  .status-dot.stale { background: var(--yellow); }
+  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green);
+    animation: statusPulse 2.4s ease-in-out infinite; }
+  @keyframes statusPulse {
+    0%,100% { box-shadow: 0 0 10px var(--green), 0 0 0 0 rgba(74,222,128,0.4); }
+    50%     { box-shadow: 0 0 10px var(--green), 0 0 0 5px rgba(74,222,128,0); }
+  }
+  .status-dot.stale { background: var(--yellow); box-shadow: 0 0 8px var(--yellow); }
   .status-dot.dead { background: var(--red); }
 
-  .nav { display: flex; background: var(--bg-2); border-bottom: 1px solid var(--border);
-    padding: 0 2rem; overflow-x: auto; }
+  /* NAV */
+  .nav { display: flex; background: var(--bg-2);
+    border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto;
+    position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
   .nav a { padding: 0.95rem 1.15rem; color: var(--muted); text-decoration: none;
-    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    border-bottom: 2px solid transparent; white-space: nowrap; transition: color 0.15s; }
+    font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; border-bottom: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s; white-space: nowrap; }
   .nav a:hover { color: var(--text); }
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
+  .nav a.ext::after { content: " ↗"; font-size: 0.7em; }
 
-  /* ticker */
+  /* TICKER */
   .ticker-wrap { display: flex; align-items: stretch; background: var(--panel);
     border-bottom: 1px solid var(--border); height: 36px;
-    max-width: 1600px; margin: 0 auto;
-    border-left: 3px solid var(--gold); border-right: 3px solid var(--gold); overflow: hidden; }
+    max-width: 1600px; margin: 1.25rem auto 0;
+    border-left: 3px solid var(--gold); border-right: 3px solid var(--gold);
+    overflow: hidden; border-radius: 4px; }
   .ticker-label { background: var(--gold); color: var(--bg);
-    font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em;
+    font-size: 0.64rem; font-weight: 800; letter-spacing: 0.14em;
     padding: 0 1rem; display: flex; align-items: center;
     white-space: nowrap; flex-shrink: 0; }
   .ticker-track { flex: 1; display: flex; gap: 1.75rem; align-items: center;
@@ -71,79 +113,128 @@
   .t-delta.down { color: var(--red); }
   .t-delta.flat { color: var(--dim); }
 
-  /* toggle */
-  .range-bar { max-width: 1600px; margin: 0 auto; padding: 1.5rem 2rem 0.5rem;
-    display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
-  .range-bar .label { color: var(--muted); font-size: 0.75rem;
-    letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;
-    margin-right: 0.5rem; }
-  .range-btn { background: var(--panel); color: var(--muted);
-    border: 1px solid var(--border); padding: 0.5rem 0.9rem;
-    border-radius: 6px; font-size: 0.82rem; font-weight: 600;
-    cursor: pointer; font-family: inherit; transition: border-color 0.15s, color 0.15s; }
+  /* RANGE / COMPARE CONTROLS */
+  .controls { max-width: 1600px; margin: 0 auto; padding: 1.25rem 2rem 0.5rem;
+    display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
+  .controls .label { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.12em;
+    text-transform: uppercase; font-weight: 700; margin-right: 0.15rem; }
+  .controls select, .controls button {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    padding: 0.55rem 0.85rem; border-radius: 6px; font-size: 0.82rem;
+    font-family: inherit; cursor: pointer; }
+  .controls select:focus, .controls button:focus { outline: none;
+    border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,55,0.12); }
+  .range-btn { background: var(--panel); color: var(--muted); border: 1px solid var(--border);
+    padding: 0.5rem 0.9rem; border-radius: 6px; font-size: 0.78rem; font-weight: 600;
+    cursor: pointer; font-family: inherit; letter-spacing: 0.04em;
+    transition: border-color 0.15s, color 0.15s; }
   .range-btn:hover { color: var(--text); border-color: var(--border-2); }
-  .range-btn.active { background: var(--panel-2); color: var(--gold-bright); border-color: var(--gold); }
-  .range-bar .baseline { color: var(--dim); font-size: 0.75rem; margin-left: auto;
-    font-variant-numeric: tabular-nums; }
+  .range-btn.active { background: var(--panel-2); color: var(--gold-bright);
+    border-color: var(--gold); }
+  .controls .baseline-label { color: var(--dim); font-size: 0.72rem;
+    font-variant-numeric: tabular-nums; margin-left: auto; }
+  .controls .custom-compare { display: flex; gap: 0.4rem; align-items: center;
+    padding-left: 0.75rem; border-left: 1px solid var(--border); }
 
-  /* summary strip */
+  /* SUMMARY */
   .summary { max-width: 1600px; margin: 0 auto; padding: 0.75rem 2rem 1rem;
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem; }
-  .sum-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.85rem 1rem; }
-  .sum-card .label { color: var(--muted); font-size: 0.65rem;
-    letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700;
-    margin-bottom: 0.35rem; }
-  .sum-card .value { font-size: 1.4rem; font-weight: 800;
-    font-variant-numeric: tabular-nums; }
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem; }
+  .sum-card { background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1.1rem;
+    position: relative; overflow: hidden; }
+  .sum-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.5; }
+  .sum-card .label { color: var(--muted); font-size: 0.66rem;
+    letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 0.4rem; }
+  .sum-card .value { font-size: 1.45rem; font-weight: 800;
+    font-variant-numeric: tabular-nums; color: var(--text); }
   .sum-card .value.up { color: var(--green); }
   .sum-card .value.down { color: var(--red); }
   .sum-card .sub { font-size: 0.72rem; color: var(--dim); margin-top: 0.2rem; }
 
-  /* table */
+  /* CHART */
+  .chart-section { max-width: 1600px; margin: 0 auto; padding: 0 2rem 1rem; }
+  .chart-panel { background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1rem 1.25rem 0.5rem; }
+  .chart-panel h2 { margin: 0 0 0.6rem; font-size: 0.82rem;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);
+    font-weight: 700; display: flex; justify-content: space-between;
+    align-items: baseline; }
+  .chart-panel h2 .hint { color: var(--dim); font-size: 0.72rem;
+    letter-spacing: 0.04em; text-transform: none; font-weight: 400; }
+  #timeseriesChart { min-height: 340px; }
+  .chart-controls { display: flex; gap: 0.5rem; flex-wrap: wrap;
+    margin-bottom: 0.5rem; align-items: center; }
+  .metric-btn { background: var(--bg-2); color: var(--muted);
+    border: 1px solid var(--border); border-radius: 6px;
+    padding: 0.35rem 0.8rem; font-size: 0.75rem; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer;
+    font-family: inherit; transition: all 0.15s; }
+  .metric-btn:hover { color: var(--text); border-color: var(--border-2); }
+  .metric-btn.active { background: var(--gold); color: var(--bg);
+    border-color: var(--gold); }
+
+  /* TABLE */
   .table-wrap { max-width: 1600px; margin: 0 auto; padding: 0 2rem 3rem; overflow-x: auto; }
-  .movers-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-  .movers-table thead th {
-    text-align: left; padding: 0.75rem 0.75rem;
-    color: var(--muted); font-size: 0.7rem; letter-spacing: 0.12em;
+  .movers-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .movers-table thead th { text-align: left; padding: 0.7rem 0.75rem;
+    color: var(--muted); font-size: 0.64rem; letter-spacing: 0.12em;
     text-transform: uppercase; font-weight: 700;
-    border-bottom: 2px solid var(--border-2); white-space: nowrap;
-  }
+    border-bottom: 1px solid var(--border-2); white-space: nowrap;
+    position: sticky; top: 52px; background: var(--bg-2); z-index: 10; }
   .movers-table thead th.num { text-align: right; }
-  .movers-table tbody tr { border-bottom: 1px solid #1a1a22; }
+  .movers-table tbody tr { border-bottom: 1px solid #1a1a22;
+    cursor: pointer; transition: background 0.1s; }
   .movers-table tbody tr:hover { background: var(--panel-2); }
-  .movers-table tbody td { padding: 0.65rem 0.75rem; }
-  .movers-table tbody td.num {
-    text-align: right; font-variant-numeric: tabular-nums;
-    font-weight: 600;
-  }
+  .movers-table tbody tr.selected { background: rgba(212,175,55,0.08); }
+  .movers-table tbody td { padding: 0.6rem 0.75rem; }
+  .movers-table tbody td.num { text-align: right;
+    font-variant-numeric: tabular-nums; font-weight: 600; }
   .movers-table .p-name { font-weight: 600; color: var(--text); }
   .movers-table .p-name a { color: inherit; text-decoration: none; }
   .movers-table .p-name a:hover { color: var(--gold-bright); }
-  .movers-table .p-state { color: var(--dim); font-size: 0.75rem; }
+  .movers-table .p-state { color: var(--dim); font-size: 0.72rem;
+    letter-spacing: 0.04em; }
   .movers-table .delta-cell { font-variant-numeric: tabular-nums; font-weight: 700; }
   .delta-cell.up { color: var(--green); }
   .delta-cell.down { color: var(--red); }
   .delta-cell.flat { color: var(--dim); }
   .movers-table .val-col { color: var(--text); font-variant-numeric: tabular-nums; }
 
-  .empty { color: var(--muted); text-align: center; padding: 3rem 1rem; font-size: 0.9rem; }
+  .empty { color: var(--muted); text-align: center; padding: 3rem 1rem;
+    font-size: 0.9rem; }
 
   #error { color: var(--red); padding: 1rem; background: #1a0a0a;
-    border: 1px solid #3a1a1a; border-radius: 6px; margin: 1rem 2rem; }
+    border: 1px solid #3a1a1a; border-radius: 6px; margin: 1rem 2rem;
+    display: none; }
 
   .footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem;
-    color: var(--dim); font-size: 0.75rem; text-align: center; letter-spacing: 0.06em; }
+    color: var(--dim); font-size: 0.75rem; text-align: center;
+    letter-spacing: 0.06em; }
+  .footer a { color: var(--dim); text-decoration: none; }
+  .footer a:hover { color: var(--gold-bright); }
 
   @media (max-width: 700px) {
-    .hero { height: 170px; }
+    .hero { height: 180px; }
     .hero-inner { padding: 0 1rem 1rem; flex-wrap: wrap; gap: 0.5rem; }
-    .brand h1 { font-size: 1.45rem; }
+    .brand h1 { font-size: 1.5rem; }
     .nav { padding: 0 0.5rem; }
     .nav a { padding: 0.8rem 0.7rem; font-size: 0.72rem; }
-    .range-bar, .summary, .table-wrap { padding-left: 1rem; padding-right: 1rem; }
-    .movers-table { font-size: 0.78rem; }
+    .controls, .summary, .table-wrap, .chart-section {
+      padding-left: 1rem; padding-right: 1rem; }
+    .controls .custom-compare { flex-direction: column; align-items: stretch;
+      border-left: none; padding-left: 0; border-top: 1px solid var(--border);
+      padding-top: 0.75rem; width: 100%; }
+    .controls .baseline-label { margin-left: 0; margin-top: 0.4rem; }
+    .movers-table { font-size: 0.74rem; }
     .movers-table thead th, .movers-table tbody td { padding: 0.5rem 0.35rem; }
+    .movers-table thead th { top: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before, .hero-img, .hero::before, .status-dot.fresh { animation: none !important; }
   }
 </style>
 </head>
@@ -154,7 +245,7 @@
   <div class="hero-inner">
     <div class="brand">
       <h1>HISTORY</h1>
-      <div class="sub">Overnight Deltas &amp; Time Series</div>
+      <div class="sub">Archive Compare &amp; Time Series</div>
     </div>
     <div class="status">
       <span class="status-dot" id="statusDot"></span>
@@ -164,9 +255,14 @@
 </div>
 
 <nav class="nav">
-  <a href="./index.html">Roster</a>
+  <a href="./index.html">Home</a>
+  <a href="./roster.html">Roster</a>
   <a href="./caucus.html">Caucus</a>
   <a href="./elections.html">Elections</a>
+  <a href="./corporations.html">Market Desk</a>
+  <a href="./congress.html">Congress</a>
+  <a href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener" class="ext">Nations</a>
+  <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="ext">Parties</a>
   <a href="./history.html" class="active">History</a>
 </nav>
 
@@ -177,14 +273,40 @@
   </div>
 </div>
 
-<div class="range-bar">
+<div class="controls">
   <span class="label">Range:</span>
   <button class="range-btn active" data-range="day">1 Day</button>
   <button class="range-btn" data-range="week">1 Week</button>
-  <span class="baseline" id="baselineLabel"></span>
+  <button class="range-btn" data-range="month">1 Month</button>
+  <button class="range-btn" data-range="all">All Time</button>
+
+  <div class="custom-compare">
+    <span class="label">Custom:</span>
+    <select id="compareFrom"></select>
+    <span style="color:var(--dim)">→</span>
+    <select id="compareTo"></select>
+    <button class="range-btn" id="compareApply">Apply</button>
+  </div>
+
+  <span class="baseline-label" id="baselineLabel"></span>
 </div>
 
 <div class="summary" id="summary"></div>
+
+<div class="chart-section">
+  <div class="chart-panel">
+    <h2>Time Series <span class="hint">click a row to isolate, click again to clear</span></h2>
+    <div class="chart-controls" id="metricControls">
+      <button class="metric-btn active" data-metric="national_prestige">NP</button>
+      <button class="metric-btn" data-metric="campaign_funds">CF</button>
+      <button class="metric-btn" data-metric="total_net_worth">NW</button>
+      <button class="metric-btn" data-metric="campaign_strength">CS</button>
+      <button class="metric-btn" data-metric="lc_income_hr">LC/hr</button>
+      <button class="metric-btn" data-metric="political_capital">PC</button>
+    </div>
+    <div id="timeseriesChart"></div>
+  </div>
+</div>
 
 <div class="table-wrap">
   <table class="movers-table">
@@ -210,7 +332,9 @@
 </div>
 
 <div class="footer">
-  BFTH War Room · Roster · Caucus · Elections · History
+  Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> ·
+  <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> ·
+  <a href="./congress.html">Congress</a> · <a href="./history.html">History</a> · BFTH War Room v1.4
 </div>
 
 <script>
@@ -230,7 +354,6 @@ const shortMoney = (n) => {
   if (a >= 1e3) return "$" + (n / 1e3).toFixed(0) + "K";
   return "$" + Number(n).toFixed(0);
 };
-
 const num = (n, d = 1) => n == null ? "—"
   : Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
 const pct = (n) => n == null ? "—" : num(n, 1) + "%";
@@ -239,6 +362,7 @@ function shortVal(stat, v) {
   if (v == null) return "—";
   if (stat === "NP") return num(v, 1);
   if (stat === "CS") return num(v, 1);
+  if (stat === "PC") return num(v, 1);
   if (stat === "CF" || stat === "NW" || stat === "LC/hr") return shortMoney(v);
   if (stat === "SR" || stat === "NR") return pct(v);
   return num(v, 1);
@@ -251,16 +375,11 @@ function deltaCell(delta, stat) {
   const sign = delta > 0 ? "up" : "down";
   const arrow = delta > 0 ? "▲" : "▼";
   const prefix = delta > 0 ? "+" : "-";
-  let mag;
-  if (stat === "NP") mag = num(Math.abs(delta), 1);
-  else if (stat === "CS") mag = num(Math.abs(delta), 1);
-  else if (stat === "CF" || stat === "NW" || stat === "LC/hr") mag = shortMoney(Math.abs(delta));
-  else if (stat === "SR" || stat === "NR") mag = pct(Math.abs(delta));
-  else mag = num(Math.abs(delta), 1);
+  const mag = shortVal(stat, Math.abs(delta));
   return `<td class="num delta-cell ${sign}">${arrow} ${prefix}${mag}</td>`;
 }
 
-// ---- GitHub API: list archive files ----
+// ---- GitHub API ----
 async function listArchives() {
   const res = await fetch(CONTENTS_API, { cache: "no-store" });
   if (!res.ok) throw new Error(`GitHub API ${res.status}`);
@@ -271,43 +390,38 @@ async function listArchives() {
     .sort();
 }
 
-function todayUTC() {
-  return new Date().toISOString().slice(0, 10);
-}
+function todayUTC() { return new Date().toISOString().slice(0, 10); }
 
-function pickDayBaseline(archives, today) {
-  // newest archive whose date is strictly before today
-  const prior = archives.filter(n => n.slice(0, 10) < today);
-  return prior.length > 0 ? prior[prior.length - 1] : null;
-}
+function archiveDate(name) { return name.slice(0, 10); }
 
-function pickWeekBaseline(archives, today) {
-  // newest archive at least 7 days before today; fallback to oldest prior-day
+function pickBaseline(archives, today, daysAgo) {
   const todayMs = Date.parse(today + "T00:00:00Z");
-  const prior = archives.filter(n => n.slice(0, 10) < today);
-  if (prior.length === 0) return null;
-  const oldEnough = prior.filter(n => {
-    const ms = Date.parse(n.slice(0, 10) + "T00:00:00Z");
-    return (todayMs - ms) / 86400000 >= 7;
+  const prior = archives.filter(n => archiveDate(n) < today);
+  if (!prior.length) return null;
+  const target = todayMs - daysAgo * 86400000;
+  // Best: exact match for that day, fallback to nearest on or before
+  const exact = prior.filter(n => {
+    const d = Date.parse(archiveDate(n) + "T00:00:00Z");
+    return d === target;
   });
-  if (oldEnough.length > 0) return oldEnough[oldEnough.length - 1];
-  return prior[0]; // oldest prior
+  if (exact.length) return exact[exact.length - 1];
+  const older = prior.filter(n => Date.parse(archiveDate(n) + "T00:00:00Z") <= target);
+  if (older.length) return older[older.length - 1];
+  return prior[0];
 }
 
-// ---- fetch data ----
 async function fetchJSON(path) {
   const res = await fetch(path + (path.includes("?") ? "&" : "?") + "_=" + Date.now(), { cache: "no-store" });
   if (!res.ok) throw new Error(`${path} HTTP ${res.status}`);
   return res.json();
 }
 
-// ---- render ----
-function computeMovers(current, previous, range) {
+// ---- compute movers ----
+function computeMovers(current, previous) {
   const prevById = new Map();
   for (const p of previous) {
     if (p.id) prevById.set(String(p.id), p);
   }
-
   const movers = [];
   for (const p of current) {
     const prev = prevById.get(String(p.id));
@@ -326,17 +440,16 @@ function computeMovers(current, previous, range) {
       cf: diff("campaign_funds"),
       nw: diff("total_net_worth"),
       lc: diff("lc_income_hr"),
-      sr: diff("state_reputation"),
-      nr: diff("national_reputation"),
+      pc: diff("political_capital"),
     };
 
-    // biggest-magnitude stat for ranking/ticker
     const candidates = [
       { stat: "NP", delta: deltas.np, mag: Math.abs(deltas.np ?? 0) },
       { stat: "CS", delta: deltas.cs, mag: Math.abs(deltas.cs ?? 0) * 8 },
       { stat: "CF", delta: deltas.cf, mag: Math.abs(deltas.cf ?? 0) / 250000 },
       { stat: "NW", delta: deltas.nw, mag: Math.abs(deltas.nw ?? 0) / 5000000 },
       { stat: "LC/hr", delta: deltas.lc, mag: Math.abs(deltas.lc ?? 0) / 5000 },
+      { stat: "PC", delta: deltas.pc, mag: Math.abs(deltas.pc ?? 0) * 2 },
     ].filter(c => c.delta != null && c.mag > 0.001);
 
     if (candidates.length === 0) continue;
@@ -354,15 +467,14 @@ function computeMovers(current, previous, range) {
       topStat: top.stat,
       topDelta: top.delta,
       topMag: top.mag,
-      range,
     });
   }
-
   movers.sort((a, b) => b.topMag - a.topMag);
   return movers;
 }
 
-function renderTicker(movers, baselineFile) {
+// ---- render helpers ----
+function renderTicker(movers) {
   const track = document.getElementById("tickerTrack");
   if (!movers.length) {
     track.innerHTML = `<span style="color:var(--muted);font-style:italic">no movers to show</span>`;
@@ -385,47 +497,26 @@ function renderTicker(movers, baselineFile) {
 function renderSummary(movers) {
   const el = document.getElementById("summary");
   if (!movers.length) { el.innerHTML = ""; return; }
-
   const gainers = movers.filter(m => m.topDelta > 0);
   const losers = movers.filter(m => m.topDelta < 0);
-
-  // biggest single gainer / loser
   const bigGain = gainers[0];
   const bigLoss = losers[0];
-
-  // total NP moved across the roster
   let totalNP = 0;
   for (const m of movers) {
     if (m.deltas.np != null) totalNP += m.deltas.np;
   }
-
   const cards = [
-    {
-      label: "Gainers",
-      value: gainers.length,
-      cls: "up",
-      sub: `${movers.length} tracked, ${losers.length} losers`
-    },
-    {
-      label: "Total NP Δ",
+    { label: "Gainers", value: gainers.length, cls: "up",
+      sub: `${movers.length} tracked, ${losers.length} losers` },
+    { label: "Total NP Δ",
       value: (totalNP > 0 ? "+" : "") + num(totalNP, 1),
       cls: totalNP > 0 ? "up" : totalNP < 0 ? "down" : "",
-      sub: "sum across roster"
-    },
-    bigGain ? {
-      label: "Top Gainer",
-      value: bigGain.name,
-      cls: "up",
-      sub: `${bigGain.topStat} ${bigGain.topDelta > 0 ? "+" : ""}${shortVal(bigGain.topStat, bigGain.topDelta)}`
-    } : null,
-    bigLoss ? {
-      label: "Top Loser",
-      value: bigLoss.name,
-      cls: "down",
-      sub: `${bigLoss.topStat} ${shortVal(bigLoss.topStat, bigLoss.topDelta)}`
-    } : null,
+      sub: "sum across roster" },
+    bigGain ? { label: "Top Gainer", value: bigGain.name, cls: "up",
+      sub: `${bigGain.topStat} ${bigGain.topDelta > 0 ? "+" : ""}${shortVal(bigGain.topStat, bigGain.topDelta)}` } : null,
+    bigLoss ? { label: "Top Loser", value: bigLoss.name, cls: "down",
+      sub: `${bigLoss.topStat} ${shortVal(bigLoss.topStat, bigLoss.topDelta)}` } : null,
   ].filter(Boolean);
-
   el.innerHTML = cards.map(c => `
     <div class="sum-card">
       <div class="label">${escapeHtml(c.label)}</div>
@@ -447,7 +538,8 @@ function renderTable(movers) {
     const nameLink = m.politician_id
       ? `<a href="https://battleforthehill.com/politician/${m.politician_id}" target="_blank" rel="noopener">${escapeHtml(m.name)}</a>`
       : escapeHtml(m.name);
-    return `<tr>
+    const selectedCls = STATE.selectedPlayerId === String(m.id) ? "selected" : "";
+    return `<tr class="${selectedCls}" data-player-id="${escapeHtml(String(m.id))}">
       <td><div class="p-name">${nameLink}</div><div class="p-state">${escapeHtml(m.state || "")}</div></td>
       <td class="num val-col">${num(p.national_prestige, 1)}</td>
       ${deltaCell(d.np, "NP")}
@@ -461,17 +553,248 @@ function renderTable(movers) {
       ${deltaCell(d.lc, "LC/hr")}
     </tr>`;
   }).join("");
+
+  // Wire row-click → isolate that player in the chart
+  tbody.querySelectorAll("tr[data-player-id]").forEach(tr => {
+    tr.addEventListener("click", (ev) => {
+      if (ev.target.closest("a")) return;
+      const id = tr.dataset.playerId;
+      STATE.selectedPlayerId = STATE.selectedPlayerId === id ? null : id;
+      renderTable(STATE.currentMovers);
+      renderTimeSeries();
+    });
+  });
+}
+
+// ---- time series chart ----
+const HC_THEME = {
+  chart: { backgroundColor: "transparent",
+    style: { fontFamily: "system-ui, -apple-system, sans-serif" } },
+  title: { text: null },
+  credits: { enabled: false },
+  legend: { enabled: false },
+  xAxis: {
+    type: "datetime",
+    lineColor: "#242a36",
+    labels: { style: { color: "#8a93a6", fontSize: "11px" } },
+    gridLineColor: "#1a1e27",
+  },
+  yAxis: {
+    title: { text: null },
+    gridLineColor: "#1a1e27",
+    labels: { style: { color: "#4a5263", fontSize: "11px" } },
+  },
+  tooltip: {
+    backgroundColor: "#1a1e27", borderColor: "#2f3745", borderRadius: 8,
+    style: { color: "#e6e8ec", fontSize: "12px" },
+    shared: false,
+  },
+  plotOptions: {
+    line: { lineWidth: 1.8, marker: { enabled: false, radius: 2 },
+      states: { hover: { lineWidthPlus: 0 } } },
+  },
+};
+
+let chart = null;
+
+function renderTimeSeries() {
+  const metric = STATE.metric;
+  const series = [];
+  const playerColors = [
+    "#d4af37", "#60a5fa", "#4ade80", "#ef4444", "#a78bfa", "#fbbf24",
+    "#22d3ee", "#f472b6", "#a3e635", "#fb923c",
+  ];
+
+  // Group archives into (timestamp, players[]) — we already loaded all archive files
+  // STATE.historyArchives = [{ ts, players }]
+  const history = STATE.historyArchives || [];
+  if (!history.length) {
+    if (chart) { chart.destroy(); chart = null; }
+    document.getElementById("timeseriesChart").innerHTML =
+      '<div class="empty">No archive data available yet.</div>';
+    return;
+  }
+
+  const tsByPlayer = new Map(); // playerId -> { name, points: [[ts, val]] }
+  for (const arch of history) {
+    const tsMs = Date.parse(arch.ts);
+    for (const p of arch.players || []) {
+      const id = String(p.id);
+      if (!tsByPlayer.has(id)) {
+        tsByPlayer.set(id, { name: p.name, state: p.state, points: [] });
+      }
+      const val = p[metric];
+      if (val != null && !isNaN(val)) {
+        tsByPlayer.get(id).points.push([tsMs, val]);
+      }
+    }
+  }
+
+  // Sort points per player
+  tsByPlayer.forEach(v => v.points.sort((a, b) => a[0] - b[0]));
+
+  const filterId = STATE.selectedPlayerId;
+  if (filterId && tsByPlayer.has(filterId)) {
+    // Single player — one series
+    const entry = tsByPlayer.get(filterId);
+    series.push({
+      name: entry.name,
+      color: "#f0c850",
+      data: entry.points,
+    });
+  } else {
+    // Show top 10 players by current metric value
+    const entries = Array.from(tsByPlayer.entries())
+      .filter(([, v]) => v.points.length > 1);
+    entries.sort(([, a], [, b]) => {
+      const aLast = a.points[a.points.length - 1][1];
+      const bLast = b.points[b.points.length - 1][1];
+      return bLast - aLast;
+    });
+    entries.slice(0, 10).forEach(([, v], idx) => {
+      series.push({
+        name: v.name,
+        color: playerColors[idx % playerColors.length],
+        data: v.points,
+      });
+    });
+  }
+
+  if (!series.length) {
+    if (chart) { chart.destroy(); chart = null; }
+    document.getElementById("timeseriesChart").innerHTML =
+      '<div class="empty">No time series data — pick a different metric or wait for more archives.</div>';
+    return;
+  }
+
+  document.getElementById("timeseriesChart").innerHTML = "";
+
+  chart = Highcharts.chart("timeseriesChart", Highcharts.merge(HC_THEME, {
+    chart: { type: "line", backgroundColor: "transparent" },
+    tooltip: {
+      backgroundColor: "#1a1e27", borderColor: "#2f3745", borderRadius: 8,
+      style: { color: "#e6e8ec", fontSize: "12px" },
+      formatter: function () {
+        const metricLabel = metric.replace(/_/g, " ");
+        const val = this.point.y;
+        const valStr = metric.includes("funds") || metric.includes("worth") || metric.includes("income")
+          ? shortMoney(val) : num(val, 1);
+        return `<b>${this.series.name}</b><br/>${metricLabel}: ${valStr}<br/><span style="color:#8a93a6;font-size:11px">${new Date(this.x).toLocaleString()}</span>`;
+      }
+    },
+    series
+  }));
+}
+
+// ---- controls ----
+function wireRangeButtons() {
+  document.querySelectorAll(".range-btn[data-range]").forEach(b => {
+    b.addEventListener("click", () => {
+      const range = b.dataset.range;
+      STATE.range = range;
+      document.querySelectorAll(".range-btn[data-range]").forEach(x =>
+        x.classList.toggle("active", x === b));
+      applyRange(range);
+    });
+  });
+}
+
+function wireMetricButtons() {
+  document.querySelectorAll(".metric-btn").forEach(b => {
+    b.addEventListener("click", () => {
+      STATE.metric = b.dataset.metric;
+      document.querySelectorAll(".metric-btn").forEach(x =>
+        x.classList.toggle("active", x === b));
+      renderTimeSeries();
+    });
+  });
+}
+
+function wireCustomCompare() {
+  const fromSel = document.getElementById("compareFrom");
+  const toSel = document.getElementById("compareTo");
+  const btn = document.getElementById("compareApply");
+
+  btn.addEventListener("click", async () => {
+    const from = fromSel.value;
+    const to = toSel.value;
+    if (!from || !to) return;
+    if (from === to) return;
+    await applyCustomCompare(from, to);
+  });
+}
+
+async function applyCustomCompare(fromName, toName) {
+  try {
+    const fromData = await fetchJSON("./data/players/" + fromName);
+    const toData = await fetchJSON("./data/players/" + toName);
+
+    const movers = computeMovers(toData.players || [], fromData.players || []);
+    STATE.currentMovers = movers;
+    STATE.selectedPlayerId = null;
+
+    document.getElementById("baselineLabel").textContent =
+      `${fromName.replace(".json", "").replace("T", " ")} → ${toName.replace(".json", "").replace("T", " ")}`;
+
+    renderTicker(movers);
+    renderSummary(movers);
+    renderTable(movers);
+  } catch (e) {
+    console.error(e);
+    document.getElementById("error").style.display = "block";
+    document.getElementById("error").textContent = "Custom compare failed: " + e.message;
+  }
+}
+
+async function applyRange(range) {
+  const today = todayUTC();
+  let baselineName = null;
+  if (range === "day") baselineName = pickBaseline(STATE.archives, today, 1);
+  else if (range === "week") baselineName = pickBaseline(STATE.archives, today, 7);
+  else if (range === "month") baselineName = pickBaseline(STATE.archives, today, 30);
+  else if (range === "all") baselineName = STATE.archives.find(n => archiveDate(n) < today);
+
+  if (!baselineName) {
+    document.getElementById("moversBody").innerHTML =
+      '<tr><td colspan="11" class="empty">No archive available for this range yet.</td></tr>';
+    document.getElementById("tickerTrack").innerHTML = '';
+    document.getElementById("summary").innerHTML = '';
+    document.getElementById("baselineLabel").textContent = "no baseline";
+    return;
+  }
+
+  try {
+    const baseline = await fetchJSON("./data/players/" + baselineName);
+    const movers = computeMovers(STATE.current.players || [], baseline.players || []);
+    STATE.currentMovers = movers;
+    STATE.selectedPlayerId = null;
+
+    document.getElementById("baselineLabel").textContent =
+      `vs ${baselineName.replace(".json", "").replace("T", " ")}`;
+
+    // Sync custom compare selects to the picked range
+    document.getElementById("compareFrom").value = baselineName;
+    document.getElementById("compareTo").value = "latest";
+
+    renderTicker(movers);
+    renderSummary(movers);
+    renderTable(movers);
+  } catch (e) {
+    console.error(e);
+    document.getElementById("error").style.display = "block";
+    document.getElementById("error").textContent = "Range failed: " + e.message;
+  }
 }
 
 // ---- main ----
 let STATE = {
   current: null,
   archives: [],
-  dayBaseline: null,
-  weekBaseline: null,
-  dayMovers: [],
-  weekMovers: [],
+  historyArchives: [],
+  currentMovers: [],
   range: "day",
+  metric: "national_prestige",
+  selectedPlayerId: null,
 };
 
 async function loadAll() {
@@ -483,61 +806,68 @@ async function loadAll() {
     STATE.archives = await listArchives();
     STATE.current = await fetchJSON("./data/players/latest.json");
 
-    const today = todayUTC();
-    STATE.dayBaseline = pickDayBaseline(STATE.archives, today);
-    STATE.weekBaseline = pickWeekBaseline(STATE.archives, today);
+    // Fetch ALL archive files for the time series (parallel, capped at 60 most recent)
+    const recent = STATE.archives.slice(-60);
+    const allArchiveData = await Promise.all(
+      recent.map(name =>
+        fetchJSON("./data/players/" + name)
+          .then(data => ({ ts: name.replace(".json", ""), players: data.players || [] }))
+          .catch(() => null)
+      )
+    );
+    STATE.historyArchives = allArchiveData.filter(Boolean);
 
-    // fetch baselines
-    let dayData = null, weekData = null;
-    if (STATE.dayBaseline) {
-      dayData = await fetchJSON("./data/players/" + STATE.dayBaseline);
+    // Populate custom compare selects
+    const fromSel = document.getElementById("compareFrom");
+    const toSel = document.getElementById("compareTo");
+    const reversed = [...STATE.archives].reverse();
+    reversed.forEach(name => {
+      const label = name.replace(".json", "").replace("T", " ");
+      const opt = document.createElement("option");
+      opt.value = name;
+      opt.textContent = label;
+      fromSel.appendChild(opt);
+      toSel.appendChild(opt.cloneNode(true));
+    });
+
+    // Defaults: from = yesterday, to = latest
+    const yest = pickBaseline(STATE.archives, todayUTC(), 1);
+    if (yest) {
+      fromSel.value = yest;
+    } else if (reversed.length > 1) {
+      fromSel.value = reversed[1].value;
     }
-    if (STATE.weekBaseline && STATE.weekBaseline !== STATE.dayBaseline) {
-      weekData = await fetchJSON("./data/players/" + STATE.weekBaseline);
-    } else {
-      weekData = dayData;
-    }
+    // "latest" is handled by the range buttons; add a note
+    const latestOpt = document.createElement("option");
+    latestOpt.value = "latest";
+    latestOpt.textContent = "latest (current)";
+    toSel.appendChild(latestOpt);
+    toSel.value = "latest";
 
-    // compute movers
-    STATE.dayMovers = dayData ? computeMovers(STATE.current.players || [], dayData.players || [], "day") : [];
-    STATE.weekMovers = weekData ? computeMovers(STATE.current.players || [], weekData.players || [], "week") : [];
-
+    // Baseline date label
     statusDot.className = "status-dot fresh";
-    statusText.textContent = `Updated ${STATE.current.generated_at ? new Date(STATE.current.generated_at).toLocaleString() : "unknown"}`;
+    statusText.textContent = STATE.current.generated_at
+      ? "Updated " + new Date(STATE.current.generated_at).toLocaleString()
+      : "Updated";
 
-    render();
+    wireRangeButtons();
+    wireMetricButtons();
+    wireCustomCompare();
+
+    // Initial render
+    renderTimeSeries();
+    await applyRange("day");
+
   } catch (e) {
     console.error(e);
     statusDot.className = "status-dot dead";
     statusText.textContent = "Error loading";
+    errEl.style.display = "block";
     errEl.textContent = e.message || "Failed to load history data";
-    document.getElementById("moversBody").innerHTML = `<tr><td colspan="11" class="empty">${escapeHtml(e.message || "error")}</td></tr>`;
+    document.getElementById("moversBody").innerHTML =
+      `<tr><td colspan="11" class="empty">${escapeHtml(e.message || "error")}</td></tr>`;
   }
 }
-
-function render() {
-  const movers = STATE.range === "day" ? STATE.dayMovers : STATE.weekMovers;
-  const baselineFile = STATE.range === "day" ? STATE.dayBaseline : STATE.weekBaseline;
-
-  document.getElementById("baselineLabel").textContent = baselineFile
-    ? `vs ${baselineFile.replace(".json", "").replace("T", " ")}`
-    : "no baseline";
-
-  renderTicker(movers, baselineFile);
-  renderSummary(movers);
-  renderTable(movers);
-
-  document.querySelectorAll(".range-btn").forEach(b => {
-    b.classList.toggle("active", b.dataset.range === STATE.range);
-  });
-}
-
-document.querySelectorAll(".range-btn").forEach(b => {
-  b.addEventListener("click", () => {
-    STATE.range = b.dataset.range;
-    render();
-  });
-});
 
 loadAll();
 </script>
