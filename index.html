@@ -24,6 +24,27 @@
     background: var(--bg); color: var(--text); min-height: 100vh;
     overflow-x: hidden;
   }
+
+  /* ============================================================
+     AMBIENT GRID — fixed layer behind everything, redrawn on scroll
+     ============================================================ */
+  body::before {
+    content: ""; position: fixed; inset: -1px; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(212,175,55,0.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,175,55,0.022) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-position: 0 0;
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    animation: gridDrift 40s linear infinite;
+  }
+  @keyframes gridDrift {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 64px 64px, 64px 64px; }
+  }
+  body > * { position: relative; z-index: 1; }
+
   a { color: inherit; }
   a.ext::after { content: " ↗"; font-size: 0.85em; color: var(--dim); font-weight: 400; }
   a.ext:hover::after { color: var(--gold-bright); }
@@ -67,9 +88,15 @@
     background: rgba(13,15,20,0.75); border: 1px solid var(--border-2);
     padding: 0.5rem 0.95rem; border-radius: 999px; font-size: 0.78rem;
     color: var(--muted); backdrop-filter: blur(12px); flex-shrink: 0; }
-  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
-  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green); }
-  .status-dot.stale { background: var(--yellow); }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted);
+    transition: background 0.3s; }
+  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green);
+    animation: statusPulse 2.4s ease-in-out infinite; }
+  @keyframes statusPulse {
+    0%, 100% { box-shadow: 0 0 10px var(--green), 0 0 0 0 rgba(74,222,128,0.4); }
+    50%      { box-shadow: 0 0 10px var(--green), 0 0 0 5px rgba(74,222,128,0); }
+  }
+  .status-dot.stale { background: var(--yellow); box-shadow: 0 0 8px var(--yellow); }
   .status-dot.dead  { background: var(--red); }
 
   /* NAV */
@@ -96,7 +123,7 @@
     text-decoration: none; letter-spacing: 0.08em; font-weight: 600; }
   .section h2 .open-link:hover { color: var(--gold-bright); }
 
-  /* QUICK STATS — now clickable */
+  /* QUICK STATS */
   .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 0.75rem; margin-bottom: 1rem; }
   .qs-card {
@@ -115,8 +142,9 @@
   .qs-card .lbl { color: var(--muted); font-size: 0.66rem; letter-spacing: 0.15em;
     text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 700;
     display: flex; justify-content: space-between; align-items: baseline; }
-  .qs-card .lbl .go { color: var(--dim); font-size: 0.9em; font-weight: 400; }
-  .qs-card:hover .lbl .go { color: var(--gold-bright); }
+  .qs-card .lbl .go { color: var(--dim); font-size: 0.9em; font-weight: 400;
+    transition: transform 0.2s; }
+  .qs-card:hover .lbl .go { color: var(--gold-bright); transform: translateX(2px); }
   .qs-card .num { font-size: 1.65rem; font-weight: 800;
     font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
   .qs-card.gold .num { color: var(--gold-bright); }
@@ -136,19 +164,32 @@
     position: relative; overflow: hidden; min-height: 220px; }
   .tile .tile-bg { position: absolute; inset: 0; background-size: cover;
     background-position: center; opacity: 0.12; z-index: 0;
-    transition: opacity 0.3s; pointer-events: none; }
-  .tile:hover .tile-bg { opacity: 0.22; }
+    transition: opacity 0.3s, transform 0.6s ease; pointer-events: none; }
+  .tile:hover .tile-bg { opacity: 0.22; transform: scale(1.05); }
   .tile::after { content: ""; position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(135deg, rgba(8,9,12,0.65) 0%, rgba(8,9,12,0.25) 60%, rgba(8,9,12,0.85) 100%);
     pointer-events: none; }
-  .tile > *:not(.tile-bg) { position: relative; z-index: 2; }
-  .tile::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
-    height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    opacity: 0; transition: opacity 0.3s; z-index: 3; }
+  /* Diagonal sheen that sweeps across once on hover */
+  .tile::before { content: ""; position: absolute; top: -50%; left: -60%;
+    width: 40%; height: 200%; z-index: 2; pointer-events: none;
+    background: linear-gradient(
+      115deg,
+      transparent 0%,
+      transparent 40%,
+      rgba(240,200,80,0.14) 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    transform: translateX(-100%) skewX(-12deg);
+    transition: transform 0.7s cubic-bezier(.2,.8,.2,1);
+  }
+  .tile:hover::before { transform: translateX(420%) skewX(-12deg); }
+  .tile > *:not(.tile-bg) { position: relative; z-index: 3; }
   .tile:hover { transform: translateY(-3px); border-color: var(--gold);
     box-shadow: 0 12px 32px rgba(212,175,55,0.18); }
-  .tile:hover::before { opacity: 0.9; }
-  .tile .tile-icon { font-size: 1.7rem; line-height: 1; }
+  .tile .tile-icon { font-size: 1.7rem; line-height: 1;
+    transition: transform 0.3s ease; }
+  .tile:hover .tile-icon { transform: scale(1.1) rotate(-4deg); }
   .tile .tile-title { font-size: 0.72rem; letter-spacing: 0.16em;
     text-transform: uppercase; color: var(--gold); font-weight: 700; }
   .tile .tile-main { font-size: 1.55rem; font-weight: 800;
@@ -332,6 +373,12 @@
     .section { padding-left: 1rem; padding-right: 1rem; }
     .congress-grid { grid-template-columns: 1fr; }
     #debug-panel { width: calc(100vw - 2rem); max-width: 460px; }
+    body::before { background-size: 40px 40px; animation: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before { animation: none; }
+    .hero-img, .hero::before, .hero-emblem, .status-dot.fresh { animation: none !important; }
+    .tile::before { transition: none; }
   }
 </style>
 </head>
@@ -363,7 +410,6 @@
   <a href="./history.html" class="soon">History</a>
 </nav>
 
-<!-- QUICK STATS — every card links -->
 <div class="section">
   <h2>Overview <span class="open-link" id="last-update-label"></span></h2>
   <div class="quick-stats">
@@ -397,7 +443,7 @@
       <div class="num" id="qsSenate">—</div>
       <div class="sub">of 98</div>
     </a>
-    <a class="qs-card fade-in stagger-4" href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener">
+    <a class="qs-card fade-in stagger-4" href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener">
       <div class="lbl">Nations <span class="go">↗</span></div>
       <div class="num" id="qsNations">—</div>
       <div class="sub">tracked</div>
@@ -410,7 +456,6 @@
   </div>
 </div>
 
-<!-- TILES — added Countries -->
 <div class="section" style="padding-top: 0">
   <div class="tiles">
     <a class="tile fade-in stagger-1" href="./roster.html">
@@ -445,13 +490,13 @@
       <div class="tile-rows" id="tileElectionsRows"></div>
       <div class="tile-cta">Open Elections →</div>
     </a>
-    <a class="tile fade-in stagger-4" href="./nations.html">
+    <a class="tile fade-in stagger-4" href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener">
       <div class="tile-bg" style="background-image:url('./images/banner-caucus.png');"></div>
       <div class="tile-icon">🌐</div>
       <div class="tile-title">Nations</div>
       <div class="tile-main" id="tileNationsCount">—</div>
       <div class="tile-rows" id="tileNationsRows"></div>
-      <div class="tile-cta">Open Nations →</div>
+      <div class="tile-cta">Open on BFTH ↗</div>
     </a>
   </div>
 </div>
@@ -470,7 +515,7 @@
 </div>
 
 <div class="section" id="nations-section">
-  <h2>Nations <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="open-link ext">Open on BFTH</a></h2>
+  <h2>Nations <a href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener" class="open-link ext">Open on BFTH</a></h2>
   <div class="table-wrap">
     <table id="nationsTable">
       <thead>
@@ -505,9 +550,10 @@
 <div class="footer">
   Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> ·
   <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> ·
-  <a href="./congress.html">Congress</a> · <a href="./nations.html">Nations</a> ·
+  <a href="./congress.html">Congress</a> ·
+  <a href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener" class="ext">Nations</a> ·
   <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="ext">Parties</a> ·
-  History (soon) — BFTH War Room v1.2
+  History (soon) — BFTH War Room v1.3
 </div>
 
 <button id="debug-toggle" title="Toggle debug panel">DEBUG</button>
@@ -539,10 +585,24 @@ const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, ch => (
 }[ch]));
 const escapeAttr = (s) => escapeHtml(s).replace(/"/g, "&quot;");
 
-// Safe URL builders — undefined/invalid -> null (renderer falls back to text)
+// ============================================================
+// URL BUILDERS
+// BFTH uses named slugs for a handful of nations; everything else is /<id>/overview
+// ============================================================
 const BFTH = "https://battleforthehill.com";
+const NAMED_NATION_SLUGS = {
+  "1":  "national",   // USA
+  "10": "canada",
+  "20": "cuba",
+  "58": "russia",
+};
 const politicianUrl = (pid) => pid ? `${BFTH}/politician/${encodeURIComponent(pid)}` : null;
-const nationUrl = (nid) => nid ? `${BFTH}/nation/${encodeURIComponent(nid)}` : null;
+const nationUrl = (nid) => {
+  if (!nid) return null;
+  const id = String(nid);
+  if (NAMED_NATION_SLUGS[id]) return `${BFTH}/${NAMED_NATION_SLUGS[id]}/overview`;
+  return `${BFTH}/${id}/overview`;
+};
 const electionUrl = (e) => {
   if (!e) return null;
   if (e.url && /^https?:/.test(e.url)) return e.url;
@@ -762,10 +822,9 @@ function renderNationsTable() {
       <td class="num val-pos">${num(combined, 1)}</td>
     </tr>`;
   }).join('');
-  // Row click delegates to the row's href (name link has target=_blank so clicks there work too)
   tbody.querySelectorAll('tr.row-link').forEach(tr => {
     tr.addEventListener('click', (ev) => {
-      if (ev.target.closest('a')) return; // let the <a> handle it
+      if (ev.target.closest('a')) return;
       window.open(tr.dataset.href, '_blank', 'noopener');
     });
   });
@@ -819,7 +878,6 @@ function renderElections() {
     return;
   }
 
-  // Prefer ones with polls; secondary sort by election_id desc
   const top = [...elections]
     .sort((a, b) => (b.polls_count || 0) - (a.polls_count || 0)
                  || Number(b.election_id || 0) - Number(a.election_id || 0))
