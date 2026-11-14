@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BFTH War Room — GOP</title>
+<title>BFTH War Room — Home</title>
 <link rel="icon" href="./images/emblem.png" type="image/png">
+<meta property="og:title" content="BFTH War Room — GOP">
+<meta property="og:description" content="Home dashboard — roster, market, caucus, congress, elections.">
+<meta property="og:image" content="./images/banner-warroom.png">
 <style>
   :root {
     --bg: #08090c; --bg-2: #0d0f14; --panel: #13161d; --panel-2: #1a1e27;
@@ -13,35 +16,56 @@
     --gold: #d4af37; --gold-bright: #f0c850;
     --green: #4ade80; --red: #ef4444; --blue: #60a5fa;
     --purple: #a78bfa; --yellow: #fbbf24; --cyan: #22d3ee;
-    --tier-s: #d4af37; --tier-a: #60a5fa; --tier-b: #3a4150;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
-  body { font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--bg); color: var(--text); min-height: 100vh; scroll-behavior: smooth; }
+  body {
+    font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh;
+    overflow-x: hidden;
+  }
 
-  /* HERO */
-  .hero { position: relative; height: 220px; overflow: hidden;
+  /* HERO — animated gradient sweep */
+  .hero { position: relative; height: 240px; overflow: hidden;
     border-bottom: 2px solid var(--gold); background: var(--bg-2); }
   .hero-img { position: absolute; inset: 0;
     background-image: url("./images/banner-warroom.png");
     background-size: cover; background-position: center 45%;
-    background-repeat: no-repeat; opacity: 0.6; }
-  .hero::after { content: ""; position: absolute; inset: 0;
+    background-repeat: no-repeat; opacity: 0.55; }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(135deg,
+      rgba(212,175,55,0.0) 0%, rgba(212,175,55,0.08) 25%,
+      rgba(212,175,55,0.0) 50%, rgba(212,175,55,0.08) 75%,
+      rgba(212,175,55,0.0) 100%);
+    background-size: 300% 300%;
+    animation: heroSweep 12s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes heroSweep {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2;
     background:
       linear-gradient(180deg, rgba(8,9,12,0.4) 0%, rgba(8,9,12,0.1) 40%, rgba(8,9,12,0.96) 100%),
       linear-gradient(90deg, rgba(8,9,12,0.75) 0%, transparent 25%, transparent 75%, rgba(8,9,12,0.75) 100%); }
-  .hero-inner { position: relative; z-index: 2; height: 100%;
+  .hero-inner { position: relative; z-index: 3; height: 100%;
     display: flex; align-items: flex-end; justify-content: space-between;
     padding: 0 2rem 1.4rem; gap: 1rem; max-width: 1600px; margin: 0 auto; }
-  .brand h1 { font-size: 2.1rem; margin: 0; letter-spacing: 0.08em;
-    color: var(--gold-bright); text-shadow: 0 2px 14px rgba(0,0,0,0.85); font-weight: 800; }
+  .brand h1 {
+    font-size: 2.1rem; margin: 0; letter-spacing: 0.08em;
+    background: linear-gradient(90deg, #f0c850 0%, #fbbf24 40%, #d4af37 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85));
+    font-weight: 800;
+  }
   .brand .sub { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.18em;
     text-transform: uppercase; margin-top: 0.4rem; }
   .status { display: flex; align-items: center; gap: 0.5rem;
-    background: rgba(13,15,20,0.85); border: 1px solid var(--border-2);
+    background: rgba(13,15,20,0.75); border: 1px solid var(--border-2);
     padding: 0.5rem 0.95rem; border-radius: 999px; font-size: 0.78rem;
-    color: var(--muted); backdrop-filter: blur(8px); flex-shrink: 0; }
+    color: var(--muted); backdrop-filter: blur(12px); flex-shrink: 0; }
   .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
   .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green); }
   .status-dot.stale { background: var(--yellow); }
@@ -50,7 +74,7 @@
   /* NAV */
   .nav { display: flex; background: var(--bg-2);
     border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto;
-    position: sticky; top: 0; z-index: 50; }
+    position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
   .nav a { padding: 0.95rem 1.15rem; color: var(--muted); text-decoration: none;
     font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
     text-transform: uppercase; border-bottom: 2px solid transparent;
@@ -59,187 +83,110 @@
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
   .nav a.soon { color: var(--dim); }
 
-  /* SECTIONS */
-  .section { max-width: 1600px; margin: 0 auto; padding: 3rem 2rem 1rem;
-    border-top: 1px solid var(--border); }
-  .section:first-of-type { border-top: none; }
-  .section-header { display: flex; align-items: baseline; justify-content: space-between;
-    margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.5rem; }
-  .section-header h2 { font-size: 1.4rem; letter-spacing: 0.06em;
-    color: var(--gold-bright); margin: 0; font-weight: 800;
-    text-transform: uppercase; }
-  .section-header .count { color: var(--muted); font-size: 0.82rem; }
-  .section-header .open-page { color: var(--muted); font-size: 0.78rem;
-    text-decoration: none; letter-spacing: 0.05em; }
-  .section-header .open-page:hover { color: var(--gold-bright); }
+  /* SECTION */
+  .section { max-width: 1600px; margin: 0 auto;
+    padding: 2.5rem 2rem 1rem; }
+  .section h2 { font-size: 0.85rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--gold); margin: 0 0 1.25rem;
+    padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between; }
+  .section h2 .open-link { color: var(--muted); font-size: 0.72rem;
+    text-decoration: none; letter-spacing: 0.08em; font-weight: 600; }
+  .section h2 .open-link:hover { color: var(--gold-bright); }
 
-  /* STAT STRIP */
-  .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 0.75rem; margin-bottom: 1.5rem; }
-  .stat-card { background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
-    border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.15rem;
-    position: relative; overflow: hidden; }
-  .stat-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
+  /* QUICK STATS — glassmorphism */
+  .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem; margin-bottom: 1rem; }
+  .qs-card {
+    background: linear-gradient(135deg, rgba(19,22,29,0.9) 0%, rgba(26,30,39,0.85) 100%);
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.1rem 1.15rem; position: relative; overflow: hidden;
+    backdrop-filter: blur(10px);
+  }
+  .qs-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
     height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    opacity: 0.5; }
-  .stat-card .label { color: var(--muted); font-size: 0.68rem; letter-spacing: 0.14em;
-    text-transform: uppercase; margin-bottom: 0.45rem; font-weight: 600; }
-  .stat-card .value { font-size: 1.7rem; font-weight: 800;
+    opacity: 0.6; }
+  .qs-card .lbl { color: var(--muted); font-size: 0.66rem; letter-spacing: 0.15em;
+    text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 700; }
+  .qs-card .num { font-size: 1.65rem; font-weight: 800;
+    font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .qs-card.gold .num { color: var(--gold-bright); }
+  .qs-card.green .num { color: var(--green); }
+  .qs-card.blue .num { color: var(--blue); }
+  .qs-card.red .num { color: var(--red); }
+  .qs-card .sub { color: var(--dim); font-size: 0.7rem; margin-top: 0.2rem; }
+
+  /* TILES */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem; margin-bottom: 1rem; }
+  .tile { background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.25rem 1.4rem;
+    display: flex; flex-direction: column; gap: 0.75rem;
+    text-decoration: none; color: inherit;
+    transition: transform 0.2s ease, border-color 0.2s, box-shadow 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .tile::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
+    height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0; transition: opacity 0.3s; }
+  .tile:hover { transform: translateY(-3px); border-color: var(--gold);
+    box-shadow: 0 12px 32px rgba(212,175,55,0.15); }
+  .tile:hover::before { opacity: 0.8; }
+  .tile .tile-icon { font-size: 1.6rem; line-height: 1; }
+  .tile .tile-title { font-size: 0.72rem; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  .tile .tile-main { font-size: 1.5rem; font-weight: 800;
     font-variant-numeric: tabular-nums; color: var(--text); }
-  .stat-card.gold .value { color: var(--gold-bright); }
-  .stat-card.green .value { color: var(--green); }
-  .stat-card.blue .value { color: var(--blue); }
-  .stat-card.red .value { color: var(--red); }
-  .stat-card .delta { font-size: 0.72rem; color: var(--dim); margin-top: 0.2rem; }
-
-  /* CONTROLS */
-  .controls-wrap { display: flex; gap: 0.75rem;
-    flex-wrap: wrap; align-items: center; margin-bottom: 1.25rem; }
-  .controls-wrap input, .controls-wrap select {
-    background: var(--panel); color: var(--text); border: 1px solid var(--border);
-    padding: 0.65rem 0.95rem; border-radius: 6px; font-size: 0.88rem; font-family: inherit; }
-  .controls-wrap input:focus, .controls-wrap select:focus {
-    outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,175,55,0.12); }
-  .controls-wrap input { flex: 1; min-width: 240px; }
-  .controls-wrap .count { color: var(--muted); font-size: 0.82rem; margin-left: auto; }
-
-  /* PLAYER CARDS */
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 1.25rem; }
-  .card { background: var(--panel); border: 1px solid var(--border);
-    border-left: 3px solid var(--tier-b); border-radius: 10px;
-    padding: 1.1rem 1.25rem; transition: border-color 0.15s, transform 0.15s, box-shadow 0.2s; }
-  .card:hover { border-color: var(--border-2); transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(0,0,0,0.45); }
-  .card.tier-s { border-left-color: var(--tier-s);
-    background: linear-gradient(135deg, #15120a 0%, var(--panel) 45%); }
-  .card.tier-a { border-left-color: var(--tier-a); }
-  .card.dormant { opacity: 0.55; }
-
-  .card-header { display: flex; gap: 0.85rem; align-items: flex-start; margin-bottom: 0.75rem; }
-  .card-header .avatar { width: 64px; height: 64px; border-radius: 8px;
-    object-fit: cover; background: var(--panel-2); flex-shrink: 0;
-    border: 1px solid var(--border-2); }
-  .card-header .info { flex: 1; min-width: 0; }
-  .card-header .name-row { display: flex; align-items: center; gap: 0.5rem;
-    margin-bottom: 0.25rem; }
-  .card-header h3 { font-size: 1.05rem; margin: 0; line-height: 1.2;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .card-header h3 a { color: inherit; text-decoration: none; }
-  .card-header h3 a:hover { color: var(--gold-bright); }
-  .rank-chip { flex-shrink: 0; font-size: 0.7rem; font-weight: 800;
-    font-variant-numeric: tabular-nums; background: var(--panel-2);
-    border: 1px solid var(--border-2); color: var(--muted);
-    padding: 0.15rem 0.45rem; border-radius: 4px; }
-  .card.tier-s .rank-chip { color: var(--gold-bright); border-color: var(--gold); }
-  .card.tier-a .rank-chip { color: var(--blue); border-color: var(--blue); }
-  .card-header .meta-row { color: var(--muted); font-size: 0.76rem;
-    display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
-  .card-header .bfth-link { display: inline-block; color: var(--muted);
-    text-decoration: none; font-size: 0.7rem; margin-top: 0.4rem; letter-spacing: 0.06em; }
-  .card-header .bfth-link:hover { color: var(--gold-bright); }
-
-  .badge { display: inline-block; padding: 0.1rem 0.4rem;
-    border-radius: 3px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.03em; }
-  .badge-party { background: #3a1414; color: #f87171; }
-  .badge-alt { background: #3a2a1a; color: var(--yellow); }
-  .badge-married { background: #2a1a3a; color: var(--purple); }
-  .badge-kofi { background: #1a2a3a; color: var(--blue); }
-  .badge-dormant { background: #3a1a1a; color: var(--red); }
-  .badge-nodc { background: #2a1a1a; color: var(--red); }
-  .badge-caucus { background: #1a2a1e; color: var(--green); }
-  .badge-stance { background: #1a1a2a; color: var(--purple); font-variant-numeric: tabular-nums; }
-
-  .np-bar-wrap { height: 4px; background: var(--bg-2); border-radius: 2px;
-    margin: 0.65rem 0 0.9rem; overflow: hidden; }
-  .np-bar { height: 100%; background: linear-gradient(90deg, var(--tier-b), var(--gold));
-    border-radius: 2px; transition: width 0.5s ease; }
-  .card.tier-a .np-bar { background: linear-gradient(90deg, var(--tier-b), var(--blue)); }
-  .card.dormant .np-bar { background: var(--dim); }
-
-  .stat-groups { display: grid; grid-template-columns: repeat(3, 1fr);
-    gap: 0.55rem; font-size: 0.8rem; }
-  .stat-group { background: var(--bg-2); border: 1px solid var(--border);
-    border-radius: 6px; padding: 0.55rem 0.65rem; }
-  .stat-group .group-label { font-size: 0.6rem; letter-spacing: 0.14em;
-    text-transform: uppercase; color: var(--dim); margin-bottom: 0.35rem; font-weight: 700; }
-  .stat-group .stat { display: flex; justify-content: space-between;
-    padding: 0.13rem 0; font-size: 0.77rem; }
-  .stat-group .stat .label { color: var(--muted); }
-  .stat-group .stat .val { font-weight: 700; font-variant-numeric: tabular-nums; }
-  .val.np { color: var(--yellow); }
-  .val.cs, .val.sr, .val.nr { color: var(--blue); }
-  .val.cf, .val.nw { color: var(--green); }
-  .val.pc, .val.mil { color: var(--muted); }
-
-  /* CAUCUS */
-  .caucus-group { margin-bottom: 1.75rem; }
-  .caucus-header { display: flex; align-items: center; gap: 0.75rem;
-    margin-bottom: 0.75rem; flex-wrap: wrap; }
-  .caucus-header h3 { margin: 0; font-size: 1rem; color: var(--text); }
-  .caucus-header .badge { background: var(--gold); color: #08090c;
-    font-size: 0.7rem; font-weight: 800; padding: 0.15rem 0.5rem; border-radius: 4px; }
-  .caucus-header .meta { color: var(--muted); font-size: 0.8rem; }
-  .member-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 0.75rem; }
-  .member { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.8rem 1rem; display: flex; gap: 0.75rem;
-    align-items: center; }
-  .member .avatar { width: 42px; height: 42px; border-radius: 6px;
-    object-fit: cover; background: var(--panel-2); flex-shrink: 0; }
-  .member .info { flex: 1; min-width: 0; }
-  .member .name { font-size: 0.88rem; font-weight: 700;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .member .name a { color: inherit; text-decoration: none; }
-  .member .name a:hover { color: var(--gold-bright); }
-  .member .meta { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
-  .member .np { font-size: 0.78rem; color: var(--yellow); font-weight: 700;
-    font-variant-numeric: tabular-nums; flex-shrink: 0; }
-
-  /* MARKET DESK */
-  .movers { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.75rem; margin-bottom: 1.25rem; }
-  .mover { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.8rem 1rem; }
-  .mover.up { border-left: 3px solid var(--green); }
-  .mover.down { border-left: 3px solid var(--red); }
-  .mover .pct { font-size: 1.1rem; font-weight: 800;
+  .tile .tile-rows { font-size: 0.78rem; color: var(--muted);
+    display: flex; flex-direction: column; gap: 0.3rem; margin-top: auto; }
+  .tile .tile-row { display: flex; justify-content: space-between; gap: 0.5rem; }
+  .tile .tile-row .v { color: var(--text); font-weight: 600;
     font-variant-numeric: tabular-nums; }
-  .mover.up .pct { color: var(--green); }
-  .mover.down .pct { color: var(--red); }
-  .mover .name { font-size: 0.82rem; color: var(--text); margin-top: 0.15rem; font-weight: 600; }
-  .mover .meta { font-size: 0.7rem; color: var(--muted); margin-top: 0.15rem; }
+  .tile .tile-cta { color: var(--gold-bright); font-size: 0.72rem;
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;
+    margin-top: 0.5rem; }
 
-  .sector-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0.75rem; margin-bottom: 1.5rem; }
-  .sector-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 8px; padding: 0.9rem 1rem; }
-  .sector-card .label { font-size: 0.72rem; letter-spacing: 0.08em;
-    text-transform: uppercase; color: var(--muted); margin-bottom: 0.3rem;
-    display: flex; justify-content: space-between; }
-  .sector-card .value { font-size: 1.1rem; font-weight: 800;
-    color: var(--gold-bright); font-variant-numeric: tabular-nums; }
-  .sector-card .bar { height: 4px; background: var(--bg-2);
-    border-radius: 2px; overflow: hidden; margin: 0.4rem 0; }
-  .sector-card .bar-fill { height: 100%; background: var(--gold); }
-  .sector-card .meta { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
+  /* CONGRESS SPLIT */
+  .congress-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
+    margin-bottom: 1rem; }
+  @media (max-width: 900px) { .congress-grid { grid-template-columns: 1fr; } }
+  .chamber-card { background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.25rem 1.5rem; }
+  .chamber-card h3 { margin: 0 0 0.5rem; font-size: 0.95rem;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); }
+  .chamber-card .seat-count { font-size: 2rem; font-weight: 800;
+    font-variant-numeric: tabular-nums; color: var(--text); margin-bottom: 0.75rem; }
+  .chamber-card .seat-count .majority { font-size: 0.72rem;
+    color: var(--muted); font-weight: 400; letter-spacing: 0.05em;
+    margin-left: 0.5rem; text-transform: uppercase; }
+  /* stacked bar */
+  .stacked-bar { display: flex; height: 14px; border-radius: 4px;
+    overflow: hidden; margin-bottom: 0.75rem; background: var(--bg-2); }
+  .stacked-bar .seg { transition: flex-basis 0.6s ease; }
+  .party-legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+    font-size: 0.75rem; margin-bottom: 1rem; }
+  .party-legend .item { display: flex; align-items: center; gap: 0.35rem; }
+  .party-legend .swatch { width: 10px; height: 10px; border-radius: 2px; }
+  .party-legend .num { color: var(--text); font-weight: 700;
+    font-variant-numeric: tabular-nums; }
+  .leadership { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.6rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+  .leader { background: var(--bg-2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 0.6rem 0.75rem; font-size: 0.78rem; }
+  .leader .role { color: var(--dim); font-size: 0.65rem;
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .leader .who { font-weight: 700; }
+  .leader .who.vacant { color: var(--red); font-style: italic; font-weight: 500; }
+  .leader .who a { color: inherit; text-decoration: none; }
+  .leader .who a:hover { color: var(--gold-bright); }
 
-  .vacant-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 0.75rem; margin-bottom: 1.5rem; }
-  .vacant-card { background: var(--panel); border: 1px solid var(--border);
-    border-left: 3px solid var(--red); border-radius: 8px; padding: 0.8rem 1rem; }
-  .vacant-card .name { font-size: 0.88rem; font-weight: 700; }
-  .vacant-card .meta { font-size: 0.72rem; color: var(--muted); margin-top: 0.15rem; }
-  .vacant-card .val { font-size: 0.88rem; font-weight: 700;
-    color: var(--gold-bright); margin-top: 0.3rem; font-variant-numeric: tabular-nums; }
-
-  /* TABLES (shared for corps + nations) */
+  /* TABLES */
   .table-wrap { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 10px; overflow: hidden; margin-bottom: 1.5rem; }
-  table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    border-radius: 10px; overflow: hidden; margin-bottom: 1rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   thead { background: var(--bg-2); }
-  th { text-align: left; padding: 0.65rem 0.85rem; font-size: 0.68rem;
-    letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+  th { text-align: left; padding: 0.7rem 0.9rem; font-size: 0.66rem;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
     font-weight: 700; border-bottom: 1px solid var(--border-2);
     cursor: pointer; user-select: none; white-space: nowrap; }
   th:hover { color: var(--text); }
@@ -248,84 +195,88 @@
   th.sort-desc::after { content: " ↓"; color: var(--gold); }
   tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
   tbody tr:hover { background: var(--panel-2); }
-  tbody tr:last-child { border-bottom: none; }
-  td { padding: 0.6rem 0.85rem; vertical-align: middle; }
+  td { padding: 0.65rem 0.9rem; vertical-align: middle; }
   td.num { text-align: right; font-variant-numeric: tabular-nums; }
   td.name { font-weight: 600; }
-  td.name a { color: inherit; text-decoration: none; }
-  td.name a:hover { color: var(--gold-bright); }
-  td.symbol { font-family: "SF Mono", Menlo, Consolas, monospace;
-    font-size: 0.78rem; color: var(--blue); font-weight: 700; }
-  td.ceo.vacant { color: var(--red); font-style: italic; }
-  .sector-tag { display: inline-block; padding: 0.15rem 0.5rem;
-    border-radius: 4px; font-size: 0.68rem; font-weight: 600; text-transform: capitalize;
-    background: var(--panel-2); color: var(--muted); }
+  .val-gold { color: var(--gold-bright); font-weight: 700; }
   .val-pos { color: var(--green); font-weight: 600; }
   .val-neg { color: var(--red); font-weight: 600; }
-  .val-gold { color: var(--gold-bright); font-weight: 700; }
+  .tag { display: inline-block; padding: 0.12rem 0.5rem;
+    border-radius: 4px; font-size: 0.66rem; font-weight: 600;
+    text-transform: capitalize; }
 
-  /* ELECTIONS */
-  .election-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 1rem; }
+  /* ELECTION TILES */
+  .election-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.75rem; margin-bottom: 1rem; }
   .election-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 10px; padding: 1rem 1.15rem; }
-  .election-card .race { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem; }
-  .election-card .meta { font-size: 0.76rem; color: var(--muted); margin-bottom: 0.5rem; }
-  .election-card .winner { display: flex; justify-content: space-between;
-    align-items: center; padding: 0.3rem 0; font-size: 0.82rem; }
-  .election-card .winner .pct { font-weight: 700;
-    color: var(--gold-bright); font-variant-numeric: tabular-nums; }
+    border-radius: 10px; padding: 0.9rem 1rem; font-size: 0.82rem; }
+  .election-card .race { font-weight: 700; margin-bottom: 0.25rem; }
+  .election-card .meta { color: var(--muted); font-size: 0.72rem; }
 
   /* ERROR + LOADING */
   .section-error { color: var(--red); padding: 1rem 1.2rem;
     background: #1a0a0a; border: 1px solid #3a1a1a; border-radius: 6px;
-    margin: 0 0 1.5rem; font-size: 0.85rem; font-family: "SF Mono", Menlo, monospace; }
+    margin: 0 0 1rem; font-size: 0.85rem;
+    font-family: "SF Mono", Menlo, monospace; }
   .section-loading { color: var(--muted); text-align: center;
     padding: 2rem; font-size: 0.9rem; }
-  .raw-preview { background: var(--bg-2); border: 1px solid var(--border);
-    border-radius: 6px; padding: 0.75rem 1rem; margin-top: 0.75rem;
-    font-family: "SF Mono", Menlo, monospace; font-size: 0.72rem;
-    color: var(--muted); max-height: 260px; overflow-y: auto;
-    white-space: pre-wrap; word-break: break-all; }
+  .empty-note { color: var(--muted); text-align: center;
+    padding: 1.5rem; font-size: 0.82rem; line-height: 1.6; }
+  .empty-note code { background: var(--bg-2); padding: 0.1rem 0.35rem;
+    border-radius: 3px; color: var(--gold-bright); font-size: 0.78rem; }
 
   /* DEBUG OVERLAY */
   #debug-toggle { position: fixed; bottom: 1rem; right: 1rem;
     background: var(--panel); border: 1px solid var(--border-2);
     color: var(--muted); padding: 0.5rem 0.85rem; border-radius: 6px;
-    font-family: "SF Mono", Menlo, monospace; font-size: 0.72rem;
-    cursor: pointer; z-index: 100; letter-spacing: 0.05em; }
+    font-family: "SF Mono", Menlo, monospace; font-size: 0.7rem;
+    cursor: pointer; z-index: 100; letter-spacing: 0.05em;
+    backdrop-filter: blur(8px); }
   #debug-toggle:hover { color: var(--gold-bright); border-color: var(--gold); }
   #debug-toggle.error { color: var(--red); border-color: var(--red); }
   #debug-panel { position: fixed; bottom: 3.5rem; right: 1rem;
-    width: 420px; max-height: 60vh; overflow-y: auto;
-    background: var(--panel); border: 1px solid var(--border-2);
+    width: 460px; max-height: 65vh; overflow-y: auto;
+    background: rgba(19,22,29,0.98); border: 1px solid var(--border-2);
     border-radius: 8px; padding: 0.85rem 1rem; z-index: 99;
-    font-family: "SF Mono", Menlo, monospace; font-size: 0.72rem;
-    color: var(--text); display: none; }
+    font-family: "SF Mono", Menlo, monospace; font-size: 0.7rem;
+    color: var(--text); display: none; backdrop-filter: blur(12px); }
   #debug-panel.open { display: block; }
-  #debug-panel h4 { margin: 0 0 0.5rem; color: var(--gold); font-size: 0.75rem;
-    letter-spacing: 0.1em; text-transform: uppercase; }
-  #debug-panel .debug-row { padding: 0.25rem 0; border-bottom: 1px solid var(--border); }
-  #debug-panel .debug-row:last-child { border-bottom: none; }
-  #debug-panel .debug-ok { color: var(--green); }
-  #debug-panel .debug-err { color: var(--red); }
-  #debug-panel .debug-meta { color: var(--dim); font-size: 0.68rem; }
+  #debug-panel h4 { margin: 0 0 0.5rem; color: var(--gold);
+    font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  .debug-row { padding: 0.3rem 0; border-bottom: 1px solid var(--border);
+    display: flex; gap: 0.5rem; align-items: baseline; }
+  .debug-row:last-child { border-bottom: none; }
+  .debug-ok { color: var(--green); }
+  .debug-err { color: var(--red); }
+  .debug-meta { color: var(--dim); font-size: 0.66rem; word-break: break-all; }
+  .debug-name { color: var(--muted); }
 
   /* FOOTER */
   .footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem;
     color: var(--dim); font-size: 0.75rem; text-align: center;
     letter-spacing: 0.06em; margin-top: 2rem; }
 
+  /* STAGGERED ENTRY */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeUp 0.5s ease-out both; }
+  .stagger-1 { animation-delay: 0.05s; }
+  .stagger-2 { animation-delay: 0.1s; }
+  .stagger-3 { animation-delay: 0.15s; }
+  .stagger-4 { animation-delay: 0.2s; }
+  .stagger-5 { animation-delay: 0.25s; }
+
   @media (max-width: 700px) {
-    .hero { height: 170px; }
+    .hero { height: 180px; }
     .hero-inner { padding: 0 1rem 1rem; flex-wrap: wrap; gap: 0.5rem; }
-    .brand h1 { font-size: 1.45rem; }
+    .brand h1 { font-size: 1.5rem; }
     .nav { padding: 0 0.5rem; }
     .nav a { padding: 0.8rem 0.7rem; font-size: 0.72rem; }
     .section { padding-left: 1rem; padding-right: 1rem; }
-    .grid, .stat-groups { grid-template-columns: 1fr; }
-    th:nth-child(n+4), td:nth-child(n+4) { display: none; }
-    #debug-panel { width: calc(100vw - 2rem); max-width: 420px; }
+    .congress-grid { grid-template-columns: 1fr; }
+    #debug-panel { width: calc(100vw - 2rem); max-width: 460px; }
   }
 </style>
 </head>
@@ -346,162 +297,105 @@
 </div>
 
 <nav class="nav">
-  <a href="#roster" class="active">Roster</a>
-  <a href="#caucus">Caucus</a>
-  <a href="#market">Market Desk</a>
-  <a href="#nations">Nations</a>
-  <a href="#elections">Elections</a>
+  <a href="./index.html" class="active">Home</a>
+  <a href="./roster.html">Roster</a>
+  <a href="./caucus.html">Caucus</a>
+  <a href="./elections.html">Elections</a>
+  <a href="./corporations.html">Market Desk</a>
+  <a href="./congress.html">Congress</a>
+  <a href="./history.html" class="soon">History</a>
 </nav>
 
-<!-- ============ ROSTER ============ -->
-<section class="section" id="roster">
-  <div class="section-header">
-    <h2>Roster</h2>
-    <span class="count" id="rosterCount">—</span>
+<!-- QUICK STATS -->
+<div class="section">
+  <h2>Overview <span class="open-link" id="last-update-label"></span></h2>
+  <div class="quick-stats" id="quickStats">
+    <div class="qs-card fade-in stagger-1"><div class="lbl">Members</div><div class="num" id="qsMembers">—</div><div class="sub">GOP players</div></div>
+    <div class="qs-card green fade-in stagger-1"><div class="lbl">Campaign Funds</div><div class="num" id="qsCF">—</div><div class="sub">party total</div></div>
+    <div class="qs-card gold fade-in stagger-2"><div class="lbl">GOP Corps</div><div class="num" id="qsCorps">—</div><div class="sub" id="qsCorpsShare">—</div></div>
+    <div class="qs-card gold fade-in stagger-2"><div class="lbl">GOP Valuation</div><div class="num" id="qsCorpsVal">—</div><div class="sub">$ at market</div></div>
+    <div class="qs-card blue fade-in stagger-3"><div class="lbl">House Seats</div><div class="num" id="qsHouse">—</div><div class="sub">of 374</div></div>
+    <div class="qs-card blue fade-in stagger-3"><div class="lbl">Senate Seats</div><div class="num" id="qsSenate">—</div><div class="sub">of 98</div></div>
+    <div class="qs-card fade-in stagger-4"><div class="lbl">Nations</div><div class="num" id="qsNations">—</div><div class="sub">tracked</div></div>
+    <div class="qs-card fade-in stagger-4"><div class="lbl">Elections</div><div class="num" id="qsElections">—</div><div class="sub" id="qsElectionsSub">tracked</div></div>
   </div>
-
-  <div class="stat-strip" id="rosterStats">
-    <div class="stat-card"><div class="label">Members</div><div class="value" id="statMembers">—</div></div>
-    <div class="stat-card green"><div class="label">Campaign Funds</div><div class="value" id="statCF">—</div></div>
-    <div class="stat-card gold"><div class="label">Net Worth</div><div class="value" id="statNW">—</div></div>
-    <div class="stat-card"><div class="label">Mean CS</div><div class="value" id="statCS">—</div></div>
-    <div class="stat-card"><div class="label">Mean SR</div><div class="value" id="statSR">—</div></div>
-  </div>
-
-  <div id="rosterError"></div>
-
-  <div class="controls-wrap" id="rosterControls" style="display:none">
-    <input id="rosterSearch" type="search" placeholder="Search name, state, discord, stance…" autocomplete="off">
-    <select id="rosterSort">
-      <option value="np">Sort: National Prestige</option>
-      <option value="nw">Sort: Net Worth</option>
-      <option value="cf">Sort: Campaign Funds</option>
-      <option value="cs">Sort: Campaign Strength</option>
-      <option value="sr">Sort: State Reputation</option>
-      <option value="nr">Sort: National Reputation</option>
-      <option value="pc">Sort: Political Capital</option>
-      <option value="name">Sort: Name</option>
-    </select>
-    <span class="count" id="rosterFilterCount"></span>
-  </div>
-
-  <div class="grid" id="rosterGrid"></div>
-</section>
-
-<!-- ============ CAUCUS ============ -->
-<section class="section" id="caucus">
-  <div class="section-header">
-    <h2>Caucus</h2>
-    <a href="./caucus.html" class="open-page">Open full Caucus view →</a>
-  </div>
-
-  <div id="caucusError"></div>
-  <div id="caucusContent"></div>
-</section>
-
-<!-- ============ MARKET DESK ============ -->
-<section class="section" id="market">
-  <div class="section-header">
-    <h2>GOP Market Desk</h2>
-    <a href="./corporations.html" class="open-page">Open full Market Desk →</a>
-  </div>
-
-  <div class="stat-strip" id="marketStats" style="display:none">
-    <div class="stat-card"><div class="label">GOP Corps</div><div class="value" id="mktCount">—</div><div class="delta" id="mktCountMeta">—</div></div>
-    <div class="stat-card gold"><div class="label">GOP Valuation</div><div class="value" id="mktVal">—</div><div class="delta" id="mktValMeta">—</div></div>
-    <div class="stat-card green"><div class="label">GOP Dividends</div><div class="value" id="mktDiv">—</div></div>
-    <div class="stat-card blue"><div class="label">Market Cap</div><div class="value" id="mktCap">—</div></div>
-    <div class="stat-card red"><div class="label">Vacant CEOs</div><div class="value" id="mktVacant">—</div></div>
-  </div>
-
-  <div id="marketError"></div>
-  <div id="marketContent" style="display:none">
-    <div class="movers" id="mktMovers"></div>
-    <div class="sector-grid" id="mktSectors"></div>
-    <div class="vacant-list" id="mktVacants"></div>
-    <div class="controls-wrap">
-      <input id="mktSearch" type="search" placeholder="Search corp, symbol, sector, CEO…" autocomplete="off">
-      <select id="mktFilter">
-        <option value="gop" selected>GOP only</option>
-        <option value="all">All corps</option>
-        <option value="non-gop">Non-GOP only</option>
-      </select>
-      <span class="count" id="mktFilterCount"></span>
-    </div>
-    <div class="table-wrap">
-      <table id="corpTable">
-        <thead>
-          <tr>
-            <th data-mkt-sort="name">Corporation</th>
-            <th data-mkt-sort="symbol">Symbol</th>
-            <th data-mkt-sort="sector">Sector</th>
-            <th data-mkt-sort="ceo">CEO</th>
-            <th data-mkt-sort="valuation" class="num">Valuation</th>
-            <th data-mkt-sort="dividends" class="num">Dividends</th>
-            <th data-mkt-sort="change" class="num">Chg%</th>
-          </tr>
-        </thead>
-        <tbody id="corpBody"></tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ============ NATIONS ============ -->
-<section class="section" id="nations">
-  <div class="section-header">
-    <h2>Nations</h2>
-    <span class="count" id="nationsCount">—</span>
-  </div>
-
-  <div id="nationsError"></div>
-  <div id="nationsContent" style="display:none">
-    <div class="controls-wrap">
-      <input id="nationsSearch" type="search" placeholder="Search nation…" autocomplete="off">
-      <select id="nationsSort">
-        <option value="gdp">Sort: GDP</option>
-        <option value="corp_tax">Sort: Corp Tax (low→high)</option>
-        <option value="tariff">Sort: Tariff (low→high)</option>
-        <option value="combined">Sort: Combined Burden</option>
-        <option value="name">Sort: Name</option>
-      </select>
-      <span class="count" id="nationsFilterCount"></span>
-    </div>
-    <div class="table-wrap">
-      <table id="nationsTable">
-        <thead>
-          <tr>
-            <th data-nat-sort="name">Nation</th>
-            <th data-nat-sort="gdp" class="num">GDP</th>
-            <th data-nat-sort="corp_tax" class="num">Corp Tax</th>
-            <th data-nat-sort="tariff" class="num">Tariff</th>
-            <th data-nat-sort="combined" class="num">Combined</th>
-          </tr>
-        </thead>
-        <tbody id="nationsBody"></tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ELECTIONS ============ -->
-<section class="section" id="elections">
-  <div class="section-header">
-    <h2>Elections</h2>
-    <a href="./elections.html" class="open-page">Open full Elections view →</a>
-  </div>
-
-  <div id="electionsError"></div>
-  <div id="electionsContent" style="display:none">
-    <div class="election-grid" id="electionsGrid"></div>
-  </div>
-</section>
-
-<div class="footer">
-  BFTH War Room · Monolith v1.0 · Roster · Caucus · Market Desk · Nations · Elections
 </div>
 
-<!-- DEBUG OVERLAY -->
+<!-- TILE GRID -->
+<div class="section" style="padding-top: 0">
+  <div class="tiles" id="tiles">
+    <a class="tile fade-in stagger-1" href="./roster.html">
+      <div class="tile-icon">👥</div>
+      <div class="tile-title">Roster</div>
+      <div class="tile-main" id="tileRosterCount">—</div>
+      <div class="tile-rows" id="tileRosterRows"></div>
+      <div class="tile-cta">Open Roster →</div>
+    </a>
+    <a class="tile fade-in stagger-2" href="./caucus.html">
+      <div class="tile-icon">🏛️</div>
+      <div class="tile-title">Caucus</div>
+      <div class="tile-main" id="tileCaucusCount">—</div>
+      <div class="tile-rows" id="tileCaucusRows"></div>
+      <div class="tile-cta">Open Caucus →</div>
+    </a>
+    <a class="tile fade-in stagger-3" href="./corporations.html">
+      <div class="tile-icon">🏢</div>
+      <div class="tile-title">GOP Market Desk</div>
+      <div class="tile-main" id="tileMarketVal">—</div>
+      <div class="tile-rows" id="tileMarketRows"></div>
+      <div class="tile-cta">Open Market Desk →</div>
+    </a>
+    <a class="tile fade-in stagger-4" href="./elections.html">
+      <div class="tile-icon">🗳️</div>
+      <div class="tile-title">Elections</div>
+      <div class="tile-main" id="tileElectionsCount">—</div>
+      <div class="tile-rows" id="tileElectionsRows"></div>
+      <div class="tile-cta">Open Elections →</div>
+    </a>
+  </div>
+</div>
+
+<!-- CONGRESS -->
+<div class="section" id="congress-section">
+  <h2>Congress of the United States <a href="./congress.html" class="open-link">Open Congress →</a></h2>
+  <div class="congress-grid" id="congressGrid">
+    <div class="section-loading">Loading Congress data…</div>
+  </div>
+</div>
+
+<!-- NATIONS -->
+<div class="section" id="nations-section">
+  <h2>Nations <span class="open-link" id="nationsCount">—</span></h2>
+  <div class="table-wrap">
+    <table id="nationsTable">
+      <thead>
+        <tr>
+          <th data-nat-sort="name">Nation</th>
+          <th data-nat-sort="gdp" class="num">GDP</th>
+          <th data-nat-sort="corp" class="num">Corp Tax</th>
+          <th data-nat-sort="tariff" class="num">Tariff</th>
+          <th data-nat-sort="combined" class="num">Combined</th>
+        </tr>
+      </thead>
+      <tbody id="nationsBody">
+        <tr><td colspan="5" class="empty-note">Loading nations…</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ELECTIONS PREVIEW -->
+<div class="section" id="elections-section">
+  <h2>Live Elections <a href="./elections.html" class="open-link">Open Elections →</a></h2>
+  <div class="election-grid" id="electionGrid">
+    <div class="section-loading">Loading elections…</div>
+  </div>
+</div>
+
+<div class="footer">
+  Home · <a href="./roster.html" style="color:inherit;text-decoration:underline">Roster</a> · <a href="./caucus.html" style="color:inherit;text-decoration:underline">Caucus</a> · <a href="./elections.html" style="color:inherit;text-decoration:underline">Elections</a> · <a href="./corporations.html" style="color:inherit;text-decoration:underline">Market Desk</a> · <a href="./congress.html" style="color:inherit;text-decoration:underline">Congress</a> · History (soon) — BFTH War Room v1.0
+</div>
+
 <button id="debug-toggle" title="Toggle debug panel">DEBUG</button>
 <div id="debug-panel">
   <h4>Debug Log</h4>
@@ -510,13 +404,34 @@
 
 <script>
 // ============================================================
-// DEBUG LOGGING
+// HELPERS
+// ============================================================
+const money = (n) => n == null || isNaN(n) ? "—" :
+  "$" + Number(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
+const shortMoney = (n) => {
+  if (n == null || isNaN(n)) return "—";
+  const a = Math.abs(n);
+  if (a >= 1e12) return "$" + (n / 1e12).toFixed(2) + "T";
+  if (a >= 1e9) return "$" + (n / 1e9).toFixed(2) + "B";
+  if (a >= 1e6) return "$" + (n / 1e6).toFixed(1) + "M";
+  if (a >= 1e3) return "$" + (n / 1e3).toFixed(0) + "K";
+  return "$" + Number(n).toFixed(0);
+};
+const num = (n, d = 1) => n == null || isNaN(n) ? "—" :
+  Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
+const pct = (n) => n == null || isNaN(n) ? "—" : num(n, 1) + "%";
+const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, ch => ({
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+}[ch]));
+const escapeAttr = (s) => escapeHtml(s).replace(/"/g, "&quot;");
+
+// ============================================================
+// DEBUG
 // ============================================================
 const DEBUG = {
   logs: [],
   add(status, name, detail) {
-    const entry = { status, name, detail, ts: new Date().toISOString() };
-    this.logs.push(entry);
+    this.logs.push({ status, name, detail, ts: Date.now() });
     console.log(`[BFTH] ${status === 'ok' ? '✓' : '✗'} ${name}${detail ? ' — ' + detail : ''}`);
     this.render();
   },
@@ -529,8 +444,10 @@ const DEBUG = {
     logEl.innerHTML = this.logs.map(l => `
       <div class="debug-row">
         <span class="${l.status === 'ok' ? 'debug-ok' : 'debug-err'}">${l.status === 'ok' ? '✓' : '✗'}</span>
-        <strong>${escapeHtml(l.name)}</strong>
-        ${l.detail ? `<div class="debug-meta">${escapeHtml(l.detail)}</div>` : ''}
+        <div style="flex:1;min-width:0">
+          <div class="debug-name">${escapeHtml(l.name)}</div>
+          ${l.detail ? `<div class="debug-meta">${escapeHtml(l.detail)}</div>` : ''}
+        </div>
       </div>
     `).join('');
   }
@@ -541,33 +458,8 @@ document.getElementById('debug-toggle').addEventListener('click', () => {
 });
 
 // ============================================================
-// HELPERS
+// FETCH
 // ============================================================
-const money = (n) => n == null || isNaN(n) ? "—" :
-  "$" + Number(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
-const num = (n, d = 1) => n == null || isNaN(n) ? "—" :
-  Number(n).toLocaleString("en-US", { minimumFractionDigits: d, maximumFractionDigits: d });
-const pct = (n) => n == null || isNaN(n) ? "—" : num(n, 1) + "%";
-const shortMoney = (n) => {
-  if (n == null || isNaN(n)) return "—";
-  const a = Math.abs(n);
-  if (a >= 1e9) return "$" + (n / 1e9).toFixed(2) + "B";
-  if (a >= 1e6) return "$" + (n / 1e6).toFixed(1) + "M";
-  if (a >= 1e3) return "$" + (n / 1e3).toFixed(0) + "K";
-  return "$" + Number(n).toFixed(0);
-};
-const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, ch => ({
-  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-}[ch]));
-const escapeAttr = (s) => escapeHtml(s).replace(/"/g, "&quot;");
-
-function parseStance(raw) {
-  if (!raw) return null;
-  const m = String(raw).match(/^(.+?)\s*\(([\d.]+)\)\s*$/);
-  if (!m) return { label: String(raw), value: null };
-  return { label: m[1].trim(), value: parseFloat(m[2]) };
-}
-
 async function fetchJson(url) {
   const t0 = performance.now();
   try {
@@ -575,7 +467,7 @@ async function fetchJson(url) {
     const elapsed = Math.round(performance.now() - t0);
     if (!res.ok) {
       DEBUG.add('err', url, `HTTP ${res.status} (${elapsed}ms)`);
-      return { error: `HTTP ${res.status}`, url };
+      return { error: `HTTP ${res.status}` };
     }
     const text = await res.text();
     const data = JSON.parse(text);
@@ -584,215 +476,41 @@ async function fetchJson(url) {
   } catch (e) {
     const elapsed = Math.round(performance.now() - t0);
     DEBUG.add('err', url, `${e.message} (${elapsed}ms)`);
-    return { error: e.message, url };
+    return { error: e.message };
   }
 }
 
-function showError(sectionId, msg, rawPreview) {
-  const el = document.getElementById(sectionId + 'Error');
-  if (!el) return;
-  el.innerHTML = `<div class="section-error">⚠ ${escapeHtml(msg)}${rawPreview ? `<div class="raw-preview">${escapeHtml(rawPreview)}</div>` : ''}</div>`;
+async function fetchHtml(url) {
+  const t0 = performance.now();
+  try {
+    const res = await fetch(url, { cache: "no-store" });
+    const elapsed = Math.round(performance.now() - t0);
+    if (!res.ok) {
+      DEBUG.add('err', url, `HTTP ${res.status} (${elapsed}ms)`);
+      return { error: `HTTP ${res.status}` };
+    }
+    const text = await res.text();
+    DEBUG.add('ok', url, `${(text.length / 1024).toFixed(1)} KB, ${elapsed}ms`);
+    return { html: text };
+  } catch (e) {
+    const elapsed = Math.round(performance.now() - t0);
+    DEBUG.add('err', url, `${e.message} (${elapsed}ms)`);
+    return { error: e.message };
+  }
 }
 
-function hideError(sectionId) {
-  const el = document.getElementById(sectionId + 'Error');
-  if (el) el.innerHTML = '';
+function showError(sectionEl, msg) {
+  const target = document.getElementById(sectionEl);
+  if (!target) return;
+  const err = document.createElement('div');
+  err.className = 'section-error';
+  err.textContent = '⚠ ' + msg;
+  target.prepend(err);
 }
 
 // ============================================================
-// ROSTER
+// STATUS
 // ============================================================
-let allPlayers = [];
-let filteredPlayers = [];
-let kofiDiscords = new Set();
-let topNP = 1;
-
-function computeTier(p) {
-  const np = p.national_prestige ?? 0;
-  const cs = p.campaign_strength ?? 0;
-  if (np > 10000 || cs > 95) return "tier-s";
-  if (np > 5000) return "tier-a";
-  if (np < 10 && cs < 20) return "dormant";
-  return "tier-b";
-}
-
-function buildKofiSet(players) {
-  const counts = {};
-  for (const p of players) {
-    if (p.discord) counts[p.discord] = (counts[p.discord] || 0) + 1;
-  }
-  kofiDiscords = new Set(
-    Object.entries(counts).filter(([, c]) => c >= 3).map(([d]) => d)
-  );
-}
-
-function computeRosterStats() {
-  const n = allPlayers.length || 1;
-  let cf = 0, nw = 0, cs = 0, sr = 0;
-  for (const p of allPlayers) {
-    cf += p.campaign_funds || 0;
-    nw += p.total_net_worth || 0;
-    cs += p.campaign_strength || 0;
-    sr += p.state_reputation || 0;
-  }
-  document.getElementById("statMembers").textContent = allPlayers.length;
-  document.getElementById("statCF").textContent = shortMoney(cf);
-  document.getElementById("statNW").textContent = shortMoney(nw);
-  document.getElementById("statCS").textContent = num(cs / n, 1);
-  document.getElementById("statSR").textContent = num(sr / n, 1) + "%";
-  topNP = Math.max(...allPlayers.map(p => p.national_prestige || 0), 1);
-}
-
-function renderRosterCard(p, i) {
-  const tier = computeTier(p);
-  const badges = [];
-
-  const party = p.party || "R";
-  badges.push(`<span class="badge badge-party">${escapeHtml(party)}</span>`);
-
-  if (p.caucus_name) {
-    badges.push(`<span class="badge badge-caucus">${escapeHtml(p.caucus_name)}</span>`);
-  }
-
-  const stanceS = parseStance(p.raw_stance_social);
-  const stanceE = parseStance(p.raw_stance_econ);
-  if (stanceS && stanceS.value != null && stanceE && stanceE.value != null) {
-    badges.push(`<span class="badge badge-stance" title="${escapeAttr(stanceS.label)} · ${escapeAttr(stanceE.label)}">S ${stanceS.value.toFixed(1)} · E ${stanceE.value.toFixed(1)}</span>`);
-  }
-
-  if (p.alt) badges.push(`<span class="badge badge-alt">ALT: ${escapeHtml(p.alt.name || p.alt)}</span>`);
-  if (p.marriage && p.marriage !== "Single") {
-    badges.push(`<span class="badge badge-married">💍 ${escapeHtml(p.marriage)}</span>`);
-  }
-  if (p.discord && kofiDiscords.has(p.discord)) {
-    badges.push(`<span class="badge badge-kofi">KOFI</span>`);
-  }
-  if (!p.discord) {
-    badges.push(`<span class="badge badge-nodc">NO DISCORD</span>`);
-  }
-  if (tier === "dormant") {
-    badges.push(`<span class="badge badge-dormant">DORMANT</span>`);
-  }
-
-  const imgSrc = p.profile_image || "";
-  const imgTag = imgSrc
-    ? `<img class="avatar" src="${escapeAttr(imgSrc)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`
-    : `<div class="avatar"></div>`;
-
-  const pid = p.id || p.politician_id;
-  const nameText = escapeHtml(p.name || "Unknown");
-  const nameLink = pid
-    ? `<a href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">${nameText}</a>`
-    : nameText;
-  const bfthLink = pid
-    ? `<a class="bfth-link" href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">View on BFTH ↗</a>`
-    : "";
-
-  const np = p.national_prestige || 0;
-  const npBarPct = Math.max(2, Math.min(100, (np / topNP) * 100));
-
-  return `
-    <div class="card ${tier}">
-      <div class="card-header">
-        ${imgTag}
-        <div class="info">
-          <div class="name-row">
-            <span class="rank-chip">#${i + 1}</span>
-            <h3>${nameLink}</h3>
-          </div>
-          <div class="meta-row">
-            <span>${escapeHtml(p.state || "—")}</span>
-            ${badges.join(" ")}
-          </div>
-          ${bfthLink}
-        </div>
-      </div>
-      <div class="np-bar-wrap"><div class="np-bar" style="width:${npBarPct}%"></div></div>
-      <div class="stat-groups">
-        <div class="stat-group">
-          <div class="group-label">Power</div>
-          <div class="stat"><span class="label">NP</span><span class="val np">${num(p.national_prestige)}</span></div>
-          <div class="stat"><span class="label">PC</span><span class="val pc">${num(p.political_capital, 1)}</span></div>
-          <div class="stat"><span class="label">Mil</span><span class="val mil">${num(p.military_influence, 0)}</span></div>
-        </div>
-        <div class="stat-group">
-          <div class="group-label">Electoral</div>
-          <div class="stat"><span class="label">CS</span><span class="val cs">${num(p.campaign_strength)}</span></div>
-          <div class="stat"><span class="label">SR</span><span class="val sr">${pct(p.state_reputation)}</span></div>
-          <div class="stat"><span class="label">NR</span><span class="val nr">${pct(p.national_reputation)}</span></div>
-        </div>
-        <div class="stat-group">
-          <div class="group-label">Money</div>
-          <div class="stat"><span class="label">CF</span><span class="val cf">${shortMoney(p.campaign_funds)}</span></div>
-          <div class="stat"><span class="label">NW</span><span class="val nw">${shortMoney(p.total_net_worth)}</span></div>
-          <div class="stat"><span class="label">LC/hr</span><span class="val cf">${shortMoney(p.lc_income_hr)}</span></div>
-        </div>
-      </div>
-    </div>`;
-}
-
-function renderRoster() {
-  const grid = document.getElementById("rosterGrid");
-  if (!filteredPlayers.length) {
-    grid.innerHTML = '<div style="color:var(--muted);grid-column:1/-1;text-align:center;padding:2rem">No players match.</div>';
-    return;
-  }
-  grid.innerHTML = filteredPlayers.map(renderRosterCard).join("");
-}
-
-function applyRosterFilter() {
-  const q = document.getElementById("rosterSearch").value.toLowerCase().trim();
-  const sortKey = document.getElementById("rosterSort").value;
-
-  filteredPlayers = allPlayers.filter(p => {
-    if (!q) return true;
-    const hay = [
-      p.name, p.state, p.discord,
-      p.alt && (p.alt.name || p.alt),
-      p.marriage, p.raw_stance_social, p.raw_stance_econ, p.caucus_name
-    ].filter(Boolean).join(" ").toLowerCase();
-    return hay.includes(q);
-  });
-
-  const keyMap = {
-    np: "national_prestige", nw: "total_net_worth",
-    cf: "campaign_funds", cs: "campaign_strength",
-    sr: "state_reputation", nr: "national_reputation",
-    pc: "political_capital"
-  };
-
-  if (sortKey === "name") {
-    filteredPlayers.sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-  } else {
-    const k = keyMap[sortKey];
-    filteredPlayers.sort((a, b) => (b[k] ?? -Infinity) - (a[k] ?? -Infinity));
-  }
-
-  document.getElementById("rosterFilterCount").textContent =
-    `${filteredPlayers.length} of ${allPlayers.length}`;
-  renderRoster();
-}
-
-async function loadRoster() {
-  const { data, error } = await fetchJson("./data/players/latest.json");
-  if (error) { showError("roster", `Failed to load players: ${error}`); return; }
-  if (!data.players || !data.players.length) {
-    showError("roster", "No players in latest.json", JSON.stringify(data).slice(0, 400));
-    return;
-  }
-  hideError("roster");
-  allPlayers = data.players;
-  buildKofiSet(allPlayers);
-  computeRosterStats();
-  document.getElementById("rosterCount").textContent = `${allPlayers.length} players`;
-  document.getElementById("rosterControls").style.display = "flex";
-  document.getElementById("rosterSearch").addEventListener("input", applyRosterFilter);
-  document.getElementById("rosterSort").addEventListener("change", applyRosterFilter);
-  applyRosterFilter();
-  if (data.generated_at) setStatus(data.generated_at);
-  return data;
-}
-
 function setStatus(ts) {
   const dot = document.getElementById("statusDot");
   const text = document.getElementById("statusText");
@@ -808,386 +526,336 @@ function setStatus(ts) {
 }
 
 // ============================================================
-// CAUCUS (derived from roster)
+// DATA STATE
 // ============================================================
-function renderCaucus() {
-  const content = document.getElementById("caucusContent");
-  const byCaucus = {};
-  for (const p of allPlayers) {
-    if (!p.caucus_id && !p.caucus_name) continue;
-    const key = String(p.caucus_id || p.caucus_name);
-    byCaucus[key] = byCaucus[key] || {
-      id: p.caucus_id, name: p.caucus_name || `Caucus ${p.caucus_id}`, members: []
-    };
-    byCaucus[key].members.push(p);
-  }
-  const caucusList = Object.values(byCaucus).sort((a, b) => b.members.length - a.members.length);
-
-  if (!caucusList.length) {
-    content.innerHTML = `<div style="color:var(--muted);text-align:center;padding:2rem">
-      No caucus data yet — parser doesn't extract <code>caucus_id</code> from politician pages.<br>
-      When it does, groups will appear here automatically. All ${allPlayers.length} players currently show as "no caucus" below.
-      <div class="raw-preview" style="text-align:left;max-width:600px;margin:1rem auto 0">
-Sample player keys: ${Object.keys(allPlayers[0] || {}).sort().join(", ")}
-      </div>
-    </div>`;
-  } else {
-    content.innerHTML = caucusList.map(c => {
-      const members = [...c.members].sort((a, b) => (b.national_prestige || 0) - (a.national_prestige || 0));
-      const meanNP = members.reduce((s, m) => s + (m.national_prestige || 0), 0) / members.length;
-      return `<div class="caucus-group">
-        <div class="caucus-header">
-          <h3>${escapeHtml(c.name)}</h3>
-          <span class="badge">${members.length} member${members.length !== 1 ? "s" : ""}</span>
-          <span class="meta">mean NP ${num(meanNP, 0)}</span>
-        </div>
-        <div class="member-grid">
-          ${members.map(p => `
-            <div class="member">
-              ${p.profile_image ? `<img class="avatar" src="${escapeAttr(p.profile_image)}" alt="" onerror="this.style.visibility='hidden'">` : '<div class="avatar"></div>'}
-              <div class="info">
-                <div class="name">${p.id ? `<a href="https://battleforthehill.com/politician/${p.id}" target="_blank">${escapeHtml(p.name)}</a>` : escapeHtml(p.name)}</div>
-                <div class="meta">${escapeHtml(p.state || "—")}</div>
-              </div>
-              <div class="np">${num(p.national_prestige, 0)}</div>
-            </div>
-          `).join("")}
-        </div>
-      </div>`;
-    }).join("");
-  }
-
-  // "No caucus" list
-  const noCaucus = allPlayers.filter(p => !p.caucus_id && !p.caucus_name)
-    .sort((a, b) => (b.national_prestige || 0) - (a.national_prestige || 0));
-  if (noCaucus.length) {
-    content.innerHTML += `<div class="caucus-group" style="margin-top:2rem">
-      <div class="caucus-header">
-        <h3 style="color:var(--dim)">No Caucus</h3>
-        <span class="badge" style="background:var(--dim)">${noCaucus.length} member${noCaucus.length !== 1 ? "s" : ""}</span>
-      </div>
-      <div class="member-grid">
-        ${noCaucus.slice(0, 20).map(p => `
-          <div class="member" style="border-left:3px solid var(--dim)">
-            ${p.profile_image ? `<img class="avatar" src="${escapeAttr(p.profile_image)}" alt="" onerror="this.style.visibility='hidden'">` : '<div class="avatar"></div>'}
-            <div class="info">
-              <div class="name">${p.id ? `<a href="https://battleforthehill.com/politician/${p.id}" target="_blank">${escapeHtml(p.name)}</a>` : escapeHtml(p.name)}</div>
-              <div class="meta">${escapeHtml(p.state || "—")}</div>
-            </div>
-            <div class="np">${num(p.national_prestige, 0)}</div>
-          </div>
-        `).join("")}
-      </div>
-      ${noCaucus.length > 20 ? `<p style="color:var(--muted);font-size:0.8rem;margin-top:0.5rem">…and ${noCaucus.length - 20} more</p>` : ""}
-    </div>`;
-  }
-}
+let playersData = null;
+let corpsData = null;
+let nationsData = null;
+let electionsData = null;
+let senateData = null;
+let houseData = null;
 
 // ============================================================
-// MARKET DESK
+// PLAYERS / ROSTER / CAUCUS
 // ============================================================
-let allCorps = [];
-let filteredCorps = [];
-let mktSort = { key: "valuation", dir: "desc" };
-const GOP_PARTY_ID = 2;
-
-function renderMarketStats(corps) {
-  const gop = corps.filter(c => c.party_id === GOP_PARTY_ID);
-  const nonGop = corps.filter(c => c.party_id !== GOP_PARTY_ID);
-  const gopVal = gop.reduce((s, c) => s + (c.valuation || 0), 0);
-  const nonGopVal = nonGop.reduce((s, c) => s + (c.valuation || 0), 0);
-  const gopDiv = gop.reduce((s, c) => s + (c.dividends || 0), 0);
-  const vacant = gop.filter(c => c.is_vacant_ceo);
-  const totalCap = gopVal + nonGopVal;
-  const share = totalCap > 0 ? (gopVal / totalCap * 100) : 0;
-
-  document.getElementById("mktCount").textContent = gop.length;
-  document.getElementById("mktCountMeta").textContent = `of ${corps.length} total corps`;
-  document.getElementById("mktVal").textContent = shortMoney(gopVal);
-  document.getElementById("mktValMeta").textContent = `${share.toFixed(1)}% of market`;
-  document.getElementById("mktDiv").textContent = shortMoney(gopDiv);
-  document.getElementById("mktCap").textContent = shortMoney(totalCap);
-  document.getElementById("mktVacant").textContent = vacant.length;
-  document.getElementById("marketStats").style.display = "grid";
-}
-
-function renderMktMovers(corps) {
-  const gop = corps.filter(c => c.party_id === GOP_PARTY_ID && c.stock_change_pct != null);
-  const sorted = [...gop].sort((a, b) => (b.stock_change_pct || 0) - (a.stock_change_pct || 0));
-  const movers = [...sorted.slice(0, 3), ...sorted.slice(-2).reverse()];
-  const el = document.getElementById("mktMovers");
-  if (!movers.length) { el.innerHTML = ''; return; }
-  el.innerHTML = movers.map(c => {
-    const p = c.stock_change_pct || 0;
-    const dir = p >= 0 ? "up" : "down";
-    const sign = p >= 0 ? "+" : "";
-    return `<div class="mover ${dir}">
-      <div class="pct">${sign}${p.toFixed(2)}%</div>
-      <div class="name">${escapeHtml(c.name)}</div>
-      <div class="meta">${escapeHtml(c.sector || "—")} · ${shortMoney(c.valuation)}</div>
-    </div>`;
-  }).join("");
-}
-
-function renderMktSectors(corps) {
-  const gop = corps.filter(c => c.party_id === GOP_PARTY_ID);
-  const bySector = {};
-  for (const c of gop) {
-    const s = c.sector || "unknown";
-    bySector[s] = bySector[s] || { val: 0, count: 0 };
-    bySector[s].val += c.valuation || 0;
-    bySector[s].count += 1;
-  }
-  const rows = Object.entries(bySector).sort(([, a], [, b]) => b.val - a.val);
-  const max = Math.max(...rows.map(([, r]) => r.val), 1);
-  document.getElementById("mktSectors").innerHTML = rows.map(([sector, r]) => `
-    <div class="sector-card">
-      <div class="label"><span>${escapeHtml(sector)}</span><span>${r.count}</span></div>
-      <div class="value">${shortMoney(r.val)}</div>
-      <div class="bar"><div class="bar-fill" style="width:${Math.max(2, (r.val / max) * 100)}%"></div></div>
-    </div>
-  `).join("");
-}
-
-function renderMktVacants(corps) {
-  const gop = corps.filter(c => c.party_id === GOP_PARTY_ID);
-  const vacant = [...gop.filter(c => c.is_vacant_ceo)]
-    .sort((a, b) => (b.valuation || 0) - (a.valuation || 0));
-  const el = document.getElementById("mktVacants");
-  if (!vacant.length) { el.innerHTML = '<div style="color:var(--muted);font-size:0.85rem">No vacant CEO positions.</div>'; return; }
-  el.innerHTML = vacant.slice(0, 8).map(c => `
-    <div class="vacant-card">
-      <div class="name">${escapeHtml(c.name)}</div>
-      <div class="meta">${escapeHtml(c.sector || "—")} · ${escapeHtml(c.hq?.state || "—")}</div>
-      <div class="val">${shortMoney(c.valuation)}</div>
-    </div>
-  `).join("");
-}
-
-function applyCorpFilter() {
-  const q = document.getElementById("mktSearch").value.toLowerCase().trim();
-  const filter = document.getElementById("mktFilter").value;
-
-  filteredCorps = allCorps.filter(c => {
-    if (filter === "gop" && c.party_id !== GOP_PARTY_ID) return false;
-    if (filter === "non-gop" && c.party_id === GOP_PARTY_ID) return false;
-    if (!q) return true;
-    const hay = [c.name, c.symbol, c.sector, c.ceo?.name, c.hq?.state]
-      .filter(Boolean).join(" ").toLowerCase();
-    return hay.includes(q);
-  });
-
-  const k = mktSort.key;
-  filteredCorps.sort((a, b) => {
-    if (k === "name") return (a.name || "").localeCompare(b.name || "");
-    const map = { valuation: "valuation", dividends: "dividends",
-                  change: "stock_change_pct", symbol: "symbol",
-                  sector: "sector", ceo: "is_vacant_ceo" };
-    const field = map[k] || "valuation";
-    const av = a[field] ?? -Infinity;
-    const bv = b[field] ?? -Infinity;
-    return mktSort.dir === "desc" ? bv - av : av - bv;
-  });
-
-  document.getElementById("mktFilterCount").textContent =
-    `${filteredCorps.length} of ${allCorps.length}`;
-
-  document.getElementById("corpBody").innerHTML = filteredCorps.slice(0, 50).map(c => {
-    const change = c.stock_change_pct || 0;
-    const cls = change >= 0 ? "val-pos" : "val-neg";
-    const ceo = c.ceo?.name || "Vacant";
-    const url = `https://battleforthehill.com/parties/${c.party_id}/corporations/${c.corp_id}`;
-    return `<tr>
-      <td class="name"><a href="${url}" target="_blank">${escapeHtml(c.name)}</a></td>
-      <td class="symbol">${escapeHtml(c.symbol || "—")}</td>
-      <td><span class="sector-tag">${escapeHtml(c.sector || "—")}</span></td>
-      <td class="ceo${c.is_vacant_ceo ? ' vacant' : ''}">${escapeHtml(ceo)}</td>
-      <td class="num val-gold">${shortMoney(c.valuation)}</td>
-      <td class="num val-pos">${shortMoney(c.dividends)}</td>
-      <td class="num ${cls}">${change >= 0 ? '+' : ''}${change.toFixed(2)}%</td>
-    </tr>`;
-  }).join("");
-}
-
-async function loadMarket() {
-  const { data, error } = await fetchJson("./data/corporations/latest.json");
-  if (error) { showError("market", `Failed to load corporations: ${error}`); return; }
-  if (!data.corporations || !data.corporations.length) {
-    showError("market", "No corporations in latest.json", JSON.stringify(data).slice(0, 400));
+function renderPlayers() {
+  const players = playersData?.players || [];
+  if (!players.length) {
+    DEBUG.add('err', 'players.json', 'no players array');
     return;
   }
-  hideError("market");
-  allCorps = data.corporations;
-  renderMarketStats(allCorps);
-  renderMktMovers(allCorps);
-  renderMktSectors(allCorps);
-  renderMktVacants(allCorps);
-  document.getElementById("marketContent").style.display = "block";
-  document.getElementById("mktSearch").addEventListener("input", applyCorpFilter);
-  document.getElementById("mktFilter").addEventListener("change", applyCorpFilter);
-  document.querySelectorAll("th[data-mkt-sort]").forEach(th => {
-    th.addEventListener("click", () => {
-      const key = th.dataset.mktSort;
-      document.querySelectorAll("th").forEach(h => h.classList.remove("sort-asc", "sort-desc"));
-      if (mktSort.key === key) mktSort.dir = mktSort.dir === "asc" ? "desc" : "asc";
-      else { mktSort.key = key; mktSort.dir = key === "name" ? "asc" : "desc"; }
-      th.classList.add(mktSort.dir === "asc" ? "sort-asc" : "sort-desc");
-      applyCorpFilter();
-    });
-  });
-  applyCorpFilter();
+  const count = players.length;
+  let cf = 0, nw = 0;
+  for (const p of players) {
+    cf += p.campaign_funds || 0;
+    nw += p.total_net_worth || 0;
+  }
+  document.getElementById('qsMembers').textContent = count;
+  document.getElementById('qsCF').textContent = shortMoney(cf);
+  document.getElementById('tileRosterCount').textContent = count + ' members';
+
+  // top 3 by NP
+  const sorted = [...players].sort((a, b) => (b.national_prestige || 0) - (a.national_prestige || 0));
+  document.getElementById('tileRosterRows').innerHTML = sorted.slice(0, 3).map(p => `
+    <div class="tile-row"><span>${escapeHtml(p.name)}</span><span class="v">${num(p.national_prestige, 0)} NP</span></div>
+  `).join('');
+
+  // Caucus tile
+  const caucused = players.filter(p => p.caucus_id);
+  if (caucused.length) {
+    document.getElementById('tileCaucusCount').textContent = caucused.length + ' caucused';
+    // group by caucus_name
+    const byCaucus = {};
+    for (const p of caucused) {
+      const k = p.caucus_name || String(p.caucus_id);
+      byCaucus[k] = (byCaucus[k] || 0) + 1;
+    }
+    const rows = Object.entries(byCaucus).sort((a, b) => b[1] - a[1]).slice(0, 3);
+    document.getElementById('tileCaucusRows').innerHTML = rows.map(([n, c]) =>
+      `<div class="tile-row"><span>${escapeHtml(n)}</span><span class="v">${c}</span></div>`
+    ).join('');
+  } else {
+    document.getElementById('tileCaucusCount').textContent = 'No data';
+    document.getElementById('tileCaucusRows').innerHTML = '<div class="tile-row" style="color:var(--dim)">parser needs to extract caucus_id</div>';
+  }
+
+  setStatus(playersData.generated_at);
+}
+
+// ============================================================
+// CORPORATIONS
+// ============================================================
+function renderCorps() {
+  const corps = corpsData?.corporations || [];
+  if (!corps.length) { DEBUG.add('err', 'corporations', 'no corporations'); return; }
+  const gop = corps.filter(c => c.party_id === 2);
+  const gopVal = gop.reduce((s, c) => s + (c.valuation || 0), 0);
+  const total = corps.reduce((s, c) => s + (c.valuation || 0), 0);
+  const share = total ? (gopVal / total * 100) : 0;
+
+  document.getElementById('qsCorps').textContent = gop.length;
+  document.getElementById('qsCorpsShare').textContent = `${share.toFixed(1)}% of market`;
+  document.getElementById('qsCorpsVal').textContent = shortMoney(gopVal);
+  document.getElementById('tileMarketVal').textContent = shortMoney(gopVal);
+
+  const sorted = [...gop].sort((a, b) => (b.valuation || 0) - (a.valuation || 0));
+  document.getElementById('tileMarketRows').innerHTML = sorted.slice(0, 3).map(c =>
+    `<div class="tile-row"><span>${escapeHtml(c.name)}</span><span class="v">${shortMoney(c.valuation)}</span></div>`
+  ).join('');
 }
 
 // ============================================================
 // NATIONS
 // ============================================================
+let nationsSort = { key: 'gdp', dir: 'desc' };
 let allNations = [];
-let filteredNations = [];
-let natSort = { key: "gdp", dir: "desc" };
 
-function normalizeNation(n) {
-  // Try multiple field name conventions
-  const name = n.name || n.nation_name || n.country_name || `Nation ${n.id || n.country_id || "?"}`;
-  const id = n.id || n.country_id || n.nation_id;
-  const gdp = n.gdp || n.total_gdp || n.economy?.gdp || 0;
-  const corp_tax = n.corp_tax ?? n.corporate_tax ?? n.corpTax ?? n.taxes?.corp ?? 0;
-  const tariff = n.tariff ?? n.tariff_rate ?? n.taxes?.tariff ?? 0;
-  return { id, name, gdp, corp_tax, tariff, raw: n };
-}
-
-function renderNationsTable() {
-  document.getElementById("nationsBody").innerHTML = filteredNations.map(n => {
-    const combined = (n.corp_tax || 0) + (n.tariff || 0);
-    return `<tr>
-      <td class="name">${escapeHtml(n.name)}</td>
-      <td class="num val-gold">${shortMoney(n.gdp)}</td>
-      <td class="num">${pct(n.corp_tax)}</td>
-      <td class="num">${pct(n.tariff)}</td>
-      <td class="num val-pos">${num(combined, 1)}</td>
-    </tr>`;
-  }).join("");
-}
-
-function applyNationsFilter() {
-  const q = document.getElementById("nationsSearch").value.toLowerCase().trim();
-  filteredNations = allNations.filter(n => !q || n.name.toLowerCase().includes(q));
-
-  const k = natSort.key;
-  filteredNations.sort((a, b) => {
-    if (k === "name") return (a.name || "").localeCompare(b.name || "");
-    if (k === "combined") {
-      const av = (a.corp_tax || 0) + (a.tariff || 0);
-      const bv = (b.corp_tax || 0) + (b.tariff || 0);
-      return natSort.dir === "desc" ? bv - av : av - bv;
-    }
-    const av = a[k] ?? 0;
-    const bv = b[k] ?? 0;
-    return natSort.dir === "desc" ? bv - av : av - bv;
-  });
-
-  document.getElementById("nationsFilterCount").textContent =
-    `${filteredNations.length} of ${allNations.length}`;
+function renderNations() {
+  allNations = nationsData?.nations || [];
+  if (!allNations.length) { DEBUG.add('err', 'nations', 'no nations array'); return; }
+  document.getElementById('qsNations').textContent = allNations.length;
+  document.getElementById('nationsCount').textContent = allNations.length + ' nations';
   renderNationsTable();
 }
 
-async function loadNations() {
-  const { data, error } = await fetchJson("./data/nations.json");
-  if (error) { showError("nations", `Failed to load nations: ${error}`); return; }
-  if (!data.nations || !data.nations.length) {
-    showError("nations", "No nations array in nations.json",
-      "Top-level keys: " + Object.keys(data).join(", "));
-    return;
-  }
-  hideError("nations");
-  allNations = data.nations.map(normalizeNation);
-  document.getElementById("nationsCount").textContent = `${allNations.length} nations`;
-  document.getElementById("nationsContent").style.display = "block";
-  document.getElementById("nationsSearch").addEventListener("input", applyNationsFilter);
-  document.getElementById("nationsSort").addEventListener("change", () => {
-    natSort.key = document.getElementById("nationsSort").value;
-    natSort.dir = natSort.key === "name" || natSort.key === "corp_tax" || natSort.key === "tariff" ? "asc" : "desc";
-    applyNationsFilter();
+function renderNationsTable() {
+  const tbody = document.getElementById('nationsBody');
+  const sorted = [...allNations].sort((a, b) => {
+    if (nationsSort.key === 'name') {
+      return nationsSort.dir === 'asc' ? (a.name || '').localeCompare(b.name || '') : (b.name || '').localeCompare(a.name || '');
+    }
+    const keyMap = { gdp: 'gdp', corp: 'corporate_tax_pct', tariff: 'tariffs_pct' };
+    if (nationsSort.key === 'combined') {
+      const av = (a.corporate_tax_pct || 0) + (a.tariffs_pct || 0);
+      const bv = (b.corporate_tax_pct || 0) + (b.tariffs_pct || 0);
+      return nationsSort.dir === 'desc' ? bv - av : av - bv;
+    }
+    const k = keyMap[nationsSort.key];
+    const av = a[k] ?? 0;
+    const bv = b[k] ?? 0;
+    return nationsSort.dir === 'desc' ? bv - av : av - bv;
   });
-  document.querySelectorAll("th[data-nat-sort]").forEach(th => {
-    th.addEventListener("click", () => {
+  tbody.innerHTML = sorted.slice(0, 12).map(n => {
+    const combined = (n.corporate_tax_pct || 0) + (n.tariffs_pct || 0);
+    return `<tr>
+      <td class="name">${escapeHtml(n.name || n.full_name || '—')}</td>
+      <td class="num val-gold">${shortMoney(n.gdp)}</td>
+      <td class="num">${pct(n.corporate_tax_pct)}</td>
+      <td class="num">${pct(n.tariffs_pct)}</td>
+      <td class="num val-pos">${num(combined, 1)}</td>
+    </tr>`;
+  }).join('');
+
+  // wire sort headers
+  document.querySelectorAll('th[data-nat-sort]').forEach(th => {
+    th.onclick = () => {
       const key = th.dataset.natSort;
-      document.querySelectorAll("th").forEach(h => h.classList.remove("sort-asc", "sort-desc"));
-      if (natSort.key === key) natSort.dir = natSort.dir === "asc" ? "desc" : "asc";
-      else { natSort.key = key; natSort.dir = key === "name" ? "asc" : "desc"; }
-      th.classList.add(natSort.dir === "asc" ? "sort-asc" : "sort-desc");
-      applyNationsFilter();
-    });
+      document.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+      if (nationsSort.key === key) nationsSort.dir = nationsSort.dir === 'asc' ? 'desc' : 'asc';
+      else { nationsSort.key = key; nationsSort.dir = key === 'name' ? 'asc' : 'desc'; }
+      th.classList.add(nationsSort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+      renderNationsTable();
+    };
   });
-  applyNationsFilter();
 }
 
 // ============================================================
 // ELECTIONS
 // ============================================================
-async function loadElections() {
-  const { data, error } = await fetchJson("./data/elections.json");
-  if (error) { showError("elections", `Failed to load elections: ${error}`); return; }
+function renderElections() {
+  const el = document.getElementById('electionGrid');
+  const d = electionsData;
+  if (!d) { DEBUG.add('err', 'elections', 'no data'); return; }
 
-  // Try multiple shapes
-  let elections = [];
-  if (Array.isArray(data)) elections = data;
-  else if (data.elections && Array.isArray(data.elections)) elections = data.elections;
-  else if (data.races && Array.isArray(data.races)) elections = data.races;
-  else if (data.results && Array.isArray(data.results)) elections = data.results;
+  const total = d.total || (d.elections?.length || 0);
+  const withPolls = d.with_polls || 0;
+  document.getElementById('qsElections').textContent = total;
+  document.getElementById('qsElectionsSub').textContent = withPolls + ' with polls';
+  document.getElementById('tileElectionsCount').textContent = total + ' tracked';
 
-  if (!elections.length) {
-    showError("elections", "Could not find elections array in elections.json",
-      "Top-level keys: " + (data ? Object.keys(data).join(", ") : "none") +
-      "\nFirst 400 chars: " + JSON.stringify(data).slice(0, 400));
+  const elections = d.elections || [];
+  // take up to 3 most recent by heuristic (end_time descending)
+  const recent = [...elections].sort((a, b) => {
+    const ta = new Date(a.end_time || a.election_date || 0).getTime() || 0;
+    const tb = new Date(b.end_time || b.election_date || 0).getTime() || 0;
+    return tb - ta;
+  }).slice(0, 3);
+
+  document.getElementById('tileElectionsRows').innerHTML = recent.map(e => {
+    const label = e.race_title || e.title || e.name || `Election ${e.id}`;
+    const seat = e.seat || e.office || '—';
+    return `<div class="tile-row"><span>${escapeHtml(String(label).slice(0, 32))}</span><span class="v">${escapeHtml(String(seat).slice(0, 12))}</span></div>`;
+  }).join('') || '<div class="tile-row" style="color:var(--dim)">no elections listed</div>';
+
+  el.innerHTML = recent.map(e => {
+    const label = e.race_title || e.title || e.name || `Election ${e.id}`;
+    const state = e.state_name || e.state || '—';
+    return `<div class="election-card fade-in">
+      <div class="race">${escapeHtml(String(label).slice(0, 48))}</div>
+      <div class="meta">${escapeHtml(String(state))}</div>
+    </div>`;
+  }).join('') || '<div class="empty-note">No live elections.</div>';
+}
+
+// ============================================================
+// CONGRESS
+// ============================================================
+const PARTY_COLORS = {
+  1: '#3B82F6',    // Democratic
+  2: '#EF4444',    // Republican
+  254: '#961D1D',  // Revolutionary Front
+  255: '#86489C',  // National Legion
+  396: '#020080',  // America First
+  410: '#F5D60F',  // Libertarian
+  416: '#2F4F4F',  // Independents
+  419: '#4E5FA2',  // Glen Youngkins'
+};
+
+function parseCongressHtml(html, chamber) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+
+  // Extract party seat breakdown from the political groups table
+  const tableId = chamber === 'senate' ? 'senate-political-breakdown-table' : 'political-breakdown-table';
+  const table = doc.getElementById(tableId);
+  const partySeats = {};
+  let totalSeats = 0;
+  if (table) {
+    table.querySelectorAll('tbody tr').forEach(tr => {
+      const seatsAttr = tr.getAttribute('data-seats');
+      const seats = parseInt(seatsAttr) || 0;
+      // party name is in a link/span with color
+      const partyLink = tr.querySelector('td:first-child a');
+      let partyName = '—', partyId = null;
+      if (partyLink) {
+        const href = partyLink.getAttribute('href') || '';
+        const m = href.match(/\/parties\/(\d+)/);
+        if (m) partyId = m[1];
+        const nameSpan = partyLink.querySelector('span[style*="color"]');
+        partyName = nameSpan ? nameSpan.textContent.trim() : partyLink.textContent.trim();
+      }
+      partySeats[partyId || partyName] = { seats, name: partyName, id: partyId };
+      totalSeats += seats;
+    });
+  }
+
+  // Extract leadership
+  const leadership = [];
+  const headings = doc.querySelectorAll('h3');
+  headings.forEach(h => {
+    const t = h.textContent.trim();
+    if (/Leader|Whip|Speaker|Pro-Tempore|President of the Senate/i.test(t)) {
+      // find next politician link
+      let el = h.parentElement?.nextElementSibling;
+      let name = null, pid = null;
+      for (let i = 0; i < 6 && el; i++) {
+        const link = el.querySelector('a[href*="/politician/"]');
+        if (link) {
+          const m = link.getAttribute('href').match(/\/politician\/(\d+)/);
+          if (m) pid = m[1];
+          name = link.textContent.trim();
+          break;
+        }
+        el = el.nextElementSibling;
+      }
+      leadership.push({ role: t, name: name || '[Vacant]', pid });
+    }
+  });
+
+  return { chamber, partySeats, totalSeats, leadership };
+}
+
+function renderCongress() {
+  const grid = document.getElementById('congressGrid');
+  if (!senateData && !houseData) {
+    grid.innerHTML = '<div class="empty-note">Failed to load Congress data. Check debug panel.</div>';
     return;
   }
-  hideError("elections");
-  document.getElementById("electionsContent").style.display = "block";
 
-  document.getElementById("electionsGrid").innerHTML = elections.slice(0, 24).map(e => {
-    const race = e.race || e.name || e.title || `Election ${e.id || "?"}`;
-    const state = e.state || e.state_name || "—";
-    const candidates = e.candidates || e.results || [];
-    const top = Array.isArray(candidates) ? candidates.slice(0, 3) : [];
-    const winner = top[0] || {};
-    return `<div class="election-card">
-      <div class="race">${escapeHtml(race)}</div>
-      <div class="meta">${escapeHtml(state)}${e.party ? ` · ${escapeHtml(e.party)}` : ""}</div>
-      ${top.map(c => `
-        <div class="winner">
-          <span>${escapeHtml(c.name || c.candidate_name || c.candidate || "?")}</span>
-          <span class="pct">${c.percentage != null ? num(c.percentage, 1) + "%" : (c.pct != null ? num(c.pct, 1) + "%" : "—")}</span>
-        </div>
-      `).join("")}
+  let html = '';
+  [['senate', senateData], ['house', houseData]].forEach(([chamber, data]) => {
+    if (!data) return;
+    const majority = Math.ceil(data.totalSeats / 2);
+    const gopKey = Object.keys(data.partySeats).find(k => data.partySeats[k].id === '2');
+    const gopSeats = gopKey ? data.partySeats[gopKey].seats : 0;
+
+    document.getElementById(chamber === 'senate' ? 'qsSenate' : 'qsHouse').textContent = gopSeats;
+
+    // stacked bar
+    const parties = Object.values(data.partySeats).sort((a, b) => b.seats - a.seats);
+    const barSegs = parties.map(p => {
+      const color = PARTY_COLORS[p.id] || '#666';
+      const widthPct = (p.seats / data.totalSeats) * 100;
+      return `<div class="seg" style="flex-basis:${widthPct}%;background:${color};" title="${escapeAttr(p.name)} — ${p.seats} seats"></div>`;
+    }).join('');
+
+    // legend (top 5)
+    const legend = parties.slice(0, 6).map(p => `
+      <div class="item">
+        <span class="swatch" style="background:${PARTY_COLORS[p.id] || '#666'}"></span>
+        <span>${escapeHtml(p.name)}</span>
+        <span class="num">${p.seats}</span>
+      </div>
+    `).join('');
+
+    // leadership
+    const leaders = data.leadership.map(l => {
+      const pid = l.pid;
+      const nameHtml = pid
+        ? `<a href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">${escapeHtml(l.name)}</a>`
+        : escapeHtml(l.name);
+      const cls = l.name === '[Vacant]' ? 'vacant' : '';
+      return `<div class="leader">
+        <div class="role">${escapeHtml(l.role)}</div>
+        <div class="who ${cls}">${nameHtml}</div>
+      </div>`;
+    }).join('');
+
+    html += `<div class="chamber-card fade-in">
+      <h3>${chamber === 'senate' ? 'Senate' : 'House'}</h3>
+      <div class="seat-count">${gopSeats} GOP <span class="majority">of ${data.totalSeats} · majority ${majority}</span></div>
+      <div class="stacked-bar">${barSegs}</div>
+      <div class="party-legend">${legend}</div>
+      <div class="leadership">${leaders || '<div class="empty-note">No leadership parsed</div>'}</div>
     </div>`;
-  }).join("");
+  });
+  grid.innerHTML = html;
 }
 
 // ============================================================
 // BOOT
 // ============================================================
 async function boot() {
-  DEBUG.add('ok', 'boot', 'Starting parallel fetch of all datasets');
-  const results = await Promise.allSettled([
-    loadRoster(),
-    loadMarket(),
-    loadNations(),
-    loadElections(),
+  DEBUG.add('ok', 'boot', 'Starting parallel fetches');
+
+  const [playersRes, corpsRes, nationsRes, electionsRes, senateRes, houseRes] = await Promise.all([
+    fetchJson('./data/players/latest.json'),
+    fetchJson('./data/corporations/latest.json'),
+    fetchJson('./data/nations.json'),
+    fetchJson('./data/elections.json'),
+    fetchHtml('https://battleforthehill.com/national/senate/1'),
+    fetchHtml('https://battleforthehill.com/national/house/1'),
   ]);
 
-  // After roster + market are loaded, render derived sections
-  if (allPlayers.length) renderCaucus();
+  if (playersRes.data) { playersData = playersRes.data; renderPlayers(); }
+  else showError('quickStats', 'Failed to load players: ' + playersRes.error);
 
-  results.forEach((r, i) => {
-    const names = ["roster", "market", "nations", "elections"];
-    if (r.status === 'rejected') {
-      DEBUG.add('err', `boot.${names[i]}`, String(r.reason));
-    }
-  });
+  if (corpsRes.data) { corpsData = corpsRes.data; renderCorps(); }
+  else showError('quickStats', 'Failed to load corporations: ' + corpsRes.error);
+
+  if (nationsRes.data) { nationsData = nationsRes.data; renderNations(); }
+  else showError('nations-section', 'Failed to load nations: ' + nationsRes.error);
+
+  if (electionsRes.data) { electionsData = electionsRes.data; renderElections(); }
+  else showError('elections-section', 'Failed to load elections: ' + electionsRes.error);
+
+  if (senateRes.html) { senateData = parseCongressHtml(senateRes.html, 'senate'); }
+  if (houseRes.html) { houseData = parseCongressHtml(houseRes.html, 'house'); }
+  renderCongress();
 
   const ok = DEBUG.logs.filter(l => l.status === 'ok').length;
   const err = DEBUG.logs.filter(l => l.status === 'err').length;
-  DEBUG.add(err ? 'err' : 'ok', 'boot', `${ok} ok, ${err} errors`);
+  DEBUG.add(err ? 'err' : 'ok', 'boot.complete', `${ok} ok, ${err} errors`);
 }
 
 boot();
