@@ -6,8 +6,7 @@
 <title>History — BFTH War Room</title>
 <link rel="icon" href="./images/emblem.png" type="image/png">
 <meta property="og:title" content="BFTH War Room — History">
-<meta property="og:description" content="Archive comparison and time series across the GOP roster.">
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<meta property="og:description" content="Archive comparison across the GOP roster.">
 <style>
   :root {
     --hero-image: url("./images/banner-warroom.png");
@@ -39,7 +38,6 @@
   }
   body > * { position: relative; z-index: 1; }
 
-  /* HERO */
   .hero { position: relative; height: 230px; overflow: hidden;
     border-bottom: 2px solid var(--gold); background: var(--bg-2); }
   .hero-img { position: absolute; inset: 0; background-image: var(--hero-image);
@@ -79,7 +77,6 @@
   .status-dot.stale { background: var(--yellow); box-shadow: 0 0 8px var(--yellow); }
   .status-dot.dead { background: var(--red); }
 
-  /* NAV */
   .nav { display: flex; background: var(--bg-2);
     border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto;
     position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
@@ -91,7 +88,6 @@
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
   .nav a.ext::after { content: " ↗"; font-size: 0.7em; }
 
-  /* TICKER */
   .ticker-wrap { display: flex; align-items: stretch; background: var(--panel);
     border-bottom: 1px solid var(--border); height: 36px;
     max-width: 1600px; margin: 1.25rem auto 0;
@@ -113,7 +109,6 @@
   .t-delta.down { color: var(--red); }
   .t-delta.flat { color: var(--dim); }
 
-  /* RANGE / COMPARE CONTROLS */
   .controls { max-width: 1600px; margin: 0 auto; padding: 1.25rem 2rem 0.5rem;
     display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; }
   .controls .label { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.12em;
@@ -136,7 +131,6 @@
   .controls .custom-compare { display: flex; gap: 0.4rem; align-items: center;
     padding-left: 0.75rem; border-left: 1px solid var(--border); }
 
-  /* SUMMARY */
   .summary { max-width: 1600px; margin: 0 auto; padding: 0.75rem 2rem 1rem;
     display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 0.75rem; }
@@ -155,30 +149,7 @@
   .sum-card .value.down { color: var(--red); }
   .sum-card .sub { font-size: 0.72rem; color: var(--dim); margin-top: 0.2rem; }
 
-  /* CHART */
-  .chart-section { max-width: 1600px; margin: 0 auto; padding: 0 2rem 1rem; }
-  .chart-panel { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 10px; padding: 1rem 1.25rem 0.5rem; }
-  .chart-panel h2 { margin: 0 0 0.6rem; font-size: 0.82rem;
-    letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold);
-    font-weight: 700; display: flex; justify-content: space-between;
-    align-items: baseline; }
-  .chart-panel h2 .hint { color: var(--dim); font-size: 0.72rem;
-    letter-spacing: 0.04em; text-transform: none; font-weight: 400; }
-  #timeseriesChart { min-height: 340px; }
-  .chart-controls { display: flex; gap: 0.5rem; flex-wrap: wrap;
-    margin-bottom: 0.5rem; align-items: center; }
-  .metric-btn { background: var(--bg-2); color: var(--muted);
-    border: 1px solid var(--border); border-radius: 6px;
-    padding: 0.35rem 0.8rem; font-size: 0.75rem; font-weight: 700;
-    letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer;
-    font-family: inherit; transition: all 0.15s; }
-  .metric-btn:hover { color: var(--text); border-color: var(--border-2); }
-  .metric-btn.active { background: var(--gold); color: var(--bg);
-    border-color: var(--gold); }
-
-  /* TABLE */
-  .table-wrap { max-width: 1600px; margin: 0 auto; padding: 0 2rem 3rem; overflow-x: auto; }
+  .table-wrap { max-width: 1600px; margin: 0 auto; padding: 0.5rem 2rem 3rem; overflow-x: auto; }
   .movers-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
   .movers-table thead th { text-align: left; padding: 0.7rem 0.75rem;
     color: var(--muted); font-size: 0.64rem; letter-spacing: 0.12em;
@@ -187,9 +158,8 @@
     position: sticky; top: 52px; background: var(--bg-2); z-index: 10; }
   .movers-table thead th.num { text-align: right; }
   .movers-table tbody tr { border-bottom: 1px solid #1a1a22;
-    cursor: pointer; transition: background 0.1s; }
+    transition: background 0.1s; }
   .movers-table tbody tr:hover { background: var(--panel-2); }
-  .movers-table tbody tr.selected { background: rgba(212,175,55,0.08); }
   .movers-table tbody td { padding: 0.6rem 0.75rem; }
   .movers-table tbody td.num { text-align: right;
     font-variant-numeric: tabular-nums; font-weight: 600; }
@@ -223,7 +193,7 @@
     .brand h1 { font-size: 1.5rem; }
     .nav { padding: 0 0.5rem; }
     .nav a { padding: 0.8rem 0.7rem; font-size: 0.72rem; }
-    .controls, .summary, .table-wrap, .chart-section {
+    .controls, .summary, .table-wrap {
       padding-left: 1rem; padding-right: 1rem; }
     .controls .custom-compare { flex-direction: column; align-items: stretch;
       border-left: none; padding-left: 0; border-top: 1px solid var(--border);
@@ -245,7 +215,7 @@
   <div class="hero-inner">
     <div class="brand">
       <h1>HISTORY</h1>
-      <div class="sub">Archive Compare &amp; Time Series</div>
+      <div class="sub">Archive Comparison</div>
     </div>
     <div class="status">
       <span class="status-dot" id="statusDot"></span>
@@ -292,21 +262,6 @@
 </div>
 
 <div class="summary" id="summary"></div>
-
-<div class="chart-section">
-  <div class="chart-panel">
-    <h2>Time Series <span class="hint">click a row to isolate, click again to clear</span></h2>
-    <div class="chart-controls" id="metricControls">
-      <button class="metric-btn active" data-metric="national_prestige">NP</button>
-      <button class="metric-btn" data-metric="campaign_funds">CF</button>
-      <button class="metric-btn" data-metric="total_net_worth">NW</button>
-      <button class="metric-btn" data-metric="campaign_strength">CS</button>
-      <button class="metric-btn" data-metric="lc_income_hr">LC/hr</button>
-      <button class="metric-btn" data-metric="political_capital">PC</button>
-    </div>
-    <div id="timeseriesChart"></div>
-  </div>
-</div>
 
 <div class="table-wrap">
   <table class="movers-table">
@@ -379,7 +334,6 @@ function deltaCell(delta, stat) {
   return `<td class="num delta-cell ${sign}">${arrow} ${prefix}${mag}</td>`;
 }
 
-// ---- GitHub API ----
 async function listArchives() {
   const res = await fetch(CONTENTS_API, { cache: "no-store" });
   if (!res.ok) throw new Error(`GitHub API ${res.status}`);
@@ -391,7 +345,6 @@ async function listArchives() {
 }
 
 function todayUTC() { return new Date().toISOString().slice(0, 10); }
-
 function archiveDate(name) { return name.slice(0, 10); }
 
 function pickBaseline(archives, today, daysAgo) {
@@ -399,7 +352,6 @@ function pickBaseline(archives, today, daysAgo) {
   const prior = archives.filter(n => archiveDate(n) < today);
   if (!prior.length) return null;
   const target = todayMs - daysAgo * 86400000;
-  // Best: exact match for that day, fallback to nearest on or before
   const exact = prior.filter(n => {
     const d = Date.parse(archiveDate(n) + "T00:00:00Z");
     return d === target;
@@ -416,7 +368,6 @@ async function fetchJSON(path) {
   return res.json();
 }
 
-// ---- compute movers ----
 function computeMovers(current, previous) {
   const prevById = new Map();
   for (const p of previous) {
@@ -473,7 +424,6 @@ function computeMovers(current, previous) {
   return movers;
 }
 
-// ---- render helpers ----
 function renderTicker(movers) {
   const track = document.getElementById("tickerTrack");
   if (!movers.length) {
@@ -538,8 +488,7 @@ function renderTable(movers) {
     const nameLink = m.politician_id
       ? `<a href="https://battleforthehill.com/politician/${m.politician_id}" target="_blank" rel="noopener">${escapeHtml(m.name)}</a>`
       : escapeHtml(m.name);
-    const selectedCls = STATE.selectedPlayerId === String(m.id) ? "selected" : "";
-    return `<tr class="${selectedCls}" data-player-id="${escapeHtml(String(m.id))}">
+    return `<tr>
       <td><div class="p-name">${nameLink}</div><div class="p-state">${escapeHtml(m.state || "")}</div></td>
       <td class="num val-col">${num(p.national_prestige, 1)}</td>
       ${deltaCell(d.np, "NP")}
@@ -553,140 +502,8 @@ function renderTable(movers) {
       ${deltaCell(d.lc, "LC/hr")}
     </tr>`;
   }).join("");
-
-  // Wire row-click → isolate that player in the chart
-  tbody.querySelectorAll("tr[data-player-id]").forEach(tr => {
-    tr.addEventListener("click", (ev) => {
-      if (ev.target.closest("a")) return;
-      const id = tr.dataset.playerId;
-      STATE.selectedPlayerId = STATE.selectedPlayerId === id ? null : id;
-      renderTable(STATE.currentMovers);
-      renderTimeSeries();
-    });
-  });
 }
 
-// ---- time series chart ----
-const HC_THEME = {
-  chart: { backgroundColor: "transparent",
-    style: { fontFamily: "system-ui, -apple-system, sans-serif" } },
-  title: { text: null },
-  credits: { enabled: false },
-  legend: { enabled: false },
-  xAxis: {
-    type: "datetime",
-    lineColor: "#242a36",
-    labels: { style: { color: "#8a93a6", fontSize: "11px" } },
-    gridLineColor: "#1a1e27",
-  },
-  yAxis: {
-    title: { text: null },
-    gridLineColor: "#1a1e27",
-    labels: { style: { color: "#4a5263", fontSize: "11px" } },
-  },
-  tooltip: {
-    backgroundColor: "#1a1e27", borderColor: "#2f3745", borderRadius: 8,
-    style: { color: "#e6e8ec", fontSize: "12px" },
-    shared: false,
-  },
-  plotOptions: {
-    line: { lineWidth: 1.8, marker: { enabled: false, radius: 2 },
-      states: { hover: { lineWidthPlus: 0 } } },
-  },
-};
-
-let chart = null;
-
-function renderTimeSeries() {
-  const metric = STATE.metric;
-  const series = [];
-  const playerColors = [
-    "#d4af37", "#60a5fa", "#4ade80", "#ef4444", "#a78bfa", "#fbbf24",
-    "#22d3ee", "#f472b6", "#a3e635", "#fb923c",
-  ];
-
-  // Group archives into (timestamp, players[]) — we already loaded all archive files
-  // STATE.historyArchives = [{ ts, players }]
-  const history = STATE.historyArchives || [];
-  if (!history.length) {
-    if (chart) { chart.destroy(); chart = null; }
-    document.getElementById("timeseriesChart").innerHTML =
-      '<div class="empty">No archive data available yet.</div>';
-    return;
-  }
-
-  const tsByPlayer = new Map(); // playerId -> { name, points: [[ts, val]] }
-  for (const arch of history) {
-    const tsMs = Date.parse(arch.ts);
-    for (const p of arch.players || []) {
-      const id = String(p.id);
-      if (!tsByPlayer.has(id)) {
-        tsByPlayer.set(id, { name: p.name, state: p.state, points: [] });
-      }
-      const val = p[metric];
-      if (val != null && !isNaN(val)) {
-        tsByPlayer.get(id).points.push([tsMs, val]);
-      }
-    }
-  }
-
-  // Sort points per player
-  tsByPlayer.forEach(v => v.points.sort((a, b) => a[0] - b[0]));
-
-  const filterId = STATE.selectedPlayerId;
-  if (filterId && tsByPlayer.has(filterId)) {
-    // Single player — one series
-    const entry = tsByPlayer.get(filterId);
-    series.push({
-      name: entry.name,
-      color: "#f0c850",
-      data: entry.points,
-    });
-  } else {
-    // Show top 10 players by current metric value
-    const entries = Array.from(tsByPlayer.entries())
-      .filter(([, v]) => v.points.length > 1);
-    entries.sort(([, a], [, b]) => {
-      const aLast = a.points[a.points.length - 1][1];
-      const bLast = b.points[b.points.length - 1][1];
-      return bLast - aLast;
-    });
-    entries.slice(0, 10).forEach(([, v], idx) => {
-      series.push({
-        name: v.name,
-        color: playerColors[idx % playerColors.length],
-        data: v.points,
-      });
-    });
-  }
-
-  if (!series.length) {
-    if (chart) { chart.destroy(); chart = null; }
-    document.getElementById("timeseriesChart").innerHTML =
-      '<div class="empty">No time series data — pick a different metric or wait for more archives.</div>';
-    return;
-  }
-
-  document.getElementById("timeseriesChart").innerHTML = "";
-
-  chart = Highcharts.chart("timeseriesChart", Highcharts.merge(HC_THEME, {
-    chart: { type: "line", backgroundColor: "transparent" },
-    tooltip: {
-      backgroundColor: "#1a1e27", borderColor: "#2f3745", borderRadius: 8,
-      style: { color: "#e6e8ec", fontSize: "12px" },
-      formatter: function () {
-        const metricLabel = metric.replace(/_/g, " ");
-        const val = this.point.y;
-        const valStr = metric.includes("funds") || metric.includes("worth") || metric.includes("income")
-          ? shortMoney(val) : num(val, 1);
-        return `<b>${this.series.name}</b><br/>${metricLabel}: ${valStr}<br/><span style="color:#8a93a6;font-size:11px">${new Date(this.x).toLocaleString()}</span>`;
-      }
-    },
-    series
-  }));
-}
-
-// ---- controls ----
 function wireRangeButtons() {
   document.querySelectorAll(".range-btn[data-range]").forEach(b => {
     b.addEventListener("click", () => {
@@ -695,17 +512,6 @@ function wireRangeButtons() {
       document.querySelectorAll(".range-btn[data-range]").forEach(x =>
         x.classList.toggle("active", x === b));
       applyRange(range);
-    });
-  });
-}
-
-function wireMetricButtons() {
-  document.querySelectorAll(".metric-btn").forEach(b => {
-    b.addEventListener("click", () => {
-      STATE.metric = b.dataset.metric;
-      document.querySelectorAll(".metric-btn").forEach(x =>
-        x.classList.toggle("active", x === b));
-      renderTimeSeries();
     });
   });
 }
@@ -727,22 +533,28 @@ function wireCustomCompare() {
 async function applyCustomCompare(fromName, toName) {
   try {
     const fromData = await fetchJSON("./data/players/" + fromName);
-    const toData = await fetchJSON("./data/players/" + toName);
+    const toData = toName === "latest"
+      ? STATE.current
+      : await fetchJSON("./data/players/" + toName);
 
     const movers = computeMovers(toData.players || [], fromData.players || []);
     STATE.currentMovers = movers;
-    STATE.selectedPlayerId = null;
 
-    document.getElementById("baselineLabel").textContent =
-      `${fromName.replace(".json", "").replace("T", " ")} → ${toName.replace(".json", "").replace("T", " ")}`;
+    const fromLabel = fromName.replace(".json", "").replace("T", " ");
+    const toLabel = toName === "latest" ? "latest" : toName.replace(".json", "").replace("T", " ");
+    document.getElementById("baselineLabel").textContent = `${fromLabel} → ${toLabel}`;
+
+    // Clear range-button active state (custom compare overrides)
+    document.querySelectorAll(".range-btn[data-range]").forEach(x => x.classList.remove("active"));
 
     renderTicker(movers);
     renderSummary(movers);
     renderTable(movers);
   } catch (e) {
     console.error(e);
-    document.getElementById("error").style.display = "block";
-    document.getElementById("error").textContent = "Custom compare failed: " + e.message;
+    const errEl = document.getElementById("error");
+    errEl.style.display = "block";
+    errEl.textContent = "Custom compare failed: " + e.message;
   }
 }
 
@@ -767,34 +579,32 @@ async function applyRange(range) {
     const baseline = await fetchJSON("./data/players/" + baselineName);
     const movers = computeMovers(STATE.current.players || [], baseline.players || []);
     STATE.currentMovers = movers;
-    STATE.selectedPlayerId = null;
 
     document.getElementById("baselineLabel").textContent =
       `vs ${baselineName.replace(".json", "").replace("T", " ")}`;
 
-    // Sync custom compare selects to the picked range
-    document.getElementById("compareFrom").value = baselineName;
-    document.getElementById("compareTo").value = "latest";
+    // Sync custom compare selects
+    const fromSel = document.getElementById("compareFrom");
+    const toSel = document.getElementById("compareTo");
+    if (fromSel) fromSel.value = baselineName;
+    if (toSel) toSel.value = "latest";
 
     renderTicker(movers);
     renderSummary(movers);
     renderTable(movers);
   } catch (e) {
     console.error(e);
-    document.getElementById("error").style.display = "block";
-    document.getElementById("error").textContent = "Range failed: " + e.message;
+    const errEl = document.getElementById("error");
+    errEl.style.display = "block";
+    errEl.textContent = "Range failed: " + e.message;
   }
 }
 
-// ---- main ----
 let STATE = {
   current: null,
   archives: [],
-  historyArchives: [],
   currentMovers: [],
   range: "day",
-  metric: "national_prestige",
-  selectedPlayerId: null,
 };
 
 async function loadAll() {
@@ -806,58 +616,53 @@ async function loadAll() {
     STATE.archives = await listArchives();
     STATE.current = await fetchJSON("./data/players/latest.json");
 
-    // Fetch ALL archive files for the time series (parallel, capped at 60 most recent)
-    const recent = STATE.archives.slice(-60);
-    const allArchiveData = await Promise.all(
-      recent.map(name =>
-        fetchJSON("./data/players/" + name)
-          .then(data => ({ ts: name.replace(".json", ""), players: data.players || [] }))
-          .catch(() => null)
-      )
-    );
-    STATE.historyArchives = allArchiveData.filter(Boolean);
-
-    // Populate custom compare selects
+    // Populate custom compare selects — newest first
     const fromSel = document.getElementById("compareFrom");
     const toSel = document.getElementById("compareTo");
     const reversed = [...STATE.archives].reverse();
+
+    const latestOptFrom = document.createElement("option");
+    latestOptFrom.value = "latest";
+    latestOptFrom.textContent = "latest (current)";
+    // Don't add "latest" to the From dropdown — it'd be comparing current to current.
+    // Only add it to the To dropdown.
+
     reversed.forEach(name => {
       const label = name.replace(".json", "").replace("T", " ");
       const opt = document.createElement("option");
       opt.value = name;
       opt.textContent = label;
       fromSel.appendChild(opt);
-      toSel.appendChild(opt.cloneNode(true));
     });
 
-    // Defaults: from = yesterday, to = latest
-    const yest = pickBaseline(STATE.archives, todayUTC(), 1);
-    if (yest) {
-      fromSel.value = yest;
-    } else if (reversed.length > 1) {
-      fromSel.value = reversed[1].value;
-    }
-    // "latest" is handled by the range buttons; add a note
+    reversed.forEach(name => {
+      const label = name.replace(".json", "").replace("T", " ");
+      const opt = document.createElement("option");
+      opt.value = name;
+      opt.textContent = label;
+      toSel.appendChild(opt);
+    });
+
     const latestOpt = document.createElement("option");
     latestOpt.value = "latest";
     latestOpt.textContent = "latest (current)";
     toSel.appendChild(latestOpt);
+
+    // Default From = yesterday's archive; Default To = latest
+    const yest = pickBaseline(STATE.archives, todayUTC(), 1);
+    if (yest) fromSel.value = yest;
+    else if (reversed.length > 0) fromSel.value = reversed[reversed.length - 1];
     toSel.value = "latest";
 
-    // Baseline date label
     statusDot.className = "status-dot fresh";
     statusText.textContent = STATE.current.generated_at
       ? "Updated " + new Date(STATE.current.generated_at).toLocaleString()
       : "Updated";
 
     wireRangeButtons();
-    wireMetricButtons();
     wireCustomCompare();
 
-    // Initial render
-    renderTimeSeries();
     await applyRange("day");
-
   } catch (e) {
     console.error(e);
     statusDot.className = "status-dot dead";
