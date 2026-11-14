@@ -24,6 +24,9 @@
     background: var(--bg); color: var(--text); min-height: 100vh;
     overflow-x: hidden;
   }
+  a { color: inherit; }
+  a.ext::after { content: " ↗"; font-size: 0.85em; color: var(--dim); font-weight: 400; }
+  a.ext:hover::after { color: var(--gold-bright); }
 
   /* HERO */
   .hero { position: relative; height: 280px; overflow: hidden;
@@ -33,24 +36,15 @@
     background-size: cover; background-position: center 40%;
     background-repeat: no-repeat; opacity: 0.55;
     transform: scale(1.02); animation: heroZoom 20s ease-in-out infinite alternate; }
-  @keyframes heroZoom {
-    from { transform: scale(1.02); }
-    to   { transform: scale(1.08); }
-  }
-  .hero::before {
-    content: ""; position: absolute; inset: 0; z-index: 1;
+  @keyframes heroZoom { from { transform: scale(1.02);} to { transform: scale(1.08);} }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(135deg,
       rgba(212,175,55,0.0) 0%, rgba(212,175,55,0.08) 25%,
       rgba(212,175,55,0.0) 50%, rgba(212,175,55,0.08) 75%,
       rgba(212,175,55,0.0) 100%);
-    background-size: 300% 300%;
-    animation: heroSweep 12s ease-in-out infinite;
-    pointer-events: none;
-  }
-  @keyframes heroSweep {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-  }
+    background-size: 300% 300%; animation: heroSweep 12s ease-in-out infinite;
+    pointer-events: none; }
+  @keyframes heroSweep { 0%,100% {background-position:0% 50%;} 50% {background-position:100% 50%;} }
   .hero::after { content: ""; position: absolute; inset: 0; z-index: 2;
     background:
       linear-gradient(180deg, rgba(8,9,12,0.4) 0%, rgba(8,9,12,0.1) 40%, rgba(8,9,12,0.96) 100%),
@@ -59,20 +53,14 @@
     width: 90px; height: 90px; object-fit: contain;
     opacity: 0.9; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.6));
     animation: emblemFloat 6s ease-in-out infinite; }
-  @keyframes emblemFloat {
-    0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(-4px); }
-  }
+  @keyframes emblemFloat { 0%,100% {transform:translateY(0);} 50% {transform:translateY(-4px);} }
   .hero-inner { position: relative; z-index: 3; height: 100%;
     display: flex; align-items: flex-end; justify-content: space-between;
     padding: 0 2rem 1.4rem; gap: 1rem; max-width: 1600px; margin: 0 auto; }
-  .brand h1 {
-    font-size: 2.3rem; margin: 0; letter-spacing: 0.08em;
+  .brand h1 { font-size: 2.3rem; margin: 0; letter-spacing: 0.08em;
     background: linear-gradient(90deg, #f0c850 0%, #fbbf24 40%, #d4af37 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
-    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85));
-    font-weight: 800;
-  }
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85)); font-weight: 800; }
   .brand .sub { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.18em;
     text-transform: uppercase; margin-top: 0.4rem; }
   .status { display: flex; align-items: center; gap: 0.5rem;
@@ -95,6 +83,7 @@
   .nav a:hover { color: var(--text); }
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
   .nav a.soon { color: var(--dim); }
+  .nav a.ext::after { content: " ↗"; font-size: 0.7em; }
 
   /* SECTION */
   .section { max-width: 1600px; margin: 0 auto;
@@ -107,20 +96,27 @@
     text-decoration: none; letter-spacing: 0.08em; font-weight: 600; }
   .section h2 .open-link:hover { color: var(--gold-bright); }
 
-  /* QUICK STATS */
+  /* QUICK STATS — now clickable */
   .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 0.75rem; margin-bottom: 1rem; }
   .qs-card {
+    display: block; text-decoration: none; color: inherit;
     background: linear-gradient(135deg, rgba(19,22,29,0.9) 0%, rgba(26,30,39,0.85) 100%);
     border: 1px solid var(--border); border-radius: 12px;
     padding: 1.1rem 1.15rem; position: relative; overflow: hidden;
     backdrop-filter: blur(10px);
+    transition: transform 0.18s, border-color 0.18s, box-shadow 0.25s;
   }
+  .qs-card:hover { transform: translateY(-2px); border-color: var(--gold);
+    box-shadow: 0 8px 22px rgba(212,175,55,0.14); }
   .qs-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
     height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
     opacity: 0.6; }
   .qs-card .lbl { color: var(--muted); font-size: 0.66rem; letter-spacing: 0.15em;
-    text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 700; }
+    text-transform: uppercase; margin-bottom: 0.4rem; font-weight: 700;
+    display: flex; justify-content: space-between; align-items: baseline; }
+  .qs-card .lbl .go { color: var(--dim); font-size: 0.9em; font-weight: 400; }
+  .qs-card:hover .lbl .go { color: var(--gold-bright); }
   .qs-card .num { font-size: 1.65rem; font-weight: 800;
     font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
   .qs-card.gold .num { color: var(--gold-bright); }
@@ -129,18 +125,15 @@
   .qs-card.red .num { color: var(--red); }
   .qs-card .sub { color: var(--dim); font-size: 0.7rem; margin-top: 0.2rem; }
 
-  /* TILES — with image backgrounds */
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* TILES */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 1rem; margin-bottom: 1rem; }
   .tile { background: var(--panel); border: 1px solid var(--border);
     border-radius: 12px; padding: 1.25rem 1.4rem 1.1rem;
     display: flex; flex-direction: column; gap: 0.75rem;
     text-decoration: none; color: inherit;
     transition: transform 0.2s ease, border-color 0.2s, box-shadow 0.3s;
-    position: relative; overflow: hidden;
-    min-height: 220px;
-  }
-  /* image layers behind each tile */
+    position: relative; overflow: hidden; min-height: 220px; }
   .tile .tile-bg { position: absolute; inset: 0; background-size: cover;
     background-position: center; opacity: 0.12; z-index: 0;
     transition: opacity 0.3s; pointer-events: none; }
@@ -174,16 +167,20 @@
     margin-bottom: 1rem; }
   @media (max-width: 900px) { .congress-grid { grid-template-columns: 1fr; } }
   .chamber-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 12px; padding: 1.25rem 1.5rem; position: relative; overflow: hidden; }
-  .chamber-card::before {
-    content: ""; position: absolute; inset: 0;
+    border-radius: 12px; padding: 1.25rem 1.5rem; position: relative; overflow: hidden;
+    transition: border-color 0.2s; }
+  .chamber-card:hover { border-color: var(--border-2); }
+  .chamber-card::before { content: ""; position: absolute; inset: 0;
     background-image: url("./images/texture-leather.jpg");
     background-size: cover; background-position: center;
-    opacity: 0.06; z-index: 0; pointer-events: none;
-  }
+    opacity: 0.06; z-index: 0; pointer-events: none; }
   .chamber-card > * { position: relative; z-index: 1; }
   .chamber-card h3 { margin: 0 0 0.5rem; font-size: 0.95rem;
-    letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); }
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright);
+    display: flex; justify-content: space-between; align-items: baseline; }
+  .chamber-card h3 a { color: var(--muted); font-size: 0.72rem;
+    text-decoration: none; letter-spacing: 0.08em; font-weight: 600; text-transform: none; }
+  .chamber-card h3 a:hover { color: var(--gold-bright); }
   .chamber-card .seat-count { font-size: 2rem; font-weight: 800;
     font-variant-numeric: tabular-nums; color: var(--text); margin-bottom: 0.75rem; }
   .chamber-card .seat-count .majority { font-size: 0.72rem;
@@ -222,11 +219,17 @@
   th.num { text-align: right; }
   th.sort-asc::after { content: " ↑"; color: var(--gold); }
   th.sort-desc::after { content: " ↓"; color: var(--gold); }
-  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+  tbody tr { border-bottom: 1px solid var(--border);
+    transition: background 0.1s; position: relative; }
   tbody tr:hover { background: var(--panel-2); }
+  tbody tr.row-link { cursor: pointer; }
+  tbody tr.row-link td:first-child { padding-left: 0.9rem; }
   td { padding: 0.65rem 0.9rem; vertical-align: middle; }
   td.num { text-align: right; font-variant-numeric: tabular-nums; }
   td.name { font-weight: 600; }
+  td.name a { text-decoration: none; color: inherit;
+    border-bottom: 1px dashed transparent; transition: border-color 0.15s; }
+  td.name a:hover { color: var(--gold-bright); border-bottom-color: var(--gold); }
   .val-gold { color: var(--gold-bright); font-weight: 700; }
   .val-pos { color: var(--green); font-weight: 600; }
   .val-neg { color: var(--red); font-weight: 600; }
@@ -234,37 +237,37 @@
   /* ELECTIONS */
   .election-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 0.75rem; margin-bottom: 1rem; }
-  .election-card { background: var(--panel); border: 1px solid var(--border);
+  .election-card { display: block; text-decoration: none; color: inherit;
+    background: var(--panel); border: 1px solid var(--border);
     border-radius: 10px; padding: 0.9rem 1rem; font-size: 0.82rem;
-    position: relative; overflow: hidden; }
-  .election-card::before {
-    content: ""; position: absolute; inset: 0;
+    position: relative; overflow: hidden;
+    transition: transform 0.18s, border-color 0.18s, box-shadow 0.25s; }
+  .election-card:hover { transform: translateY(-2px); border-color: var(--gold);
+    box-shadow: 0 8px 22px rgba(212,175,55,0.14); }
+  .election-card::before { content: ""; position: absolute; inset: 0;
     background-image: url("./images/banner-elections.png");
     background-size: cover; background-position: center;
-    opacity: 0.08; z-index: 0; pointer-events: none;
-  }
+    opacity: 0.08; z-index: 0; pointer-events: none; }
   .election-card > * { position: relative; z-index: 1; }
-  .election-card .race { font-weight: 700; margin-bottom: 0.25rem; }
+  .election-card .race { font-weight: 700; margin-bottom: 0.25rem;
+    display: flex; justify-content: space-between; gap: 0.5rem; }
+  .election-card .race .go { color: var(--dim); font-weight: 400; }
+  .election-card:hover .race .go { color: var(--gold-bright); }
   .election-card .meta { color: var(--muted); font-size: 0.72rem; }
 
-  /* CAUCUS DIVIDER — decorative */
-  .divider {
-    position: relative; height: 100px; max-width: 1600px; margin: 1rem auto;
-    border-radius: 12px; overflow: hidden;
-    border: 1px solid var(--border);
-  }
+  /* DIVIDER */
+  .divider { position: relative; height: 100px; max-width: 1600px; margin: 1rem auto;
+    border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
   .divider .divider-img { position: absolute; inset: 0;
     background-size: cover; background-position: center;
     opacity: 0.35; filter: grayscale(20%); }
   .divider .divider-overlay { position: absolute; inset: 0;
     background: linear-gradient(90deg, rgba(8,9,12,0.9) 0%, rgba(8,9,12,0.4) 50%, rgba(8,9,12,0.9) 100%); }
-  .divider .divider-text {
-    position: relative; z-index: 2; height: 100%;
+  .divider .divider-text { position: relative; z-index: 2; height: 100%;
     display: flex; align-items: center; justify-content: center;
     font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase;
     color: var(--gold); font-weight: 700;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
-  }
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9); }
 
   /* ERROR + EMPTY */
   .section-error { color: var(--red); padding: 1rem 1.2rem;
@@ -308,14 +311,11 @@
   .footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem;
     color: var(--dim); font-size: 0.75rem; text-align: center;
     letter-spacing: 0.06em; margin-top: 2rem; }
-  .footer a { color: var(--dim); }
+  .footer a { color: var(--dim); text-decoration: none; }
   .footer a:hover { color: var(--gold-bright); }
 
   /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(8px);} to { opacity: 1; transform: translateY(0);} }
   .fade-in { animation: fadeUp 0.5s ease-out both; }
   .stagger-1 { animation-delay: 0.05s; }
   .stagger-2 { animation-delay: 0.1s; }
@@ -337,11 +337,9 @@
 </head>
 <body>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-img"></div>
-  <img class="hero-emblem" src="./images/emblem.png" alt=""
-       onerror="this.style.display='none'">
+  <img class="hero-emblem" src="./images/emblem.png" alt="" onerror="this.style.display='none'">
   <div class="hero-inner">
     <div class="brand">
       <h1>BFTH WAR ROOM</h1>
@@ -354,7 +352,6 @@
   </div>
 </div>
 
-<!-- NAV -->
 <nav class="nav">
   <a href="./index.html" class="active">Home</a>
   <a href="./roster.html">Roster</a>
@@ -362,25 +359,58 @@
   <a href="./elections.html">Elections</a>
   <a href="./corporations.html">Market Desk</a>
   <a href="./congress.html">Congress</a>
+  <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="ext">Parties</a>
   <a href="./history.html" class="soon">History</a>
 </nav>
 
-<!-- QUICK STATS -->
+<!-- QUICK STATS — every card links -->
 <div class="section">
   <h2>Overview <span class="open-link" id="last-update-label"></span></h2>
   <div class="quick-stats">
-    <div class="qs-card fade-in stagger-1"><div class="lbl">Members</div><div class="num" id="qsMembers">—</div><div class="sub">GOP players</div></div>
-    <div class="qs-card green fade-in stagger-1"><div class="lbl">Campaign Funds</div><div class="num" id="qsCF">—</div><div class="sub">party total</div></div>
-    <div class="qs-card gold fade-in stagger-2"><div class="lbl">GOP Corps</div><div class="num" id="qsCorps">—</div><div class="sub" id="qsCorpsShare">—</div></div>
-    <div class="qs-card gold fade-in stagger-2"><div class="lbl">GOP Valuation</div><div class="num" id="qsCorpsVal">—</div><div class="sub">$ at market</div></div>
-    <div class="qs-card blue fade-in stagger-3"><div class="lbl">House Seats</div><div class="num" id="qsHouse">—</div><div class="sub">of 374</div></div>
-    <div class="qs-card blue fade-in stagger-3"><div class="lbl">Senate Seats</div><div class="num" id="qsSenate">—</div><div class="sub">of 98</div></div>
-    <div class="qs-card fade-in stagger-4"><div class="lbl">Nations</div><div class="num" id="qsNations">—</div><div class="sub">tracked</div></div>
-    <div class="qs-card fade-in stagger-4"><div class="lbl">Elections</div><div class="num" id="qsElections">—</div><div class="sub" id="qsElectionsSub">tracked</div></div>
+    <a class="qs-card fade-in stagger-1" href="./roster.html">
+      <div class="lbl">Members <span class="go">→</span></div>
+      <div class="num" id="qsMembers">—</div>
+      <div class="sub">GOP players</div>
+    </a>
+    <a class="qs-card green fade-in stagger-1" href="./roster.html">
+      <div class="lbl">Campaign Funds <span class="go">→</span></div>
+      <div class="num" id="qsCF">—</div>
+      <div class="sub">party total</div>
+    </a>
+    <a class="qs-card gold fade-in stagger-2" href="./corporations.html">
+      <div class="lbl">GOP Corps <span class="go">→</span></div>
+      <div class="num" id="qsCorps">—</div>
+      <div class="sub" id="qsCorpsShare">—</div>
+    </a>
+    <a class="qs-card gold fade-in stagger-2" href="./corporations.html">
+      <div class="lbl">GOP Valuation <span class="go">→</span></div>
+      <div class="num" id="qsCorpsVal">—</div>
+      <div class="sub">$ at market</div>
+    </a>
+    <a class="qs-card blue fade-in stagger-3" href="./congress.html">
+      <div class="lbl">House Seats <span class="go">→</span></div>
+      <div class="num" id="qsHouse">—</div>
+      <div class="sub">of 374</div>
+    </a>
+    <a class="qs-card blue fade-in stagger-3" href="./congress.html">
+      <div class="lbl">Senate Seats <span class="go">→</span></div>
+      <div class="num" id="qsSenate">—</div>
+      <div class="sub">of 98</div>
+    </a>
+    <a class="qs-card fade-in stagger-4" href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener">
+      <div class="lbl">Nations <span class="go">↗</span></div>
+      <div class="num" id="qsNations">—</div>
+      <div class="sub">tracked</div>
+    </a>
+    <a class="qs-card fade-in stagger-4" href="./elections.html">
+      <div class="lbl">Elections <span class="go">→</span></div>
+      <div class="num" id="qsElections">—</div>
+      <div class="sub" id="qsElectionsSub">tracked</div>
+    </a>
   </div>
 </div>
 
-<!-- TILE GRID with image backgrounds -->
+<!-- TILES — added Countries -->
 <div class="section" style="padding-top: 0">
   <div class="tiles">
     <a class="tile fade-in stagger-1" href="./roster.html">
@@ -415,17 +445,23 @@
       <div class="tile-rows" id="tileElectionsRows"></div>
       <div class="tile-cta">Open Elections →</div>
     </a>
+    <a class="tile fade-in stagger-4" href="./nations.html">
+      <div class="tile-bg" style="background-image:url('./images/banner-caucus.png');"></div>
+      <div class="tile-icon">🌐</div>
+      <div class="tile-title">Nations</div>
+      <div class="tile-main" id="tileNationsCount">—</div>
+      <div class="tile-rows" id="tileNationsRows"></div>
+      <div class="tile-cta">Open Nations →</div>
+    </a>
   </div>
 </div>
 
-<!-- CONGRESS DIVIDER -->
 <div class="divider" style="max-width: 1536px; margin: 1rem 2rem;">
   <div class="divider-img" style="background-image:url('./images/banner-caucus.png');"></div>
   <div class="divider-overlay"></div>
   <div class="divider-text">Congress of the United States</div>
 </div>
 
-<!-- CONGRESS -->
 <div class="section" id="congress-section">
   <h2>Congress <a href="./congress.html" class="open-link">Open Congress →</a></h2>
   <div class="congress-grid" id="congressGrid">
@@ -433,9 +469,8 @@
   </div>
 </div>
 
-<!-- NATIONS -->
 <div class="section" id="nations-section">
-  <h2>Nations <span class="open-link" id="nationsCount">—</span></h2>
+  <h2>Nations <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="open-link ext">Open on BFTH</a></h2>
   <div class="table-wrap">
     <table id="nationsTable">
       <thead>
@@ -454,14 +489,12 @@
   </div>
 </div>
 
-<!-- ELECTIONS DIVIDER -->
 <div class="divider" style="max-width: 1536px; margin: 1rem 2rem;">
   <div class="divider-img" style="background-image:url('./images/banner-elections.png');"></div>
   <div class="divider-overlay"></div>
   <div class="divider-text">Live Elections</div>
 </div>
 
-<!-- ELECTIONS -->
 <div class="section" id="elections-section">
   <h2>Live Elections <a href="./elections.html" class="open-link">Open Elections →</a></h2>
   <div class="election-grid" id="electionGrid">
@@ -470,7 +503,11 @@
 </div>
 
 <div class="footer">
-  Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> · <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> · <a href="./congress.html">Congress</a> · History (soon) — BFTH War Room v1.1
+  Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> ·
+  <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> ·
+  <a href="./congress.html">Congress</a> · <a href="./nations.html">Nations</a> ·
+  <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="ext">Parties</a> ·
+  History (soon) — BFTH War Room v1.2
 </div>
 
 <button id="debug-toggle" title="Toggle debug panel">DEBUG</button>
@@ -502,6 +539,18 @@ const escapeHtml = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, ch => (
 }[ch]));
 const escapeAttr = (s) => escapeHtml(s).replace(/"/g, "&quot;");
 
+// Safe URL builders — undefined/invalid -> null (renderer falls back to text)
+const BFTH = "https://battleforthehill.com";
+const politicianUrl = (pid) => pid ? `${BFTH}/politician/${encodeURIComponent(pid)}` : null;
+const nationUrl = (nid) => nid ? `${BFTH}/nation/${encodeURIComponent(nid)}` : null;
+const electionUrl = (e) => {
+  if (!e) return null;
+  if (e.url && /^https?:/.test(e.url)) return e.url;
+  if (e.election_id && e.state_id) return `${BFTH}/states/${e.state_id}/elections/${e.election_id}`;
+  if (e.election_id) return `${BFTH}/elections/${e.election_id}`;
+  return null;
+};
+
 // ============================================================
 // DEBUG
 // ============================================================
@@ -529,7 +578,6 @@ const DEBUG = {
     `).join('');
   }
 };
-
 document.getElementById('debug-toggle').addEventListener('click', () => {
   document.getElementById('debug-panel').classList.toggle('open');
 });
@@ -584,36 +632,32 @@ function setStatus(ts) {
 }
 
 // ============================================================
-// DATA STATE
+// DATA
 // ============================================================
-let playersData = null;
-let corpsData = null;
-let nationsData = null;
-let electionsData = null;
-let congressData = null;
+let playersData = null, corpsData = null, nationsData = null, electionsData = null, congressData = null;
 
 // ============================================================
 // PLAYERS / ROSTER / CAUCUS
 // ============================================================
 function renderPlayers() {
   const players = playersData?.players || [];
-  if (!players.length) {
-    DEBUG.add('err', 'players.json', 'no players array');
-    return;
-  }
+  if (!players.length) { DEBUG.add('err', 'players.json', 'no players array'); return; }
   const count = players.length;
   let cf = 0;
-  for (const p of players) {
-    cf += p.campaign_funds || 0;
-  }
+  for (const p of players) cf += p.campaign_funds || 0;
   document.getElementById('qsMembers').textContent = count;
   document.getElementById('qsCF').textContent = shortMoney(cf);
   document.getElementById('tileRosterCount').textContent = count + ' members';
 
   const sorted = [...players].sort((a, b) => (b.national_prestige || 0) - (a.national_prestige || 0));
-  document.getElementById('tileRosterRows').innerHTML = sorted.slice(0, 3).map(p => `
-    <div class="tile-row"><span>${escapeHtml(p.name)}</span><span class="v">${num(p.national_prestige, 0)} NP</span></div>
-  `).join('');
+  document.getElementById('tileRosterRows').innerHTML = sorted.slice(0, 3).map(p => {
+    const url = politicianUrl(p.id);
+    const name = escapeHtml(p.name);
+    const label = url
+      ? `<a class="ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${name}</a>`
+      : name;
+    return `<div class="tile-row"><span>${label}</span><span class="v">${num(p.national_prestige, 0)} NP</span></div>`;
+  }).join('');
 
   const caucused = players.filter(p => p.caucus_id);
   if (caucused.length) {
@@ -629,9 +673,9 @@ function renderPlayers() {
     ).join('');
   } else {
     document.getElementById('tileCaucusCount').textContent = 'No data';
-    document.getElementById('tileCaucusRows').innerHTML = '<div class="tile-row" style="color:var(--dim)">parser needs to extract caucus_id</div>';
+    document.getElementById('tileCaucusRows').innerHTML =
+      '<div class="tile-row" style="color:var(--dim)">parser needs caucus_id</div>';
   }
-
   setStatus(playersData.generated_at);
 }
 
@@ -645,16 +689,17 @@ function renderCorps() {
   const gopVal = gop.reduce((s, c) => s + (c.valuation || 0), 0);
   const total = corps.reduce((s, c) => s + (c.valuation || 0), 0);
   const share = total ? (gopVal / total * 100) : 0;
-
   document.getElementById('qsCorps').textContent = gop.length;
   document.getElementById('qsCorpsShare').textContent = `${share.toFixed(1)}% of market`;
   document.getElementById('qsCorpsVal').textContent = shortMoney(gopVal);
   document.getElementById('tileMarketVal').textContent = shortMoney(gopVal);
-
   const sorted = [...gop].sort((a, b) => (b.valuation || 0) - (a.valuation || 0));
-  document.getElementById('tileMarketRows').innerHTML = sorted.slice(0, 3).map(c =>
-    `<div class="tile-row"><span>${escapeHtml(c.name)}</span><span class="v">${shortMoney(c.valuation)}</span></div>`
-  ).join('');
+  document.getElementById('tileMarketRows').innerHTML = sorted.slice(0, 3).map(c => {
+    const url = c.corporation_id || c.id ? `${BFTH}/corporations/${encodeURIComponent(c.corporation_id || c.id)}` : null;
+    const name = escapeHtml(c.name);
+    const label = url ? `<a class="ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${name}</a>` : name;
+    return `<div class="tile-row"><span>${label}</span><span class="v">${shortMoney(c.valuation)}</span></div>`;
+  }).join('');
 }
 
 // ============================================================
@@ -667,16 +712,29 @@ function renderNations() {
   allNations = nationsData?.nations || [];
   if (!allNations.length) { DEBUG.add('err', 'nations', 'no nations array'); return; }
   document.getElementById('qsNations').textContent = allNations.length;
-  document.getElementById('nationsCount').textContent = allNations.length + ' nations';
+  document.getElementById('tileNationsCount').textContent = allNations.length + ' nations';
   renderNationsTable();
+  renderNationsTile();
   wireNationsSort();
+}
+
+function renderNationsTile() {
+  const top = [...allNations].sort((a, b) => (b.gdp || 0) - (a.gdp || 0)).slice(0, 3);
+  document.getElementById('tileNationsRows').innerHTML = top.map(n => {
+    const url = nationUrl(n.nation_id);
+    const name = escapeHtml(n.name || n.full_name || '—');
+    const label = url ? `<a class="ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${name}</a>` : name;
+    return `<div class="tile-row"><span>${label}</span><span class="v">${shortMoney(n.gdp)}</span></div>`;
+  }).join('');
 }
 
 function renderNationsTable() {
   const tbody = document.getElementById('nationsBody');
   const sorted = [...allNations].sort((a, b) => {
     if (nationsSort.key === 'name') {
-      return nationsSort.dir === 'asc' ? (a.name || '').localeCompare(b.name || '') : (b.name || '').localeCompare(a.name || '');
+      return nationsSort.dir === 'asc'
+        ? (a.name || '').localeCompare(b.name || '')
+        : (b.name || '').localeCompare(a.name || '');
     }
     if (nationsSort.key === 'combined') {
       const av = (a.corporate_tax_pct || 0) + (a.tariffs_pct || 0);
@@ -685,20 +743,32 @@ function renderNationsTable() {
     }
     const keyMap = { gdp: 'gdp', corp: 'corporate_tax_pct', tariff: 'tariffs_pct' };
     const k = keyMap[nationsSort.key];
-    const av = a[k] ?? 0;
-    const bv = b[k] ?? 0;
+    const av = a[k] ?? 0, bv = b[k] ?? 0;
     return nationsSort.dir === 'desc' ? bv - av : av - bv;
   });
   tbody.innerHTML = sorted.slice(0, 12).map(n => {
     const combined = (n.corporate_tax_pct || 0) + (n.tariffs_pct || 0);
-    return `<tr>
-      <td class="name">${escapeHtml(n.name || n.full_name || '—')}</td>
+    const url = nationUrl(n.nation_id);
+    const name = escapeHtml(n.name || n.full_name || '—');
+    const nameCell = url
+      ? `<a class="ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${name}</a>`
+      : name;
+    const rowAttr = url ? ` class="row-link" data-href="${escapeAttr(url)}"` : '';
+    return `<tr${rowAttr}>
+      <td class="name">${nameCell}</td>
       <td class="num val-gold">${shortMoney(n.gdp)}</td>
       <td class="num">${pct(n.corporate_tax_pct)}</td>
       <td class="num">${pct(n.tariffs_pct)}</td>
       <td class="num val-pos">${num(combined, 1)}</td>
     </tr>`;
   }).join('');
+  // Row click delegates to the row's href (name link has target=_blank so clicks there work too)
+  tbody.querySelectorAll('tr.row-link').forEach(tr => {
+    tr.addEventListener('click', (ev) => {
+      if (ev.target.closest('a')) return; // let the <a> handle it
+      window.open(tr.dataset.href, '_blank', 'noopener');
+    });
+  });
 }
 
 function wireNationsSort() {
@@ -715,24 +785,20 @@ function wireNationsSort() {
 }
 
 // ============================================================
-// ELECTIONS — shape-agnostic renderer
+// ELECTIONS
 // ============================================================
 function pickElectionLabel(e) {
-  return e.race_title || e.title || e.name || e.race || e.office_name
+  return e.label || e.race_title || e.title || e.name || e.race || e.office_name
     || e.seat_name || e.seat || e.district
-    || (e.id ? `Election #${e.id}` : 'Election');
+    || (e.election_id ? `Election #${e.election_id}` : 'Election');
 }
-
 function pickElectionState(e) {
   if (e.state_name) return e.state_name;
   if (e.state) return e.state;
   if (e.state_id) return `State ${e.state_id}`;
   return '';
 }
-
-function pickElectionParty(e) {
-  return e.party_name || e.party || e.office_party || '';
-}
+function pickElectionType(e) { return e.type || ''; }
 
 function renderElections() {
   const el = document.getElementById('electionGrid');
@@ -746,7 +812,6 @@ function renderElections() {
   document.getElementById('tileElectionsCount').textContent = total + ' tracked';
 
   const elections = d.elections || [];
-
   if (!elections.length) {
     document.getElementById('tileElectionsRows').innerHTML =
       `<div class="tile-row" style="color:var(--dim)">no elections in payload</div>`;
@@ -754,36 +819,39 @@ function renderElections() {
     return;
   }
 
-  // Try to sort by a date-like field, descending
-  const dateField = ['end_time','election_date','closes_at','end_date','starts_at','created_at','updated_at']
-    .find(f => elections[0][f]);
-  const recent = dateField
-    ? [...elections].sort((a, b) => (new Date(b[dateField]) || 0) - (new Date(a[dateField]) || 0))
-    : elections;
-  const top = recent.slice(0, 3);
+  // Prefer ones with polls; secondary sort by election_id desc
+  const top = [...elections]
+    .sort((a, b) => (b.polls_count || 0) - (a.polls_count || 0)
+                 || Number(b.election_id || 0) - Number(a.election_id || 0))
+    .slice(0, 3);
 
-  // Tile rows
   document.getElementById('tileElectionsRows').innerHTML = top.map(e => {
     const label = String(pickElectionLabel(e)).slice(0, 28);
     const state = pickElectionState(e);
-    return `<div class="tile-row"><span>${escapeHtml(label)}</span><span class="v">${escapeHtml(state)}</span></div>`;
+    const url = electionUrl(e);
+    const name = escapeHtml(label);
+    const labelHtml = url ? `<a class="ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${name}</a>` : name;
+    return `<div class="tile-row"><span>${labelHtml}</span><span class="v">${escapeHtml(state)}</span></div>`;
   }).join('');
 
-  // Full cards
   el.innerHTML = top.map(e => {
+    const url = electionUrl(e);
     const label = pickElectionLabel(e);
     const state = pickElectionState(e);
-    const party = pickElectionParty(e);
-    const meta = [state, party].filter(Boolean).join(' · ');
-    return `<div class="election-card fade-in">
-      <div class="race">${escapeHtml(String(label).slice(0, 64))}</div>
-      <div class="meta">${escapeHtml(meta || '—')}</div>
-    </div>`;
+    const type = pickElectionType(e);
+    const polls = e.polls_count;
+    const meta = [state, type, polls ? `${polls} polls` : null].filter(Boolean).join(' · ');
+    const inner = `
+      <div class="race">${escapeHtml(String(label).slice(0, 64))}<span class="go">${url ? '↗' : ''}</span></div>
+      <div class="meta">${escapeHtml(meta || '—')}</div>`;
+    return url
+      ? `<a class="election-card fade-in ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${inner}</a>`
+      : `<div class="election-card fade-in">${inner}</div>`;
   }).join('');
 }
 
 // ============================================================
-// CONGRESS — reads data/congress.json
+// CONGRESS
 // ============================================================
 const PARTY_COLORS = {
   "1": "#3B82F6", "2": "#EF4444", "254": "#961D1D",
@@ -797,36 +865,31 @@ function renderCongressFromJson(congress) {
     grid.innerHTML = '<div class="empty-note">No congress.json — run scraper/congress.py.</div>';
     return;
   }
-
   let html = '';
   ['senate', 'house'].forEach(chamber => {
     const data = congress[chamber];
     if (!data) return;
-
     document.getElementById(chamber === 'senate' ? 'qsSenate' : 'qsHouse').textContent =
       data.gop_seats != null ? data.gop_seats : '—';
 
     const majority = Math.ceil(data.total_seats / 2);
     const parties = (data.parties || []).filter(p => p.seats > 0);
-
     const barSegs = parties.map(p => {
       const color = p.color || PARTY_COLORS[p.party_id] || '#666';
-      const widthPct = (p.seats / data.total_seats) * 100;
-      return `<div class="seg" style="flex-basis:${widthPct}%;background:${color};" title="${escapeAttr(p.name)} — ${p.seats} seats"></div>`;
+      const w = (p.seats / data.total_seats) * 100;
+      return `<div class="seg" style="flex-basis:${w}%;background:${color};" title="${escapeAttr(p.name)} — ${p.seats} seats"></div>`;
     }).join('');
-
     const legend = parties.slice(0, 6).map(p => `
       <div class="item">
         <span class="swatch" style="background:${p.color || PARTY_COLORS[p.party_id] || '#666'}"></span>
         <span>${escapeHtml(p.name)}</span>
         <span class="num">${p.seats}</span>
-      </div>
-    `).join('');
-
+      </div>`).join('');
     const leaders = (data.leadership || []).map(l => {
       const pid = l.politician_id;
-      const nameHtml = pid
-        ? `<a href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">${escapeHtml(l.name || '')}</a>`
+      const url = politicianUrl(pid);
+      const nameHtml = url
+        ? `<a class="ext" href="${escapeAttr(url)}" target="_blank" rel="noopener">${escapeHtml(l.name || '')}</a>`
         : escapeHtml(l.name || '[Vacant]');
       const cls = (!l.name || l.name === '[Vacant]') ? 'vacant' : '';
       return `<div class="leader">
@@ -835,20 +898,23 @@ function renderCongressFromJson(congress) {
       </div>`;
     }).join('');
 
+    const chamberLabel = chamber === 'senate' ? 'Senate' : 'House';
+    const bfthChamber = chamber === 'senate' ? 'senate' : 'house';
     html += `<div class="chamber-card fade-in">
-      <h3>${chamber === 'senate' ? 'Senate' : 'House'}</h3>
+      <h3>${chamberLabel}
+        <a class="ext" href="${BFTH}/national/congress/${bfthChamber}" target="_blank" rel="noopener">BFTH →</a>
+      </h3>
       <div class="seat-count">${data.gop_seats} GOP <span class="majority">of ${data.total_seats} · majority ${majority}</span></div>
       <div class="stacked-bar">${barSegs}</div>
       <div class="party-legend">${legend}</div>
       <div class="leadership">${leaders || '<div class="empty-note">No leadership parsed</div>'}</div>
     </div>`;
   });
-
   grid.innerHTML = html || '<div class="empty-note">No chamber data.</div>';
 }
 
 // ============================================================
-// IMAGE CHECK — debug
+// IMAGE CHECK
 // ============================================================
 async function checkImages() {
   const images = [
@@ -874,7 +940,6 @@ async function checkImages() {
 // ============================================================
 async function boot() {
   DEBUG.add('ok', 'boot', 'Starting parallel fetches');
-
   const [playersRes, corpsRes, nationsRes, electionsRes, congressRes] = await Promise.all([
     fetchJson('./data/players/latest.json'),
     fetchJson('./data/corporations/latest.json'),
@@ -882,29 +947,21 @@ async function boot() {
     fetchJson('./data/elections.json'),
     fetchJson('./data/congress.json'),
   ]);
-
-  if (playersRes.data) { playersData = playersRes.data; renderPlayers(); }
-  else showError('quickStats', 'Failed to load players: ' + playersRes.error);
-
-  if (corpsRes.data) { corpsData = corpsRes.data; renderCorps(); }
-  else showError('quickStats', 'Failed to load corporations: ' + corpsRes.error);
-
-  if (nationsRes.data) { nationsData = nationsRes.data; renderNations(); }
+  if (playersRes.data)   { playersData = playersRes.data;   renderPlayers(); }
+  else showError('quick-stats', 'Failed to load players: ' + playersRes.error);
+  if (corpsRes.data)     { corpsData = corpsRes.data;       renderCorps(); }
+  else showError('quick-stats', 'Failed to load corporations: ' + corpsRes.error);
+  if (nationsRes.data)   { nationsData = nationsRes.data;   renderNations(); }
   else showError('nations-section', 'Failed to load nations: ' + nationsRes.error);
-
   if (electionsRes.data) { electionsData = electionsRes.data; renderElections(); }
   else showError('elections-section', 'Failed to load elections: ' + electionsRes.error);
-
-  if (congressRes.data) { congressData = congressRes.data; renderCongressFromJson(congressData); }
+  if (congressRes.data)  { congressData = congressRes.data; renderCongressFromJson(congressData); }
   else showError('congress-section', 'Failed to load congress: ' + congressRes.error);
-
   await checkImages();
-
   const ok = DEBUG.logs.filter(l => l.status === 'ok').length;
   const err = DEBUG.logs.filter(l => l.status === 'err').length;
   DEBUG.add(err ? 'err' : 'ok', 'boot.complete', `${ok} ok, ${err} errors`);
 }
-
 boot();
 </script>
 </body>
