@@ -1,40 +1,9 @@
 #!/usr/bin/env python3
 """
-parse.py - parse politician HTML into latest.json, with day-over-day and
-week-over-week deltas baked in.
+parse.py - parse BFTH politician profile HTML into structured JSON.
 
-Output structure (data/players/latest.json):
-{
-  "generated_at": "...",
-  "count": 64,
-  "npc_filtered": 61,
-  "baselines": {
-    "day":  {"ts": "...", "file": "2026-11-13T21.json"},
-    "week": {"ts": "...", "file": "2026-11-06T00.json"}
-  },
-  "players": [
-    {
-      "id": "1239", "name": "Greg Abbott", "state": "West Virginia",
-      "national_prestige": 16762.8, "campaign_strength": 100.0,
-      "campaign_funds": 1800000, "total_net_worth": 105900000,
-      "lc_income_hr": 16000, ...,
-      "delta": {
-        "day":  {"national_prestige": 127.5, "campaign_strength": 0.0,
-                 "campaign_funds": -42000, "total_net_worth": 85000,
-                 "lc_income_hr": 0, "state_reputation": 0.0,
-                 "national_reputation": 0.0},
-        "week": {"national_prestige": 890.2, ...}
-      }
-    }
-  ]
-}
-
-Baselines:
-  - day:  newest archive whose date is strictly before today's UTC date
-  - week: newest archive that is >=7 days before today (falls back to oldest
-          pre-today archive if no 7-day-old snapshot exists yet)
-
-Deltas are null when no baseline is available for a given horizon.
+Reads scraper/raw/*.html (saved by fetch.py), extracts stats, writes
+data/players/latest.json.
 
 Usage:
     python3 scraper/parse.py
@@ -51,373 +20,262 @@ from bs4 import BeautifulSoup
 HERE = Path(__file__).resolve().parent
 REPO_ROOT = HERE.parent
 RAW_DIR = HERE / "raw"
-PLAYERS_DIR = REPO_ROOT / "data" / "players"
-LATEST = PLAYERS_DIR / "latest.json"
-
-# archive filenames look like 2026-11-13T21.json
-ARCHIVE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})T(\d{2})\.json$")
-
-# minimum markers we expect on a valid politician page
-MARKERS = ["National Prestige", "Campaign Strength", "State Reputation"]
+DATA_DIR = REPO_ROOT / "data"
+PLAYERS_DIR = DATA_DIR / "players"
+OUT_FILE = PLAYERS_DIR / "latest.json"
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# scalar extraction helpers (same logic as before, cleaned up)
-# ─────────────────────────────────────────────────────────────────────────────
-
-def _text(soup):
-    return soup.get_text(" ", strip=True)
-
-
-def _money(s):
-    """'$1,234,567' or '$1.23M' or '1,234' -> float."""
-    if s is None:
+def text_of(node):
+    if node is None:
         return None
-    s = str(s).strip()
-    if not s:
+    return node.get_text(strip=True) or None
+
+
+def money(text):
+    if not text:
         return None
-    neg = s.startswith("-")
-    s = s.lstrip("-").replace("$", "").replace(",", "").strip()
-    mult = 1
-    if s.endswith("B") or s.endswith("b"):
-        mult, s = 1e9, s[:-1]
-    elif s.endswith("M") or s.endswith("m"):
-        mult, s = 1e6, s[:-1]
-    elif s.endswith("K") or s.endswith("k"):
-        mult, s = 1e3, s[:-1]
+    cleaned = re.sub(r"[^\d.\-]", "", text)
     try:
-        v = float(s) * mult
+        return float(cleaned)
     except ValueError:
         return None
-    return -v if neg else v
 
 
-def _pct(s):
-    """'54.3%' -> 54.3."""
-    if s is None:
+def number(text):
+    if not text:
         return None
-    m = re.search(r"-?\d+(?:\.\d+)?", str(s).replace(",", ""))
-    return float(m.group()) if m else None
-
-
-def _num(s):
-    if s is None:
+    cleaned = re.sub(r"[^\d.\-]", "", text)
+    try:
+        return float(cleaned)
+    except ValueError:
         return None
-    m = re.search(r"-?\d+(?:\.\d+)?", str(s).replace(",", ""))
-    return float(m.group()) if m else None
 
 
-def _find_value_after_label(soup, label, parser):
-    """Search text nodes for a label, take the next sibling's text, parse it."""
-    el = soup.find(string=re.compile(re.escape(label), re.IGNORECASE))
-    if not el:
+def by_id(soup, elem_id):
+    el = soup.find(id=elem_id)
+    return text_of(el)
+
+
+def profile_scope(soup):
+    """Return the div wrapping the static politician cards.
+
+    All stat rows (State, Stocks Value, etc.) live inside this div.
+    Nav elements live outside it, so scoping here avoids false matches.
+    """
+    scope = soup.find("div", class_="static-politician-cards")
+    if scope:
+        return scope
+    return soup.body or soup
+
+
+def find_label_row(scope, label, exact=False):
+    """Find the row div containing a span whose text is the label."""
+    if scope is None:
         return None
-    parent = el.find_parent()
-    if parent:
-        sib = parent.find_next_sibling()
-        if sib:
-            return parser(_text(sib))
-        # fallback: parse the parent text minus the label
-        parent_text = _text(parent).replace(label, "").strip()
-        return parser(parent_text)
+    for span in scope.find_all("span"):
+        t = span.get_text(strip=True)
+        if not t:
+            continue
+        if exact:
+            if t == label:
+                return span.find_parent("div")
+        else:
+            if t.startswith(label):
+                return span.find_parent("div")
     return None
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# profile parsing
-# ─────────────────────────────────────────────────────────────────────────────
+def row_value(scope, label, exact=False):
+    """Extract the value text from a labeled row inside the scope.
 
-def parse_profile(html):
-    """Parse one politician HTML page -> dict of fields."""
+    Walks the row and returns the first span/div/a text that looks like
+    a value (has a digit, starts with $, or contains %). Falls back to
+    the last non-label candidate.
+    """
+    row = find_label_row(scope, label, exact=exact)
+    if not row:
+        return None
+
+    candidates = []
+    for el in row.find_all(["span", "div", "a"]):
+        t = el.get_text(strip=True)
+        if not t:
+            continue
+        if t == label or t == label + ":":
+            continue
+        if t.startswith(label) and len(t) <= len(label) + 2:
+            continue
+        candidates.append(t)
+
+    if not candidates:
+        return None
+
+    for c in candidates:
+        if any(ch.isdigit() for ch in c) or c.startswith("$") or "%" in c:
+            return c
+    return candidates[-1]
+
+
+def state_name(scope):
+    """Find the State row inside the profile scope and return flag alt."""
+    row = find_label_row(scope, "State", exact=True)
+    if not row:
+        return None
+    img = row.find("img")
+    if img and img.get("alt"):
+        alt = img["alt"].strip()
+        if alt and alt.lower() != "united states":
+            return alt
+    return None
+
+
+def profile_image(soup):
+    """Extract the profile owner's image URL.
+
+    The nav bar has an <img> for the currently-logged-in user; the
+    profile owner's image is in the masthead. We try the masthead first
+    and fall back to the last /images/profile/ image on the page.
+    """
+    masthead = soup.find("div", class_=lambda c: c and "wn-masthead" in str(c))
+    if masthead:
+        img = masthead.find("img", src=lambda s: s and "/images/profile/" in s)
+        if img and img.get("src"):
+            return img["src"]
+
+    imgs = soup.find_all("img", src=lambda s: s and "/images/profile/" in s)
+    if imgs:
+        return imgs[-1].get("src")
+    return None
+
+
+def extract_politician_id(name):
+    m = re.search(r"(\d+)", name)
+    return m.group(1) if m else None
+
+
+def is_npc(data):
+    """NPCs have names ending in 'NPC' and no discord handle."""
+    name = data.get("name") or ""
+    return name.endswith("NPC")
+
+
+def parse_profile(html, profile_id):
     soup = BeautifulSoup(html, "html.parser")
 
-    # ---- header block: name, state, politician ID, image ----
-    name_el = soup.select_one("h1")
-    name = _text(name_el) if name_el else None
+    scope = profile_scope(soup)
 
-    # politician ID from canonical link
-    pid = None
-    canonical = soup.find("link", rel="canonical")
-    if canonical and canonical.get("href"):
-        m = re.search(r"/politician/(\d+)", canonical["href"])
-        if m:
-            pid = m.group(1)
-    if not pid:
-        # fallback: any /politician/<id> link on the page
-        a = soup.find("a", href=re.compile(r"/politician/\d+"))
-        if a:
-            m = re.search(r"/politician/(\d+)", a["href"])
-            if m:
-                pid = m.group(1)
+    # --- name ---
+    name = None
+    name_el = soup.find("p", class_=lambda c: c and "text-3xl" in c)
+    if name_el:
+        name = text_of(name_el)
 
-    # state — look for "State:" label
-    state = _find_value_after_label(soup, "State", lambda s: s.strip() or None)
+    # --- state ---
+    state = state_name(scope)
 
-    # profile image
-    profile_image = None
-    img = soup.select_one("img[src*='/images/profile/']")
-    if img:
-        src = img.get("src", "")
-        if src.startswith("/"):
-            profile_image = "https://battleforthehill.com" + src
-        else:
-            profile_image = src
+    # --- discord ---
+    discord = row_value(scope, "Discord Username", exact=False)
 
-    # discord handle
-    discord = _find_value_after_label(soup, "Discord", lambda s: s.strip() or None)
-
-    # ---- alt account ----
+    # --- alt ---
     alt = None
-    alt_link = soup.find("a", string=re.compile(r"Alt", re.IGNORECASE))
-    if alt_link:
-        alt_name = _text(alt_link).replace("Alt:", "").strip() or None
-        alt_url = alt_link.get("href")
-        if alt_name:
-            alt = {"name": alt_name, "url": alt_url}
+    alt_row = find_label_row(scope, "Alt", exact=False)
+    if alt_row:
+        a = alt_row.find("a")
+        if a:
+            alt = {"name": text_of(a), "url": a.get("href")}
 
-    # ---- marriage ----
-    marriage = _find_value_after_label(soup, "Married", lambda s: s.strip() or None)
-    if not marriage:
-        marriage = _find_value_after_label(soup, "Spouse", lambda s: s.strip() or None)
+    # --- marriage ---
+    marriage = row_value(scope, "Marriage", exact=False)
 
-    # ---- numeric stats ----
-    np_val      = _find_value_after_label(soup, "National Prestige", _num)
-    cs_val      = _find_value_after_label(soup, "Campaign Strength", _num)
-    sr_val      = _find_value_after_label(soup, "State Reputation", _pct)
-    nr_val      = _find_value_after_label(soup, "National Reputation", _pct)
-    pc_val      = _find_value_after_label(soup, "Political Capital", _num)
-    cf_val      = _find_value_after_label(soup, "Campaign Funds", _money)
-    nw_val      = _find_value_after_label(soup, "Net Worth", _money)
-    lc_val      = _find_value_after_label(soup, "Liquid Capital", _money)
-    lc_hr_val   = _find_value_after_label(soup, "LC / hr", _money) \
-                  or _find_value_after_label(soup, "LC/hr", _money) \
-                  or _find_value_after_label(soup, "Income / hr", _money)
-    lc_ann_val  = _find_value_after_label(soup, "Annual LC", _money)
-    nc_hr_val   = _find_value_after_label(soup, "Net Contributions / hr", _money) \
-                  or _find_value_after_label(soup, "Contributions / hr", _money)
-    mil_val     = _find_value_after_label(soup, "Military Influence", _num)
-    contro_val  = _find_value_after_label(soup, "Controversy", _num)
-    gold_val    = _find_value_after_label(soup, "Gold", _num)
-    stocks_val  = _find_value_after_label(soup, "Stocks", _money)
+    # --- gold and stocks ---
+    gold = row_value(scope, "Gold", exact=True)
+    stocks = row_value(scope, "Stocks Value", exact=False)
 
-    # ---- stance strings (leave as raw text for later parsing) ----
-    ss = _find_value_after_label(soup, "Social Stance", lambda s: s.strip() or None)
-    es = _find_value_after_label(soup, "Economic Stance", lambda s: s.strip() or None)
+    # --- profile image ---
+    img_url = profile_image(soup)
 
-    return {
-        "id": pid,
+    # --- stats by element id ---
+    data = {
+        "id": profile_id,
         "name": name,
-        "profile_image": profile_image,
+        "profile_image": img_url,
         "state": state,
         "discord": discord,
         "alt": alt,
         "marriage": marriage,
-        "national_prestige":      np_val,
-        "campaign_strength":      cs_val,
-        "state_reputation":       sr_val,
-        "national_reputation":    nr_val,
-        "political_capital":      pc_val,
-        "campaign_funds":         cf_val,
-        "net_contributions_hr":   nc_hr_val,
-        "total_net_worth":        nw_val,
-        "liquid_capital":         lc_val,
-        "lc_income_hr":           lc_hr_val,
-        "annual_lc_income":       lc_ann_val,
-        "military_influence":     mil_val,
-        "controversy":            contro_val,
-        "gold_oz":                gold_val,
-        "stocks_value":           stocks_val,
-        "raw_stance_social":      ss,
-        "raw_stance_econ":        es,
+
+        "campaign_strength": number(by_id(soup, "campaign-strength-display")),
+        "state_reputation": number(by_id(soup, "state-reputation-display")),
+        "political_capital": number(by_id(soup, "jurisdiction-tooltip")),
+        "campaign_funds": money(by_id(soup, "campaign-funds-tooltip")),
+        "net_contributions_hr": money(by_id(soup, "net-contributions-tooltip")),
+        "national_reputation": number(by_id(soup, "national-reputation-display")),
+        "national_prestige": number(by_id(soup, "national-prestige-tooltip")),
+        "controversy": number(by_id(soup, "controversy-display")),
+
+        "liquid_capital": money(by_id(soup, "liquid-capital-tooltip")),
+        "lc_income_hr": money(by_id(soup, "net-personal-income-tooltip")),
+        "annual_lc_income": money(by_id(soup, "annual-lc-income-tooltip")),
+        "total_net_worth": money(by_id(soup, "total-net-worth-tooltip")),
+        "gold_oz": number(gold),
+        "stocks_value": money(stocks),
+
+        "military_influence": number(by_id(soup, "military-influence-tooltip")),
+
+        "raw_stance_social": row_value(scope, "Social Stance", exact=False),
+        "raw_stance_econ": row_value(scope, "Economic Stance", exact=False),
     }
 
+    return data
 
-def is_npc(profile):
-    """NPC detection - same heuristic as before."""
-    name = (profile.get("name") or "").lower()
-    if "npc" in name:
-        return True
-    # missing discord is a strong signal, but some dormant players lack it too
-    return False
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# delta computation
-# ─────────────────────────────────────────────────────────────────────────────
-
-def load_baseline(path):
-    try:
-        data = json.loads(path.read_text())
-        return {
-            "ts": data.get("generated_at"),
-            "file": path.name,
-            "by_id": {str(p.get("id")): p for p in data.get("players", []) if p.get("id")},
-        }
-    except Exception as e:
-        print(f"  WARN: could not load baseline {path.name}: {e}")
-        return None
-
-
-def find_baseline_day(today_str):
-    """Newest archive strictly before today."""
-    candidates = []
-    for f in PLAYERS_DIR.glob("*.json"):
-        m = ARCHIVE_RE.match(f.name)
-        if m and m.group(1) < today_str:
-            candidates.append((m.group(1), m.group(2), f.name, f))
-    if not candidates:
-        return None
-    candidates.sort(key=lambda x: (x[0], x[1], x[2]))
-    return load_baseline(candidates[-1][3])
-
-
-def find_baseline_week(today_str):
-    """Newest archive >=7 days before today. Falls back to oldest pre-today archive."""
-    today_dt = datetime.strptime(today_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-    seven_ago = []
-    all_prior = []
-    for f in PLAYERS_DIR.glob("*.json"):
-        m = ARCHIVE_RE.match(f.name)
-        if not m:
-            continue
-        date_part = m.group(1)
-        if date_part >= today_str:
-            continue
-        all_prior.append((date_part, m.group(2), f.name, f))
-        try:
-            archive_dt = datetime.strptime(date_part, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        except ValueError:
-            continue
-        if (today_dt - archive_dt).days >= 7:
-            seven_ago.append((date_part, m.group(2), f.name, f))
-
-    if seven_ago:
-        seven_ago.sort(key=lambda x: (x[0], x[1], x[2]))
-        return load_baseline(seven_ago[-1][3])
-    if all_prior:
-        all_prior.sort(key=lambda x: (x[0], x[1], x[2]))
-        return load_baseline(all_prior[0][3])
-    return None
-
-
-def diff_fields(cur, prev):
-    """Return delta dict or None if prev is missing."""
-    if not prev:
-        return None
-
-    def d(field):
-        cv = cur.get(field)
-        pv = prev.get(field)
-        if cv is None or pv is None:
-            return None
-        return round(cv - pv, 4)
-
-    return {
-        "national_prestige":    d("national_prestige"),
-        "campaign_strength":    d("campaign_strength"),
-        "campaign_funds":       d("campaign_funds"),
-        "total_net_worth":      d("total_net_worth"),
-        "lc_income_hr":         d("lc_income_hr"),
-        "state_reputation":     d("state_reputation"),
-        "national_reputation":  d("national_reputation"),
-    }
-
-
-def attach_deltas(players, baseline_day, baseline_week):
-    """Attach delta.day / delta.week to each player."""
-    day_by_id = baseline_day["by_id"] if baseline_day else {}
-    week_by_id = baseline_week["by_id"] if baseline_week else {}
-
-    for p in players:
-        pid = str(p.get("id"))
-        p["delta"] = {
-            "day":  diff_fields(p, day_by_id.get(pid)),
-            "week": diff_fields(p, week_by_id.get(pid)),
-        }
-
-    return {
-        "day": {
-            "ts": baseline_day["ts"] if baseline_day else None,
-            "file": baseline_day["file"] if baseline_day else None,
-        },
-        "week": {
-            "ts": baseline_week["ts"] if baseline_week else None,
-            "file": baseline_week["file"] if baseline_week else None,
-        },
-    }
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# main
-# ─────────────────────────────────────────────────────────────────────────────
 
 def main():
     if not RAW_DIR.exists():
-        sys.exit(f"no {RAW_DIR} — run fetch.py first")
+        sys.exit("no scraper/raw/ directory - run fetch.py first")
 
-    html_files = sorted(RAW_DIR.glob("politician-*.html"))
+    html_files = sorted(RAW_DIR.glob("*.html"))
     if not html_files:
-        # fallback: fetch.py may save with different naming
-        html_files = sorted(RAW_DIR.glob("*.html"))
-    if not html_files:
-        sys.exit(f"no HTML files in {RAW_DIR}")
+        sys.exit("no HTML files in scraper/raw/ - run fetch.py first")
 
     print(f"[parse] {len(html_files)} HTML files")
 
     players = []
     npc_count = 0
     for path in html_files:
+        profile_id = extract_politician_id(path.stem)
+        html = path.read_text(encoding="utf-8", errors="replace")
         try:
-            html = path.read_text(encoding="utf-8", errors="replace")
-            profile = parse_profile(html)
-            if not profile.get("name"):
-                continue
-            if is_npc(profile):
-                npc_count += 1
-                print(f"  {profile['name']:30} (NPC — filtered)")
-                continue
-            # count non-empty fields for the summary line
-            field_count = sum(1 for v in profile.values() if v not in (None, "", 0, []))
-            print(f"  {profile['name']:30} {field_count} fields")
-            players.append(profile)
+            data = parse_profile(html, profile_id)
         except Exception as e:
             print(f"  ERROR {path.name}: {e}")
+            continue
+
+        if is_npc(data):
+            npc_count += 1
+            continue
+
+        players.append(data)
+        skip = {"id", "raw_stance_social", "raw_stance_econ"}
+        found = sum(1 for k, v in data.items() if k not in skip and v not in (None, "", {}))
+        print(f"  {str(data.get('name', path.stem)):30s}  {found} fields")
 
     PLAYERS_DIR.mkdir(parents=True, exist_ok=True)
-
-    # ---- attach deltas ----
-    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    baseline_day = find_baseline_day(today_str)
-    baseline_week = find_baseline_week(today_str)
-
-    print(f"[parse] today: {today_str}")
-    if baseline_day:
-        print(f"[parse] day baseline:  {baseline_day['file']}  ({baseline_day['ts']})")
-    else:
-        print(f"[parse] day baseline:  none (no prior-day archive)")
-    if baseline_week:
-        print(f"[parse] week baseline: {baseline_week['file']}  ({baseline_week['ts']})")
-    else:
-        print(f"[parse] week baseline: none")
-
-    baselines = attach_deltas(players, baseline_day, baseline_week)
-
-    output = {
+    payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": "parse.py",
         "count": len(players),
         "npc_filtered": npc_count,
-        "baselines": baselines,
         "players": players,
     }
+    body = json.dumps(payload, indent=2)
 
-    LATEST.write_text(json.dumps(output, indent=2))
-    print(f"[parse] wrote {LATEST.relative_to(REPO_ROOT)} ({len(players)} players, {npc_count} NPCs filtered)")
+    OUT_FILE.write_text(body)
+    print(f"[parse] wrote {OUT_FILE.relative_to(REPO_ROOT)} ({len(players)} players, {npc_count} NPCs filtered)")
 
-    # ---- archive a copy ----
-    hour_str = datetime.now(timezone.utc).strftime("%H")
-    archive_path = PLAYERS_DIR / f"{today_str}T{hour_str}.json"
-    archive_path.write_text(json.dumps(output, indent=2))
-    print(f"[parse] archived {archive_path.relative_to(REPO_ROOT)}")
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H")
+    archive = PLAYERS_DIR / f"{stamp}.json"
+    archive.write_text(body)
+    print(f"[parse] archived {archive.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":
