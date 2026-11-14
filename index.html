@@ -25,13 +25,18 @@
     overflow-x: hidden;
   }
 
-  /* HERO — animated gradient sweep */
-  .hero { position: relative; height: 240px; overflow: hidden;
+  /* HERO */
+  .hero { position: relative; height: 280px; overflow: hidden;
     border-bottom: 2px solid var(--gold); background: var(--bg-2); }
   .hero-img { position: absolute; inset: 0;
     background-image: url("./images/banner-warroom.png");
-    background-size: cover; background-position: center 45%;
-    background-repeat: no-repeat; opacity: 0.55; }
+    background-size: cover; background-position: center 40%;
+    background-repeat: no-repeat; opacity: 0.55;
+    transform: scale(1.02); animation: heroZoom 20s ease-in-out infinite alternate; }
+  @keyframes heroZoom {
+    from { transform: scale(1.02); }
+    to   { transform: scale(1.08); }
+  }
   .hero::before {
     content: ""; position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(135deg,
@@ -50,11 +55,19 @@
     background:
       linear-gradient(180deg, rgba(8,9,12,0.4) 0%, rgba(8,9,12,0.1) 40%, rgba(8,9,12,0.96) 100%),
       linear-gradient(90deg, rgba(8,9,12,0.75) 0%, transparent 25%, transparent 75%, rgba(8,9,12,0.75) 100%); }
+  .hero-emblem { position: absolute; top: 1.5rem; right: 2rem; z-index: 3;
+    width: 90px; height: 90px; object-fit: contain;
+    opacity: 0.9; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.6));
+    animation: emblemFloat 6s ease-in-out infinite; }
+  @keyframes emblemFloat {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-4px); }
+  }
   .hero-inner { position: relative; z-index: 3; height: 100%;
     display: flex; align-items: flex-end; justify-content: space-between;
     padding: 0 2rem 1.4rem; gap: 1rem; max-width: 1600px; margin: 0 auto; }
   .brand h1 {
-    font-size: 2.1rem; margin: 0; letter-spacing: 0.08em;
+    font-size: 2.3rem; margin: 0; letter-spacing: 0.08em;
     background: linear-gradient(90deg, #f0c850 0%, #fbbf24 40%, #d4af37 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
     filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85));
@@ -85,7 +98,7 @@
 
   /* SECTION */
   .section { max-width: 1600px; margin: 0 auto;
-    padding: 2.5rem 2rem 1rem; }
+    padding: 2.5rem 2rem 1rem; position: relative; }
   .section h2 { font-size: 0.85rem; letter-spacing: 0.18em;
     text-transform: uppercase; color: var(--gold); margin: 0 0 1.25rem;
     padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
@@ -94,7 +107,7 @@
     text-decoration: none; letter-spacing: 0.08em; font-weight: 600; }
   .section h2 .open-link:hover { color: var(--gold-bright); }
 
-  /* QUICK STATS — glassmorphism */
+  /* QUICK STATS */
   .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 0.75rem; margin-bottom: 1rem; }
   .qs-card {
@@ -116,26 +129,36 @@
   .qs-card.red .num { color: var(--red); }
   .qs-card .sub { color: var(--dim); font-size: 0.7rem; margin-top: 0.2rem; }
 
-  /* TILES */
+  /* TILES — with image backgrounds */
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem; margin-bottom: 1rem; }
   .tile { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 12px; padding: 1.25rem 1.4rem;
+    border-radius: 12px; padding: 1.25rem 1.4rem 1.1rem;
     display: flex; flex-direction: column; gap: 0.75rem;
     text-decoration: none; color: inherit;
     transition: transform 0.2s ease, border-color 0.2s, box-shadow 0.3s;
     position: relative; overflow: hidden;
+    min-height: 220px;
   }
+  /* image layers behind each tile */
+  .tile .tile-bg { position: absolute; inset: 0; background-size: cover;
+    background-position: center; opacity: 0.12; z-index: 0;
+    transition: opacity 0.3s; pointer-events: none; }
+  .tile:hover .tile-bg { opacity: 0.22; }
+  .tile::after { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(135deg, rgba(8,9,12,0.65) 0%, rgba(8,9,12,0.25) 60%, rgba(8,9,12,0.85) 100%);
+    pointer-events: none; }
+  .tile > *:not(.tile-bg) { position: relative; z-index: 2; }
   .tile::before { content: ""; position: absolute; top: 0; left: 0; right: 0;
     height: 2px; background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    opacity: 0; transition: opacity 0.3s; }
+    opacity: 0; transition: opacity 0.3s; z-index: 3; }
   .tile:hover { transform: translateY(-3px); border-color: var(--gold);
-    box-shadow: 0 12px 32px rgba(212,175,55,0.15); }
-  .tile:hover::before { opacity: 0.8; }
-  .tile .tile-icon { font-size: 1.6rem; line-height: 1; }
+    box-shadow: 0 12px 32px rgba(212,175,55,0.18); }
+  .tile:hover::before { opacity: 0.9; }
+  .tile .tile-icon { font-size: 1.7rem; line-height: 1; }
   .tile .tile-title { font-size: 0.72rem; letter-spacing: 0.16em;
     text-transform: uppercase; color: var(--gold); font-weight: 700; }
-  .tile .tile-main { font-size: 1.5rem; font-weight: 800;
+  .tile .tile-main { font-size: 1.55rem; font-weight: 800;
     font-variant-numeric: tabular-nums; color: var(--text); }
   .tile .tile-rows { font-size: 0.78rem; color: var(--muted);
     display: flex; flex-direction: column; gap: 0.3rem; margin-top: auto; }
@@ -144,14 +167,21 @@
     font-variant-numeric: tabular-nums; }
   .tile .tile-cta { color: var(--gold-bright); font-size: 0.72rem;
     letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;
-    margin-top: 0.5rem; }
+    margin-top: 0.4rem; }
 
-  /* CONGRESS SPLIT */
+  /* CONGRESS */
   .congress-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;
     margin-bottom: 1rem; }
   @media (max-width: 900px) { .congress-grid { grid-template-columns: 1fr; } }
   .chamber-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 12px; padding: 1.25rem 1.5rem; }
+    border-radius: 12px; padding: 1.25rem 1.5rem; position: relative; overflow: hidden; }
+  .chamber-card::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: url("./images/texture-leather.jpg");
+    background-size: cover; background-position: center;
+    opacity: 0.06; z-index: 0; pointer-events: none;
+  }
+  .chamber-card > * { position: relative; z-index: 1; }
   .chamber-card h3 { margin: 0 0 0.5rem; font-size: 0.95rem;
     letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-bright); }
   .chamber-card .seat-count { font-size: 2rem; font-weight: 800;
@@ -159,7 +189,6 @@
   .chamber-card .seat-count .majority { font-size: 0.72rem;
     color: var(--muted); font-weight: 400; letter-spacing: 0.05em;
     margin-left: 0.5rem; text-transform: uppercase; }
-  /* stacked bar */
   .stacked-bar { display: flex; height: 14px; border-radius: 4px;
     overflow: hidden; margin-bottom: 0.75rem; background: var(--bg-2); }
   .stacked-bar .seg { transition: flex-basis 0.6s ease; }
@@ -201,19 +230,43 @@
   .val-gold { color: var(--gold-bright); font-weight: 700; }
   .val-pos { color: var(--green); font-weight: 600; }
   .val-neg { color: var(--red); font-weight: 600; }
-  .tag { display: inline-block; padding: 0.12rem 0.5rem;
-    border-radius: 4px; font-size: 0.66rem; font-weight: 600;
-    text-transform: capitalize; }
 
-  /* ELECTION TILES */
+  /* ELECTIONS */
   .election-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 0.75rem; margin-bottom: 1rem; }
   .election-card { background: var(--panel); border: 1px solid var(--border);
-    border-radius: 10px; padding: 0.9rem 1rem; font-size: 0.82rem; }
+    border-radius: 10px; padding: 0.9rem 1rem; font-size: 0.82rem;
+    position: relative; overflow: hidden; }
+  .election-card::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: url("./images/banner-elections.png");
+    background-size: cover; background-position: center;
+    opacity: 0.08; z-index: 0; pointer-events: none;
+  }
+  .election-card > * { position: relative; z-index: 1; }
   .election-card .race { font-weight: 700; margin-bottom: 0.25rem; }
   .election-card .meta { color: var(--muted); font-size: 0.72rem; }
 
-  /* ERROR + LOADING */
+  /* CAUCUS DIVIDER — decorative */
+  .divider {
+    position: relative; height: 100px; max-width: 1600px; margin: 1rem auto;
+    border-radius: 12px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .divider .divider-img { position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    opacity: 0.35; filter: grayscale(20%); }
+  .divider .divider-overlay { position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(8,9,12,0.9) 0%, rgba(8,9,12,0.4) 50%, rgba(8,9,12,0.9) 100%); }
+  .divider .divider-text {
+    position: relative; z-index: 2; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--gold); font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+  }
+
+  /* ERROR + EMPTY */
   .section-error { color: var(--red); padding: 1rem 1.2rem;
     background: #1a0a0a; border: 1px solid #3a1a1a; border-radius: 6px;
     margin: 0 0 1rem; font-size: 0.85rem;
@@ -225,7 +278,7 @@
   .empty-note code { background: var(--bg-2); padding: 0.1rem 0.35rem;
     border-radius: 3px; color: var(--gold-bright); font-size: 0.78rem; }
 
-  /* DEBUG OVERLAY */
+  /* DEBUG */
   #debug-toggle { position: fixed; bottom: 1rem; right: 1rem;
     background: var(--panel); border: 1px solid var(--border-2);
     color: var(--muted); padding: 0.5rem 0.85rem; border-radius: 6px;
@@ -255,8 +308,10 @@
   .footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem;
     color: var(--dim); font-size: 0.75rem; text-align: center;
     letter-spacing: 0.06em; margin-top: 2rem; }
+  .footer a { color: var(--dim); }
+  .footer a:hover { color: var(--gold-bright); }
 
-  /* STAGGERED ENTRY */
+  /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
@@ -266,10 +321,10 @@
   .stagger-2 { animation-delay: 0.1s; }
   .stagger-3 { animation-delay: 0.15s; }
   .stagger-4 { animation-delay: 0.2s; }
-  .stagger-5 { animation-delay: 0.25s; }
 
   @media (max-width: 700px) {
-    .hero { height: 180px; }
+    .hero { height: 190px; }
+    .hero-emblem { width: 60px; height: 60px; top: 1rem; right: 1rem; }
     .hero-inner { padding: 0 1rem 1rem; flex-wrap: wrap; gap: 0.5rem; }
     .brand h1 { font-size: 1.5rem; }
     .nav { padding: 0 0.5rem; }
@@ -282,8 +337,11 @@
 </head>
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <div class="hero-img"></div>
+  <img class="hero-emblem" src="./images/emblem.png" alt=""
+       onerror="this.style.display='none'">
   <div class="hero-inner">
     <div class="brand">
       <h1>BFTH WAR ROOM</h1>
@@ -296,6 +354,7 @@
   </div>
 </div>
 
+<!-- NAV -->
 <nav class="nav">
   <a href="./index.html" class="active">Home</a>
   <a href="./roster.html">Roster</a>
@@ -309,7 +368,7 @@
 <!-- QUICK STATS -->
 <div class="section">
   <h2>Overview <span class="open-link" id="last-update-label"></span></h2>
-  <div class="quick-stats" id="quickStats">
+  <div class="quick-stats">
     <div class="qs-card fade-in stagger-1"><div class="lbl">Members</div><div class="num" id="qsMembers">—</div><div class="sub">GOP players</div></div>
     <div class="qs-card green fade-in stagger-1"><div class="lbl">Campaign Funds</div><div class="num" id="qsCF">—</div><div class="sub">party total</div></div>
     <div class="qs-card gold fade-in stagger-2"><div class="lbl">GOP Corps</div><div class="num" id="qsCorps">—</div><div class="sub" id="qsCorpsShare">—</div></div>
@@ -321,10 +380,11 @@
   </div>
 </div>
 
-<!-- TILE GRID -->
+<!-- TILE GRID with image backgrounds -->
 <div class="section" style="padding-top: 0">
-  <div class="tiles" id="tiles">
+  <div class="tiles">
     <a class="tile fade-in stagger-1" href="./roster.html">
+      <div class="tile-bg" style="background-image:url('./images/banner-caucus.png');"></div>
       <div class="tile-icon">👥</div>
       <div class="tile-title">Roster</div>
       <div class="tile-main" id="tileRosterCount">—</div>
@@ -332,6 +392,7 @@
       <div class="tile-cta">Open Roster →</div>
     </a>
     <a class="tile fade-in stagger-2" href="./caucus.html">
+      <div class="tile-bg" style="background-image:url('./images/banner-caucus.png');"></div>
       <div class="tile-icon">🏛️</div>
       <div class="tile-title">Caucus</div>
       <div class="tile-main" id="tileCaucusCount">—</div>
@@ -339,6 +400,7 @@
       <div class="tile-cta">Open Caucus →</div>
     </a>
     <a class="tile fade-in stagger-3" href="./corporations.html">
+      <div class="tile-bg" style="background-image:url('./images/banner-warroom.png');"></div>
       <div class="tile-icon">🏢</div>
       <div class="tile-title">GOP Market Desk</div>
       <div class="tile-main" id="tileMarketVal">—</div>
@@ -346,6 +408,7 @@
       <div class="tile-cta">Open Market Desk →</div>
     </a>
     <a class="tile fade-in stagger-4" href="./elections.html">
+      <div class="tile-bg" style="background-image:url('./images/banner-elections.png');"></div>
       <div class="tile-icon">🗳️</div>
       <div class="tile-title">Elections</div>
       <div class="tile-main" id="tileElectionsCount">—</div>
@@ -355,9 +418,16 @@
   </div>
 </div>
 
+<!-- CONGRESS DIVIDER -->
+<div class="divider" style="max-width: 1536px; margin: 1rem 2rem;">
+  <div class="divider-img" style="background-image:url('./images/banner-caucus.png');"></div>
+  <div class="divider-overlay"></div>
+  <div class="divider-text">Congress of the United States</div>
+</div>
+
 <!-- CONGRESS -->
 <div class="section" id="congress-section">
-  <h2>Congress of the United States <a href="./congress.html" class="open-link">Open Congress →</a></h2>
+  <h2>Congress <a href="./congress.html" class="open-link">Open Congress →</a></h2>
   <div class="congress-grid" id="congressGrid">
     <div class="section-loading">Loading Congress data…</div>
   </div>
@@ -384,7 +454,14 @@
   </div>
 </div>
 
-<!-- ELECTIONS PREVIEW -->
+<!-- ELECTIONS DIVIDER -->
+<div class="divider" style="max-width: 1536px; margin: 1rem 2rem;">
+  <div class="divider-img" style="background-image:url('./images/banner-elections.png');"></div>
+  <div class="divider-overlay"></div>
+  <div class="divider-text">Live Elections</div>
+</div>
+
+<!-- ELECTIONS -->
 <div class="section" id="elections-section">
   <h2>Live Elections <a href="./elections.html" class="open-link">Open Elections →</a></h2>
   <div class="election-grid" id="electionGrid">
@@ -393,7 +470,7 @@
 </div>
 
 <div class="footer">
-  Home · <a href="./roster.html" style="color:inherit;text-decoration:underline">Roster</a> · <a href="./caucus.html" style="color:inherit;text-decoration:underline">Caucus</a> · <a href="./elections.html" style="color:inherit;text-decoration:underline">Elections</a> · <a href="./corporations.html" style="color:inherit;text-decoration:underline">Market Desk</a> · <a href="./congress.html" style="color:inherit;text-decoration:underline">Congress</a> · History (soon) — BFTH War Room v1.0
+  Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> · <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> · <a href="./congress.html">Congress</a> · History (soon) — BFTH War Room v1.1
 </div>
 
 <button id="debug-toggle" title="Toggle debug panel">DEBUG</button>
@@ -431,7 +508,7 @@ const escapeAttr = (s) => escapeHtml(s).replace(/"/g, "&quot;");
 const DEBUG = {
   logs: [],
   add(status, name, detail) {
-    this.logs.push({ status, name, detail, ts: Date.now() });
+    this.logs.push({ status, name, detail });
     console.log(`[BFTH] ${status === 'ok' ? '✓' : '✗'} ${name}${detail ? ' — ' + detail : ''}`);
     this.render();
   },
@@ -480,27 +557,8 @@ async function fetchJson(url) {
   }
 }
 
-async function fetchHtml(url) {
-  const t0 = performance.now();
-  try {
-    const res = await fetch(url, { cache: "no-store" });
-    const elapsed = Math.round(performance.now() - t0);
-    if (!res.ok) {
-      DEBUG.add('err', url, `HTTP ${res.status} (${elapsed}ms)`);
-      return { error: `HTTP ${res.status}` };
-    }
-    const text = await res.text();
-    DEBUG.add('ok', url, `${(text.length / 1024).toFixed(1)} KB, ${elapsed}ms`);
-    return { html: text };
-  } catch (e) {
-    const elapsed = Math.round(performance.now() - t0);
-    DEBUG.add('err', url, `${e.message} (${elapsed}ms)`);
-    return { error: e.message };
-  }
-}
-
-function showError(sectionEl, msg) {
-  const target = document.getElementById(sectionEl);
+function showError(sectionElId, msg) {
+  const target = document.getElementById(sectionElId);
   if (!target) return;
   const err = document.createElement('div');
   err.className = 'section-error';
@@ -532,8 +590,7 @@ let playersData = null;
 let corpsData = null;
 let nationsData = null;
 let electionsData = null;
-let senateData = null;
-let houseData = null;
+let congressData = null;
 
 // ============================================================
 // PLAYERS / ROSTER / CAUCUS
@@ -545,26 +602,22 @@ function renderPlayers() {
     return;
   }
   const count = players.length;
-  let cf = 0, nw = 0;
+  let cf = 0;
   for (const p of players) {
     cf += p.campaign_funds || 0;
-    nw += p.total_net_worth || 0;
   }
   document.getElementById('qsMembers').textContent = count;
   document.getElementById('qsCF').textContent = shortMoney(cf);
   document.getElementById('tileRosterCount').textContent = count + ' members';
 
-  // top 3 by NP
   const sorted = [...players].sort((a, b) => (b.national_prestige || 0) - (a.national_prestige || 0));
   document.getElementById('tileRosterRows').innerHTML = sorted.slice(0, 3).map(p => `
     <div class="tile-row"><span>${escapeHtml(p.name)}</span><span class="v">${num(p.national_prestige, 0)} NP</span></div>
   `).join('');
 
-  // Caucus tile
   const caucused = players.filter(p => p.caucus_id);
   if (caucused.length) {
     document.getElementById('tileCaucusCount').textContent = caucused.length + ' caucused';
-    // group by caucus_name
     const byCaucus = {};
     for (const p of caucused) {
       const k = p.caucus_name || String(p.caucus_id);
@@ -616,6 +669,7 @@ function renderNations() {
   document.getElementById('qsNations').textContent = allNations.length;
   document.getElementById('nationsCount').textContent = allNations.length + ' nations';
   renderNationsTable();
+  wireNationsSort();
 }
 
 function renderNationsTable() {
@@ -624,12 +678,12 @@ function renderNationsTable() {
     if (nationsSort.key === 'name') {
       return nationsSort.dir === 'asc' ? (a.name || '').localeCompare(b.name || '') : (b.name || '').localeCompare(a.name || '');
     }
-    const keyMap = { gdp: 'gdp', corp: 'corporate_tax_pct', tariff: 'tariffs_pct' };
     if (nationsSort.key === 'combined') {
       const av = (a.corporate_tax_pct || 0) + (a.tariffs_pct || 0);
       const bv = (b.corporate_tax_pct || 0) + (b.tariffs_pct || 0);
       return nationsSort.dir === 'desc' ? bv - av : av - bv;
     }
+    const keyMap = { gdp: 'gdp', corp: 'corporate_tax_pct', tariff: 'tariffs_pct' };
     const k = keyMap[nationsSort.key];
     const av = a[k] ?? 0;
     const bv = b[k] ?? 0;
@@ -645,8 +699,9 @@ function renderNationsTable() {
       <td class="num val-pos">${num(combined, 1)}</td>
     </tr>`;
   }).join('');
+}
 
-  // wire sort headers
+function wireNationsSort() {
   document.querySelectorAll('th[data-nat-sort]').forEach(th => {
     th.onclick = () => {
       const key = th.dataset.natSort;
@@ -660,151 +715,120 @@ function renderNationsTable() {
 }
 
 // ============================================================
-// ELECTIONS
+// ELECTIONS — shape-agnostic renderer
 // ============================================================
+function pickElectionLabel(e) {
+  return e.race_title || e.title || e.name || e.race || e.office_name
+    || e.seat_name || e.seat || e.district
+    || (e.id ? `Election #${e.id}` : 'Election');
+}
+
+function pickElectionState(e) {
+  if (e.state_name) return e.state_name;
+  if (e.state) return e.state;
+  if (e.state_id) return `State ${e.state_id}`;
+  return '';
+}
+
+function pickElectionParty(e) {
+  return e.party_name || e.party || e.office_party || '';
+}
+
 function renderElections() {
   const el = document.getElementById('electionGrid');
   const d = electionsData;
   if (!d) { DEBUG.add('err', 'elections', 'no data'); return; }
 
-  const total = d.total || (d.elections?.length || 0);
-  const withPolls = d.with_polls || 0;
+  const total = d.total ?? (d.elections?.length ?? 0);
+  const withPolls = d.with_polls ?? 0;
   document.getElementById('qsElections').textContent = total;
   document.getElementById('qsElectionsSub').textContent = withPolls + ' with polls';
   document.getElementById('tileElectionsCount').textContent = total + ' tracked';
 
   const elections = d.elections || [];
-  // take up to 3 most recent by heuristic (end_time descending)
-  const recent = [...elections].sort((a, b) => {
-    const ta = new Date(a.end_time || a.election_date || 0).getTime() || 0;
-    const tb = new Date(b.end_time || b.election_date || 0).getTime() || 0;
-    return tb - ta;
-  }).slice(0, 3);
 
-  document.getElementById('tileElectionsRows').innerHTML = recent.map(e => {
-    const label = e.race_title || e.title || e.name || `Election ${e.id}`;
-    const seat = e.seat || e.office || '—';
-    return `<div class="tile-row"><span>${escapeHtml(String(label).slice(0, 32))}</span><span class="v">${escapeHtml(String(seat).slice(0, 12))}</span></div>`;
-  }).join('') || '<div class="tile-row" style="color:var(--dim)">no elections listed</div>';
-
-  el.innerHTML = recent.map(e => {
-    const label = e.race_title || e.title || e.name || `Election ${e.id}`;
-    const state = e.state_name || e.state || '—';
-    return `<div class="election-card fade-in">
-      <div class="race">${escapeHtml(String(label).slice(0, 48))}</div>
-      <div class="meta">${escapeHtml(String(state))}</div>
-    </div>`;
-  }).join('') || '<div class="empty-note">No live elections.</div>';
-}
-
-// ============================================================
-// CONGRESS
-// ============================================================
-const PARTY_COLORS = {
-  1: '#3B82F6',    // Democratic
-  2: '#EF4444',    // Republican
-  254: '#961D1D',  // Revolutionary Front
-  255: '#86489C',  // National Legion
-  396: '#020080',  // America First
-  410: '#F5D60F',  // Libertarian
-  416: '#2F4F4F',  // Independents
-  419: '#4E5FA2',  // Glen Youngkins'
-};
-
-function parseCongressHtml(html, chamber) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(html, 'text/html');
-
-  // Extract party seat breakdown from the political groups table
-  const tableId = chamber === 'senate' ? 'senate-political-breakdown-table' : 'political-breakdown-table';
-  const table = doc.getElementById(tableId);
-  const partySeats = {};
-  let totalSeats = 0;
-  if (table) {
-    table.querySelectorAll('tbody tr').forEach(tr => {
-      const seatsAttr = tr.getAttribute('data-seats');
-      const seats = parseInt(seatsAttr) || 0;
-      // party name is in a link/span with color
-      const partyLink = tr.querySelector('td:first-child a');
-      let partyName = '—', partyId = null;
-      if (partyLink) {
-        const href = partyLink.getAttribute('href') || '';
-        const m = href.match(/\/parties\/(\d+)/);
-        if (m) partyId = m[1];
-        const nameSpan = partyLink.querySelector('span[style*="color"]');
-        partyName = nameSpan ? nameSpan.textContent.trim() : partyLink.textContent.trim();
-      }
-      partySeats[partyId || partyName] = { seats, name: partyName, id: partyId };
-      totalSeats += seats;
-    });
+  if (!elections.length) {
+    document.getElementById('tileElectionsRows').innerHTML =
+      `<div class="tile-row" style="color:var(--dim)">no elections in payload</div>`;
+    el.innerHTML = '<div class="empty-note">No elections in data.</div>';
+    return;
   }
 
-  // Extract leadership
-  const leadership = [];
-  const headings = doc.querySelectorAll('h3');
-  headings.forEach(h => {
-    const t = h.textContent.trim();
-    if (/Leader|Whip|Speaker|Pro-Tempore|President of the Senate/i.test(t)) {
-      // find next politician link
-      let el = h.parentElement?.nextElementSibling;
-      let name = null, pid = null;
-      for (let i = 0; i < 6 && el; i++) {
-        const link = el.querySelector('a[href*="/politician/"]');
-        if (link) {
-          const m = link.getAttribute('href').match(/\/politician\/(\d+)/);
-          if (m) pid = m[1];
-          name = link.textContent.trim();
-          break;
-        }
-        el = el.nextElementSibling;
-      }
-      leadership.push({ role: t, name: name || '[Vacant]', pid });
-    }
-  });
+  // Try to sort by a date-like field, descending
+  const dateField = ['end_time','election_date','closes_at','end_date','starts_at','created_at','updated_at']
+    .find(f => elections[0][f]);
+  const recent = dateField
+    ? [...elections].sort((a, b) => (new Date(b[dateField]) || 0) - (new Date(a[dateField]) || 0))
+    : elections;
+  const top = recent.slice(0, 3);
 
-  return { chamber, partySeats, totalSeats, leadership };
+  // Tile rows
+  document.getElementById('tileElectionsRows').innerHTML = top.map(e => {
+    const label = String(pickElectionLabel(e)).slice(0, 28);
+    const state = pickElectionState(e);
+    return `<div class="tile-row"><span>${escapeHtml(label)}</span><span class="v">${escapeHtml(state)}</span></div>`;
+  }).join('');
+
+  // Full cards
+  el.innerHTML = top.map(e => {
+    const label = pickElectionLabel(e);
+    const state = pickElectionState(e);
+    const party = pickElectionParty(e);
+    const meta = [state, party].filter(Boolean).join(' · ');
+    return `<div class="election-card fade-in">
+      <div class="race">${escapeHtml(String(label).slice(0, 64))}</div>
+      <div class="meta">${escapeHtml(meta || '—')}</div>
+    </div>`;
+  }).join('');
 }
 
-function renderCongress() {
+// ============================================================
+// CONGRESS — reads data/congress.json
+// ============================================================
+const PARTY_COLORS = {
+  "1": "#3B82F6", "2": "#EF4444", "254": "#961D1D",
+  "255": "#86489C", "396": "#020080", "410": "#F5D60F",
+  "416": "#2F4F4F", "419": "#4E5FA2",
+};
+
+function renderCongressFromJson(congress) {
   const grid = document.getElementById('congressGrid');
-  if (!senateData && !houseData) {
-    grid.innerHTML = '<div class="empty-note">Failed to load Congress data. Check debug panel.</div>';
+  if (!congress) {
+    grid.innerHTML = '<div class="empty-note">No congress.json — run scraper/congress.py.</div>';
     return;
   }
 
   let html = '';
-  [['senate', senateData], ['house', houseData]].forEach(([chamber, data]) => {
+  ['senate', 'house'].forEach(chamber => {
+    const data = congress[chamber];
     if (!data) return;
-    const majority = Math.ceil(data.totalSeats / 2);
-    const gopKey = Object.keys(data.partySeats).find(k => data.partySeats[k].id === '2');
-    const gopSeats = gopKey ? data.partySeats[gopKey].seats : 0;
 
-    document.getElementById(chamber === 'senate' ? 'qsSenate' : 'qsHouse').textContent = gopSeats;
+    document.getElementById(chamber === 'senate' ? 'qsSenate' : 'qsHouse').textContent =
+      data.gop_seats != null ? data.gop_seats : '—';
 
-    // stacked bar
-    const parties = Object.values(data.partySeats).sort((a, b) => b.seats - a.seats);
+    const majority = Math.ceil(data.total_seats / 2);
+    const parties = (data.parties || []).filter(p => p.seats > 0);
+
     const barSegs = parties.map(p => {
-      const color = PARTY_COLORS[p.id] || '#666';
-      const widthPct = (p.seats / data.totalSeats) * 100;
+      const color = p.color || PARTY_COLORS[p.party_id] || '#666';
+      const widthPct = (p.seats / data.total_seats) * 100;
       return `<div class="seg" style="flex-basis:${widthPct}%;background:${color};" title="${escapeAttr(p.name)} — ${p.seats} seats"></div>`;
     }).join('');
 
-    // legend (top 5)
     const legend = parties.slice(0, 6).map(p => `
       <div class="item">
-        <span class="swatch" style="background:${PARTY_COLORS[p.id] || '#666'}"></span>
+        <span class="swatch" style="background:${p.color || PARTY_COLORS[p.party_id] || '#666'}"></span>
         <span>${escapeHtml(p.name)}</span>
         <span class="num">${p.seats}</span>
       </div>
     `).join('');
 
-    // leadership
-    const leaders = data.leadership.map(l => {
-      const pid = l.pid;
+    const leaders = (data.leadership || []).map(l => {
+      const pid = l.politician_id;
       const nameHtml = pid
-        ? `<a href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">${escapeHtml(l.name)}</a>`
-        : escapeHtml(l.name);
-      const cls = l.name === '[Vacant]' ? 'vacant' : '';
+        ? `<a href="https://battleforthehill.com/politician/${pid}" target="_blank" rel="noopener">${escapeHtml(l.name || '')}</a>`
+        : escapeHtml(l.name || '[Vacant]');
+      const cls = (!l.name || l.name === '[Vacant]') ? 'vacant' : '';
       return `<div class="leader">
         <div class="role">${escapeHtml(l.role)}</div>
         <div class="who ${cls}">${nameHtml}</div>
@@ -813,13 +837,36 @@ function renderCongress() {
 
     html += `<div class="chamber-card fade-in">
       <h3>${chamber === 'senate' ? 'Senate' : 'House'}</h3>
-      <div class="seat-count">${gopSeats} GOP <span class="majority">of ${data.totalSeats} · majority ${majority}</span></div>
+      <div class="seat-count">${data.gop_seats} GOP <span class="majority">of ${data.total_seats} · majority ${majority}</span></div>
       <div class="stacked-bar">${barSegs}</div>
       <div class="party-legend">${legend}</div>
       <div class="leadership">${leaders || '<div class="empty-note">No leadership parsed</div>'}</div>
     </div>`;
   });
-  grid.innerHTML = html;
+
+  grid.innerHTML = html || '<div class="empty-note">No chamber data.</div>';
+}
+
+// ============================================================
+// IMAGE CHECK — debug
+// ============================================================
+async function checkImages() {
+  const images = [
+    './images/banner-warroom.png',
+    './images/banner-caucus.png',
+    './images/banner-elections.png',
+    './images/texture-leather.jpg',
+    './images/emblem.png',
+  ];
+  let loaded = 0, failed = [];
+  await Promise.all(images.map(src => new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => { loaded++; resolve(); };
+    img.onerror = () => { failed.push(src.split('/').pop()); resolve(); };
+    img.src = src + '?t=' + Date.now();
+  })));
+  DEBUG.add(failed.length ? 'err' : 'ok', 'images',
+    `${loaded}/${images.length} loaded` + (failed.length ? ` — missing: ${failed.join(', ')}` : ''));
 }
 
 // ============================================================
@@ -828,13 +875,12 @@ function renderCongress() {
 async function boot() {
   DEBUG.add('ok', 'boot', 'Starting parallel fetches');
 
-  const [playersRes, corpsRes, nationsRes, electionsRes, senateRes, houseRes] = await Promise.all([
+  const [playersRes, corpsRes, nationsRes, electionsRes, congressRes] = await Promise.all([
     fetchJson('./data/players/latest.json'),
     fetchJson('./data/corporations/latest.json'),
     fetchJson('./data/nations.json'),
     fetchJson('./data/elections.json'),
-    fetchHtml('https://battleforthehill.com/national/senate/1'),
-    fetchHtml('https://battleforthehill.com/national/house/1'),
+    fetchJson('./data/congress.json'),
   ]);
 
   if (playersRes.data) { playersData = playersRes.data; renderPlayers(); }
@@ -849,9 +895,10 @@ async function boot() {
   if (electionsRes.data) { electionsData = electionsRes.data; renderElections(); }
   else showError('elections-section', 'Failed to load elections: ' + electionsRes.error);
 
-  if (senateRes.html) { senateData = parseCongressHtml(senateRes.html, 'senate'); }
-  if (houseRes.html) { houseData = parseCongressHtml(houseRes.html, 'house'); }
-  renderCongress();
+  if (congressRes.data) { congressData = congressRes.data; renderCongressFromJson(congressData); }
+  else showError('congress-section', 'Failed to load congress: ' + congressRes.error);
+
+  await checkImages();
 
   const ok = DEBUG.logs.filter(l => l.status === 'ok').length;
   const err = DEBUG.logs.filter(l => l.status === 'err').length;

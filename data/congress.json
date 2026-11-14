@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-11-14T20:41:23.319938+00:00",
+  "senate": {
+    "chamber": "senate",
+    "total_seats": 98,
+    "majority_needed": 50,
+    "gop_seats": 47,
+    "parties": [
+      {
+        "party_id": "2",
+        "name": "Republican Party[Plurality]",
+        "seats": 47,
+        "color": "#EF4444"
+      },
+      {
+        "party_id": "1",
+        "name": "Democratic Party[Minority]",
+        "seats": 44,
+        "color": "#3B82F6"
+      },
+      {
+        "party_id": "410",
+        "name": "Libertarian Party",
+        "seats": 6,
+        "color": "#F5D60F"
+      },
+      {
+        "party_id": "416",
+        "name": "Independents",
+        "seats": 1,
+        "color": "#2F4F4F"
+      }
+    ],
+    "leadership": [
+      {
+        "role": "Senate Leadership",
+        "name": "Sandra Sully",
+        "politician_id": "1743"
+      },
+      {
+        "role": "President of the Senate",
+        "name": "Sandra Sully",
+        "politician_id": "1743"
+      },
+      {
+        "role": "Senate Majority Leader",
+        "name": "Nikki Haley",
+        "politician_id": "1240"
+      },
+      {
+        "role": "Senate Majority Whip",
+        "name": "JD Vance",
+        "politician_id": "3108"
+      },
+      {
+        "role": "Pro-Tempore",
+        "name": "Nancy Mace",
+        "politician_id": "3085"
+      },
+      {
+        "role": "Senate Minority Leader",
+        "name": "Harvey Spector",
+        "politician_id": "10381"
+      },
+      {
+        "role": "Senate Minority Whip",
+        "name": "Christopher Luxon",
+        "politician_id": "1267"
+      }
+    ]
+  },
+  "house": {
+    "chamber": "house",
+    "total_seats": 374,
+    "majority_needed": 188,
+    "gop_seats": 155,
+    "parties": [
+      {
+        "party_id": "2",
+        "name": "Republican Party[Plurality]",
+        "seats": 155,
+        "color": "#EF4444"
+      },
+      {
+        "party_id": "1",
+        "name": "Democratic Party[Minority]",
+        "seats": 123,
+        "color": "#3B82F6"
+      },
+      {
+        "party_id": "254",
+        "name": "Revolutionary Front",
+        "seats": 26,
+        "color": "#961D1D"
+      },
+      {
+        "party_id": "396",
+        "name": "America First Party",
+        "seats": 21,
+        "color": "#020080"
+      },
+      {
+        "party_id": "410",
+        "name": "Libertarian Party",
+        "seats": 19,
+        "color": "#F5D60F"
+      },
+      {
+        "party_id": "255",
+        "name": "National Legion",
+        "seats": 17,
+        "color": "#86489C"
+      },
+      {
+        "party_id": "416",
+        "name": "Independents",
+        "seats": 7,
+        "color": "#2F4F4F"
+      },
+      {
+        "party_id": "419",
+        "name": "Glen Youngkins' Party",
+        "seats": 6,
+        "color": "#4E5FA2"
+      },
+      {
+        "party_id": "321",
+        "name": "Inactive",
+        "seats": 0,
+        "color": "#666"
+      },
+      {
+        "party_id": "399",
+        "name": "Bull Moose Party",
+        "seats": 0,
+        "color": "#666"
+      },
+      {
+        "party_id": "418",
+        "name": "Jewish Party",
+        "seats": 0,
+        "color": "#666"
+      }
+    ],
+    "leadership": [
+      {
+        "role": "House Leadership",
+        "name": "Jack Thatch",
+        "politician_id": "1361"
+      },
+      {
+        "role": "House Majority Whip",
+        "name": "Jack Thatch",
+        "politician_id": "1361"
+      },
+      {
+        "role": "Speaker of the House",
+        "name": "Jeffrey Epstein",
+        "politician_id": "1317"
+      },
+      {
+        "role": "House Minority Leader",
+        "name": "Alice Huang",
+        "politician_id": "4900"
+      },
+      {
+        "role": "House Minority Whip",
+        "name": "Peter L. King",
+        "politician_id": "2491"
+      }
+    ]
+  }
+}
