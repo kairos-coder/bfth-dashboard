@@ -1,0 +1,61 @@
+# nation_id | name
+1 United States of America
+10 Canada
+11 Germany
+12 Australia
+13 United Kingdom
+14 Brazil
+15 Hong Kong
+16 Poland
+17 Ireland
+18 France
+19 Italy
+20 Cuba
+22 New Zealand
+24 Finland
+26 Norway
+27 Nigeria
+29 Argentina
+30 South Korea
+34 North Korea
+36 South Africa
+38 Somalia
+40 Iran
+41 Spain
+42 Japan
+46 Indonesia
+49 Kenya
+53 Venezuela
+54 Mexico
+56 Saudi Arabia
+57 China
+58 Russia
+59 Bosnia and Herzegovina
+60 Greece
+61 Singapore
+62 Netherlands
+63 Uganda
+64 Philippines
+65 Ukraine
+66 Israel
+67 Turkey
+68 Palestine
+69 Zimbabwe
+70 Taiwan
+71 India
+72 Sweden
+73 Portugal
+74 Colombia
+75 Peru
+76 Chile
+77 Pakistan
+78 Afghanistan
+79 Denmark
+80 Greenland
+81 Egypt
+82 Panama
+83 Malaysia
+84 Dominican Republic
+85 Haiti
+86 Puerto Rico
+87 El Salvador

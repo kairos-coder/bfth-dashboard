@@ -1,0 +1,34 @@
+{
+  "nation_id": "68",
+  "name": "Palestine",
+  "full_name": "Palestine",
+  "gdp": 14471115000.0,
+  "gdp_per_capita": 2276.0,
+  "gdp_growth_pct": 0.16,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 1452031679.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 9610679065.0,
+    "pct_gdp": 265.65
+  },
+  "total_expenditure": {
+    "amount": 4109249651.0,
+    "pct_gdp": 113.58
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 16.34,
+  "surplus": 5501429413.0,
+  "budget_surplus_pct": 38.02,
+  "wealth_fund": 87789753847.0,
+  "parsed_at": "2026-11-14T16:49:23.283618+00:00"
+}

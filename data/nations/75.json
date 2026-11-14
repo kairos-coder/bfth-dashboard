@@ -1,0 +1,34 @@
+{
+  "nation_id": "75",
+  "name": "Peru",
+  "full_name": "Peru",
+  "gdp": 213229950000.0,
+  "gdp_per_capita": 4154.0,
+  "gdp_growth_pct": 0.34,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 21459358968.0,
+  "income_tax_pct": 15.0,
+  "income_tax_desc": "Flat Tax (15%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 367132500.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 83708085983.0,
+    "pct_gdp": 157.03
+  },
+  "total_expenditure": {
+    "amount": 68709503177.0,
+    "pct_gdp": 128.89
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 15.93,
+  "surplus": 14998582806.0,
+  "budget_surplus_pct": 7.03,
+  "wealth_fund": 311229540471.0,
+  "parsed_at": "2026-11-14T16:49:23.764903+00:00"
+}

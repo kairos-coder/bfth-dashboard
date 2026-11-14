@@ -1,0 +1,34 @@
+{
+  "nation_id": "26",
+  "name": "Norway",
+  "full_name": "Norway",
+  "gdp": 366215155000.0,
+  "gdp_per_capita": 42791.0,
+  "gdp_growth_pct": 0.0,
+  "corporate_tax_pct": 35.0,
+  "corporate_tax_revenue": 45776894375.0,
+  "income_tax_pct": 40.0,
+  "income_tax_desc": "Social Democratic (40%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 245858750.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 182715314693.0,
+    "pct_gdp": 199.57
+  },
+  "total_expenditure": {
+    "amount": 166124349686.0,
+    "pct_gdp": 181.45
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 9.61,
+  "surplus": 16590965006.0,
+  "budget_surplus_pct": 4.53,
+  "wealth_fund": 335601492651.0,
+  "parsed_at": "2026-11-14T16:49:21.613607+00:00"
+}

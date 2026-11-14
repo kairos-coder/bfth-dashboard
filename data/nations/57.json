@@ -1,0 +1,34 @@
+{
+  "nation_id": "57",
+  "name": "China",
+  "full_name": "China",
+  "gdp": 30369101560000.0,
+  "gdp_per_capita": 11349.0,
+  "gdp_growth_pct": 5.94,
+  "corporate_tax_pct": 20.0,
+  "corporate_tax_revenue": 2795481042320.0,
+  "income_tax_pct": 10.0,
+  "income_tax_desc": "Low Regressive (10%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 177685513750.0,
+  "estate_tax_desc": "None",
+  "excise_tax_desc": "High (22% alcohol / 30% tobacco / 12% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 7182025919729.0,
+    "pct_gdp": 94.59
+  },
+  "total_expenditure": {
+    "amount": 6543490528188.0,
+    "pct_gdp": 86.19
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 11.3,
+  "surplus": 638535391541.0,
+  "budget_surplus_pct": 2.1,
+  "wealth_fund": 22033747861865.0,
+  "parsed_at": "2026-11-14T16:49:22.591650+00:00"
+}

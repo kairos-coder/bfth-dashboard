@@ -1,0 +1,34 @@
+{
+  "nation_id": "14",
+  "name": "Brazil",
+  "full_name": "Brazil",
+  "gdp": 3519180580000.0,
+  "gdp_per_capita": 9849.0,
+  "gdp_growth_pct": 3.63,
+  "corporate_tax_pct": 15.0,
+  "corporate_tax_revenue": 288362362148.0,
+  "income_tax_pct": 50.0,
+  "income_tax_desc": "Redistributive (50%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Standard (15% alcohol / 20% tobacco / 8% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 1385994170875.0,
+    "pct_gdp": 157.28
+  },
+  "total_expenditure": {
+    "amount": 1371159095800.0,
+    "pct_gdp": 155.85
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 13.33,
+  "surplus": 14835075075.0,
+  "budget_surplus_pct": 0.42,
+  "wealth_fund": 1640435058318.0,
+  "parsed_at": "2026-11-14T16:49:21.070762+00:00"
+}

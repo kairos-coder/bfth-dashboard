@@ -1,0 +1,34 @@
+{
+  "nation_id": "38",
+  "name": "Somalia",
+  "full_name": "Somalia",
+  "gdp": 5830950000.0,
+  "gdp_per_capita": 171.0,
+  "gdp_growth_pct": 0.98,
+  "corporate_tax_pct": 0.0,
+  "corporate_tax_revenue": 0.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 2.5,
+  "tariffs_desc": "Very Tiny (2.5%)",
+  "tariffs_revenue": 363750.0,
+  "estate_tax_desc": "Very Low",
+  "excise_tax_desc": "Very Low (2% alcohol / 3% tobacco / 1% fuel)",
+  "exit_tax_desc": "None (0%)",
+  "exit_tax_pct": 0.0,
+  "total_revenue": {
+    "amount": 96323648400.0,
+    "pct_gdp": 607.75
+  },
+  "total_expenditure": {
+    "amount": 4256656357.0,
+    "pct_gdp": 292.0
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 16.28,
+  "surplus": 92066992042.0,
+  "budget_surplus_pct": 578.94,
+  "wealth_fund": 1905943311600.0,
+  "parsed_at": "2026-11-14T16:49:22.024129+00:00"
+}

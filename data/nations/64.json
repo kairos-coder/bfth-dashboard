@@ -1,0 +1,34 @@
+{
+  "nation_id": "64",
+  "name": "Philippines",
+  "full_name": "Philippines",
+  "gdp": 374144090000.0,
+  "gdp_per_capita": 2717.0,
+  "gdp_growth_pct": 0.04,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 37446211247.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 212207200209.0,
+    "pct_gdp": 226.87
+  },
+  "total_expenditure": {
+    "amount": 105972777830.0,
+    "pct_gdp": 113.3
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 17.0,
+  "surplus": 106234422378.0,
+  "budget_surplus_pct": 28.39,
+  "wealth_fund": 1612600078969.0,
+  "parsed_at": "2026-11-14T16:49:23.042090+00:00"
+}

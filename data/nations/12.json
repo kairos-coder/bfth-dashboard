@@ -1,0 +1,34 @@
+{
+  "nation_id": "12",
+  "name": "Australia",
+  "full_name": "Australia",
+  "gdp": 1738821970000.0,
+  "gdp_per_capita": 44087.0,
+  "gdp_growth_pct": 1.23,
+  "corporate_tax_pct": 30.0,
+  "corporate_tax_revenue": 200379799832.0,
+  "income_tax_pct": 30.0,
+  "income_tax_desc": "Medium Progressive (30%)",
+  "tariffs_pct": 0.0,
+  "tariffs_desc": "None (0%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Low (5% alcohol / 8% tobacco / 2.5% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 597593896490.0,
+    "pct_gdp": 137.22
+  },
+  "total_expenditure": {
+    "amount": 543129996706.0,
+    "pct_gdp": 124.94
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 11.13,
+  "surplus": 54463899784.0,
+  "budget_surplus_pct": 3.13,
+  "wealth_fund": 898557018269.0,
+  "parsed_at": "2026-11-14T16:49:20.955558+00:00"
+}

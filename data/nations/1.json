@@ -1,0 +1,34 @@
+{
+  "nation_id": "1",
+  "name": "United States of America",
+  "full_name": "United States of America",
+  "gdp": 23020074240000.0,
+  "gdp_per_capita": 42655.0,
+  "gdp_growth_pct": 1.39,
+  "corporate_tax_pct": 0.0,
+  "corporate_tax_revenue": 0.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 30.0,
+  "tariffs_desc": "Somewhat High (30%)",
+  "tariffs_revenue": 74397891250.0,
+  "estate_tax_desc": "Low",
+  "excise_tax_desc": "Very Low (2% alcohol / 3% tobacco / 1% fuel)",
+  "exit_tax_desc": "Modest (10%)",
+  "exit_tax_pct": 10.0,
+  "total_revenue": {
+    "amount": 1372739386928.0,
+    "pct_gdp": 23.85
+  },
+  "total_expenditure": {
+    "amount": 1702985864146.0,
+    "pct_gdp": 29.59
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 842738427.0,
+  "interest_rate_pct": 8.94,
+  "surplus": null,
+  "budget_surplus_pct": null,
+  "wealth_fund": 12994895215831.0,
+  "parsed_at": "2026-11-14T16:49:20.780614+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "15",
+  "name": "Hong Kong",
+  "full_name": "Hong Kong",
+  "gdp": 322418835000.0,
+  "gdp_per_capita": 24907.0,
+  "gdp_growth_pct": 0.09,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 32302806288.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 491885000.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 158191579266.0,
+    "pct_gdp": 196.26
+  },
+  "total_expenditure": {
+    "amount": 91416941796.0,
+    "pct_gdp": 113.41
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 12.57,
+  "surplus": 66774637469.0,
+  "budget_surplus_pct": 20.71,
+  "wealth_fund": 1105007737175.0,
+  "parsed_at": "2026-11-14T16:49:21.128464+00:00"
+}

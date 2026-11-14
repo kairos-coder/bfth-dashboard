@@ -1,0 +1,34 @@
+{
+  "nation_id": "56",
+  "name": "Saudi Arabia",
+  "full_name": "Saudi Arabia",
+  "gdp": 801020730000.0,
+  "gdp_per_capita": 15376.0,
+  "gdp_growth_pct": 0.46,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 80861157025.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 702422500.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 343792006479.0,
+    "pct_gdp": 171.68
+  },
+  "total_expenditure": {
+    "amount": 389043241739.0,
+    "pct_gdp": 194.27
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 13.99,
+  "surplus": null,
+  "budget_surplus_pct": null,
+  "wealth_fund": 1408725407988.0,
+  "parsed_at": "2026-11-14T16:49:22.528992+00:00"
+}

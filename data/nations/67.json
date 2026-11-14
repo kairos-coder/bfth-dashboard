@@ -1,0 +1,34 @@
+{
+  "nation_id": "67",
+  "name": "Turkey",
+  "full_name": "Turkey",
+  "gdp": 835322020000.0,
+  "gdp_per_capita": 5789.0,
+  "gdp_growth_pct": 0.04,
+  "corporate_tax_pct": 0.0,
+  "corporate_tax_revenue": 0.0,
+  "income_tax_pct": 15.0,
+  "income_tax_desc": "Flat Tax (15%)",
+  "tariffs_pct": 5.0,
+  "tariffs_desc": "Tiny (5%)",
+  "tariffs_revenue": 10506250.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "High (22% alcohol / 30% tobacco / 12% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 263980241671.0,
+    "pct_gdp": 126.27
+  },
+  "total_expenditure": {
+    "amount": 235507074107.0,
+    "pct_gdp": 112.77
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 14.49,
+  "surplus": 28473167564.0,
+  "budget_surplus_pct": 3.41,
+  "wealth_fund": 632583616596.0,
+  "parsed_at": "2026-11-14T16:49:23.223981+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "77",
+  "name": "Pakistan",
+  "full_name": "Pakistan",
+  "gdp": 393001870000.0,
+  "gdp_per_capita": 854.0,
+  "gdp_growth_pct": 1.38,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 40448814525.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 1183811250.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 194061227875.0,
+    "pct_gdp": 197.05
+  },
+  "total_expenditure": {
+    "amount": 122559908013.0,
+    "pct_gdp": 124.74
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 13.19,
+  "surplus": 71501319861.0,
+  "budget_surplus_pct": 18.19,
+  "wealth_fund": 1148259793748.0,
+  "parsed_at": "2026-11-14T16:49:23.879536+00:00"
+}

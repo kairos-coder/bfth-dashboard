@@ -1,0 +1,34 @@
+{
+  "nation_id": "72",
+  "name": "Sweden",
+  "full_name": "Sweden",
+  "gdp": 397745840000.0,
+  "gdp_per_capita": 23674.0,
+  "gdp_growth_pct": -0.21,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 39564165642.0,
+  "income_tax_pct": 20.0,
+  "income_tax_desc": "Mild Progressive (20%)",
+  "tariffs_pct": 90.0,
+  "tariffs_desc": "Prohibitive (90%)",
+  "tariffs_revenue": 2348285000.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Low (5% alcohol / 8% tobacco / 2.5% fuel)",
+  "exit_tax_desc": "None (0%)",
+  "exit_tax_pct": 0.0,
+  "total_revenue": {
+    "amount": 201787105886.0,
+    "pct_gdp": 202.29
+  },
+  "total_expenditure": {
+    "amount": 190205252373.0,
+    "pct_gdp": 191.28
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 12.82,
+  "surplus": 11581853513.0,
+  "budget_surplus_pct": 2.91,
+  "wealth_fund": 627815066663.0,
+  "parsed_at": "2026-11-14T16:49:23.585410+00:00"
+}

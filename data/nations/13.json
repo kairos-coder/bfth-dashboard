@@ -1,0 +1,34 @@
+{
+  "nation_id": "13",
+  "name": "United Kingdom",
+  "full_name": "United Kingdom",
+  "gdp": 4179913945000.0,
+  "gdp_per_capita": 38299.0,
+  "gdp_growth_pct": 1.28,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 425630759262.0,
+  "income_tax_pct": 20.0,
+  "income_tax_desc": "Mild Progressive (20%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 8526316250.0,
+  "estate_tax_desc": "High",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Maximum (55%)",
+  "exit_tax_pct": 55.0,
+  "total_revenue": {
+    "amount": 1293892667220.0,
+    "pct_gdp": 123.67
+  },
+  "total_expenditure": {
+    "amount": 1272331754147.0,
+    "pct_gdp": 121.76
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 9.72,
+  "surplus": 21560913072.0,
+  "budget_surplus_pct": 0.52,
+  "wealth_fund": 2194799823945.0,
+  "parsed_at": "2026-11-14T16:49:21.010727+00:00"
+}

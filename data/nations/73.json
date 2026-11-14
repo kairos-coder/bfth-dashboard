@@ -1,0 +1,34 @@
+{
+  "nation_id": "73",
+  "name": "Portugal",
+  "full_name": "Portugal",
+  "gdp": 4198895000.0,
+  "gdp_per_capita": 221.0,
+  "gdp_growth_pct": 1.85,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 436396405.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 173489422437.0,
+    "pct_gdp": 527.15
+  },
+  "total_expenditure": {
+    "amount": 1709582920.0,
+    "pct_gdp": 162.86
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 34.0,
+  "surplus": 171779839516.0,
+  "budget_surplus_pct": 91.07,
+  "wealth_fund": 1435680092526.0,
+  "parsed_at": "2026-11-14T16:49:23.645382+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "79",
+  "name": "Denmark",
+  "full_name": "Denmark",
+  "gdp": 275645830000.0,
+  "gdp_per_capita": 27263.0,
+  "gdp_growth_pct": 0.35,
+  "corporate_tax_pct": 60.0,
+  "corporate_tax_revenue": 48850221324.0,
+  "income_tax_pct": 30.0,
+  "income_tax_desc": "Medium Progressive (30%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 236137500.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 170907848836.0,
+    "pct_gdp": 247.89
+  },
+  "total_expenditure": {
+    "amount": 138385698408.0,
+    "pct_gdp": 200.82
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 10.01,
+  "surplus": 32522150428.0,
+  "budget_surplus_pct": 11.8,
+  "wealth_fund": 719337596462.0,
+  "parsed_at": "2026-11-14T16:49:24.000333+00:00"
+}

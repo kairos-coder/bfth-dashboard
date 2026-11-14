@@ -1,0 +1,34 @@
+{
+  "nation_id": "63",
+  "name": "Uganda",
+  "full_name": "Uganda",
+  "gdp": 136190250000.0,
+  "gdp_per_capita": 2907.0,
+  "gdp_growth_pct": 5.71,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 15477257587.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "Standard (15% alcohol / 20% tobacco / 8% fuel)",
+  "exit_tax_desc": "None (0%)",
+  "exit_tax_pct": 0.0,
+  "total_revenue": {
+    "amount": 65657571798.0,
+    "pct_gdp": 192.84
+  },
+  "total_expenditure": {
+    "amount": 72046634068.0,
+    "pct_gdp": 211.61
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 13.45,
+  "surplus": null,
+  "budget_surplus_pct": null,
+  "wealth_fund": 4515552151.0,
+  "parsed_at": "2026-11-14T16:49:22.977699+00:00"
+}

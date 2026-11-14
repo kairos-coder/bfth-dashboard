@@ -1,0 +1,34 @@
+{
+  "nation_id": "22",
+  "name": "New Zealand",
+  "full_name": "New Zealand",
+  "gdp": 198711900000.0,
+  "gdp_per_capita": 28286.0,
+  "gdp_growth_pct": 0.14,
+  "corporate_tax_pct": 60.0,
+  "corporate_tax_revenue": 34915158749.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "None (0%)",
+  "exit_tax_pct": 0.0,
+  "total_revenue": {
+    "amount": 80928350466.0,
+    "pct_gdp": 162.91
+  },
+  "total_expenditure": {
+    "amount": 71003352322.0,
+    "pct_gdp": 142.93
+  },
+  "debt_to_gdp_pct": 49.54,
+  "debt": 98449234431.0,
+  "interest_rate_pct": 11.98,
+  "surplus": 9924998143.0,
+  "budget_surplus_pct": 4.99,
+  "wealth_fund": 0.0,
+  "parsed_at": "2026-11-14T16:49:21.491737+00:00"
+}

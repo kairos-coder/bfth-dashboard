@@ -1,0 +1,34 @@
+{
+  "nation_id": "83",
+  "name": "Malaysia",
+  "full_name": "Malaysia",
+  "gdp": 289413080000.0,
+  "gdp_per_capita": 6604.0,
+  "gdp_growth_pct": 0.1,
+  "corporate_tax_pct": 60.0,
+  "corporate_tax_revenue": 50795558938.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 182191153992.0,
+    "pct_gdp": 251.81
+  },
+  "total_expenditure": {
+    "amount": 129673805461.0,
+    "pct_gdp": 179.22
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 15.64,
+  "surplus": 52517348530.0,
+  "budget_surplus_pct": 18.15,
+  "wealth_fund": 1327298021174.0,
+  "parsed_at": "2026-11-14T16:49:24.238960+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "30",
+  "name": "South Korea",
+  "full_name": "South Korea",
+  "gdp": 1661983300000.0,
+  "gdp_per_capita": 17258.0,
+  "gdp_growth_pct": 0.07,
+  "corporate_tax_pct": 0.0,
+  "corporate_tax_revenue": 0.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 3672962500.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Moderate (15%)",
+  "exit_tax_pct": 15.0,
+  "total_revenue": {
+    "amount": 234132566827.0,
+    "pct_gdp": 56.35
+  },
+  "total_expenditure": {
+    "amount": 900383622715.0,
+    "pct_gdp": 216.7
+  },
+  "debt_to_gdp_pct": 38.32,
+  "debt": 636868407584.0,
+  "interest_rate_pct": 0.5,
+  "surplus": null,
+  "budget_surplus_pct": null,
+  "wealth_fund": 0.0,
+  "parsed_at": "2026-11-14T16:49:21.839833+00:00"
+}

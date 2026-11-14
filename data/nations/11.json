@@ -1,0 +1,34 @@
+{
+  "nation_id": "11",
+  "name": "Germany",
+  "full_name": "Germany",
+  "gdp": 3835512055000.0,
+  "gdp_per_capita": 26498.0,
+  "gdp_growth_pct": 1.01,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 389471965156.0,
+  "income_tax_pct": 20.0,
+  "income_tax_desc": "Mild Progressive (20%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 48349837500.0,
+  "estate_tax_desc": "Very High",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 1436798755745.0,
+    "pct_gdp": 149.75
+  },
+  "total_expenditure": {
+    "amount": 1383952779082.0,
+    "pct_gdp": 144.33
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 11.84,
+  "surplus": 52845976662.0,
+  "budget_surplus_pct": 1.38,
+  "wealth_fund": 1825002302507.0,
+  "parsed_at": "2026-11-14T16:49:20.895003+00:00"
+}

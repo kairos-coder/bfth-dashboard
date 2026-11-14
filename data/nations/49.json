@@ -1,0 +1,34 @@
+{
+  "nation_id": "49",
+  "name": "Kenya",
+  "full_name": "Kenya",
+  "gdp": 104422705000.0,
+  "gdp_per_capita": 1266.0,
+  "gdp_growth_pct": 0.24,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 10495319287.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 385000.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 50460590306.0,
+    "pct_gdp": 189.35
+  },
+  "total_expenditure": {
+    "amount": 31013668495.0,
+    "pct_gdp": 118.8
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 13.7,
+  "surplus": 19446921811.0,
+  "budget_surplus_pct": 18.62,
+  "wealth_fund": 325402562549.0,
+  "parsed_at": "2026-11-14T16:49:22.344637+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "27",
+  "name": "Nigeria",
+  "full_name": "Nigeria",
+  "gdp": 480835190000.0,
+  "gdp_per_capita": 1668.0,
+  "gdp_growth_pct": 0.18,
+  "corporate_tax_pct": 30.0,
+  "corporate_tax_revenue": 54305884290.0,
+  "income_tax_pct": 20.0,
+  "income_tax_desc": "Mild Progressive (20%)",
+  "tariffs_pct": 20.0,
+  "tariffs_desc": "Average (20%)",
+  "tariffs_revenue": 335853750.0,
+  "estate_tax_desc": "Below-Average",
+  "excise_tax_desc": "High (22% alcohol / 30% tobacco / 12% fuel)",
+  "exit_tax_desc": "Standard (20%)",
+  "exit_tax_pct": 20.0,
+  "total_revenue": {
+    "amount": 196405017744.0,
+    "pct_gdp": 163.39
+  },
+  "total_expenditure": {
+    "amount": 190462804181.0,
+    "pct_gdp": 158.44
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 16.43,
+  "surplus": 5942213562.0,
+  "budget_surplus_pct": 1.24,
+  "wealth_fund": 204758575304.0,
+  "parsed_at": "2026-11-14T16:49:21.672681+00:00"
+}

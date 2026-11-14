@@ -1,0 +1,34 @@
+{
+  "nation_id": "17",
+  "name": "Ireland",
+  "full_name": "Ireland",
+  "gdp": 255606000000.0,
+  "gdp_per_capita": 29054.0,
+  "gdp_growth_pct": 0.5,
+  "corporate_tax_pct": 60.0,
+  "corporate_tax_revenue": 45176932416.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 1718761250.0,
+  "estate_tax_desc": "Exorbitant",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 86516926204.0,
+    "pct_gdp": 135.39
+  },
+  "total_expenditure": {
+    "amount": 86320210153.0,
+    "pct_gdp": 135.08
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 11.67,
+  "surplus": 196716050.0,
+  "budget_surplus_pct": 0.08,
+  "wealth_fund": 482514733607.0,
+  "parsed_at": "2026-11-14T16:49:21.250199+00:00"
+}

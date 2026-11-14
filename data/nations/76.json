@@ -1,0 +1,34 @@
+{
+  "nation_id": "76",
+  "name": "Chile",
+  "full_name": "Chile",
+  "gdp": 256510805000.0,
+  "gdp_per_capita": 6978.0,
+  "gdp_growth_pct": 0.17,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 25744570492.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 115421919778.0,
+    "pct_gdp": 179.99
+  },
+  "total_expenditure": {
+    "amount": 98053697961.0,
+    "pct_gdp": 152.9
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 15.54,
+  "surplus": 17368221816.0,
+  "budget_surplus_pct": 6.77,
+  "wealth_fund": 576736840348.0,
+  "parsed_at": "2026-11-14T16:49:23.822350+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "16",
+  "name": "Poland",
+  "full_name": "Poland",
+  "gdp": 2008129540000.0,
+  "gdp_per_capita": 27160.0,
+  "gdp_growth_pct": 6.18,
+  "corporate_tax_pct": 0.0,
+  "corporate_tax_revenue": 0.0,
+  "income_tax_pct": 30.0,
+  "income_tax_desc": "Medium Progressive (30%)",
+  "tariffs_pct": 100.0,
+  "tariffs_desc": "Maximum Tariff (100%)",
+  "tariffs_revenue": 19403750.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "Moderate (10% alcohol / 12% tobacco / 5% fuel)",
+  "exit_tax_desc": "Maximum (55%)",
+  "exit_tax_pct": 55.0,
+  "total_revenue": {
+    "amount": 662117253326.0,
+    "pct_gdp": 131.34
+  },
+  "total_expenditure": {
+    "amount": 656661525455.0,
+    "pct_gdp": 130.8
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 9.15,
+  "surplus": 5455727871.0,
+  "budget_surplus_pct": 0.27,
+  "wealth_fund": 814406198629.0,
+  "parsed_at": "2026-11-14T16:49:21.190569+00:00"
+}

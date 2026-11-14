@@ -16,3 +16,4 @@ __pycache__/
 
 # Logs
 scraper/cron.log
+data/players/.contaminated/

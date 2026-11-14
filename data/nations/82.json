@@ -1,0 +1,34 @@
+{
+  "nation_id": "82",
+  "name": "Panama",
+  "full_name": "Panama",
+  "gdp": 54564045000.0,
+  "gdp_per_capita": 12455.0,
+  "gdp_growth_pct": 0.65,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 5531393904.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 36322500.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 25529275159.0,
+    "pct_gdp": 187.15
+  },
+  "total_expenditure": {
+    "amount": 17382405345.0,
+    "pct_gdp": 127.43
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 14.38,
+  "surplus": 8146869814.0,
+  "budget_surplus_pct": 14.93,
+  "wealth_fund": 145614880889.0,
+  "parsed_at": "2026-11-14T16:49:24.181449+00:00"
+}

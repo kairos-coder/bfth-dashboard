@@ -1,0 +1,34 @@
+{
+  "nation_id": "85",
+  "name": "Haiti",
+  "full_name": "Haiti",
+  "gdp": 9792025000.0,
+  "gdp_per_capita": 864.0,
+  "gdp_growth_pct": 1.89,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 1018473497.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 6198433072.0,
+    "pct_gdp": 253.2
+  },
+  "total_expenditure": {
+    "amount": 3200552965.0,
+    "pct_gdp": 130.74
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 15.71,
+  "surplus": 2997880107.0,
+  "budget_surplus_pct": 30.62,
+  "wealth_fund": 49241696049.0,
+  "parsed_at": "2026-11-14T16:49:24.358441+00:00"
+}

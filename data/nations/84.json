@@ -1,0 +1,34 @@
+{
+  "nation_id": "84",
+  "name": "Dominican Republic",
+  "full_name": "Dominican Republic",
+  "gdp": 65851865000.0,
+  "gdp_per_capita": 3455.0,
+  "gdp_growth_pct": 0.1,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 6605271318.0,
+  "income_tax_pct": 40.0,
+  "income_tax_desc": "Social Democratic (40%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 41503563298.0,
+    "pct_gdp": 248.34
+  },
+  "total_expenditure": {
+    "amount": 31903460469.0,
+    "pct_gdp": 193.79
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 16.17,
+  "surplus": 9600102829.0,
+  "budget_surplus_pct": 14.58,
+  "wealth_fund": 187871230228.0,
+  "parsed_at": "2026-11-14T16:49:24.301748+00:00"
+}

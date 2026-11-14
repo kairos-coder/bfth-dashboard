@@ -1,0 +1,34 @@
+{
+  "nation_id": "59",
+  "name": "Bosnia and Herzegovina",
+  "full_name": "Bosnia and Herzegovina",
+  "gdp": 33055045000.0,
+  "gdp_per_capita": 5504.0,
+  "gdp_growth_pct": 0.16,
+  "corporate_tax_pct": 25.0,
+  "corporate_tax_revenue": 3317417538.0,
+  "income_tax_pct": 25.0,
+  "income_tax_desc": "Low Progressive (25%)",
+  "tariffs_pct": 10.0,
+  "tariffs_desc": "Low (10%)",
+  "tariffs_revenue": 256250.0,
+  "estate_tax_desc": "Standard",
+  "excise_tax_desc": "None (0% alcohol / 0% tobacco / 0% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 19605614391.0,
+    "pct_gdp": 237.18
+  },
+  "total_expenditure": {
+    "amount": 10424984613.0,
+    "pct_gdp": 126.15
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 15.8,
+  "surplus": 9180629777.0,
+  "budget_surplus_pct": 27.77,
+  "wealth_fund": 153134640140.0,
+  "parsed_at": "2026-11-14T16:49:22.726851+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "nation_id": "86",
+  "name": "Puerto Rico",
+  "full_name": "Puerto Rico",
+  "gdp": 312703490000.0,
+  "gdp_per_capita": 61713.0,
+  "gdp_growth_pct": 5.62,
+  "corporate_tax_pct": 0.0,
+  "corporate_tax_revenue": 0.0,
+  "income_tax_pct": 0.0,
+  "income_tax_desc": "None (0%)",
+  "tariffs_pct": 0.0,
+  "tariffs_desc": "None (0%)",
+  "tariffs_revenue": 0.0,
+  "estate_tax_desc": "None",
+  "excise_tax_desc": "Very High (30% alcohol / 45% tobacco / 18% fuel)",
+  "exit_tax_desc": "Low (5%)",
+  "exit_tax_pct": 5.0,
+  "total_revenue": {
+    "amount": 49329696670.0,
+    "pct_gdp": 63.1
+  },
+  "total_expenditure": {
+    "amount": 50218915326.0,
+    "pct_gdp": 64.24
+  },
+  "debt_to_gdp_pct": 0.0,
+  "debt": 0.0,
+  "interest_rate_pct": 4.45,
+  "surplus": null,
+  "budget_surplus_pct": null,
+  "wealth_fund": 366395589486.0,
+  "parsed_at": "2026-11-14T16:49:24.420624+00:00"
+}
