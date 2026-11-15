@@ -155,7 +155,18 @@
     color: var(--muted); font-size: 0.64rem; letter-spacing: 0.12em;
     text-transform: uppercase; font-weight: 700;
     border-bottom: 1px solid var(--border-2); white-space: nowrap;
-    position: sticky; top: 52px; background: var(--bg-2); z-index: 10; }
+    position: sticky; top: 52px; background: var(--bg-2); z-index: 10;
+    user-select: none; }
+  .movers-table thead th.sortable { cursor: pointer;
+    transition: color 0.15s; }
+  .movers-table thead th.sortable:hover { color: var(--text); }
+  .movers-table thead th.sortable::after {
+    content: ""; display: inline-block; width: 0.55em; margin-left: 0.25em;
+    color: var(--dim); opacity: 0.6; }
+  .movers-table thead th.sortable.sort-asc::after {
+    content: "▲"; color: var(--gold-bright); opacity: 1; }
+  .movers-table thead th.sortable.sort-desc::after {
+    content: "▼"; color: var(--gold-bright); opacity: 1; }
   .movers-table thead th.num { text-align: right; }
   .movers-table tbody tr { border-bottom: 1px solid #1a1a22;
     transition: background 0.1s; }
@@ -267,17 +278,17 @@
   <table class="movers-table">
     <thead>
       <tr>
-        <th>Player</th>
-        <th class="num">NP</th>
-        <th class="num">Δ NP</th>
-        <th class="num">CS</th>
-        <th class="num">Δ CS</th>
-        <th class="num">CF</th>
-        <th class="num">Δ CF</th>
-        <th class="num">NW</th>
-        <th class="num">Δ NW</th>
-        <th class="num">LC/hr</th>
-        <th class="num">Δ LC/hr</th>
+        <th class="sortable" data-sort="name">Player</th>
+        <th class="num sortable" data-sort="np">NP</th>
+        <th class="num sortable" data-sort="dNp">Δ NP</th>
+        <th class="num sortable" data-sort="cs">CS</th>
+        <th class="num sortable" data-sort="dCs">Δ CS</th>
+        <th class="num sortable" data-sort="cf">CF</th>
+        <th class="num sortable" data-sort="dCf">Δ CF</th>
+        <th class="num sortable" data-sort="nw">NW</th>
+        <th class="num sortable" data-sort="dNw">Δ NW</th>
+        <th class="num sortable" data-sort="lc">LC/hr</th>
+        <th class="num sortable" data-sort="dLc">Δ LC/hr</th>
       </tr>
     </thead>
     <tbody id="moversBody">
@@ -289,7 +300,7 @@
 <div class="footer">
   Home · <a href="./roster.html">Roster</a> · <a href="./caucus.html">Caucus</a> ·
   <a href="./elections.html">Elections</a> · <a href="./corporations.html">Market Desk</a> ·
-  <a href="./congress.html">Congress</a> · <a href="./history.html">History</a> · BFTH War Room v1.4
+  <a href="./congress.html">Congress</a> · <a href="./history.html">History</a> · BFTH War Room v1.5
 </div>
 
 <script>
@@ -476,13 +487,74 @@ function renderSummary(movers) {
   `).join("");
 }
 
+// ============================================================
+// SORTABLE COLUMNS
+// ============================================================
+// Each key maps to a value extractor on a mover object.
+// When the user clicks a header, we set STATE.sort = { key, dir } and re-render.
+const SORT_EXTRACTORS = {
+  name: m => (m.name || "").toLowerCase(),
+  np:   m => m.current?.national_prestige ?? -Infinity,
+  dNp:  m => m.deltas?.np ?? -Infinity,
+  cs:   m => m.current?.campaign_strength ?? -Infinity,
+  dCs:  m => m.deltas?.cs ?? -Infinity,
+  cf:   m => m.current?.campaign_funds ?? -Infinity,
+  dCf:  m => m.deltas?.cf ?? -Infinity,
+  nw:   m => m.current?.total_net_worth ?? -Infinity,
+  dNw:  m => m.deltas?.nw ?? -Infinity,
+  lc:   m => m.current?.lc_income_hr ?? -Infinity,
+  dLc:  m => m.deltas?.lc ?? -Infinity,
+};
+
+function applySort(movers) {
+  const { key, dir } = STATE.sort;
+  const extractor = SORT_EXTRACTORS[key];
+  if (!extractor) return movers;
+  const sorted = [...movers].sort((a, b) => {
+    const av = extractor(a);
+    const bv = extractor(b);
+    if (typeof av === "string" && typeof bv === "string") {
+      return dir === "asc" ? av.localeCompare(bv) : bv.localeCompare(av);
+    }
+    return dir === "asc" ? av - bv : bv - av;
+  });
+  return sorted;
+}
+
+function updateSortIndicators() {
+  document.querySelectorAll("th.sortable").forEach(th => {
+    th.classList.remove("sort-asc", "sort-desc");
+    if (th.dataset.sort === STATE.sort.key) {
+      th.classList.add(STATE.sort.dir === "asc" ? "sort-asc" : "sort-desc");
+    }
+  });
+}
+
+function wireSortHeaders() {
+  document.querySelectorAll("th.sortable").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sort;
+      if (STATE.sort.key === key) {
+        STATE.sort.dir = STATE.sort.dir === "asc" ? "desc" : "asc";
+      } else {
+        STATE.sort.key = key;
+        // Numeric columns default to desc (biggest first), name defaults to asc
+        STATE.sort.dir = key === "name" ? "asc" : "desc";
+      }
+      updateSortIndicators();
+      renderTable(STATE.currentMovers);
+    });
+  });
+}
+
 function renderTable(movers) {
   const tbody = document.getElementById("moversBody");
   if (!movers.length) {
     tbody.innerHTML = `<tr><td colspan="11" class="empty">No movers to show for this range.</td></tr>`;
     return;
   }
-  tbody.innerHTML = movers.map(m => {
+  const sorted = applySort(movers);
+  tbody.innerHTML = sorted.map(m => {
     const p = m.current;
     const d = m.deltas;
     const nameLink = m.politician_id
@@ -544,7 +616,6 @@ async function applyCustomCompare(fromName, toName) {
     const toLabel = toName === "latest" ? "latest" : toName.replace(".json", "").replace("T", " ");
     document.getElementById("baselineLabel").textContent = `${fromLabel} → ${toLabel}`;
 
-    // Clear range-button active state (custom compare overrides)
     document.querySelectorAll(".range-btn[data-range]").forEach(x => x.classList.remove("active"));
 
     renderTicker(movers);
@@ -583,7 +654,6 @@ async function applyRange(range) {
     document.getElementById("baselineLabel").textContent =
       `vs ${baselineName.replace(".json", "").replace("T", " ")}`;
 
-    // Sync custom compare selects
     const fromSel = document.getElementById("compareFrom");
     const toSel = document.getElementById("compareTo");
     if (fromSel) fromSel.value = baselineName;
@@ -605,6 +675,7 @@ let STATE = {
   archives: [],
   currentMovers: [],
   range: "day",
+  sort: { key: "topMag", dir: "desc" },  // default: magnitude of top mover
 };
 
 async function loadAll() {
@@ -616,16 +687,9 @@ async function loadAll() {
     STATE.archives = await listArchives();
     STATE.current = await fetchJSON("./data/players/latest.json");
 
-    // Populate custom compare selects — newest first
     const fromSel = document.getElementById("compareFrom");
     const toSel = document.getElementById("compareTo");
     const reversed = [...STATE.archives].reverse();
-
-    const latestOptFrom = document.createElement("option");
-    latestOptFrom.value = "latest";
-    latestOptFrom.textContent = "latest (current)";
-    // Don't add "latest" to the From dropdown — it'd be comparing current to current.
-    // Only add it to the To dropdown.
 
     reversed.forEach(name => {
       const label = name.replace(".json", "").replace("T", " ");
@@ -648,7 +712,6 @@ async function loadAll() {
     latestOpt.textContent = "latest (current)";
     toSel.appendChild(latestOpt);
 
-    // Default From = yesterday's archive; Default To = latest
     const yest = pickBaseline(STATE.archives, todayUTC(), 1);
     if (yest) fromSel.value = yest;
     else if (reversed.length > 0) fromSel.value = reversed[reversed.length - 1];
@@ -661,6 +724,8 @@ async function loadAll() {
 
     wireRangeButtons();
     wireCustomCompare();
+    wireSortHeaders();
+    updateSortIndicators();
 
     await applyRange("day");
   } catch (e) {
