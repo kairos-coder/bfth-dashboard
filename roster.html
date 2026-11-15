@@ -22,7 +22,6 @@
   body { font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
     background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
 
-  /* ambient grid */
   body::before {
     content: ""; position: fixed; inset: -1px; z-index: 0; pointer-events: none;
     background-image:
@@ -39,7 +38,6 @@
   }
   body > * { position: relative; z-index: 1; }
 
-  /* HERO */
   .hero { position: relative; height: 230px; overflow: hidden;
     border-bottom: 2px solid var(--gold); background: var(--bg-2); }
   .hero-img { position: absolute; inset: 0;
@@ -83,7 +81,6 @@
   .status-dot.stale { background: var(--yellow); }
   .status-dot.dead  { background: var(--red); }
 
-  /* NAV */
   .nav { display: flex; background: var(--bg-2);
     border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto;
     position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
@@ -95,7 +92,6 @@
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
   .nav a.ext::after { content: " ↗"; font-size: 0.7em; }
 
-  /* STAT STRIP */
   .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 0.75rem; padding: 1.5rem 2rem 0.75rem; max-width: 1600px; margin: 0 auto; }
   .stat-card { background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
@@ -111,7 +107,6 @@
   .stat-card.gold .value { color: var(--gold-bright); }
   .stat-card.green .value { color: var(--green); }
 
-  /* CONTROLS */
   .controls-wrap { max-width: 1600px; margin: 0 auto;
     padding: 1.5rem 2rem 0.9rem; display: flex; gap: 0.75rem;
     flex-wrap: wrap; align-items: center; }
@@ -123,7 +118,6 @@
   .controls-wrap input { flex: 1; min-width: 240px; }
   .controls-wrap .count { color: var(--muted); font-size: 0.82rem; margin-left: auto; }
 
-  /* GRID + CARDS */
   .grid-wrap { max-width: 1600px; margin: 0 auto; padding: 0 2rem 3rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 1.25rem; }
@@ -186,25 +180,22 @@
   .stat-group .group-label { font-size: 0.6rem; letter-spacing: 0.14em;
     text-transform: uppercase; color: var(--dim); margin-bottom: 0.35rem; font-weight: 700; }
   .stat-group .stat { display: flex; justify-content: space-between;
-    padding: 0.13rem 0; font-size: 0.77rem; align-items: center; }
+    padding: 0.13rem 0; font-size: 0.77rem; }
   .stat-group .stat .label { color: var(--muted); }
-  .stat-group .stat .val { font-weight: 700; font-variant-numeric: tabular-nums;
-    display: flex; align-items: center; gap: 0.35rem; }
+  .stat-group .stat .val { font-weight: 700; font-variant-numeric: tabular-nums; }
   .val.np { color: var(--yellow); }
   .val.cs, .val.sr, .val.nr { color: var(--blue); }
   .val.cf, .val.nw { color: var(--green); }
   .val.pc, .val.mil { color: var(--muted); }
 
-  /* SPARKLINES */
-  .spark { display: inline-block; vertical-align: middle;
-    width: 48px; height: 14px; flex-shrink: 0; }
+  /* SPARKLINES — trend strip at bottom of card only */
+  .spark { display: inline-block; vertical-align: middle; flex-shrink: 0; }
   .spark polyline { fill: none; stroke-width: 1.5;
     stroke-linecap: round; stroke-linejoin: round; }
   .spark-up polyline   { stroke: var(--green); }
   .spark-down polyline { stroke: var(--red); }
   .spark-flat polyline { stroke: var(--dim); }
 
-  /* Trend strip at bottom of card */
   .trend-strip { display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem; margin-top: 0.85rem; padding-top: 0.75rem;
     border-top: 1px solid var(--border); }
@@ -231,8 +222,6 @@
   .footer a:hover { color: var(--gold-bright); }
 
   @media (max-width: 900px) {
-    /* Sparklines are unreadable at mobile widths — hide them, keep the numbers */
-    .spark { display: none; }
     .trend-strip { display: none; }
   }
 
@@ -345,10 +334,7 @@ function parseStance(raw) {
 // ============================================================
 // SPARKLINE HELPERS
 // ============================================================
-// values: array of numbers (may contain nulls for missing snapshots)
-// Returns: { svg, direction, delta, pct } where svg is inline SVG markup
-// and direction is "up" | "down" | "flat"
-function buildSparkline(values, width = 48, height = 14) {
+function buildSparkline(values, width = 64, height = 16) {
   if (!values || values.length < 2) return null;
   const clean = values.map(v => v == null || isNaN(v) ? null : Number(v));
 
@@ -377,7 +363,6 @@ function buildSparkline(values, width = 48, height = 14) {
   const first = clean[0];
   const last = clean[clean.length - 1];
   const delta = last - first;
-  const pctChange = first !== 0 ? (delta / Math.abs(first)) * 100 : 0;
 
   let direction = "flat";
   if (Math.abs(delta) > span * 0.05) {
@@ -390,21 +375,10 @@ function buildSparkline(values, width = 48, height = 14) {
     <polyline points="${points}"/>
   </svg>`;
 
-  return { svg, direction, delta, pctChange };
+  return { svg, direction, delta };
 }
 
-// Returns HTML for a stat cell with sparkline appended
-function statWithSpark(label, metric, currentValue, formatter, className) {
-  const series = sparklinesData?.players?.[currentPlayerId]?.[metric];
-  const spark = series ? buildSparkline(series) : null;
-  const sparkHtml = spark ? spark.svg : "";
-  return `<span class="label">${label}</span><span class="val ${className}">${formatter(currentValue)}${sparkHtml}</span>`;
-}
-
-// Track current player ID during render so statWithSpark can look up the right series
-let currentPlayerId = null;
-
-// Returns the trend-strip HTML for a card (four mini charts at bottom)
+// Trend strip at bottom of card — 4 mini charts
 function trendStrip(playerId) {
   const entry = sparklinesData?.players?.[String(playerId)];
   if (!entry) return "";
@@ -484,9 +458,6 @@ function computeStats() {
   topNP = Math.max(...allPlayers.map(p => p.national_prestige || 0), 1);
 }
 
-// ============================================================
-// RENDER
-// ============================================================
 function render() {
   const grid = document.getElementById("grid");
   if (!filtered.length) {
@@ -542,9 +513,6 @@ function render() {
     const np = p.national_prestige || 0;
     const npBarPct = Math.max(2, Math.min(100, (np / topNP) * 100));
 
-    // Set current player ID for statWithSpark to look up correct series
-    currentPlayerId = String(pid);
-
     return `
       <div class="card ${tier}">
         <div class="card-header">
@@ -565,21 +533,21 @@ function render() {
         <div class="stat-groups">
           <div class="stat-group">
             <div class="group-label">Power</div>
-            <div class="stat">${statWithSpark("NP", "np", p.national_prestige, v => num(v, 1), "np")}</div>
-            <div class="stat">${statWithSpark("PC", "pc", p.political_capital, v => num(v, 1), "pc")}</div>
-            <div class="stat">${statWithSpark("Mil", "mil", p.military_influence, v => num(v, 0), "mil")}</div>
+            <div class="stat"><span class="label">NP</span><span class="val np">${num(p.national_prestige)}</span></div>
+            <div class="stat"><span class="label">PC</span><span class="val pc">${num(p.political_capital, 1)}</span></div>
+            <div class="stat"><span class="label">Mil</span><span class="val mil">${num(p.military_influence, 0)}</span></div>
           </div>
           <div class="stat-group">
             <div class="group-label">Electoral</div>
-            <div class="stat">${statWithSpark("CS", "cs", p.campaign_strength, v => num(v, 1), "cs")}</div>
-            <div class="stat">${statWithSpark("SR", "sr", p.state_reputation, v => pct(v), "sr")}</div>
-            <div class="stat">${statWithSpark("NR", "nr", p.national_reputation, v => pct(v), "nr")}</div>
+            <div class="stat"><span class="label">CS</span><span class="val cs">${num(p.campaign_strength)}</span></div>
+            <div class="stat"><span class="label">SR</span><span class="val sr">${pct(p.state_reputation)}</span></div>
+            <div class="stat"><span class="label">NR</span><span class="val nr">${pct(p.national_reputation)}</span></div>
           </div>
           <div class="stat-group">
             <div class="group-label">Money</div>
-            <div class="stat">${statWithSpark("CF", "cf", p.campaign_funds, v => shortMoney(v), "cf")}</div>
-            <div class="stat">${statWithSpark("NW", "nw", p.total_net_worth, v => shortMoney(v), "nw")}</div>
-            <div class="stat">${statWithSpark("LC/hr", "lc", p.lc_income_hr, v => shortMoney(v), "cf")}</div>
+            <div class="stat"><span class="label">CF</span><span class="val cf">${shortMoney(p.campaign_funds)}</span></div>
+            <div class="stat"><span class="label">NW</span><span class="val nw">${shortMoney(p.total_net_worth)}</span></div>
+            <div class="stat"><span class="label">LC/hr</span><span class="val cf">${shortMoney(p.lc_income_hr)}</span></div>
           </div>
         </div>
         ${trendStrip(pid)}
@@ -638,7 +606,6 @@ async function main() {
   const errEl = document.getElementById("error");
   const loadEl = document.getElementById("loading");
 
-  // Fetch latest.json (required) and sparklines.json (optional, in parallel)
   let res, sparkRes;
   try {
     [res, sparkRes] = await Promise.allSettled([
@@ -662,7 +629,6 @@ async function main() {
   const data = await res.value.json();
   allPlayers = data.players || [];
 
-  // Optional: load sparklines, never fail if missing
   if (sparkRes.status === "fulfilled" && sparkRes.value.ok) {
     try {
       sparklinesData = await sparkRes.value.json();
