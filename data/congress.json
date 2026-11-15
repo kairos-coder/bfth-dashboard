@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T20:41:23.319938+00:00",
+  "generated_at": "2026-11-15T00:45:31.337915+00:00",
   "senate": {
     "chamber": "senate",
     "total_seats": 98,
@@ -71,8 +71,8 @@
   },
   "house": {
     "chamber": "house",
-    "total_seats": 374,
-    "majority_needed": 188,
+    "total_seats": 368,
+    "majority_needed": 185,
     "gop_seats": 155,
     "parties": [
       {
@@ -118,12 +118,6 @@
         "color": "#2F4F4F"
       },
       {
-        "party_id": "419",
-        "name": "Glen Youngkins' Party",
-        "seats": 6,
-        "color": "#4E5FA2"
-      },
-      {
         "party_id": "321",
         "name": "Inactive",
         "seats": 0,
@@ -140,6 +134,12 @@
         "name": "Jewish Party",
         "seats": 0,
         "color": "#666"
+      },
+      {
+        "party_id": "419",
+        "name": "Glen Youngkins' Party",
+        "seats": 0,
+        "color": "#4E5FA2"
       }
     ],
     "leadership": [
