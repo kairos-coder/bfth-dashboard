@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Roster — BFTH War Room</title>
 <link rel="icon" href="./images/emblem.png" type="image/png">
+<meta property="og:title" content="BFTH War Room — Roster">
+<meta property="og:description" content="GOP politician roster with tier ranking and 7-day trend sparklines.">
 <style>
   :root {
     --bg: #08090c; --bg-2: #0d0f14; --panel: #13161d; --panel-2: #1a1e27;
@@ -18,48 +20,82 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body { font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--bg); color: var(--text); min-height: 100vh; }
+    background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; }
 
-  .hero { position: relative; height: 220px; overflow: hidden;
+  /* ambient grid */
+  body::before {
+    content: ""; position: fixed; inset: -1px; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(212,175,55,0.022) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,175,55,0.022) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 0%, #000 0%, #000 40%, transparent 100%);
+    animation: gridDrift 40s linear infinite;
+  }
+  @keyframes gridDrift {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 64px 64px, 64px 64px; }
+  }
+  body > * { position: relative; z-index: 1; }
+
+  /* HERO */
+  .hero { position: relative; height: 230px; overflow: hidden;
     border-bottom: 2px solid var(--gold); background: var(--bg-2); }
   .hero-img { position: absolute; inset: 0;
     background-image: url("./images/banner-warroom.png");
-    background-size: cover; background-position: center 45%;
-    background-repeat: no-repeat; opacity: 0.6; }
-  .hero::after { content: ""; position: absolute; inset: 0;
+    background-size: cover; background-position: center 45%; opacity: 0.55;
+    transform: scale(1.02); animation: heroZoom 20s ease-in-out infinite alternate; }
+  @keyframes heroZoom { from { transform: scale(1.02); } to { transform: scale(1.08); } }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(135deg,
+      rgba(212,175,55,0) 0%, rgba(212,175,55,0.08) 25%,
+      rgba(212,175,55,0) 50%, rgba(212,175,55,0.08) 75%,
+      rgba(212,175,55,0) 100%);
+    background-size: 300% 300%; animation: heroSweep 12s ease-in-out infinite;
+    pointer-events: none; }
+  @keyframes heroSweep { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .hero::after { content: ""; position: absolute; inset: 0; z-index: 2;
     background:
       linear-gradient(180deg, rgba(8,9,12,0.4) 0%, rgba(8,9,12,0.1) 40%, rgba(8,9,12,0.96) 100%),
       linear-gradient(90deg, rgba(8,9,12,0.75) 0%, transparent 25%, transparent 75%, rgba(8,9,12,0.75) 100%); }
-  .hero-inner { position: relative; z-index: 2; height: 100%;
+  .hero-inner { position: relative; z-index: 3; height: 100%;
     display: flex; align-items: flex-end; justify-content: space-between;
     padding: 0 2rem 1.4rem; gap: 1rem; max-width: 1600px; margin: 0 auto; }
   .brand h1 { font-size: 2.1rem; margin: 0; letter-spacing: 0.08em;
-    color: var(--gold-bright); text-shadow: 0 2px 14px rgba(0,0,0,0.85); font-weight: 800; }
+    background: linear-gradient(90deg, #f0c850 0%, #fbbf24 40%, #d4af37 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 2px 14px rgba(0,0,0,0.85)); font-weight: 800; }
   .brand .sub { color: var(--muted); font-size: 0.8rem; letter-spacing: 0.18em;
     text-transform: uppercase; margin-top: 0.4rem; }
   .status { display: flex; align-items: center; gap: 0.5rem;
     background: rgba(13,15,20,0.85); border: 1px solid var(--border-2);
     padding: 0.5rem 0.95rem; border-radius: 999px; font-size: 0.78rem;
     color: var(--muted); backdrop-filter: blur(8px); flex-shrink: 0; }
-  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
-  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green); }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted);
+    transition: background 0.3s; }
+  .status-dot.fresh { background: var(--green); box-shadow: 0 0 10px var(--green);
+    animation: statusPulse 2.4s ease-in-out infinite; }
+  @keyframes statusPulse {
+    0%,100% { box-shadow: 0 0 10px var(--green), 0 0 0 0 rgba(74,222,128,0.4); }
+    50%     { box-shadow: 0 0 10px var(--green), 0 0 0 5px rgba(74,222,128,0); }
+  }
   .status-dot.stale { background: var(--yellow); }
   .status-dot.dead  { background: var(--red); }
 
+  /* NAV */
   .nav { display: flex; background: var(--bg-2);
-    border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto; }
+    border-bottom: 1px solid var(--border); padding: 0 2rem; overflow-x: auto;
+    position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
   .nav a { padding: 0.95rem 1.15rem; color: var(--muted); text-decoration: none;
     font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
     text-transform: uppercase; border-bottom: 2px solid transparent;
     transition: color 0.15s, border-color 0.15s; white-space: nowrap; }
   .nav a:hover { color: var(--text); }
   .nav a.active { color: var(--gold-bright); border-bottom-color: var(--gold); }
-  .nav a.soon { color: var(--dim); }
-  .nav a.soon:hover { color: var(--muted); }
-  .nav a.soon::after { content: "SOON"; font-size: 0.55rem; background: var(--panel-2);
-    color: var(--muted); padding: 0.1rem 0.35rem; border-radius: 3px;
-    margin-left: 0.5rem; vertical-align: middle; letter-spacing: 0.1em; }
+  .nav a.ext::after { content: " ↗"; font-size: 0.7em; }
 
+  /* STAT STRIP */
   .stat-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 0.75rem; padding: 1.5rem 2rem 0.75rem; max-width: 1600px; margin: 0 auto; }
   .stat-card { background: linear-gradient(135deg, var(--panel) 0%, var(--panel-2) 100%);
@@ -75,6 +111,7 @@
   .stat-card.gold .value { color: var(--gold-bright); }
   .stat-card.green .value { color: var(--green); }
 
+  /* CONTROLS */
   .controls-wrap { max-width: 1600px; margin: 0 auto;
     padding: 1.5rem 2rem 0.9rem; display: flex; gap: 0.75rem;
     flex-wrap: wrap; align-items: center; }
@@ -86,6 +123,7 @@
   .controls-wrap input { flex: 1; min-width: 240px; }
   .controls-wrap .count { color: var(--muted); font-size: 0.82rem; margin-left: auto; }
 
+  /* GRID + CARDS */
   .grid-wrap { max-width: 1600px; margin: 0 auto; padding: 0 2rem 3rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     gap: 1.25rem; }
@@ -148,13 +186,40 @@
   .stat-group .group-label { font-size: 0.6rem; letter-spacing: 0.14em;
     text-transform: uppercase; color: var(--dim); margin-bottom: 0.35rem; font-weight: 700; }
   .stat-group .stat { display: flex; justify-content: space-between;
-    padding: 0.13rem 0; font-size: 0.77rem; }
+    padding: 0.13rem 0; font-size: 0.77rem; align-items: center; }
   .stat-group .stat .label { color: var(--muted); }
-  .stat-group .stat .val { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat-group .stat .val { font-weight: 700; font-variant-numeric: tabular-nums;
+    display: flex; align-items: center; gap: 0.35rem; }
   .val.np { color: var(--yellow); }
   .val.cs, .val.sr, .val.nr { color: var(--blue); }
   .val.cf, .val.nw { color: var(--green); }
   .val.pc, .val.mil { color: var(--muted); }
+
+  /* SPARKLINES */
+  .spark { display: inline-block; vertical-align: middle;
+    width: 48px; height: 14px; flex-shrink: 0; }
+  .spark polyline { fill: none; stroke-width: 1.5;
+    stroke-linecap: round; stroke-linejoin: round; }
+  .spark-up polyline   { stroke: var(--green); }
+  .spark-down polyline { stroke: var(--red); }
+  .spark-flat polyline { stroke: var(--dim); }
+
+  /* Trend strip at bottom of card */
+  .trend-strip { display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem; margin-top: 0.85rem; padding-top: 0.75rem;
+    border-top: 1px solid var(--border); }
+  .trend-cell { text-align: center; }
+  .trend-cell .trend-label { color: var(--dim); font-size: 0.6rem;
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700;
+    margin-bottom: 0.2rem; }
+  .trend-cell .trend-spark { display: flex; justify-content: center;
+    margin-bottom: 0.15rem; }
+  .trend-cell .trend-spark .spark { width: 64px; height: 16px; }
+  .trend-cell .trend-delta { font-size: 0.68rem;
+    font-variant-numeric: tabular-nums; font-weight: 700; }
+  .trend-cell .trend-delta.up   { color: var(--green); }
+  .trend-cell .trend-delta.down { color: var(--red); }
+  .trend-cell .trend-delta.flat { color: var(--dim); }
 
   #error { color: var(--red); padding: 1rem; background: #1a0a0a;
     border: 1px solid #3a1a1a; border-radius: 6px; margin: 1rem 2rem; display: none; }
@@ -162,16 +227,27 @@
 
   .footer { border-top: 1px solid var(--border); padding: 1.5rem 2rem;
     color: var(--dim); font-size: 0.75rem; text-align: center; letter-spacing: 0.06em; }
+  .footer a { color: var(--dim); text-decoration: none; }
+  .footer a:hover { color: var(--gold-bright); }
+
+  @media (max-width: 900px) {
+    /* Sparklines are unreadable at mobile widths — hide them, keep the numbers */
+    .spark { display: none; }
+    .trend-strip { display: none; }
+  }
 
   @media (max-width: 700px) {
-    .hero { height: 170px; }
+    .hero { height: 180px; }
     .hero-inner { padding: 0 1rem 1rem; flex-wrap: wrap; gap: 0.5rem; }
-    .brand h1 { font-size: 1.45rem; }
+    .brand h1 { font-size: 1.5rem; }
     .nav { padding: 0 0.5rem; }
     .nav a { padding: 0.8rem 0.7rem; font-size: 0.72rem; }
     .stat-strip, .controls-wrap, .grid-wrap { padding-left: 1rem; padding-right: 1rem; }
     .grid { grid-template-columns: 1fr; }
     .stat-groups { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before, .hero-img, .hero::before, .status-dot.fresh { animation: none !important; }
   }
 </style>
 </head>
@@ -184,7 +260,7 @@
       <h1>GOP ROSTER</h1>
       <div class="sub">Republican Party · Vice Chair's Briefing</div>
     </div>
-    <div class="status" id="status">
+    <div class="status">
       <span class="status-dot" id="statusDot"></span>
       <span id="statusText">Loading…</span>
     </div>
@@ -197,7 +273,10 @@
   <a href="./caucus.html">Caucus</a>
   <a href="./elections.html">Elections</a>
   <a href="./corporations.html">Market Desk</a>
-  <a href="./history.html" class="soon">History</a>
+  <a href="./congress.html">Congress</a>
+  <a href="https://battleforthehill.com/world/countries" target="_blank" rel="noopener" class="ext">Nations</a>
+  <a href="https://battleforthehill.com/national/parties/1" target="_blank" rel="noopener" class="ext">Parties</a>
+  <a href="./history.html">History</a>
 </nav>
 
 <div class="stat-strip">
@@ -231,11 +310,12 @@
 </div>
 
 <div class="footer">
-  Home · <strong style="color:var(--gold-bright)">Roster</strong> · Caucus · Elections · Market Desk · History (soon)
+  Home · <strong style="color:var(--gold-bright)">Roster</strong> · Caucus · Elections · Market Desk · Congress · History
 </div>
 
 <script>
 const DATA_URL = "./data/players/latest.json";
+const SPARK_URL = "./data/players/sparklines.json";
 
 const money = (n) => n == null ? "—" :
   "$" + Number(n).toLocaleString("en-US", { maximumFractionDigits: 0 });
@@ -262,10 +342,111 @@ function parseStance(raw) {
   return { label: m[1].trim(), value: parseFloat(m[2]) };
 }
 
+// ============================================================
+// SPARKLINE HELPERS
+// ============================================================
+// values: array of numbers (may contain nulls for missing snapshots)
+// Returns: { svg, direction, delta, pct } where svg is inline SVG markup
+// and direction is "up" | "down" | "flat"
+function buildSparkline(values, width = 48, height = 14) {
+  if (!values || values.length < 2) return null;
+  const clean = values.map(v => v == null || isNaN(v) ? null : Number(v));
+
+  // Interpolate nulls from nearest non-null neighbors
+  for (let i = 0; i < clean.length; i++) {
+    if (clean[i] == null) {
+      const prev = clean.slice(0, i).reverse().find(v => v != null);
+      const next = clean.slice(i + 1).find(v => v != null);
+      clean[i] = prev != null ? prev : next;
+    }
+  }
+  const nums = clean.filter(v => v != null);
+  if (nums.length < 2) return null;
+
+  const min = Math.min(...nums);
+  const max = Math.max(...nums);
+  const span = max - min || 1;
+  const stepX = width / (clean.length - 1);
+
+  const points = clean.map((v, i) => {
+    const x = (i * stepX).toFixed(1);
+    const y = (height - ((v - min) / span) * (height - 3) - 1.5).toFixed(1);
+    return `${x},${y}`;
+  }).join(" ");
+
+  const first = clean[0];
+  const last = clean[clean.length - 1];
+  const delta = last - first;
+  const pctChange = first !== 0 ? (delta / Math.abs(first)) * 100 : 0;
+
+  let direction = "flat";
+  if (Math.abs(delta) > span * 0.05) {
+    direction = delta > 0 ? "up" : "down";
+  }
+
+  const svg = `<svg class="spark spark-${direction}" viewBox="0 0 ${width} ${height}"
+                    width="${width}" height="${height}"
+                    preserveAspectRatio="none" aria-hidden="true">
+    <polyline points="${points}"/>
+  </svg>`;
+
+  return { svg, direction, delta, pctChange };
+}
+
+// Returns HTML for a stat cell with sparkline appended
+function statWithSpark(label, metric, currentValue, formatter, className) {
+  const series = sparklinesData?.players?.[currentPlayerId]?.[metric];
+  const spark = series ? buildSparkline(series) : null;
+  const sparkHtml = spark ? spark.svg : "";
+  return `<span class="label">${label}</span><span class="val ${className}">${formatter(currentValue)}${sparkHtml}</span>`;
+}
+
+// Track current player ID during render so statWithSpark can look up the right series
+let currentPlayerId = null;
+
+// Returns the trend-strip HTML for a card (four mini charts at bottom)
+function trendStrip(playerId) {
+  const entry = sparklinesData?.players?.[String(playerId)];
+  if (!entry) return "";
+
+  const metrics = [
+    { key: "np", label: "NP" },
+    { key: "cf", label: "CF" },
+    { key: "nw", label: "NW" },
+    { key: "lc", label: "LC/hr" },
+  ];
+
+  const cells = metrics.map(m => {
+    const series = entry[m.key];
+    const spark = series ? buildSparkline(series, 64, 16) : null;
+    if (!spark) {
+      return `<div class="trend-cell">
+        <div class="trend-label">${m.label}</div>
+        <div class="trend-spark"><span style="color:var(--dim);font-size:0.6rem">—</span></div>
+      </div>`;
+    }
+    const sign = spark.delta > 0 ? "+" : "";
+    let deltaLabel;
+    if (m.key === "np") deltaLabel = `${sign}${num(spark.delta, 1)}`;
+    else deltaLabel = `${sign}${shortMoney(spark.delta)}`;
+    return `<div class="trend-cell">
+      <div class="trend-label">${m.label}</div>
+      <div class="trend-spark">${spark.svg}</div>
+      <div class="trend-delta ${spark.direction}">${deltaLabel}</div>
+    </div>`;
+  }).join("");
+
+  return `<div class="trend-strip">${cells}</div>`;
+}
+
+// ============================================================
+// STATE
+// ============================================================
 let allPlayers = [];
 let filtered = [];
 let kofiDiscords = new Set();
 let topNP = 1;
+let sparklinesData = null;
 
 function computeTier(p) {
   const np = p.national_prestige ?? 0;
@@ -303,6 +484,9 @@ function computeStats() {
   topNP = Math.max(...allPlayers.map(p => p.national_prestige || 0), 1);
 }
 
+// ============================================================
+// RENDER
+// ============================================================
 function render() {
   const grid = document.getElementById("grid");
   if (!filtered.length) {
@@ -358,6 +542,9 @@ function render() {
     const np = p.national_prestige || 0;
     const npBarPct = Math.max(2, Math.min(100, (np / topNP) * 100));
 
+    // Set current player ID for statWithSpark to look up correct series
+    currentPlayerId = String(pid);
+
     return `
       <div class="card ${tier}">
         <div class="card-header">
@@ -378,23 +565,24 @@ function render() {
         <div class="stat-groups">
           <div class="stat-group">
             <div class="group-label">Power</div>
-            <div class="stat"><span class="label">NP</span><span class="val np">${num(p.national_prestige)}</span></div>
-            <div class="stat"><span class="label">PC</span><span class="val pc">${num(p.political_capital, 1)}</span></div>
-            <div class="stat"><span class="label">Mil</span><span class="val mil">${num(p.military_influence, 0)}</span></div>
+            <div class="stat">${statWithSpark("NP", "np", p.national_prestige, v => num(v, 1), "np")}</div>
+            <div class="stat">${statWithSpark("PC", "pc", p.political_capital, v => num(v, 1), "pc")}</div>
+            <div class="stat">${statWithSpark("Mil", "mil", p.military_influence, v => num(v, 0), "mil")}</div>
           </div>
           <div class="stat-group">
             <div class="group-label">Electoral</div>
-            <div class="stat"><span class="label">CS</span><span class="val cs">${num(p.campaign_strength)}</span></div>
-            <div class="stat"><span class="label">SR</span><span class="val sr">${pct(p.state_reputation)}</span></div>
-            <div class="stat"><span class="label">NR</span><span class="val nr">${pct(p.national_reputation)}</span></div>
+            <div class="stat">${statWithSpark("CS", "cs", p.campaign_strength, v => num(v, 1), "cs")}</div>
+            <div class="stat">${statWithSpark("SR", "sr", p.state_reputation, v => pct(v), "sr")}</div>
+            <div class="stat">${statWithSpark("NR", "nr", p.national_reputation, v => pct(v), "nr")}</div>
           </div>
           <div class="stat-group">
             <div class="group-label">Money</div>
-            <div class="stat"><span class="label">CF</span><span class="val cf">${shortMoney(p.campaign_funds)}</span></div>
-            <div class="stat"><span class="label">NW</span><span class="val nw">${shortMoney(p.total_net_worth)}</span></div>
-            <div class="stat"><span class="label">LC/hr</span><span class="val cf">${shortMoney(p.lc_income_hr)}</span></div>
+            <div class="stat">${statWithSpark("CF", "cf", p.campaign_funds, v => shortMoney(v), "cf")}</div>
+            <div class="stat">${statWithSpark("NW", "nw", p.total_net_worth, v => shortMoney(v), "nw")}</div>
+            <div class="stat">${statWithSpark("LC/hr", "lc", p.lc_income_hr, v => shortMoney(v), "cf")}</div>
           </div>
         </div>
+        ${trendStrip(pid)}
       </div>`;
   }).join("");
 }
@@ -450,9 +638,13 @@ async function main() {
   const errEl = document.getElementById("error");
   const loadEl = document.getElementById("loading");
 
-  let res;
+  // Fetch latest.json (required) and sparklines.json (optional, in parallel)
+  let res, sparkRes;
   try {
-    res = await fetch(DATA_URL, { cache: "no-store" });
+    [res, sparkRes] = await Promise.allSettled([
+      fetch(DATA_URL, { cache: "no-store" }),
+      fetch(SPARK_URL, { cache: "no-store" }),
+    ]);
   } catch (e) {
     loadEl.style.display = "none";
     errEl.style.display = "block";
@@ -460,15 +652,29 @@ async function main() {
     return;
   }
 
-  if (!res.ok) {
+  if (res.status !== "fulfilled" || !res.value.ok) {
     loadEl.style.display = "none";
     errEl.style.display = "block";
-    errEl.textContent = `HTTP ${res.status} — ${DATA_URL} not found`;
+    errEl.textContent = `HTTP error loading ${DATA_URL}`;
     return;
   }
 
-  const data = await res.json();
+  const data = await res.value.json();
   allPlayers = data.players || [];
+
+  // Optional: load sparklines, never fail if missing
+  if (sparkRes.status === "fulfilled" && sparkRes.value.ok) {
+    try {
+      sparklinesData = await sparkRes.value.json();
+    } catch (e) {
+      console.warn("[roster] sparklines.json parse failed, rendering without sparklines");
+      sparklinesData = null;
+    }
+  } else {
+    console.info("[roster] sparklines.json not available yet — rendering without sparklines");
+    sparklinesData = null;
+  }
+
   buildKofiSet(allPlayers);
   computeStats();
   setStatus(data.generated_at);
