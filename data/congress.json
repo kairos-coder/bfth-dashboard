@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T00:45:31.337915+00:00",
+  "generated_at": "2026-11-15T14:32:26.179630+00:00",
   "senate": {
     "chamber": "senate",
     "total_seats": 98,
@@ -44,7 +44,7 @@
       },
       {
         "role": "Senate Majority Leader",
-        "name": "Nikki Haley",
+        "name": "Judith Ellen Foster",
         "politician_id": "1240"
       },
       {
@@ -155,8 +155,8 @@
       },
       {
         "role": "Speaker of the House",
-        "name": "Jeffrey Epstein",
-        "politician_id": "1317"
+        "name": "Vertin",
+        "politician_id": "1287"
       },
       {
         "role": "House Minority Leader",
