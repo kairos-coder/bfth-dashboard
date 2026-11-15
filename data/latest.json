@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-14T19:58:10.957419+00:00",
+  "generated_at": "2026-11-15T14:31:33.819449+00:00",
   "source": "fetch.py (playwright)",
   "results": [
     {
       "url": "https://battleforthehill.com/politician/1175",
       "status": 200,
-      "bytes": 260410,
+      "bytes": 260267,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -21,7 +21,7 @@
     {
       "url": "https://battleforthehill.com/politician/1223",
       "status": 200,
-      "bytes": 272950,
+      "bytes": 272804,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -37,7 +37,7 @@
     {
       "url": "https://battleforthehill.com/politician/1224",
       "status": 200,
-      "bytes": 266187,
+      "bytes": 266046,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -53,7 +53,7 @@
     {
       "url": "https://battleforthehill.com/politician/1225",
       "status": 200,
-      "bytes": 265010,
+      "bytes": 264864,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -69,7 +69,7 @@
     {
       "url": "https://battleforthehill.com/politician/1227",
       "status": 200,
-      "bytes": 269833,
+      "bytes": 269683,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -85,7 +85,7 @@
     {
       "url": "https://battleforthehill.com/politician/1239",
       "status": 200,
-      "bytes": 288605,
+      "bytes": 288522,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -101,7 +101,7 @@
     {
       "url": "https://battleforthehill.com/politician/1263",
       "status": 200,
-      "bytes": 281504,
+      "bytes": 280935,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -117,7 +117,7 @@
     {
       "url": "https://battleforthehill.com/politician/1291",
       "status": 200,
-      "bytes": 268301,
+      "bytes": 268161,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -133,7 +133,7 @@
     {
       "url": "https://battleforthehill.com/politician/1361",
       "status": 200,
-      "bytes": 283255,
+      "bytes": 283108,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -149,7 +149,7 @@
     {
       "url": "https://battleforthehill.com/politician/1464",
       "status": 200,
-      "bytes": 283558,
+      "bytes": 283410,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -165,7 +165,7 @@
     {
       "url": "https://battleforthehill.com/politician/1690",
       "status": 200,
-      "bytes": 260776,
+      "bytes": 260629,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -181,7 +181,7 @@
     {
       "url": "https://battleforthehill.com/politician/1743",
       "status": 200,
-      "bytes": 283755,
+      "bytes": 283062,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -197,7 +197,7 @@
     {
       "url": "https://battleforthehill.com/politician/1744",
       "status": 200,
-      "bytes": 268080,
+      "bytes": 268053,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -213,7 +213,7 @@
     {
       "url": "https://battleforthehill.com/politician/1770",
       "status": 200,
-      "bytes": 285692,
+      "bytes": 285542,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -229,7 +229,7 @@
     {
       "url": "https://battleforthehill.com/politician/1771",
       "status": 200,
-      "bytes": 261479,
+      "bytes": 261338,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -245,7 +245,7 @@
     {
       "url": "https://battleforthehill.com/politician/1871",
       "status": 200,
-      "bytes": 325601,
+      "bytes": 326287,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -261,7 +261,7 @@
     {
       "url": "https://battleforthehill.com/politician/1969",
       "status": 200,
-      "bytes": 275930,
+      "bytes": 275784,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -277,7 +277,7 @@
     {
       "url": "https://battleforthehill.com/politician/2273",
       "status": 200,
-      "bytes": 255938,
+      "bytes": 255921,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -293,7 +293,7 @@
     {
       "url": "https://battleforthehill.com/politician/2820",
       "status": 200,
-      "bytes": 265105,
+      "bytes": 264937,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -307,25 +307,9 @@
       "saved_to": "scraper/raw/2820.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/2985",
-      "status": 200,
-      "bytes": 255036,
-      "markers_found": [
-        "National Prestige",
-        "Campaign Strength",
-        "State Reputation",
-        "National Reputation",
-        "Campaign Funds"
-      ],
-      "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/2985",
-      "error": null,
-      "saved_to": "scraper/raw/2985.html"
-    },
-    {
       "url": "https://battleforthehill.com/politician/3108",
       "status": 200,
-      "bytes": 277336,
+      "bytes": 277189,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -341,7 +325,7 @@
     {
       "url": "https://battleforthehill.com/politician/4142",
       "status": 200,
-      "bytes": 256085,
+      "bytes": 255939,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -357,7 +341,7 @@
     {
       "url": "https://battleforthehill.com/politician/4657",
       "status": 200,
-      "bytes": 279616,
+      "bytes": 279478,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -373,7 +357,7 @@
     {
       "url": "https://battleforthehill.com/politician/11473",
       "status": 200,
-      "bytes": 257328,
+      "bytes": 257182,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -389,7 +373,7 @@
     {
       "url": "https://battleforthehill.com/politician/11474",
       "status": 200,
-      "bytes": 256662,
+      "bytes": 256514,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -405,7 +389,7 @@
     {
       "url": "https://battleforthehill.com/politician/11475",
       "status": 200,
-      "bytes": 257856,
+      "bytes": 257712,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -421,7 +405,7 @@
     {
       "url": "https://battleforthehill.com/politician/11476",
       "status": 200,
-      "bytes": 257022,
+      "bytes": 256874,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -437,7 +421,7 @@
     {
       "url": "https://battleforthehill.com/politician/11477",
       "status": 200,
-      "bytes": 256415,
+      "bytes": 256269,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -453,7 +437,7 @@
     {
       "url": "https://battleforthehill.com/politician/11478",
       "status": 200,
-      "bytes": 257616,
+      "bytes": 257468,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -469,7 +453,7 @@
     {
       "url": "https://battleforthehill.com/politician/11479",
       "status": 200,
-      "bytes": 255781,
+      "bytes": 255635,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -485,7 +469,7 @@
     {
       "url": "https://battleforthehill.com/politician/11480",
       "status": 200,
-      "bytes": 255780,
+      "bytes": 255634,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -501,7 +485,7 @@
     {
       "url": "https://battleforthehill.com/politician/11481",
       "status": 200,
-      "bytes": 255545,
+      "bytes": 255397,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -517,7 +501,7 @@
     {
       "url": "https://battleforthehill.com/politician/11482",
       "status": 200,
-      "bytes": 256177,
+      "bytes": 256029,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -533,7 +517,7 @@
     {
       "url": "https://battleforthehill.com/politician/11493",
       "status": 200,
-      "bytes": 254835,
+      "bytes": 254691,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -549,7 +533,7 @@
     {
       "url": "https://battleforthehill.com/politician/11494",
       "status": 200,
-      "bytes": 255120,
+      "bytes": 254974,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -565,7 +549,7 @@
     {
       "url": "https://battleforthehill.com/politician/11502",
       "status": 200,
-      "bytes": 255425,
+      "bytes": 255279,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -581,7 +565,7 @@
     {
       "url": "https://battleforthehill.com/politician/11506",
       "status": 200,
-      "bytes": 255902,
+      "bytes": 255759,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -597,7 +581,7 @@
     {
       "url": "https://battleforthehill.com/politician/11508",
       "status": 200,
-      "bytes": 257145,
+      "bytes": 257004,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -613,7 +597,7 @@
     {
       "url": "https://battleforthehill.com/politician/11511",
       "status": 200,
-      "bytes": 255812,
+      "bytes": 255670,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -629,7 +613,7 @@
     {
       "url": "https://battleforthehill.com/politician/11512",
       "status": 200,
-      "bytes": 256153,
+      "bytes": 256011,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -645,7 +629,7 @@
     {
       "url": "https://battleforthehill.com/politician/11514",
       "status": 200,
-      "bytes": 255922,
+      "bytes": 255781,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -661,7 +645,7 @@
     {
       "url": "https://battleforthehill.com/politician/11515",
       "status": 200,
-      "bytes": 256927,
+      "bytes": 256786,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -677,7 +661,7 @@
     {
       "url": "https://battleforthehill.com/politician/11519",
       "status": 200,
-      "bytes": 255491,
+      "bytes": 255348,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -693,7 +677,7 @@
     {
       "url": "https://battleforthehill.com/politician/11521",
       "status": 200,
-      "bytes": 256720,
+      "bytes": 256579,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -709,7 +693,7 @@
     {
       "url": "https://battleforthehill.com/politician/11536",
       "status": 200,
-      "bytes": 256350,
+      "bytes": 256209,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -725,7 +709,7 @@
     {
       "url": "https://battleforthehill.com/politician/11538",
       "status": 200,
-      "bytes": 256187,
+      "bytes": 256048,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -741,7 +725,7 @@
     {
       "url": "https://battleforthehill.com/politician/11539",
       "status": 200,
-      "bytes": 255837,
+      "bytes": 255696,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -757,7 +741,7 @@
     {
       "url": "https://battleforthehill.com/politician/11540",
       "status": 200,
-      "bytes": 255510,
+      "bytes": 255371,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -773,7 +757,7 @@
     {
       "url": "https://battleforthehill.com/politician/11542",
       "status": 200,
-      "bytes": 255256,
+      "bytes": 255117,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -789,7 +773,7 @@
     {
       "url": "https://battleforthehill.com/politician/11544",
       "status": 200,
-      "bytes": 256179,
+      "bytes": 256038,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -805,7 +789,7 @@
     {
       "url": "https://battleforthehill.com/politician/11547",
       "status": 200,
-      "bytes": 256541,
+      "bytes": 256400,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -821,7 +805,7 @@
     {
       "url": "https://battleforthehill.com/politician/11548",
       "status": 200,
-      "bytes": 255539,
+      "bytes": 255398,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -837,7 +821,7 @@
     {
       "url": "https://battleforthehill.com/politician/11549",
       "status": 200,
-      "bytes": 255261,
+      "bytes": 255122,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -853,7 +837,7 @@
     {
       "url": "https://battleforthehill.com/politician/11550",
       "status": 200,
-      "bytes": 258147,
+      "bytes": 258004,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -869,7 +853,7 @@
     {
       "url": "https://battleforthehill.com/politician/11552",
       "status": 200,
-      "bytes": 255574,
+      "bytes": 255433,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -885,7 +869,7 @@
     {
       "url": "https://battleforthehill.com/politician/11553",
       "status": 200,
-      "bytes": 257072,
+      "bytes": 256931,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -901,7 +885,7 @@
     {
       "url": "https://battleforthehill.com/politician/11557",
       "status": 200,
-      "bytes": 255933,
+      "bytes": 255792,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -917,7 +901,7 @@
     {
       "url": "https://battleforthehill.com/politician/11560",
       "status": 200,
-      "bytes": 255551,
+      "bytes": 255410,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -933,7 +917,7 @@
     {
       "url": "https://battleforthehill.com/politician/11565",
       "status": 200,
-      "bytes": 256291,
+      "bytes": 256150,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -949,7 +933,7 @@
     {
       "url": "https://battleforthehill.com/politician/11572",
       "status": 200,
-      "bytes": 254741,
+      "bytes": 254595,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -965,7 +949,7 @@
     {
       "url": "https://battleforthehill.com/politician/11573",
       "status": 200,
-      "bytes": 255143,
+      "bytes": 254997,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -981,7 +965,7 @@
     {
       "url": "https://battleforthehill.com/politician/11574",
       "status": 200,
-      "bytes": 255092,
+      "bytes": 254946,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -997,7 +981,7 @@
     {
       "url": "https://battleforthehill.com/politician/11575",
       "status": 200,
-      "bytes": 255138,
+      "bytes": 254992,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1013,7 +997,7 @@
     {
       "url": "https://battleforthehill.com/politician/11576",
       "status": 200,
-      "bytes": 254770,
+      "bytes": 254624,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1029,7 +1013,7 @@
     {
       "url": "https://battleforthehill.com/politician/11578",
       "status": 200,
-      "bytes": 255508,
+      "bytes": 255362,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1045,7 +1029,7 @@
     {
       "url": "https://battleforthehill.com/politician/11579",
       "status": 200,
-      "bytes": 254768,
+      "bytes": 254622,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1061,7 +1045,7 @@
     {
       "url": "https://battleforthehill.com/politician/11581",
       "status": 200,
-      "bytes": 253308,
+      "bytes": 253162,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1077,7 +1061,7 @@
     {
       "url": "https://battleforthehill.com/politician/11584",
       "status": 200,
-      "bytes": 254755,
+      "bytes": 254609,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1093,7 +1077,7 @@
     {
       "url": "https://battleforthehill.com/politician/11585",
       "status": 200,
-      "bytes": 254328,
+      "bytes": 254182,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1109,7 +1093,7 @@
     {
       "url": "https://battleforthehill.com/politician/11587",
       "status": 200,
-      "bytes": 253446,
+      "bytes": 253300,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1125,7 +1109,7 @@
     {
       "url": "https://battleforthehill.com/politician/11588",
       "status": 200,
-      "bytes": 254365,
+      "bytes": 254215,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1141,7 +1125,7 @@
     {
       "url": "https://battleforthehill.com/politician/11593",
       "status": 200,
-      "bytes": 254369,
+      "bytes": 254223,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1157,7 +1141,7 @@
     {
       "url": "https://battleforthehill.com/politician/11597",
       "status": 200,
-      "bytes": 254353,
+      "bytes": 254207,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1173,7 +1157,7 @@
     {
       "url": "https://battleforthehill.com/politician/11598",
       "status": 200,
-      "bytes": 255283,
+      "bytes": 255137,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1189,7 +1173,7 @@
     {
       "url": "https://battleforthehill.com/politician/11605",
       "status": 200,
-      "bytes": 253283,
+      "bytes": 253137,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1205,7 +1189,7 @@
     {
       "url": "https://battleforthehill.com/politician/11608",
       "status": 200,
-      "bytes": 253419,
+      "bytes": 253273,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1221,7 +1205,7 @@
     {
       "url": "https://battleforthehill.com/politician/11610",
       "status": 200,
-      "bytes": 253298,
+      "bytes": 253152,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1237,7 +1221,7 @@
     {
       "url": "https://battleforthehill.com/politician/11613",
       "status": 200,
-      "bytes": 253338,
+      "bytes": 253192,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1253,7 +1237,7 @@
     {
       "url": "https://battleforthehill.com/politician/11615",
       "status": 200,
-      "bytes": 253092,
+      "bytes": 252946,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1269,7 +1253,7 @@
     {
       "url": "https://battleforthehill.com/politician/11634",
       "status": 200,
-      "bytes": 253310,
+      "bytes": 253164,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1285,7 +1269,7 @@
     {
       "url": "https://battleforthehill.com/politician/11635",
       "status": 200,
-      "bytes": 253243,
+      "bytes": 253097,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1301,7 +1285,7 @@
     {
       "url": "https://battleforthehill.com/politician/11638",
       "status": 200,
-      "bytes": 253352,
+      "bytes": 253206,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1317,7 +1301,7 @@
     {
       "url": "https://battleforthehill.com/politician/11640",
       "status": 200,
-      "bytes": 253250,
+      "bytes": 253104,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1333,7 +1317,7 @@
     {
       "url": "https://battleforthehill.com/politician/11641",
       "status": 200,
-      "bytes": 253255,
+      "bytes": 253109,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1349,7 +1333,7 @@
     {
       "url": "https://battleforthehill.com/politician/12098",
       "status": 200,
-      "bytes": 279851,
+      "bytes": 279695,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1365,7 +1349,7 @@
     {
       "url": "https://battleforthehill.com/politician/12512",
       "status": 200,
-      "bytes": 262193,
+      "bytes": 262047,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1381,7 +1365,7 @@
     {
       "url": "https://battleforthehill.com/politician/12731",
       "status": 200,
-      "bytes": 261848,
+      "bytes": 261704,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1397,7 +1381,7 @@
     {
       "url": "https://battleforthehill.com/politician/13207",
       "status": 200,
-      "bytes": 269319,
+      "bytes": 269170,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1423,7 +1407,7 @@
     {
       "url": "https://battleforthehill.com/politician/13537",
       "status": 200,
-      "bytes": 268433,
+      "bytes": 268287,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1439,7 +1423,7 @@
     {
       "url": "https://battleforthehill.com/politician/13549",
       "status": 200,
-      "bytes": 288570,
+      "bytes": 288189,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1453,9 +1437,9 @@
       "saved_to": "scraper/raw/13549.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/13709",
+      "url": "https://battleforthehill.com/politician/13562",
       "status": 200,
-      "bytes": 256123,
+      "bytes": 257476,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1464,14 +1448,14 @@
         "Campaign Funds"
       ],
       "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/13709",
+      "final_url": "https://battleforthehill.com/politician/13562",
       "error": null,
-      "saved_to": "scraper/raw/13709.html"
+      "saved_to": "scraper/raw/13562.html"
     },
     {
       "url": "https://battleforthehill.com/politician/13798",
       "status": 200,
-      "bytes": 275836,
+      "bytes": 275690,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1487,7 +1471,7 @@
     {
       "url": "https://battleforthehill.com/politician/13850",
       "status": 200,
-      "bytes": 278612,
+      "bytes": 278460,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1503,7 +1487,7 @@
     {
       "url": "https://battleforthehill.com/politician/14145",
       "status": 200,
-      "bytes": 271844,
+      "bytes": 271698,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1519,7 +1503,7 @@
     {
       "url": "https://battleforthehill.com/politician/14159",
       "status": 200,
-      "bytes": 278309,
+      "bytes": 278291,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1535,7 +1519,7 @@
     {
       "url": "https://battleforthehill.com/politician/14479",
       "status": 200,
-      "bytes": 261568,
+      "bytes": 261421,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1551,7 +1535,7 @@
     {
       "url": "https://battleforthehill.com/politician/14480",
       "status": 200,
-      "bytes": 257682,
+      "bytes": 257536,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1567,7 +1551,7 @@
     {
       "url": "https://battleforthehill.com/politician/14606",
       "status": 200,
-      "bytes": 271596,
+      "bytes": 271455,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1583,7 +1567,7 @@
     {
       "url": "https://battleforthehill.com/politician/14621",
       "status": 200,
-      "bytes": 259192,
+      "bytes": 258624,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1599,7 +1583,7 @@
     {
       "url": "https://battleforthehill.com/politician/14649",
       "status": 200,
-      "bytes": 260697,
+      "bytes": 259768,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1613,89 +1597,9 @@
       "saved_to": "scraper/raw/14649.html"
     },
     {
-      "url": "https://battleforthehill.com/politician/14753",
-      "status": 200,
-      "bytes": 255101,
-      "markers_found": [
-        "National Prestige",
-        "Campaign Strength",
-        "State Reputation",
-        "National Reputation",
-        "Campaign Funds"
-      ],
-      "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/14753",
-      "error": null,
-      "saved_to": "scraper/raw/14753.html"
-    },
-    {
-      "url": "https://battleforthehill.com/politician/14755",
-      "status": 200,
-      "bytes": 255002,
-      "markers_found": [
-        "National Prestige",
-        "Campaign Strength",
-        "State Reputation",
-        "National Reputation",
-        "Campaign Funds"
-      ],
-      "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/14755",
-      "error": null,
-      "saved_to": "scraper/raw/14755.html"
-    },
-    {
-      "url": "https://battleforthehill.com/politician/14765",
-      "status": 200,
-      "bytes": 254732,
-      "markers_found": [
-        "National Prestige",
-        "Campaign Strength",
-        "State Reputation",
-        "National Reputation",
-        "Campaign Funds"
-      ],
-      "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/14765",
-      "error": null,
-      "saved_to": "scraper/raw/14765.html"
-    },
-    {
-      "url": "https://battleforthehill.com/politician/14767",
-      "status": 200,
-      "bytes": 258566,
-      "markers_found": [
-        "National Prestige",
-        "Campaign Strength",
-        "State Reputation",
-        "National Reputation",
-        "Campaign Funds"
-      ],
-      "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/14767",
-      "error": null,
-      "saved_to": "scraper/raw/14767.html"
-    },
-    {
-      "url": "https://battleforthehill.com/politician/14777",
-      "status": 200,
-      "bytes": 255038,
-      "markers_found": [
-        "National Prestige",
-        "Campaign Strength",
-        "State Reputation",
-        "National Reputation",
-        "Campaign Funds"
-      ],
-      "markers_missing": [],
-      "final_url": "https://battleforthehill.com/politician/14777",
-      "error": null,
-      "saved_to": "scraper/raw/14777.html"
-    },
-    {
       "url": "https://battleforthehill.com/politician/14779",
       "status": 200,
-      "bytes": 258666,
+      "bytes": 258519,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1711,7 +1615,7 @@
     {
       "url": "https://battleforthehill.com/politician/14787",
       "status": 200,
-      "bytes": 256547,
+      "bytes": 256424,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1727,7 +1631,7 @@
     {
       "url": "https://battleforthehill.com/politician/14796",
       "status": 200,
-      "bytes": 257227,
+      "bytes": 257081,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1743,7 +1647,7 @@
     {
       "url": "https://battleforthehill.com/politician/14810",
       "status": 200,
-      "bytes": 255072,
+      "bytes": 254926,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1759,7 +1663,7 @@
     {
       "url": "https://battleforthehill.com/politician/14826",
       "status": 200,
-      "bytes": 255091,
+      "bytes": 254945,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1775,7 +1679,7 @@
     {
       "url": "https://battleforthehill.com/politician/14830",
       "status": 200,
-      "bytes": 263127,
+      "bytes": 262110,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1791,7 +1695,7 @@
     {
       "url": "https://battleforthehill.com/politician/14853",
       "status": 200,
-      "bytes": 270313,
+      "bytes": 270117,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1807,7 +1711,7 @@
     {
       "url": "https://battleforthehill.com/politician/14855",
       "status": 200,
-      "bytes": 254801,
+      "bytes": 254667,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1823,7 +1727,7 @@
     {
       "url": "https://battleforthehill.com/politician/14882",
       "status": 200,
-      "bytes": 261520,
+      "bytes": 258905,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1839,7 +1743,7 @@
     {
       "url": "https://battleforthehill.com/politician/14903",
       "status": 200,
-      "bytes": 262869,
+      "bytes": 262733,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1855,7 +1759,7 @@
     {
       "url": "https://battleforthehill.com/politician/14906",
       "status": 200,
-      "bytes": 255460,
+      "bytes": 255318,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
@@ -1871,7 +1775,7 @@
     {
       "url": "https://battleforthehill.com/politician/14923",
       "status": 200,
-      "bytes": 254801,
+      "bytes": 254655,
       "markers_found": [
         "National Prestige",
         "Campaign Strength",
