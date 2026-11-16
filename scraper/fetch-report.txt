@@ -1,527 +1,533 @@
-# Fetch report - 2026-11-15 09:31:33
+# Fetch report - 2026-11-16 10:01:15
 # 112 URLs
 
 ## Summary: 111/112 fetched successfully
 
 ### https://battleforthehill.com/politician/1175
 - status: 200
-- bytes: 260267
+- bytes: 261213
 - saved: scraper/raw/1175.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1223
 - status: 200
-- bytes: 272804
+- bytes: 280494
 - saved: scraper/raw/1223.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1224
 - status: 200
-- bytes: 266046
+- bytes: 266996
 - saved: scraper/raw/1224.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1225
 - status: 200
-- bytes: 264864
+- bytes: 265822
 - saved: scraper/raw/1225.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1227
 - status: 200
-- bytes: 269683
+- bytes: 271061
 - saved: scraper/raw/1227.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1239
 - status: 200
-- bytes: 288522
+- bytes: 289803
 - saved: scraper/raw/1239.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1263
 - status: 200
-- bytes: 280935
+- bytes: 281885
 - saved: scraper/raw/1263.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1291
 - status: 200
-- bytes: 268161
+- bytes: 269105
 - saved: scraper/raw/1291.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1361
 - status: 200
-- bytes: 283108
+- bytes: 284501
 - saved: scraper/raw/1361.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1464
 - status: 200
-- bytes: 283410
+- bytes: 284885
 - saved: scraper/raw/1464.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1690
 - status: 200
-- bytes: 260629
+- bytes: 262102
 - saved: scraper/raw/1690.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1743
 - status: 200
-- bytes: 283062
+- bytes: 284651
 - saved: scraper/raw/1743.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1744
 - status: 200
-- bytes: 268053
+- bytes: 270443
 - saved: scraper/raw/1744.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1770
 - status: 200
-- bytes: 285542
+- bytes: 286979
 - saved: scraper/raw/1770.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1771
 - status: 200
-- bytes: 261338
+- bytes: 262797
 - saved: scraper/raw/1771.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1871
 - status: 200
-- bytes: 326287
+- bytes: 327565
 - saved: scraper/raw/1871.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/1969
 - status: 200
-- bytes: 275784
+- bytes: 277254
 - saved: scraper/raw/1969.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/2273
 - status: 200
-- bytes: 255921
+- bytes: 257292
 - saved: scraper/raw/2273.html
+- markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
+
+### https://battleforthehill.com/politician/2475
+- status: 200
+- bytes: 292533
+- saved: scraper/raw/2475.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/2820
 - status: 200
-- bytes: 264937
+- bytes: 266552
 - saved: scraper/raw/2820.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/3108
 - status: 200
-- bytes: 277189
+- bytes: 278527
 - saved: scraper/raw/3108.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/4142
 - status: 200
-- bytes: 255939
+- bytes: 257409
 - saved: scraper/raw/4142.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/4657
 - status: 200
-- bytes: 279478
+- bytes: 280948
 - saved: scraper/raw/4657.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11473
 - status: 200
-- bytes: 257182
+- bytes: 258654
 - saved: scraper/raw/11473.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11474
 - status: 200
-- bytes: 256514
+- bytes: 257984
 - saved: scraper/raw/11474.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11475
 - status: 200
-- bytes: 257712
+- bytes: 259170
 - saved: scraper/raw/11475.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11476
 - status: 200
-- bytes: 256874
+- bytes: 258344
 - saved: scraper/raw/11476.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11477
 - status: 200
-- bytes: 256269
+- bytes: 257739
 - saved: scraper/raw/11477.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11478
 - status: 200
-- bytes: 257468
+- bytes: 258940
 - saved: scraper/raw/11478.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11479
 - status: 200
-- bytes: 255635
+- bytes: 257105
 - saved: scraper/raw/11479.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11480
 - status: 200
-- bytes: 255634
+- bytes: 257104
 - saved: scraper/raw/11480.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11481
 - status: 200
-- bytes: 255397
+- bytes: 256867
 - saved: scraper/raw/11481.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11482
 - status: 200
-- bytes: 256029
+- bytes: 257499
 - saved: scraper/raw/11482.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11493
 - status: 200
-- bytes: 254691
+- bytes: 256161
 - saved: scraper/raw/11493.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11494
 - status: 200
-- bytes: 254974
+- bytes: 256444
 - saved: scraper/raw/11494.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11502
 - status: 200
-- bytes: 255279
+- bytes: 256749
 - saved: scraper/raw/11502.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11506
 - status: 200
-- bytes: 255759
+- bytes: 257226
 - saved: scraper/raw/11506.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11508
 - status: 200
-- bytes: 257004
+- bytes: 258469
 - saved: scraper/raw/11508.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11511
 - status: 200
-- bytes: 255670
+- bytes: 257135
 - saved: scraper/raw/11511.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11512
 - status: 200
-- bytes: 256011
+- bytes: 257476
 - saved: scraper/raw/11512.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11514
 - status: 200
-- bytes: 255781
+- bytes: 257246
 - saved: scraper/raw/11514.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11515
 - status: 200
-- bytes: 256786
+- bytes: 258229
 - saved: scraper/raw/11515.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11519
 - status: 200
-- bytes: 255348
+- bytes: 256789
 - saved: scraper/raw/11519.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11521
 - status: 200
-- bytes: 256579
+- bytes: 258020
 - saved: scraper/raw/11521.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11536
 - status: 200
-- bytes: 256209
+- bytes: 257652
 - saved: scraper/raw/11536.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11538
 - status: 200
-- bytes: 256048
+- bytes: 257494
 - saved: scraper/raw/11538.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11539
 - status: 200
-- bytes: 255696
+- bytes: 257144
 - saved: scraper/raw/11539.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11540
 - status: 200
-- bytes: 255371
+- bytes: 256817
 - saved: scraper/raw/11540.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11542
 - status: 200
-- bytes: 255117
+- bytes: 256561
 - saved: scraper/raw/11542.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11544
 - status: 200
-- bytes: 256038
+- bytes: 257486
 - saved: scraper/raw/11544.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11547
 - status: 200
-- bytes: 256400
+- bytes: 257846
 - saved: scraper/raw/11547.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11548
 - status: 200
-- bytes: 255398
+- bytes: 256844
 - saved: scraper/raw/11548.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11549
 - status: 200
-- bytes: 255122
+- bytes: 256568
 - saved: scraper/raw/11549.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11550
 - status: 200
-- bytes: 258004
+- bytes: 259452
 - saved: scraper/raw/11550.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11552
 - status: 200
-- bytes: 255433
+- bytes: 256881
 - saved: scraper/raw/11552.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11553
 - status: 200
-- bytes: 256931
+- bytes: 258377
 - saved: scraper/raw/11553.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11557
 - status: 200
-- bytes: 255792
+- bytes: 257238
 - saved: scraper/raw/11557.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11560
 - status: 200
-- bytes: 255410
+- bytes: 256856
 - saved: scraper/raw/11560.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11565
 - status: 200
-- bytes: 256150
+- bytes: 257598
 - saved: scraper/raw/11565.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11572
 - status: 200
-- bytes: 254595
+- bytes: 256041
 - saved: scraper/raw/11572.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11573
 - status: 200
-- bytes: 254997
+- bytes: 256443
 - saved: scraper/raw/11573.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11574
 - status: 200
-- bytes: 254946
+- bytes: 256392
 - saved: scraper/raw/11574.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11575
 - status: 200
-- bytes: 254992
+- bytes: 256438
 - saved: scraper/raw/11575.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11576
 - status: 200
-- bytes: 254624
+- bytes: 256070
 - saved: scraper/raw/11576.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11578
 - status: 200
-- bytes: 255362
+- bytes: 256809
 - saved: scraper/raw/11578.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11579
 - status: 200
-- bytes: 254622
+- bytes: 256069
 - saved: scraper/raw/11579.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11581
 - status: 200
-- bytes: 253162
+- bytes: 254609
 - saved: scraper/raw/11581.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11584
 - status: 200
-- bytes: 254609
+- bytes: 256056
 - saved: scraper/raw/11584.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11585
 - status: 200
-- bytes: 254182
+- bytes: 255629
 - saved: scraper/raw/11585.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11587
 - status: 200
-- bytes: 253300
+- bytes: 254747
 - saved: scraper/raw/11587.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11588
 - status: 200
-- bytes: 254215
+- bytes: 255662
 - saved: scraper/raw/11588.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11593
 - status: 200
-- bytes: 254223
+- bytes: 255670
 - saved: scraper/raw/11593.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11597
 - status: 200
-- bytes: 254207
+- bytes: 255654
 - saved: scraper/raw/11597.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11598
 - status: 200
-- bytes: 255137
+- bytes: 256584
 - saved: scraper/raw/11598.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11605
 - status: 200
-- bytes: 253137
+- bytes: 254584
 - saved: scraper/raw/11605.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11608
 - status: 200
-- bytes: 253273
+- bytes: 254720
 - saved: scraper/raw/11608.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11610
 - status: 200
-- bytes: 253152
+- bytes: 254599
 - saved: scraper/raw/11610.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11613
 - status: 200
-- bytes: 253192
+- bytes: 254639
 - saved: scraper/raw/11613.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11615
 - status: 200
-- bytes: 252946
+- bytes: 254393
 - saved: scraper/raw/11615.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11634
 - status: 200
-- bytes: 253164
+- bytes: 254611
 - saved: scraper/raw/11634.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11635
 - status: 200
-- bytes: 253097
+- bytes: 254544
 - saved: scraper/raw/11635.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11638
 - status: 200
-- bytes: 253206
+- bytes: 254653
 - saved: scraper/raw/11638.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11640
 - status: 200
-- bytes: 253104
+- bytes: 254551
 - saved: scraper/raw/11640.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/11641
 - status: 200
-- bytes: 253109
+- bytes: 254556
 - saved: scraper/raw/11641.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/12098
 - status: 200
-- bytes: 279695
+- bytes: 281144
 - saved: scraper/raw/12098.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/12512
 - status: 200
-- bytes: 262047
+- bytes: 263521
 - saved: scraper/raw/12512.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/12731
 - status: 200
-- bytes: 261704
+- bytes: 263151
 - saved: scraper/raw/12731.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/13207
 - status: 200
-- bytes: 269170
+- bytes: 270630
 - saved: scraper/raw/13207.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
@@ -533,144 +539,138 @@
 
 ### https://battleforthehill.com/politician/13537
 - status: 200
-- bytes: 268287
+- bytes: 269737
 - saved: scraper/raw/13537.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/13549
 - status: 200
-- bytes: 288189
+- bytes: 289591
 - saved: scraper/raw/13549.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/13562
 - status: 200
-- bytes: 257476
+- bytes: 260534
 - saved: scraper/raw/13562.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/13798
 - status: 200
-- bytes: 275690
+- bytes: 277137
 - saved: scraper/raw/13798.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/13850
 - status: 200
-- bytes: 278460
+- bytes: 279908
 - saved: scraper/raw/13850.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14145
 - status: 200
-- bytes: 271698
+- bytes: 273146
 - saved: scraper/raw/14145.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14159
 - status: 200
-- bytes: 278291
+- bytes: 280338
 - saved: scraper/raw/14159.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14479
 - status: 200
-- bytes: 261421
+- bytes: 262871
 - saved: scraper/raw/14479.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14480
 - status: 200
-- bytes: 257536
+- bytes: 259632
 - saved: scraper/raw/14480.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14606
 - status: 200
-- bytes: 271455
+- bytes: 279227
 - saved: scraper/raw/14606.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14621
 - status: 200
-- bytes: 258624
+- bytes: 260377
 - saved: scraper/raw/14621.html
+- markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
+
+### https://battleforthehill.com/politician/14627
+- status: 200
+- bytes: 260465
+- saved: scraper/raw/14627.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14649
 - status: 200
-- bytes: 259768
+- bytes: 261633
 - saved: scraper/raw/14649.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14779
 - status: 200
-- bytes: 258519
+- bytes: 259963
 - saved: scraper/raw/14779.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14787
 - status: 200
-- bytes: 256424
+- bytes: 257857
 - saved: scraper/raw/14787.html
-- markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
-
-### https://battleforthehill.com/politician/14796
-- status: 200
-- bytes: 257081
-- saved: scraper/raw/14796.html
-- markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
-
-### https://battleforthehill.com/politician/14810
-- status: 200
-- bytes: 254926
-- saved: scraper/raw/14810.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14826
 - status: 200
-- bytes: 254945
+- bytes: 256392
 - saved: scraper/raw/14826.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14830
 - status: 200
-- bytes: 262110
+- bytes: 264395
 - saved: scraper/raw/14830.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14853
 - status: 200
-- bytes: 270117
+- bytes: 274133
 - saved: scraper/raw/14853.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14855
 - status: 200
-- bytes: 254667
+- bytes: 256102
 - saved: scraper/raw/14855.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14882
 - status: 200
-- bytes: 258905
+- bytes: 261261
 - saved: scraper/raw/14882.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14903
 - status: 200
-- bytes: 262733
+- bytes: 264210
 - saved: scraper/raw/14903.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14906
 - status: 200
-- bytes: 255318
+- bytes: 256757
 - saved: scraper/raw/14906.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds
 
 ### https://battleforthehill.com/politician/14923
 - status: 200
-- bytes: 254655
+- bytes: 256102
 - saved: scraper/raw/14923.html
 - markers found: National Prestige, Campaign Strength, State Reputation, National Reputation, Campaign Funds

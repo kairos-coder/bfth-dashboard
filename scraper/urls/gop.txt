@@ -16,6 +16,7 @@ https://battleforthehill.com/politician/1771
 https://battleforthehill.com/politician/1871
 https://battleforthehill.com/politician/1969
 https://battleforthehill.com/politician/2273
+https://battleforthehill.com/politician/2475
 https://battleforthehill.com/politician/2820
 https://battleforthehill.com/politician/3108
 https://battleforthehill.com/politician/4142
@@ -97,11 +98,10 @@ https://battleforthehill.com/politician/14479
 https://battleforthehill.com/politician/14480
 https://battleforthehill.com/politician/14606
 https://battleforthehill.com/politician/14621
+https://battleforthehill.com/politician/14627
 https://battleforthehill.com/politician/14649
 https://battleforthehill.com/politician/14779
 https://battleforthehill.com/politician/14787
-https://battleforthehill.com/politician/14796
-https://battleforthehill.com/politician/14810
 https://battleforthehill.com/politician/14826
 https://battleforthehill.com/politician/14830
 https://battleforthehill.com/politician/14853

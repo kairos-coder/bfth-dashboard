@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-15T14:32:26.179630+00:00",
+  "generated_at": "2026-11-16T15:02:10.161919+00:00",
   "senate": {
     "chamber": "senate",
-    "total_seats": 98,
-    "majority_needed": 50,
-    "gop_seats": 47,
+    "total_seats": 97,
+    "majority_needed": 49,
+    "gop_seats": 48,
     "parties": [
       {
         "party_id": "2",
         "name": "Republican Party[Plurality]",
-        "seats": 47,
+        "seats": 48,
         "color": "#EF4444"
       },
       {
         "party_id": "1",
         "name": "Democratic Party[Minority]",
-        "seats": 44,
+        "seats": 42,
         "color": "#3B82F6"
       },
       {
@@ -49,8 +49,8 @@
       },
       {
         "role": "Senate Majority Whip",
-        "name": "JD Vance",
-        "politician_id": "3108"
+        "name": "James Bond",
+        "politician_id": "1264"
       },
       {
         "role": "Pro-Tempore",
@@ -71,20 +71,20 @@
   },
   "house": {
     "chamber": "house",
-    "total_seats": 368,
-    "majority_needed": 185,
-    "gop_seats": 155,
+    "total_seats": 352,
+    "majority_needed": 177,
+    "gop_seats": 145,
     "parties": [
       {
         "party_id": "2",
         "name": "Republican Party[Plurality]",
-        "seats": 155,
+        "seats": 145,
         "color": "#EF4444"
       },
       {
         "party_id": "1",
         "name": "Democratic Party[Minority]",
-        "seats": 123,
+        "seats": 117,
         "color": "#3B82F6"
       },
       {
@@ -145,23 +145,18 @@
     "leadership": [
       {
         "role": "House Leadership",
-        "name": "Jack Thatch",
-        "politician_id": "1361"
+        "name": "Warren Buffett",
+        "politician_id": "13279"
       },
       {
-        "role": "House Majority Whip",
-        "name": "Jack Thatch",
-        "politician_id": "1361"
+        "role": "House Majority Leader",
+        "name": "Warren Buffett",
+        "politician_id": "13279"
       },
       {
         "role": "Speaker of the House",
         "name": "Vertin",
         "politician_id": "1287"
-      },
-      {
-        "role": "House Minority Leader",
-        "name": "Alice Huang",
-        "politician_id": "4900"
       },
       {
         "role": "House Minority Whip",
