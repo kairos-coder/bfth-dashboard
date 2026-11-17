@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:02:10.161919+00:00",
+  "generated_at": "2026-11-17T01:54:31.294542+00:00",
   "senate": {
     "chamber": "senate",
     "total_seats": 97,
@@ -44,8 +44,8 @@
       },
       {
         "role": "Senate Majority Leader",
-        "name": "Judith Ellen Foster",
-        "politician_id": "1240"
+        "name": "JD Vance",
+        "politician_id": "3108"
       },
       {
         "role": "Senate Majority Whip",
@@ -71,8 +71,8 @@
   },
   "house": {
     "chamber": "house",
-    "total_seats": 352,
-    "majority_needed": 177,
+    "total_seats": 338,
+    "majority_needed": 170,
     "gop_seats": 145,
     "parties": [
       {
@@ -84,7 +84,7 @@
       {
         "party_id": "1",
         "name": "Democratic Party[Minority]",
-        "seats": 117,
+        "seats": 103,
         "color": "#3B82F6"
       },
       {
@@ -140,6 +140,12 @@
         "name": "Glen Youngkins' Party",
         "seats": 0,
         "color": "#4E5FA2"
+      },
+      {
+        "party_id": "422",
+        "name": "The Federalist Party",
+        "seats": 0,
+        "color": "#666"
       }
     ],
     "leadership": [
